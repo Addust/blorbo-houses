@@ -9383,8 +9383,8 @@
 	desc = "A bulky turret made of broken-down equipment from the New Gorlex Republic, twin lasers humming away. Its beady camera-eye stares at you.";
 	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	lethal_projectile = /obj/projectile/beam/eoehoma/heavy;
-	stun_projectile = /obj/projectile/beam/eoehoma/heavy;
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
 	burst_size = 2;
 	burst_delay = 5
 	},

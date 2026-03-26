@@ -974,6 +974,12 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
+"hy" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/hidden/layer1{
+	dir = 9
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
 "hz" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/toilet)
@@ -1221,6 +1227,12 @@
 /obj/item/food/grown/cabbage,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
+"iD" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/hidden/layer1{
+	dir = 6
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
 "iG" = (
 /obj/structure/table/chem,
 /obj/effect/turf_decal/borderfloorblack{
@@ -1880,10 +1892,6 @@
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
-"mb" = (
-/obj/machinery/atmospherics/pipe/layer_manifold/visible,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/engineering/electrical)
 "mc" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 10
@@ -2686,13 +2694,6 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/crew/office)
-"rA" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/incinerator_input{
-	dir = 1
-	},
-/obj/machinery/igniter/incinerator_atmos,
-/turf/open/floor/engine/airless,
-/area/ship/engineering/electrical)
 "rC" = (
 /obj/effect/turf_decal/industrial/warning,
 /obj/effect/turf_decal/siding/thinplating/dark,
@@ -2836,6 +2837,13 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
+"se" = (
+/obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/yellow/hidden/layer1{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/ship/external/dark)
 "sf" = (
 /obj/structure/railing,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -2875,8 +2883,8 @@
 	desc = "A bulky turret made of broken-down equipment from the New Gorlex Republic, twin lasers humming away. Its beady camera-eye stares at you.";
 	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	lethal_projectile = /obj/projectile/beam/eoehoma/heavy;
-	stun_projectile = /obj/projectile/beam/eoehoma/heavy;
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
 	burst_size = 2;
 	burst_delay = 5
 	},
@@ -3516,11 +3524,11 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
 "wZ" = (
-/obj/machinery/atmospherics/pipe/simple/yellow/hidden/layer1{
-	dir = 9
+/obj/machinery/bluespace_drive{
+	icon_state = "bsdrive_right"
 	},
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external/dark)
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/maintenance/starboard)
 "xa" = (
 /obj/structure/table/chem,
 /obj/effect/turf_decal/borderfloorblack{
@@ -4067,6 +4075,13 @@
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/office)
+"zD" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
+/obj/machinery/air_sensor/ship/shetland/burn,
+/turf/open/floor/engine/airless,
+/area/ship/engineering/electrical)
 "zM" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -5606,6 +5621,10 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/toilet)
+"Jw" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/visible,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/engineering/electrical)
 "Jx" = (
 /obj/structure/closet/crate/bin,
 /obj/machinery/light_switch{
@@ -5799,10 +5818,11 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
 "KH" = (
-/obj/machinery/door/poddoor{
-	id = "milcant_teg_eject"
+/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/incinerator_input{
+	dir = 1
 	},
-/turf/open/floor/engine/hull/reinforced,
+/obj/machinery/igniter/incinerator_atmos,
+/turf/open/floor/engine/airless,
 /area/ship/engineering/electrical)
 "KI" = (
 /obj/effect/turf_decal/techfloor{
@@ -5905,12 +5925,11 @@
 /turf/open/floor/plating,
 /area/ship/hallway/fore)
 "Ld" = (
-/obj/structure/catwalk/over,
-/obj/machinery/atmospherics/pipe/simple/yellow/hidden/layer1{
-	dir = 1
+/obj/machinery/door/poddoor{
+	id = "milcant_teg_eject"
 	},
-/turf/open/floor/plating/airless,
-/area/ship/external/dark)
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/engineering/electrical)
 "Lk" = (
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/industrial/warning{
@@ -6432,12 +6451,6 @@
 /obj/machinery/griddle,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
-"Or" = (
-/obj/machinery/bluespace_drive{
-	icon_state = "bsdrive_right"
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/maintenance/starboard)
 "Ov" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10;
@@ -6846,15 +6859,6 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
-"QL" = (
-/obj/effect/turf_decal/corner/opaque/tan{
-	dir = 5
-	},
-/obj/structure/sign/flag/ngr{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/patterned/grid/dark,
-/area/ship/hallway/central)
 "QW" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -6876,13 +6880,6 @@
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
-"QY" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 1
-	},
-/obj/machinery/air_sensor/ship/shetland/burn,
-/turf/open/floor/engine/airless,
-/area/ship/engineering/electrical)
 "QZ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor/border_only{
@@ -7531,17 +7528,13 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/crew/office)
 "Ud" = (
-/obj/machinery/door/airlock/external{
-	dir = 4
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 5
 	},
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/atmospherics/pipe/layer_manifold{
-	dir = 4
+/obj/structure/sign/flag/ngr{
+	pixel_y = 32
 	},
-/obj/machinery/atmospherics/pipe/simple/yellow/hidden/layer1{
-	dir = 4
-	},
-/turf/open/floor/plasteel/tech/grid,
+/turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
 "Ue" = (
 /obj/structure/table/chem,
@@ -8012,8 +8005,8 @@
 	desc = "A bulky turret made of broken-down equipment from the New Gorlex Republic, twin lasers humming away. Its beady camera-eye stares at you.";
 	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	lethal_projectile = /obj/projectile/beam/eoehoma/heavy;
-	stun_projectile = /obj/projectile/beam/eoehoma/heavy;
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
 	burst_size = 2;
 	burst_delay = 5
 	},
@@ -8142,12 +8135,19 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
-"WX" = (
-/obj/machinery/atmospherics/pipe/simple/yellow/hidden/layer1{
-	dir = 6
+"Xa" = (
+/obj/machinery/door/airlock/external{
+	dir = 4
 	},
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/external/dark)
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/yellow/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/hallway/central)
 "Xb" = (
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
@@ -8868,9 +8868,9 @@ CP
 CP
 CP
 CP
-WX
+iD
 kQ
-Ld
+se
 Qz
 mU
 XK
@@ -8904,7 +8904,7 @@ CP
 GA
 qr
 qr
-Ud
+Xa
 eV
 XK
 oD
@@ -8929,12 +8929,12 @@ os
 aC
 cL
 TM
-Ld
-Ld
-Ld
-Ld
-Ld
-wZ
+se
+se
+se
+se
+se
+hy
 qr
 bj
 tS
@@ -9037,7 +9037,7 @@ ok
 fG
 sw
 RD
-mb
+Jw
 LF
 Ux
 LU
@@ -9076,8 +9076,8 @@ Kn
 nk
 Rw
 Xr
-QY
-KH
+zD
+Ld
 CP
 "}
 (12,1,1) = {"
@@ -9103,14 +9103,14 @@ OZ
 fG
 hK
 kg
-mb
+Jw
 TU
 vk
 vQ
 lr
 Xr
-rA
 KH
+Ld
 CP
 "}
 (13,1,1) = {"
@@ -9304,7 +9304,7 @@ oe
 qZ
 PO
 cd
-Or
+wZ
 rS
 LZ
 CP
@@ -9332,7 +9332,7 @@ SM
 SM
 SM
 SM
-QL
+Ud
 UR
 BA
 BA

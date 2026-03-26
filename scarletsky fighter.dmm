@@ -1,5 +1,185 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 10
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/handrail{
+	dir = 8
+	},
+/turf/open/floor/plating/rust,
+/area/ship/bridge)
+"b" = (
+/obj/machinery/porta_turret/ship/ngr/heavy{
+	dir = 10;
+	name = "Canterbury Turret";
+	id = "military_cant_nanami_guns";
+	desc = "A bulky turret made of broken-down equipment from the New Gorlex Republic, twin lasers humming away. Its beady camera-eye stares at you.";
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
+	burst_size = 2;
+	burst_delay = 5
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"c" = (
+/obj/structure/cable{
+	icon_state = "6-10"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 8
+	},
+/obj/machinery/door/airlock/maintenance/external{
+	dir = 4;
+	name = "Cockpit";
+	id_tag = "scarlet_sky_fighter_bolts";
+	req_ship_access = 0
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
+"f" = (
+/obj/structure/grille,
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"j" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 8
+	},
+/obj/machinery/computer/helm/retro{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
+"k" = (
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 1
+	},
+/obj/machinery/door/airlock/maintenance/external{
+	name = "Maintenance Hatch";
+	id_tag = "scarlet_sky_fighter_bolts";
+	req_ship_access = 0
+	},
+/obj/docking_port/mobile{
+	preferred_direction = 4;
+	launch_status = 0;
+	name = "nanami"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
+"m" = (
+/obj/machinery/porta_turret/ship/ngr/heavy{
+	dir = 9;
+	name = "Canterbury Turret";
+	id = "military_cant_nanami_guns";
+	desc = "A bulky turret made of broken-down equipment from the New Gorlex Republic, twin lasers humming away. Its beady camera-eye stares at you.";
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
+	burst_size = 2;
+	burst_delay = 5
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"n" = (
+/obj/structure/window/plasma/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/shuttle/fire_heater,
+/obj/structure/window/plasma/reinforced,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"p" = (
+/obj/structure/window/plasma/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/shuttle/fire_heater,
+/obj/structure/window/plasma/reinforced{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"r" = (
+/obj/structure/salvageable/airbase/cannon{
+	pixel_y = -16;
+	name = "outdated autocannon";
+	desc = "A rotary cannon that seems to have rusted into place over the years. Its maintenance panel is open and you can see some parts missing."
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"s" = (
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 1
+	},
+/obj/machinery/door/airlock/maintenance/external{
+	name = "Maintenance Hatch";
+	id_tag = "scarlet_sky_fighter_bolts";
+	req_ship_access = 0
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
+"u" = (
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/auto_name/directional/south{
+	start_charge = 0
+	},
+/obj/item/storage/toolbox/syndicate{
+	pixel_x = 6;
+	pixel_y = 13
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = 12;
+	pixel_y = -19
+	},
+/turf/open/floor/plating/rust,
+/area/ship/bridge)
+"v" = (
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/cable{
@@ -11,22 +191,25 @@
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
-"c" = (
-/obj/machinery/porta_turret/ship/ngr/heavy{
-	dir = 9;
-	name = "Canterbury Turret";
-	id = "military_cant_nanami_guns";
-	desc = "A bulky turret made of broken-down equipment from the New Gorlex Republic, twin lasers humming away. Its beady camera-eye stares at you.";
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	lethal_projectile = /obj/projectile/beam/eoehoma/heavy;
-	stun_projectile = /obj/projectile/beam/eoehoma/heavy;
-	burst_size = 2;
-	burst_delay = 5
-	},
+"y" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
-"d" = (
+"z" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
+	id = "military_cant_nanami_guns";
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 6;
+	burst_delay = 2;
+	burst_size = 4
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ship/bridge)
+"A" = (
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/cable{
@@ -37,13 +220,7 @@
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
-"j" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
-"l" = (
-/turf/template_noop,
-/area/template_noop)
-"m" = (
+"B" = (
 /obj/structure/chair/comfy/shuttle{
 	name = "grav couch";
 	dir = 4;
@@ -61,17 +238,64 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
-"n" = (
-/obj/effect/turf_decal/techfloor{
-	dir = 8
+"E" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
+	id = "military_cant_nanami_guns";
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 5;
+	burst_delay = 2;
+	burst_size = 4
 	},
-/obj/machinery/computer/helm/retro{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/bridge)
-"r" = (
+"F" = (
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 9
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "5-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
+	},
+/obj/structure/closet/wall/red/directional/east,
+/obj/item/storage/firstaid/ancient,
+/obj/item/storage/ration/pepperoni_pizza_slice,
+/obj/item/storage/ration/pepper_jack_beef_patty,
+/obj/item/storage/ration/pepper_jack_beef_patty,
+/obj/item/storage/ration/crayons,
+/obj/item/storage/toolbox/emergency,
+/obj/item/hatchet/wooden,
+/obj/item/melee/knife/survival,
+/obj/item/gun/ballistic/automatic/pistol/ringneck/indie,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/storage/toolbox/ammo/c10mm,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/rust,
+/area/ship/bridge)
+"K" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
+"L" = (
+/obj/structure/grille,
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"M" = (
 /obj/effect/turf_decal/techfloor,
 /obj/structure/closet/wall/red/directional/west,
 /obj/item/clothing/under/syndicate/combat{
@@ -86,54 +310,10 @@
 /obj/item/clothing/head/helmet/space/syndicate/ngr,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
-"t" = (
-/obj/structure/grille,
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/turf/open/floor/plating,
-/area/ship/bridge)
-"u" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 4
-	},
-/obj/machinery/light/small/directional/west,
-/obj/machinery/portable_atmospherics/canister/fuel,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
-"v" = (
-/obj/machinery/power/shuttle/engine/fire,
+"O" = (
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/bridge)
-"A" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Rampage Turret";
-	id = "military_cant_nanami_guns";
-	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
-	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	dir = 6;
-	burst_delay = 2;
-	burst_size = 4
-	},
-/turf/open/floor/engine/hull/reinforced/interior,
-/area/ship/bridge)
-"B" = (
-/obj/structure/salvageable/airbase/cannon{
-	pixel_y = 16;
-	name = "outdated autocannon";
-	desc = "A rotary cannon that seems to have rusted into place over the years. Its maintenance panel is open and you can see some parts missing."
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
-"D" = (
+"Q" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8
 	},
@@ -145,7 +325,27 @@
 /obj/structure/chair/handrail,
 /turf/open/floor/plating,
 /area/ship/bridge)
-"F" = (
+"S" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 4
+	},
+/obj/machinery/light/small/directional/west,
+/obj/machinery/portable_atmospherics/canister/fuel,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"T" = (
+/obj/structure/salvageable/airbase/cannon{
+	pixel_y = 16;
+	name = "outdated autocannon";
+	desc = "A rotary cannon that seems to have rusted into place over the years. Its maintenance panel is open and you can see some parts missing."
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"U" = (
+/turf/template_noop,
+/area/template_noop)
+"V" = (
 /obj/machinery/power/smes/engineering{
 	input_attempt = 0;
 	output_attempt = 0
@@ -175,55 +375,22 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
-"G" = (
-/obj/structure/window/plasma/reinforced{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/shuttle/fire_heater,
-/obj/structure/window/plasma/reinforced{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
-"H" = (
+"W" = (
+/obj/structure/grille,
+/obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "0-8"
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
-	dir = 1
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
-/obj/machinery/door/airlock/maintenance/external{
-	name = "Maintenance Hatch";
-	id_tag = "scarlet_sky_fighter_bolts"
-	},
-/obj/docking_port/mobile{
-	preferred_direction = 4;
-	launch_status = 0;
-	name = "nanami"
-	},
-/turf/open/floor/plasteel/tech/grid,
+/turf/open/floor/plating,
 /area/ship/bridge)
-"I" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Rampage Turret";
-	id = "military_cant_nanami_guns";
-	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
-	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	dir = 5;
-	burst_delay = 2;
-	burst_size = 4
-	},
+"X" = (
+/obj/machinery/power/shuttle/engine/fire,
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/bridge)
-"L" = (
+"Z" = (
 /obj/machinery/atmospherics/pipe/manifold/orange/hidden{
 	dir = 4
 	},
@@ -237,226 +404,67 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/ship/bridge)
-"M" = (
-/obj/structure/salvageable/airbase/cannon{
-	pixel_y = -16;
-	name = "outdated autocannon";
-	desc = "A rotary cannon that seems to have rusted into place over the years. Its maintenance panel is open and you can see some parts missing."
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
-"N" = (
-/obj/structure/window/plasma/reinforced{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/shuttle/fire_heater,
-/obj/structure/window/plasma/reinforced,
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
-"O" = (
-/obj/structure/grille,
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/open/floor/plating,
-/area/ship/bridge)
-"P" = (
-/obj/machinery/porta_turret/ship/ngr/heavy{
-	dir = 10;
-	name = "Canterbury Turret";
-	id = "military_cant_nanami_guns";
-	desc = "A bulky turret made of broken-down equipment from the New Gorlex Republic, twin lasers humming away. Its beady camera-eye stares at you.";
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	lethal_projectile = /obj/projectile/beam/eoehoma/heavy;
-	stun_projectile = /obj/projectile/beam/eoehoma/heavy;
-	burst_size = 2;
-	burst_delay = 5
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/bridge)
-"Q" = (
-/obj/structure/grille,
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plating,
-/area/ship/bridge)
-"R" = (
-/obj/machinery/atmospherics/pipe/simple/orange/hidden{
-	dir = 10
-	},
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/chair/handrail{
-	dir = 8
-	},
-/turf/open/floor/plating/rust,
-/area/ship/bridge)
-"S" = (
-/obj/machinery/atmospherics/pipe/simple/orange/hidden{
-	dir = 9
-	},
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/structure/cable{
-	icon_state = "5-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
-	},
-/obj/structure/closet/wall/red/directional/east,
-/obj/item/storage/firstaid/ancient,
-/obj/item/storage/ration/pepperoni_pizza_slice,
-/obj/item/storage/ration/pepper_jack_beef_patty,
-/obj/item/storage/ration/pepper_jack_beef_patty,
-/obj/item/storage/ration/crayons,
-/obj/item/storage/toolbox/emergency,
-/obj/item/hatchet/wooden,
-/obj/item/melee/knife/survival,
-/obj/item/gun/ballistic/automatic/pistol/ringneck/indie,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/storage/toolbox/ammo/c10mm,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/rust,
-/area/ship/bridge)
-"U" = (
-/obj/structure/cable{
-	icon_state = "6-10"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
-	dir = 8
-	},
-/obj/machinery/door/airlock/maintenance/external{
-	dir = 4;
-	name = "Cockpit";
-	id_tag = "scarlet_sky_fighter_bolts"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
-"V" = (
-/turf/open/floor/engine/hull/reinforced/interior,
-/area/ship/bridge)
-"W" = (
-/obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
-	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
-	dir = 1
-	},
-/obj/machinery/door/airlock/maintenance/external{
-	name = "Maintenance Hatch";
-	id_tag = "scarlet_sky_fighter_bolts"
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
-"X" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 8
-	},
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc/auto_name/directional/south{
-	start_charge = 0
-	},
-/obj/item/storage/toolbox/syndicate{
-	pixel_x = 6;
-	pixel_y = 13
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/rust,
-/area/ship/bridge)
-"Y" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/bridge)
 
 (1,1,1) = {"
-l
-v
-j
-v
-l
+U
+X
+y
+X
+U
 "}
 (2,1,1) = {"
-c
-G
-j
-N
-P
+m
+p
+y
+n
+b
 "}
 (3,1,1) = {"
-j
-D
+y
+Q
+S
 u
-X
-j
+y
 "}
 (4,1,1) = {"
-W
-R
-L
-S
-H
+s
+a
+Z
+F
+k
 "}
 (5,1,1) = {"
-B
-j
-U
-j
-M
+T
+y
+c
+y
+r
 "}
 (6,1,1) = {"
-j
-r
-m
-F
-j
+y
+M
+B
+V
+y
 "}
 (7,1,1) = {"
-Y
-Q
-n
-d
-Y
+K
+f
+j
+A
+K
 "}
 (8,1,1) = {"
-I
-t
-a
-O
-A
+E
+L
+v
+W
+z
 "}
 (9,1,1) = {"
-l
-V
-V
-V
-l
+U
+O
+O
+O
+U
 "}
