@@ -5291,12 +5291,13 @@
 /turf/open/floor/plating,
 /area/outpost/cargo)
 "YW" = (
-/obj/structure/fluff/ladder{
+/obj/structure/fluff{
 	icon_state = "ladder10";
+	icon = 'icons/obj/structures.dmi';
 	name = "topside ladder";
 	desc = "A ladder meant to head topside - a lot of it's stairwell, but there's still an unbroken ladder. Architect Base personnel routinely use it as a show of strength, at least whenever Johnson isn't using his infinite cybernetic endurance to shame them.";
 	pixel_x = 0;
-	pixel_y = 12
+	pixel_y = 13
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/port)

@@ -6358,12 +6358,13 @@
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/ruin/beach/gunsmith)
 "oc" = (
-/obj/structure/fluff/ladder{
+/obj/structure/fluff{
 	icon_state = "ladder01";
+	icon = 'icons/obj/structures.dmi';
 	name = "deepwell access ladder";
 	desc = "Oh, that's a long way down. There are stairs immediately below, at least, but the elevator's a quicker bet.";
 	pixel_x = 0;
-	pixel_y = 14
+	pixel_y = 18
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/storage)
@@ -19479,19 +19480,19 @@
 /turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Rv" = (
-/obj/effect/mob_spawn/human/corpse/ramzi/runt/noarmour{
-	mob_species = /datum/species/ipc
-	},
 /obj/effect/mob_spawn/human/corpse/ramzi/engi{
-	mob_species = /datum/species/ipc
-	},
-/obj/effect/mob_spawn/human/corpse/ramzi/runt/noarmour{
 	mob_species = /datum/species/ipc
 	},
 /obj/structure/closet/crate/engineering{
 	name = "spare parts crate (Ramzi)"
 	},
 /obj/structure/crate_shelf,
+/obj/effect/mob_spawn/human/corpse/ramzi{
+	mob_species = /datum/species/ipc
+	},
+/obj/effect/mob_spawn/human/corpse/ramzi/space/soft/surplus{
+	mob_species = /datum/species/ipc
+	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
 "Rw" = (
