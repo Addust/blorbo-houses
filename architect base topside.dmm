@@ -14022,17 +14022,6 @@
 /obj/item/stock_parts/cell/high,
 /turf/open/floor/plasteel/mono/dark,
 /area/ruin/beach/piratecrash/storage)
-"EO" = (
-/obj/effect/turf_decal/siding/wood/end{
-	color = "#D2BC9D";
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/carpet/orange,
-/area/outpost/crew/bar)
 "EP" = (
 /obj/structure/hazard/electrical/electrified_water{
 	id = "bunkermoat";
@@ -17983,13 +17972,6 @@
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering/atmospherics)
-"Oe" = (
-/obj/effect/turf_decal/siding/wood/end{
-	color = "#D2BC9D";
-	dir = 4
-	},
-/turf/open/floor/carpet/orange,
-/area/outpost/crew/bar)
 "Of" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 4
@@ -31485,7 +31467,7 @@ Fo
 HI
 iI
 GG
-EO
+GG
 Yc
 ZL
 xb
@@ -31602,7 +31584,7 @@ Pi
 PM
 uI
 FR
-Oe
+FR
 aH
 ft
 NL
