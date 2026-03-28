@@ -132,6 +132,25 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/hallway/central)
+"bO" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/airlock/maintenance/external{
+	dir = 4;
+	name = "Sandblaster Emplacement"
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/maintenance/starboard)
 "bQ" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4;
@@ -149,6 +168,16 @@
 	desc = "A deposit of shallow water deep below Requiem's surface."
 	},
 /area/outpost/crew/canteen)
+"ce" = (
+/obj/structure/platform/corner{
+	dir = 1
+	},
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/outpost/maintenance/starboard)
 "cm" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 1;
@@ -1031,7 +1060,9 @@
 	icon_state = "1-6";
 	layer = 3.1
 	},
-/turf/open/floor/plating/asteroid/dirt/beach,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
 /area/outpost/maintenance/starboard)
 "jY" = (
 /turf/open/floor/plating/asteroid/waterplanet{
@@ -1458,6 +1489,9 @@
 /obj/structure/cable{
 	icon_state = "4-9"
 	},
+/obj/structure/cable{
+	icon_state = "4-10"
+	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
 "px" = (
@@ -1866,6 +1900,22 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/maintenance/port)
+"tM" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Architect Turret";
+	id = "addust_abyss_drill";
+	desc = "A custom-made sentry turret built out of the remains of destroyed New Gorlex Republic and Ramzi Clique equipment. Fitted to deter intruders.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 5
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/concrete/reinforced,
+/area/outpost/maintenance/starboard)
 "tP" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 8;
@@ -2059,15 +2109,19 @@
 	},
 /obj/machinery/porta_turret/ship/ngr/heavy{
 	dir = 6;
-	name = "Canterbury Turret";
-	id = "addust_abyss_drill";
-	desc = "A bulky turret made of broken-down equipment from the New Gorlex Republic, twin lasers humming away. Its beady camera-eye stares at you.";
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	lethal_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
-	stun_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
-	burst_size = 2;
-	burst_delay = 5
+	name = "Sandblaster Rotary Coilgun Prototype Turret";
+	id = "deepwell_mining_turret_prototype";
+	desc = "An experimental heavy turret bearing the insignia of Johnson and Company. Twin five-barrel rotary coilguns hum menacingly, a long-ranged sensor array in the middle staring at you judgementally.";
+	lethal_projectile_sound = 'sound/weapons/gun/gauss/gar.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/gauss/gar.ogg';
+	lethal_projectile = /obj/projectile/bullet/c22lr/ap;
+	stun_projectile = /obj/projectile/bullet/c22lr/rubber;
+	burst_size = 10;
+	burst_delay = 2;
+	shot_delay = 15;
+	max_integrity = 250;
+	integrity_failure = 0.3;
+	spread = 15
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
@@ -2224,6 +2278,15 @@
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
+"wD" = (
+/obj/machinery/turretid/lethal{
+	pixel_y = 37;
+	id = "deepwell_mining_turret_prototype";
+	name = "prototype turret control panel";
+	pixel_x = -2
+	},
+/turf/open/floor/concrete/reinforced,
+/area/outpost/maintenance/starboard)
 "wE" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
@@ -2862,6 +2925,9 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"Bx" = (
+/turf/closed/wall/concrete/reinforced,
+/area/outpost/maintenance/starboard)
 "Bz" = (
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/hallway/central)
@@ -3095,6 +3161,7 @@
 /area/outpost/maintenance/starboard)
 "Ee" = (
 /obj/machinery/light/directional/north,
+/obj/effect/baseturf_helper/asteroid,
 /turf/open/water/beach{
 	color = "#617B64";
 	name = "abyssal aquifer";
@@ -3269,6 +3336,13 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"Gw" = (
+/obj/structure/barricade/sandbags,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/concrete/reinforced,
+/area/outpost/maintenance/starboard)
 "Gx" = (
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
@@ -3381,6 +3455,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/outpost/engineering)
+"Ht" = (
+/turf/open/floor/concrete/reinforced,
+/area/outpost/maintenance/starboard)
 "Hz" = (
 /obj/structure/cable{
 	icon_state = "1-2";
@@ -3451,7 +3528,7 @@
 "HY" = (
 /obj/machinery/atmospherics/miner/water_vapor{
 	name = "mantle steam drill";
-	spawn_temp = 7650;
+	spawn_temp = 9999999;
 	desc = "An incredibly powerful piece of machinery invented by Johnson and Company's remnants that runs water through a pipe tearing into the planet's mantle, creating superheated steam that can then drive a geothermal generator. Truly, a wonderful piece of technology."
 	},
 /turf/open/floor/engine/hull/reinforced,
@@ -3811,6 +3888,12 @@
 /obj/effect/baseturf_helper/asteroid,
 /turf/open/floor/plating,
 /area/outpost/crew/cryo)
+"Lj" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/engineering)
 "Lq" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -4579,12 +4662,27 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"SO" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
+/area/outpost/maintenance/starboard)
 "SS" = (
 /obj/structure/platform{
 	dir = 1
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/port)
+"SU" = (
+/obj/structure/table/emptycomputer,
+/turf/open/floor/concrete/reinforced,
+/area/outpost/maintenance/starboard)
 "SV" = (
 /obj/structure/platform,
 /turf/open/water/beach{
@@ -8186,9 +8284,9 @@ sA
 Wx
 bq
 bq
-bq
-bq
-bq
+Lj
+Lj
+Lj
 bq
 bq
 bq
@@ -8252,10 +8350,10 @@ sA
 sA
 Wx
 bq
-bq
-bq
-bq
-bq
+Bx
+Bx
+bO
+Bx
 bq
 bq
 bq
@@ -8319,12 +8417,12 @@ Wx
 UK
 Wx
 bq
-bq
-bq
-bq
-bq
-bq
-bq
+Bx
+SU
+wD
+aq
+Gi
+Zw
 bq
 bq
 bq
@@ -8386,14 +8484,14 @@ is
 is
 is
 bq
-bq
-bq
+Bx
+Ht
 uV
 aq
 Gi
 Zw
 bq
-bq
+iF
 bq
 bq
 bq
@@ -8453,17 +8551,17 @@ is
 is
 is
 bq
-bq
+Bx
 aq
 aq
 uz
 Gi
 Zw
 Mm
-iF
-bq
-bq
-bq
+pV
+SV
+aq
+tM
 bq
 bq
 bq
@@ -8527,10 +8625,10 @@ QI
 xp
 Oo
 Mm
-pV
-bq
-bq
-bq
+Mm
+SV
+aq
+Gw
 bq
 bq
 bq
@@ -8595,9 +8693,9 @@ uJ
 Zw
 Jo
 Mm
-Mm
-bq
-bq
+ce
+QI
+SO
 bq
 bq
 bq
@@ -8663,8 +8761,8 @@ uJ
 Np
 PO
 jX
-uJ
-uJ
+Zw
+yi
 bq
 iF
 Il

@@ -1,4 +1,23 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ak" = (
+/obj/structure/window/plasma/reinforced/spawner/east,
+/obj/structure/cable,
+/obj/structure/window/plasma/reinforced/spawner,
+/obj/structure/window/plasma/reinforced/spawner/north,
+/obj/effect/turf_decal/techfloor{
+	dir = 8
+	},
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 8;
+	id = "battlebury_supermatter_holofield";
+	pixel_x = -8;
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/manifold/cyan/hidden{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/engineering/electrical)
 "an" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -6,10 +25,14 @@
 /obj/machinery/computer/cargo,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
-"as" = (
-/obj/structure/sign/number/two,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/engineering/atmospherics)
+"ao" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/machinery/light/directional/east,
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "at" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 6
@@ -70,6 +93,9 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
+"aE" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/crew)
 "aH" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/turf_decal/techfloor{
@@ -302,14 +328,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/crew/cryo)
-"bX" = (
-/obj/machinery/door/window/brigdoor/southleft,
-/obj/machinery/door/window/brigdoor/northright,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 10
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/engineering/electrical)
 "cc" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2{
 	dir = 8
@@ -401,12 +419,6 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden,
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
-"cu" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "cw" = (
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/structure/chair{
@@ -429,9 +441,6 @@
 "cL" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/maintenance/port)
-"cQ" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/crew/toilet)
 "cS" = (
 /obj/structure/table/wood,
 /obj/machinery/light/directional/south,
@@ -458,9 +467,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/crew/janitor)
-"do" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/bridge)
 "dq" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 10
@@ -490,6 +496,10 @@
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
+"dz" = (
+/obj/structure/sign/number/eight,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/engineering/atmospherics)
 "dG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
@@ -540,15 +550,6 @@
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/ccommons)
-"dM" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/industrial/warning/corner{
-	dir = 8
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "dP" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden{
 	dir = 5
@@ -644,9 +645,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/effect/turf_decal/industrial/warning/corner{
-	dir = 1
-	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "eA" = (
@@ -660,12 +658,9 @@
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/storage)
-"eL" = (
+"eF" = (
 /obj/effect/turf_decal/industrial/warning/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/industrial/traffic{
-	layer = 2.038
+	dir = 4
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
@@ -841,12 +836,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
-"gh" = (
-/obj/machinery/door/airlock/external,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/hangar)
 "gn" = (
 /obj/machinery/airalarm/directional/west,
 /obj/effect/turf_decal/corner/opaque/tan{
@@ -911,12 +900,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
-"gM" = (
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/hangar)
 "gP" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 4
@@ -964,6 +947,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hangar)
+"hd" = (
+/obj/machinery/door/airlock/external,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/hangar)
 "hf" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/o2{
 	dir = 8
@@ -999,22 +988,18 @@
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm/captain)
 "hp" = (
-/obj/effect/turf_decal/industrial/hatch,
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Rampage Turret";
-	id = "military_canterbury_guns";
-	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
-	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	dir = 10;
-	burst_delay = 2;
-	burst_size = 4;
-	use_power = 0
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
 	},
-/turf/open/floor/plasteel/mono/dark/airless,
-/area/ship/external/dark)
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "hx" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 8
@@ -1032,21 +1017,11 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "hy" = (
-/obj/effect/turf_decal/industrial/hatch/red,
-/obj/machinery/porta_turret/ship/clip/heavy{
-	faction = list("New Gorlex Republic","turret");
-	id = "military_canterbury_guns";
-	dir = 4;
-	name = "Razorback Turret";
-	desc = "A bulky laser turret built to fit reserve ships of the Second Battlegroup's fleet by remnants of Johnson and Company. Fitted for long-range ship-to-ship engagements, though capable of targeting infantry and lighter targets.";
-	lethal_projectile = /obj/projectile/beam/hitscan/kalix/pgf/sniper;
-	stun_projectile = /obj/projectile/beam/hitscan/kalix/pgf/sniper;
-	scan_range = 24;
-	burst_delay = 3;
-	shot_delay = 15
+/obj/effect/turf_decal/industrial/warning{
+	dir = 6
 	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/external/dark)
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "hz" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/toilet)
@@ -1113,6 +1088,16 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
+"hO" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 10
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	layer = 2.038;
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "hP" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden{
 	dir = 1
@@ -1294,8 +1279,12 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "iD" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/cargo)
+/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating,
+/turf/open/floor/plasteel/dark,
+/area/ship/hangar)
 "iG" = (
 /obj/structure/table/chem,
 /obj/effect/turf_decal/borderfloorblack{
@@ -1439,20 +1428,6 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering/engines/starboard)
-"je" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/smes/engineering,
-/obj/structure/platform{
-	dir = 1;
-	layer = 2.8
-	},
-/obj/effect/turf_decal/techfloor{
-	dir = 1
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/engineering/electrical)
 "ji" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -1616,20 +1591,6 @@
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
-"ki" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/machinery/light/directional/east,
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 1
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
-"kj" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 8
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "kk" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -1641,15 +1602,37 @@
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
 "km" = (
-/obj/structure/grille,
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor/shutters{
-	id = "goliathblastbridge"
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/crew/dorm)
+"kp" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
 	},
-/turf/open/floor/plating,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "kr" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/hangar)
+"ku" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/directional/north,
+/obj/effect/turf_decal/stairs{
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "kx" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden,
@@ -1671,13 +1654,6 @@
 /obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engines/port)
-"kC" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/crew)
-"kF" = (
-/obj/effect/turf_decal/industrial/warning/corner,
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "kG" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -1765,6 +1741,9 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
+"kT" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/crew/toilet)
 "kV" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/light/directional/north,
@@ -1927,6 +1906,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
+"lw" = (
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 8
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/hangar)
 "lx" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden{
 	dir = 4
@@ -2001,6 +1986,22 @@
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
+"lX" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
+	id = "military_canterbury_guns";
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 9;
+	burst_delay = 2;
+	burst_size = 4;
+	use_power = 0
+	},
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/engineering/engines/port)
 "mc" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 10
@@ -2014,6 +2015,19 @@
 /obj/item/tank/jetpack/oxygen/harness,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security)
+"me" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/syndicate{
+	pixel_x = 0;
+	pixel_y = 6
+	},
+/obj/item/storage/toolbox/syndicate{
+	pixel_x = 5;
+	pixel_y = 0
+	},
+/obj/effect/turf_decal/industrial/outline/red,
+/turf/open/floor/plasteel/tech,
+/area/ship/hangar)
 "mg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -2081,22 +2095,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engines/port)
-"mG" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light/directional/north,
-/obj/effect/turf_decal/stairs{
-	dir = 1
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "mH" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -2111,6 +2109,19 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hangar)
+"mI" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "mK" = (
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/structure/chair/stool/bar{
@@ -2121,6 +2132,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
+"mN" = (
+/obj/structure/window/plasma/reinforced/spawner/west,
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/ship/engineering/electrical)
 "mO" = (
 /obj/machinery/door/airlock{
 	name = "Dormitory 1"
@@ -2197,6 +2218,9 @@
 /obj/machinery/power/emitter/welded/upgraded,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/electrical)
+"nm" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/bridge)
 "nn" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -2389,6 +2413,14 @@
 /obj/machinery/vending/snack/orange,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/ccommons)
+"on" = (
+/obj/structure/cable/yellow,
+/obj/effect/turf_decal/industrial/outline/orange,
+/obj/machinery/power/rad_collector/anchored{
+	anchored = 1
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/engineering/electrical)
 "os" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -2483,19 +2515,6 @@
 /obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
-"oQ" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/industrial/warning/corner,
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "oS" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2526,11 +2545,6 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/ccommons)
-"pf" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal{
-	rad_insulation = 0
-	},
-/area/ship/engineering/engines/starboard)
 "pr" = (
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
@@ -2558,9 +2572,6 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/crew/janitor)
-"px" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/crew/dorm)
 "py" = (
 /obj/effect/turf_decal/techfloor,
 /turf/open/floor/plasteel/dark,
@@ -2625,6 +2636,9 @@
 "pR" = (
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/engineering/communications)
+"pT" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/crew/cryo)
 "pU" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden{
 	dir = 4
@@ -2657,8 +2671,10 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/cargo)
 "qA" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/hangar)
+/turf/closed/wall/r_wall/syndicate/nodiagonal{
+	rad_insulation = 0
+	},
+/area/ship/crew/janitor)
 "qD" = (
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
@@ -2930,12 +2946,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/ccommons)
-"rW" = (
-/obj/effect/turf_decal/industrial/warning/corner{
-	dir = 4
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "rX" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light_switch{
@@ -3021,19 +3031,20 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/communications)
 "ss" = (
-/obj/machinery/porta_turret/ship/ngr/heavy{
-	dir = 5;
-	name = "Canterbury Turret";
-	id = "military_canterbury_guns";
-	desc = "A bulky turret made of broken-down equipment from the New Gorlex Republic, twin lasers humming away. Its beady camera-eye stares at you.";
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	lethal_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
-	stun_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
-	burst_size = 2;
-	burst_delay = 5
-	},
 /obj/structure/catwalk/over,
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
+	id = "military_canterbury_guns";
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 5;
+	burst_delay = 2;
+	burst_size = 4;
+	use_power = 0
+	},
 /turf/open/floor/plating/airless,
 /area/ship/hangar)
 "st" = (
@@ -3196,14 +3207,6 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
-"tA" = (
-/obj/structure/cable/yellow,
-/obj/effect/turf_decal/industrial/outline/orange,
-/obj/machinery/power/rad_collector/anchored{
-	anchored = 1
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/engineering/electrical)
 "tC" = (
 /obj/structure/railing{
 	dir = 1;
@@ -3215,6 +3218,20 @@
 	},
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/plasteel/dark,
+/area/ship/hangar)
+"tF" = (
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
+/area/ship/hangar)
+"tG" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "tM" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden,
@@ -3261,13 +3278,34 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering/electrical)
-"uy" = (
-/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
-	dir = 4
+"tW" = (
+/obj/structure/grille,
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/shutters{
+	id = "goliathblastbridge"
 	},
-/obj/effect/turf_decal/siding/thinplating,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plating,
 /area/ship/hangar)
+"ul" = (
+/obj/structure/catwalk/over,
+/obj/machinery/porta_turret/ship/ngr/heavy{
+	dir = 6;
+	name = "Sandblaster Rotary Coilgun Turret";
+	id = "military_canterbury_guns";
+	desc = "An incredibly heavy turret custom-built for the reserve fleet of the New Gorlex Republic's navy, fitted with twin rotary coilguns to wear down the hulls of hostile vessels quickly and efficiently. Also pretty terrifying against infantry.";
+	lethal_projectile_sound = 'sound/weapons/gun/gauss/gar.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/gauss/gar.ogg';
+	lethal_projectile = /obj/projectile/bullet/c22lr/ap;
+	stun_projectile = /obj/projectile/bullet/c22lr/rubber;
+	burst_size = 10;
+	burst_delay = 2;
+	shot_delay = 15;
+	max_integrity = 250;
+	integrity_failure = 0.3;
+	spread = 15
+	},
+/turf/open/floor/plating/airless,
+/area/ship/engineering/atmospherics)
 "uA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
@@ -3754,8 +3792,15 @@
 /turf/open/floor/plating,
 /area/ship/medical)
 "xi" = (
-/obj/machinery/advanced_airlock_controller/directional/east,
-/turf/open/floor/plasteel/tech,
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 4
+	},
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/syndicate/surplus,
+/obj/item/clothing/head/helmet/space/syndicate/surplus,
+/obj/item/tank/internals/oxygen,
+/obj/item/clothing/mask/gas/syndicate,
+/turf/open/floor/plasteel/tech/grid,
 /area/ship/hangar)
 "xk" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden{
@@ -3914,9 +3959,6 @@
 "xL" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/engineering/engines/port)
-"xN" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/crew/cryo)
 "xQ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -3967,21 +4009,6 @@
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
-"xX" = (
-/obj/effect/turf_decal/industrial/outline/orange,
-/obj/structure/cable/yellow,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/power/rad_collector/anchored{
-	anchored = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/cyan/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/cyan/hidden/layer1,
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/engineering/electrical)
 "ya" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
@@ -4231,32 +4258,6 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
-"zg" = (
-/obj/structure/catwalk/over,
-/obj/machinery/porta_turret/ship/ngr/heavy{
-	dir = 6;
-	name = "Sandblaster Rotary Coilgun Turret";
-	id = "military_canterbury_guns";
-	desc = "An incredibly heavy turret custom-built for the reserve fleet of the New Gorlex Republic's navy, fitted with twin rotary coilguns to wear down the hulls of hostile vessels quickly and efficiently. Also pretty terrifying against infantry.";
-	lethal_projectile_sound = 'sound/weapons/gun/gauss/gar.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/gauss/gar.ogg';
-	lethal_projectile = /obj/projectile/bullet/c22lr/ap;
-	stun_projectile = /obj/projectile/bullet/c22lr/rubber;
-	burst_size = 10;
-	burst_delay = 2;
-	shot_delay = 15;
-	max_integrity = 250;
-	integrity_failure = 0.3;
-	spread = 15
-	},
-/turf/open/floor/plating/airless,
-/area/ship/engineering/atmospherics)
-"zk" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "zn" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/crew/canteen)
@@ -4312,6 +4313,14 @@
 /obj/machinery/power/supermatter_crystal/shard,
 /turf/open/floor/engine,
 /area/ship/engineering/electrical)
+"zJ" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "zM" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -4415,10 +4424,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/starboard)
-"At" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plasteel/patterned/grid/dark,
-/area/ship/engineering/electrical)
 "Av" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/hallway/fore)
@@ -4541,6 +4546,9 @@
 	},
 /turf/open/floor/plating,
 /area/ship/crew/office)
+"AW" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/engineering)
 "AX" = (
 /obj/structure/catwalk/over,
 /obj/structure/sign/warning/fire{
@@ -4563,6 +4571,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
+"Bd" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "Bk" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1;
@@ -4630,12 +4644,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/atmospherics)
-"BL" = (
-/obj/effect/turf_decal/box,
-/obj/structure/crate_shelf,
-/obj/structure/closet/crate/rations,
-/turf/open/floor/plasteel/tech,
-/area/ship/cargo)
+"BD" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal{
+	rad_insulation = 0
+	},
+/area/ship/engineering/engines/starboard)
 "BR" = (
 /obj/structure/railing{
 	dir = 1;
@@ -4871,23 +4884,6 @@
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
-"Dg" = (
-/obj/structure/catwalk/over,
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Rampage Turret";
-	id = "military_canterbury_guns";
-	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
-	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	dir = 1;
-	burst_delay = 2;
-	burst_size = 4;
-	use_power = 0
-	},
-/turf/open/floor/plating/airless,
-/area/ship/external/dark)
 "Do" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 5
@@ -4932,6 +4928,9 @@
 /obj/item/clothing/shoes/jackboots/knife,
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
+"Du" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/crew/dorm/captain)
 "Dz" = (
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/structure/table,
@@ -4945,9 +4944,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
-"DB" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/engineering)
+"DA" = (
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "DC" = (
 /obj/machinery/bluespace_drive{
 	icon_state = "bsdrive_right"
@@ -4957,19 +4956,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/electrical)
-"DF" = (
-/obj/effect/turf_decal/industrial/warning,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "DJ" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 6
@@ -5030,15 +5016,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
-"DT" = (
-/obj/structure/cable/yellow,
-/obj/effect/turf_decal/industrial/outline/orange,
-/obj/machinery/power/rad_collector/anchored{
-	anchored = 1
-	},
-/obj/machinery/atmospherics/pipe/layer_manifold,
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/engineering/electrical)
 "En" = (
 /obj/effect/turf_decal/industrial/hatch/blue,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5117,6 +5094,23 @@
 /obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
+"Ez" = (
+/obj/structure/catwalk/over,
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
+	id = "military_canterbury_guns";
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 1;
+	burst_delay = 2;
+	burst_size = 4;
+	use_power = 0
+	},
+/turf/open/floor/plating/airless,
+/area/ship/external/dark)
 "ED" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/turf_decal/corner/opaque/tan{
@@ -5124,6 +5118,12 @@
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
+"EE" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 5
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "EF" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/glass/mortar/metal{
@@ -5134,10 +5134,20 @@
 /turf/open/floor/wood/walnut,
 /area/ship/maintenance/port)
 "EG" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/turf/open/floor/plating,
+/obj/docking_port/stationary{
+	dwidth = 25;
+	height = 90;
+	width = 90;
+	name = "Canterbury Resupply Dock"
+	},
+/turf/template_noop,
+/area/template_noop)
+"EU" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "EX" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
@@ -5196,6 +5206,9 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/medical)
+"Fi" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/cargo)
 "Fl" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -5285,17 +5298,19 @@
 /obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/plasteel/dark,
 /area/ship/hangar)
+"FG" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "FP" = (
 /obj/structure/catwalk/over,
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
-"FR" = (
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
-"FU" = (
-/obj/structure/sign/number/five,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/engineering/atmospherics)
 "FY" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 8
@@ -5465,14 +5480,13 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hangar)
 "GM" = (
-/obj/structure/window/plasma/reinforced/spawner/west,
-/obj/structure/railing{
-	dir = 4
+/obj/structure/cable/yellow,
+/obj/effect/turf_decal/industrial/outline/orange,
+/obj/machinery/power/rad_collector/anchored{
+	anchored = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber{
-	dir = 1
-	},
-/turf/open/floor/engine,
+/obj/machinery/atmospherics/pipe/layer_manifold,
+/turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering/electrical)
 "GN" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2{
@@ -5508,11 +5522,7 @@
 /turf/open/floor/engine/air,
 /area/ship/engineering/atmospherics)
 "Hi" = (
-/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/thinplating,
-/turf/open/floor/plasteel/dark,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/hangar)
 "Hm" = (
 /obj/effect/turf_decal/techfloor/corner{
@@ -5559,6 +5569,12 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/central)
+"Hv" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "Hz" = (
 /obj/structure/sign/poster/contraband/m90{
 	pixel_y = 32
@@ -5580,6 +5596,10 @@
 	},
 /turf/open/floor/carpet,
 /area/ship/crew/ccommons)
+"HE" = (
+/obj/machinery/advanced_airlock_controller/directional/east,
+/turf/open/floor/plasteel/tech,
+/area/ship/hangar)
 "HG" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 4
@@ -5803,6 +5823,22 @@
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew/ccommons)
+"Ja" = (
+/obj/effect/turf_decal/industrial/hatch/red,
+/obj/machinery/porta_turret/ship/clip/heavy{
+	faction = list("New Gorlex Republic","turret");
+	id = "military_canterbury_guns";
+	dir = 4;
+	name = "Razorback Turret";
+	desc = "A bulky laser turret built to fit reserve ships of the Second Battlegroup's fleet by remnants of Johnson and Company. Fitted for long-range ship-to-ship engagements, though capable of targeting infantry and lighter targets.";
+	lethal_projectile = /obj/projectile/beam/hitscan/kalix/pgf/sniper;
+	stun_projectile = /obj/projectile/beam/hitscan/kalix/pgf/sniper;
+	scan_range = 24;
+	burst_delay = 3;
+	shot_delay = 15
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/external/dark)
 "Jc" = (
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
@@ -5901,15 +5937,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/ccommons)
-"Jy" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 9
-	},
-/obj/effect/turf_decal/industrial/traffic{
-	layer = 2.038
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "Jz" = (
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 4
@@ -5933,6 +5960,12 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/office)
+"JI" = (
+/obj/effect/turf_decal/box,
+/obj/structure/crate_shelf,
+/obj/structure/closet/crate/freezer/blood,
+/turf/open/floor/plasteel/tech,
+/area/ship/cargo)
 "JL" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -6058,17 +6091,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/electrical)
-"Ko" = (
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 4
-	},
-/obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/syndicate/surplus,
-/obj/item/clothing/head/helmet/space/syndicate/surplus,
-/obj/item/tank/internals/oxygen,
-/obj/item/clothing/mask/gas/syndicate,
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/hangar)
 "Kq" = (
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 4
@@ -6090,6 +6112,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/electrical)
+"Kv" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
+/area/ship/hangar)
 "KC" = (
 /obj/machinery/airalarm/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6101,19 +6129,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
-"KD" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 9
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/industrial/warning,
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "KH" = (
 /obj/structure/window/plasma/reinforced/spawner/east,
 /obj/structure/railing{
@@ -6342,6 +6357,10 @@
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/fore)
+"LQ" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/ship/engineering/electrical)
 "LT" = (
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/structure/chair{
@@ -6597,11 +6616,35 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engines/starboard)
+"Ni" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	layer = 2.038;
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "No" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/industrial/outline/red,
 /turf/open/floor/plasteel/tech,
 /area/ship/hangar)
+"Nt" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/smes/engineering,
+/obj/structure/platform{
+	dir = 1;
+	layer = 2.8
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/engineering/electrical)
 "Nu" = (
 /obj/structure/bed/dogbed,
 /mob/living/simple_animal/pet/dog/corgi{
@@ -6617,6 +6660,13 @@
 /obj/structure/closet/radiation,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/atmospherics)
+"NE" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating,
+/turf/open/floor/plasteel/dark,
+/area/ship/hangar)
 "NG" = (
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
@@ -6626,6 +6676,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
+"NI" = (
+/obj/structure/sign/number/five,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/engineering/atmospherics)
 "NN" = (
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 4
@@ -6661,17 +6715,9 @@
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/ccommons)
-"NY" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/patterned,
+"NR" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plasteel/tech,
 /area/ship/hangar)
 "Oa" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -6743,6 +6789,12 @@
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
+"OF" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/hangar)
 "OH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -6845,10 +6897,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/cryo)
-"Pa" = (
-/obj/machinery/atmospherics/pipe/layer_manifold,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/engineering/atmospherics)
 "Pg" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -6934,6 +6982,16 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
+"Ps" = (
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	layer = 2.038;
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "Pv" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 10;
@@ -6949,6 +7007,19 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
+"PJ" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/industrial/warning/corner,
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "PO" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/firealarm/directional/east,
@@ -6961,14 +7032,6 @@
 /obj/structure/janitorialcart,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/janitor)
-"PT" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/turf/open/floor/plating,
-/area/ship/hangar)
 "PU" = (
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
@@ -7030,12 +7093,6 @@
 /obj/item/clothing/mask/gas/syndicate,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
-"Qg" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 5
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "Qh" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
@@ -7130,12 +7187,6 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
-"QP" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 6
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "QW" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -7210,17 +7261,6 @@
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
-"Rm" = (
-/obj/effect/turf_decal/industrial/warning,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "Rp" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -7263,22 +7303,6 @@
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/engineering/electrical)
-"Rx" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Rampage Turret";
-	id = "military_canterbury_guns";
-	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
-	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	dir = 9;
-	burst_delay = 2;
-	burst_size = 4;
-	use_power = 0
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/engineering/engines/port)
 "Ry" = (
 /obj/structure/closet/wall/directional/east{
 	name = "wardrobe"
@@ -7354,6 +7378,18 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/canteen)
+"RL" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "RR" = (
 /obj/structure/chair/office/light,
 /obj/effect/turf_decal/corner/opaque/purple/half{
@@ -7442,6 +7478,21 @@
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/office)
+"Sh" = (
+/obj/effect/turf_decal/industrial/outline/orange,
+/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/power/rad_collector/anchored{
+	anchored = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/cyan/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/cyan/hidden/layer1,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/engineering/electrical)
 "Sj" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -7549,14 +7600,6 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
-"SB" = (
-/obj/effect/turf_decal/industrial/warning,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light/directional/north,
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "SC" = (
 /obj/structure/chair/comfy/beige/old,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -7653,10 +7696,6 @@
 	},
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/cargo)
-"Ta" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/plasteel/tech,
-/area/ship/hangar)
 "Tc" = (
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
@@ -7751,12 +7790,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"Tv" = (
-/obj/machinery/atmospherics/pipe/layer_manifold{
-	dir = 8
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/hangar)
 "Tw" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden/layer2{
 	dir = 6
@@ -7786,25 +7819,6 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden,
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
-"TJ" = (
-/obj/docking_port/stationary{
-	dwidth = 25;
-	height = 90;
-	width = 90;
-	name = "Canterbury Resupply Dock"
-	},
-/turf/template_noop,
-/area/template_noop)
-"TK" = (
-/obj/effect/turf_decal/industrial/warning/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/traffic{
-	layer = 2.038;
-	dir = 1
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "TM" = (
 /obj/effect/turf_decal/industrial/warning{
 	layer = 2.456;
@@ -7816,6 +7830,12 @@
 	},
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
+"TR" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "TU" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -8077,6 +8097,15 @@
 /obj/effect/turf_decal/industrial/outline/red,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
+"UP" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "UR" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -8257,15 +8286,16 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
+"VL" = (
+/obj/machinery/atmospherics/pipe/layer_manifold,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/engineering/atmospherics)
 "VO" = (
 /obj/effect/turf_decal/box,
 /obj/structure/crate_shelf,
-/obj/structure/closet/crate/freezer/blood,
+/obj/structure/closet/crate/rations,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
-"VR" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/crew/dorm/captain)
 "VZ" = (
 /obj/effect/turf_decal/industrial/fire{
 	dir = 4
@@ -8343,17 +8373,17 @@
 	dir = 8
 	},
 /obj/structure/catwalk/over,
-/obj/machinery/porta_turret/ship/ngr/heavy{
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
+	id = "addust_camp";
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
 	dir = 9;
-	name = "Canterbury Turret";
-	id = "military_canterbury_guns";
-	desc = "A bulky turret made of broken-down equipment from the New Gorlex Republic, twin lasers humming away. Its beady camera-eye stares at you.";
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	lethal_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
-	stun_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
-	burst_size = 2;
-	burst_delay = 5
+	burst_delay = 2;
+	burst_size = 4
 	},
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
@@ -8407,6 +8437,15 @@
 	},
 /turf/open/floor/plating,
 /area/ship/crew/cryo)
+"WN" = (
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	layer = 2.038
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "WR" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -8474,29 +8513,9 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
-"WX" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 10
-	},
-/obj/effect/turf_decal/industrial/traffic{
-	layer = 2.038;
-	dir = 1
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "Xa" = (
-/obj/structure/rack,
-/obj/item/storage/toolbox/syndicate{
-	pixel_x = 0;
-	pixel_y = 6
-	},
-/obj/item/storage/toolbox/syndicate{
-	pixel_x = 5;
-	pixel_y = 0
-	},
-/obj/effect/turf_decal/industrial/outline/red,
-/turf/open/floor/plasteel/tech,
-/area/ship/hangar)
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/engineering/atmospherics)
 "Xb" = (
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
@@ -8568,23 +8587,12 @@
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/hangar)
 "Xr" = (
-/obj/structure/window/plasma/reinforced/spawner/east,
-/obj/structure/cable,
-/obj/structure/window/plasma/reinforced/spawner,
-/obj/structure/window/plasma/reinforced/spawner/north,
-/obj/effect/turf_decal/techfloor{
-	dir = 8
+/obj/machinery/door/window/brigdoor/southleft,
+/obj/machinery/door/window/brigdoor/northright,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 10
 	},
-/obj/machinery/power/shieldwallgen/atmos/roundstart{
-	dir = 8;
-	id = "battlebury_supermatter_holofield";
-	pixel_x = -8;
-	pixel_y = 0
-	},
-/obj/machinery/atmospherics/pipe/manifold/cyan/hidden{
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech/grid,
+/turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "Xt" = (
 /obj/structure/cable{
@@ -8784,12 +8792,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
-"XZ" = (
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 1
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "Ya" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/effect/turf_decal/corner/opaque/tan{
@@ -8814,13 +8816,8 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security)
-"Ye" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal{
-	rad_insulation = 0
-	},
-/area/ship/crew/janitor)
 "Yf" = (
-/obj/structure/sign/number,
+/obj/structure/sign/number/two,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/engineering/atmospherics)
 "Yg" = (
@@ -8902,6 +8899,7 @@
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/central)
 "Yw" = (
+/obj/structure/sign/number,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/engineering/atmospherics)
 "Yx" = (
@@ -8938,11 +8936,22 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/central)
 "YB" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
+/obj/effect/turf_decal/industrial/hatch,
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
+	id = "military_canterbury_guns";
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 10;
+	burst_delay = 2;
+	burst_size = 4;
+	use_power = 0
 	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
+/turf/open/floor/plasteel/mono/dark/airless,
+/area/ship/external/dark)
 "YD" = (
 /obj/effect/decal/cleanable/wrapping,
 /obj/effect/turf_decal/siding/thinplating{
@@ -8954,29 +8963,28 @@
 /obj/structure/punching_bag,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
-"YQ" = (
-/obj/structure/cable{
-	icon_state = "2-8"
+"YU" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 9
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	layer = 2.038
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
-"YZ" = (
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/effect/turf_decal/industrial/traffic{
-	layer = 2.038;
-	dir = 1
-	},
+"YX" = (
+/obj/effect/turf_decal/industrial/warning/corner,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "Zb" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/engineering/communications)
 "Zc" = (
-/obj/structure/sign/number/eight,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/engineering/atmospherics)
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "Zj" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 5
@@ -8989,13 +8997,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
-"Zk" = (
-/obj/effect/turf_decal/industrial/warning,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "Zn" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden{
 	dir = 10
@@ -9125,7 +9126,7 @@ CP
 CP
 CP
 CP
-hp
+YB
 CP
 CP
 CP
@@ -9164,7 +9165,7 @@ CP
 CP
 CP
 CP
-hp
+YB
 CP
 CP
 CP
@@ -9181,7 +9182,7 @@ CP
 (3,1,1) = {"
 CP
 CP
-Rx
+lX
 eq
 ld
 ld
@@ -9312,8 +9313,8 @@ CP
 "}
 (7,1,1) = {"
 CP
-px
-px
+km
+km
 gq
 gq
 gq
@@ -9334,7 +9335,7 @@ qr
 bj
 tS
 cc
-pf
+BD
 ja
 Jw
 Jw
@@ -9345,7 +9346,7 @@ CP
 "}
 (8,1,1) = {"
 CP
-px
+km
 Uj
 LW
 zf
@@ -9367,12 +9368,12 @@ qr
 Je
 Zj
 iI
-pf
+BD
 WC
-je
+Nt
 pB
 AL
-At
+LQ
 Jw
 CP
 "}
@@ -9389,14 +9390,14 @@ IJ
 cL
 cL
 se
-cQ
-cQ
-cQ
-xN
-xN
+kT
+kT
+kT
+pT
+pT
 fC
-xN
-xN
+pT
+pT
 Ao
 Yz
 Jw
@@ -9405,7 +9406,7 @@ Kq
 rC
 Xw
 tU
-tA
+on
 Jw
 CP
 "}
@@ -9438,7 +9439,7 @@ Ux
 LU
 UB
 sI
-GM
+mN
 Jw
 CP
 "}
@@ -9470,14 +9471,14 @@ DC
 Kn
 nk
 Rw
-bX
+Xr
 zD
 Ld
 CP
 "}
 (12,1,1) = {"
 CP
-px
+km
 lI
 Mq
 Ry
@@ -9503,15 +9504,15 @@ TU
 vk
 vQ
 lr
-Xr
+ak
 KH
 Jw
 CP
 "}
 (13,1,1) = {"
 CP
-px
-px
+km
+km
 gq
 gq
 gq
@@ -9536,15 +9537,15 @@ CC
 od
 pL
 ya
-xX
-DT
+Sh
+GM
 Jw
 CP
 "}
 (14,1,1) = {"
 CP
 FP
-kC
+aE
 cD
 kL
 Yg
@@ -9570,13 +9571,13 @@ rM
 vt
 dP
 RS
-At
+LQ
 Jw
 CP
 "}
 (15,1,1) = {"
 CP
-Dg
+Ez
 PU
 zS
 sc
@@ -9597,9 +9598,9 @@ Zx
 ZZ
 mt
 lW
-Ye
-Ye
-Ye
+qA
+qA
+qA
 Jw
 li
 Jw
@@ -9642,7 +9643,7 @@ CP
 "}
 (17,1,1) = {"
 CP
-Dg
+Ez
 PU
 qc
 MA
@@ -9676,7 +9677,7 @@ CP
 (18,1,1) = {"
 CP
 FP
-kC
+aE
 Hq
 KC
 Yg
@@ -9708,8 +9709,8 @@ CP
 "}
 (19,1,1) = {"
 CP
-iD
-iD
+Fi
+Fi
 qy
 qy
 qy
@@ -9742,7 +9743,7 @@ CP
 (20,1,1) = {"
 CP
 IL
-iD
+Fi
 Ev
 ST
 yd
@@ -9813,7 +9814,7 @@ ZB
 Wu
 Me
 gv
-BL
+VO
 hD
 Mx
 Fy
@@ -9835,7 +9836,7 @@ BA
 Aq
 LZ
 LZ
-Yw
+Xa
 CP
 "}
 (23,1,1) = {"
@@ -9846,7 +9847,7 @@ NG
 Wu
 UL
 Eo
-VO
+JI
 jX
 Mx
 Zt
@@ -9867,8 +9868,8 @@ js
 js
 vl
 NO
-Yw
-zg
+Xa
+ul
 CP
 "}
 (24,1,1) = {"
@@ -9900,14 +9901,14 @@ wc
 Uh
 Tt
 VI
-Zc
+dz
 CP
 CP
 "}
 (25,1,1) = {"
 CP
 Wo
-iD
+Fi
 Gd
 GE
 AY
@@ -9933,14 +9934,14 @@ Ka
 Uh
 EX
 En
-FU
+NI
 CP
 CP
 "}
 (26,1,1) = {"
 CP
-qA
-qA
+Hi
+Hi
 kr
 kr
 kr
@@ -9966,14 +9967,14 @@ js
 js
 US
 Et
-Yf
+Yw
 CP
 CP
 "}
 (27,1,1) = {"
 CP
 vg
-qA
+Hi
 No
 eg
 yS
@@ -9999,22 +10000,22 @@ OH
 Lx
 FY
 PZ
-as
+Yf
 CP
 CP
 "}
 (28,1,1) = {"
 CP
 Cm
-qA
+Hi
 pP
-XZ
-NY
-kF
-YB
-YB
-YB
-rW
+tG
+RL
+YX
+TR
+TR
+TR
+eF
 jR
 Ab
 qg
@@ -10032,22 +10033,22 @@ Hd
 Lx
 hx
 Ym
-Yw
+Xa
 CP
 CP
 "}
 (29,1,1) = {"
 CP
 hG
-qA
+Hi
 Rj
-XZ
-oQ
-QP
+tG
+PJ
+hy
 xc
 xc
 xc
-Qg
+EE
 kI
 Cg
 qg
@@ -10065,24 +10066,24 @@ js
 js
 BB
 NA
-Yw
+Xa
 CP
 CP
 "}
 (30,1,1) = {"
 CP
 wF
-qA
-Xa
-ki
-Rm
+Hi
+me
+ao
+kp
 xc
 xc
 xc
 xc
 xc
 Zw
-Tv
+lw
 qg
 qg
 qg
@@ -10098,17 +10099,17 @@ dV
 OK
 ml
 Lq
-Yw
+Xa
 CP
 CP
 "}
 (31,1,1) = {"
-qA
-qA
-qA
-qA
-qA
-DF
+Hi
+Hi
+Hi
+Hi
+Hi
+mI
 xc
 xc
 xc
@@ -10131,17 +10132,17 @@ ZM
 Pr
 uS
 EY
-Pa
-Yw
+VL
+Xa
 CP
 "}
 (32,1,1) = {"
 CP
-qA
-Ko
-Ko
-qA
-mG
+Hi
+xi
+xi
+Hi
+ku
 xc
 xc
 xc
@@ -10164,17 +10165,17 @@ uA
 Tw
 mR
 Wd
-Yw
+Xa
 FP
 CP
 "}
 (33,1,1) = {"
-TJ
-GL
-PT
 EG
-gh
-KD
+GL
+tF
+Kv
+hd
+hp
 xc
 xc
 xc
@@ -10197,17 +10198,17 @@ iY
 Og
 kZ
 GN
-Yw
+Xa
 Ft
 CP
 "}
 (34,1,1) = {"
 CP
-km
-xi
-Ta
-qA
-SB
+tW
+HE
+NR
+Hi
+zJ
 xc
 xc
 xc
@@ -10230,17 +10231,17 @@ hk
 yo
 sZ
 hf
-Yw
+Xa
 AX
 CP
 "}
 (35,1,1) = {"
-qA
-qA
-qA
-qA
-qA
-Zk
+Hi
+Hi
+Hi
+Hi
+Hi
+EU
 xc
 xc
 xc
@@ -10270,10 +10271,10 @@ CP
 (36,1,1) = {"
 CP
 wF
-qA
+Hi
 dJ
 FD
-Zk
+EU
 xc
 xc
 xc
@@ -10296,23 +10297,23 @@ qD
 wX
 wX
 wX
-DB
+AW
 Oc
 CP
 "}
 (37,1,1) = {"
 CP
 hG
-qA
-gM
 Hi
-dM
-WX
+OF
+NE
+UP
+hO
 xc
 xc
 xc
-Jy
-es
+YU
+FG
 xo
 Eu
 np
@@ -10329,23 +10330,23 @@ AA
 Oa
 Pv
 AO
-DB
+AW
 Ft
 CP
 "}
 (38,1,1) = {"
 CP
 Cm
-qA
+Hi
 NN
-uy
-cu
-TK
-kj
-kj
-kj
-eL
-zk
+iD
+Hv
+Ps
+Bd
+Bd
+Bd
+WN
+es
 xo
 tu
 FA
@@ -10362,21 +10363,21 @@ jO
 hN
 rl
 DJ
-DB
+AW
 FP
 CP
 "}
 (39,1,1) = {"
 CP
 nv
-qA
+Hi
 xx
 FD
-YQ
-YZ
-FR
-FR
-FR
+Zc
+Ni
+DA
+DA
+DA
 Id
 vf
 rZ
@@ -10401,18 +10402,18 @@ CP
 "}
 (40,1,1) = {"
 CP
-qA
-qA
-qA
-qA
-qA
+Hi
+Hi
+Hi
+Hi
+Hi
 mH
 yf
 yf
 yf
 xC
-qA
-do
+Hi
+nm
 jW
 Wj
 sf
@@ -10420,9 +10421,9 @@ ID
 KP
 bs
 Yp
-VR
-VR
-VR
+Du
+Du
+Du
 Zb
 OW
 Cx
@@ -10435,7 +10436,7 @@ CP
 (41,1,1) = {"
 CP
 ss
-qA
+Hi
 st
 nO
 vB
@@ -10449,7 +10450,7 @@ Tc
 OP
 Bk
 gJ
-do
+nm
 JO
 uV
 wa
@@ -10482,7 +10483,7 @@ Tc
 gR
 gR
 gR
-do
+nm
 gR
 gR
 gR
@@ -10593,7 +10594,7 @@ CP
 CP
 CP
 CP
-hy
+Ja
 CP
 CP
 "}

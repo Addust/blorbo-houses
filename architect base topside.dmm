@@ -2371,9 +2371,9 @@
 /area/outpost/crew)
 "fo" = (
 /obj/effect/turf_decal/siding/wood{
-	dir = 10;
-	color = "#332521"
+	dir = 10
 	},
+/obj/structure/barricade/sandbags,
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "fp" = (
@@ -3666,6 +3666,11 @@
 /obj/item/tank/internals/emergency_oxygen/double,
 /turf/open/floor/suns,
 /area/outpost/medical)
+"ii" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "ij" = (
 /obj/structure/table/reinforced,
 /obj/machinery/microwave{
@@ -5380,6 +5385,13 @@
 /obj/structure/closet/wall/orange/directional/east,
 /turf/open/floor/carpet/orange,
 /area/outpost/crew)
+"lL" = (
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 8
+	},
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "lM" = (
 /obj/structure/platform{
 	dir = 10
@@ -10739,6 +10751,12 @@
 /obj/item/storage/box/ammo/a65clip,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/storage)
+"xX" = (
+/obj/structure/platform/wood/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/sand/dense/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "xY" = (
 /obj/effect/turf_decal/road/stripes{
 	dir = 8
@@ -17228,6 +17246,13 @@
 	},
 /turf/open/floor/wood/maple,
 /area/outpost/crew)
+"MO" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/obj/structure/barricade/sandbags,
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "MP" = (
 /turf/closed/mineral/random/beach,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -17770,9 +17795,8 @@
 /turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "NO" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
+/obj/effect/turf_decal/siding/wood/corner,
+/obj/structure/barricade/sandbags,
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "NP" = (
@@ -25603,7 +25627,7 @@ Kz
 Kz
 So
 So
-ni
+So
 NO
 MP
 MP
@@ -25720,9 +25744,9 @@ Kz
 Kz
 So
 So
-IA
+NO
+MO
 IM
-gE
 MP
 MP
 aw
@@ -25837,9 +25861,9 @@ Kz
 So
 So
 So
-IA
-qV
-Kz
+ii
+IM
+xX
 KE
 tq
 aw
@@ -25954,7 +25978,7 @@ Kz
 cd
 So
 So
-IA
+ii
 qV
 Kz
 mv
@@ -26071,7 +26095,7 @@ Kz
 So
 So
 So
-IA
+ii
 qV
 Kz
 ZW
@@ -26188,7 +26212,7 @@ Kz
 So
 So
 So
-IA
+ii
 LR
 Zw
 Kz
@@ -26305,7 +26329,7 @@ Kz
 So
 So
 So
-jM
+lL
 fo
 LR
 gR

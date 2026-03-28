@@ -154,17 +154,17 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/bridge)
 "m" = (
-/obj/machinery/porta_turret/ship/ngr/heavy{
-	dir = 9;
-	name = "Canterbury Turret";
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
 	id = "addust_pod";
-	desc = "A bulky, lightly-reinforced turret made of NGR scrap and surplus laser weapons. This one stares at you angrily, promising the blaze of Indecipheres if you dare step out of line.";
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	lethal_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
-	stun_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
-	burst_size = 2;
-	burst_delay = 5
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 9;
+	burst_delay = 2;
+	burst_size = 4
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
