@@ -1018,6 +1018,10 @@
 	pixel_x = 3;
 	pixel_y = 4
 	},
+/obj/item/clothing/head/ramzi/beret{
+	pixel_x = 1;
+	pixel_y = 12
+	},
 /turf/open/floor/carpet/red_gold,
 /area/outpost/crew/library)
 "cq" = (
