@@ -6524,6 +6524,14 @@
 	name = "ARMS-OS MK-1 control board";
 	desc = "A heavily-reinforced control board with laser-engraved insignia identifying it as property of Johnson and Company, primarily used in high-redundancy control systems such as for an ARMS-A unit's organ support system."
 	},
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake{
+	allowed_ammo_types = list(/obj/item/ammo_box/magazine/m10mm_cottonmouth);
+	default_ammo_type = /obj/item/ammo_box/magazine/m10mm_cottonmouth;
+	name = "MP-84j 'Rattlemouth'";
+	desc = "A professional rechambering of the MP-84 'Rattlesnake' into 10x22mm, built to compete with the Ramzi Clique's Rattlesnake machinepistol. The insignia of Johnson and Company is engraved immediately above that of Scarborough Arms.";
+	pixel_x = -2;
+	pixel_y = -4
+	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
 "ot" = (
@@ -9194,11 +9202,14 @@
 	color = "#c1b6a5"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/gun/ballistic/automatic/pistol/rattlesnake{
-	allowed_ammo_types = list(/obj/item/ammo_box/magazine/m10mm_cottonmouth);
-	default_ammo_type = /obj/item/ammo_box/magazine/m10mm_cottonmouth;
-	name = "MP-84j 'Rattlemouth'";
-	desc = "A professional rechambering of the MP-84 'Rattlesnake' into 10x22mm, built to compete with the Ramzi Clique's Rattlesnake machinepistol. The insignia of Johnson and Company is engraved immediately above that of Scarborough Arms."
+/obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag{
+	pixel_x = -1;
+	pixel_y = 3;
+	gun_firemodes = list("single","burst");
+	burst_delay = 1;
+	burst_size = 2;
+	name = "JC-60db 'Two-Step Goodbye'";
+	desc = "A bullpup combat shotgun custom-made by the loyalist remnants of Johnson and Company as a superior alternative to the Ramzi Clique's Bockadam, now with such wonders as a fire selector and not jamming every fourth round. Chambered in 12g."
 	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
