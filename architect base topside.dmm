@@ -9206,7 +9206,7 @@
 	pixel_x = -1;
 	pixel_y = 3;
 	gun_firemodes = list("single","burst");
-	burst_delay = 1;
+	burst_delay = 2;
 	burst_size = 2;
 	name = "JC-60db 'Two-Step Goodbye'";
 	desc = "A bullpup combat shotgun custom-made by the loyalist remnants of Johnson and Company as a superior alternative to the Ramzi Clique's Bockadam, now with such wonders as a fire selector and not jamming every fourth round. Chambered in 12g."
