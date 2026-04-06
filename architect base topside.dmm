@@ -19,8 +19,15 @@
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 8
 	},
+/obj/machinery/door/poddoor{
+	desc = "FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK FUCK";
+	id = "addust_fuck";
+	dir = 4;
+	name = "emergency blast door";
+	armor = list("melee" = 50, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	},
 /turf/open/floor/plasteel/tech/grid,
-/area/outpost/security/armory)
+/area/outpost/cargo)
 "ab" = (
 /obj/item/target,
 /turf/open/floor/concrete/reinforced/jungleplanet/lit{
@@ -384,17 +391,8 @@
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/engineering/atmospherics)
 "aL" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8;
-	color = "#332521"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light/directional/south,
-/obj/machinery/door/window/brigdoor/westleft,
-/turf/open/floor/wood/ebony,
-/area/outpost/crew/bar)
+/turf/closed/wall/concrete/reinforced,
+/area/outpost/vacant_rooms/office)
 "aN" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -554,6 +552,9 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/orange/corner{
 	dir = 8
+	},
+/obj/item/pushbroom{
+	desc = "A hand broom with a considerable amount of dust on the bristles. Now featuring a telescopic handle for ease of concealing evidence."
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/engineering)
@@ -746,40 +747,25 @@
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/outpost/maintenance/starboard)
 "bN" = (
-/obj/effect/turf_decal/siding/wood/end{
-	color = "#332521"
+/obj/structure/table/chem,
+/obj/item/clothing/head/wig{
+	hairstyle = "Twintails (Long)";
+	icon_state = "hair_twintaillong";
+	pixel_x = 0;
+	pixel_y = 34;
+	layer = 4;
+	desc = "The hair of a goddess. Actually just a wig that is yet to be fixed on."
 	},
-/obj/machinery/photocopier,
-/obj/machinery/button/door{
-	dir = 8;
-	pixel_x = 20;
-	pixel_y = 10;
-	name = "shutters";
-	id = "addust_bunker_shutters"
+/obj/item/stack/cable_coil/red{
+	pixel_x = 4;
+	pixel_y = 13
 	},
-/obj/machinery/button/door{
-	dir = 8;
-	pixel_x = 20;
-	pixel_y = -1;
-	id = "addust_bunker_storage";
-	name = "storage door"
+/obj/item/modular_computer/laptop/preset{
+	desc = "A portable laptop computer. It seems to be used exclusively for diagnostics on other hardware.";
+	pixel_x = 1;
+	pixel_y = 0
 	},
-/obj/machinery/button/door{
-	dir = 8;
-	pixel_x = 20;
-	pixel_y = -12;
-	name = "armory lockdown";
-	id = "addust_bunker_armoury"
-	},
-/obj/machinery/button/door{
-	dir = 8;
-	pixel_x = 28;
-	pixel_y = 10;
-	name = "windows";
-	id = "addust_bunker_exchangewindows"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/ebony,
+/turf/open/floor/mineral/plastitanium,
 /area/outpost/security/armory)
 "bQ" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
@@ -840,15 +826,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating/rust,
 /area/outpost/engineering)
-"ca" = (
-/obj/machinery/vending/boozeomat/all_access{
-	dir = 8;
-	pixel_x = 8;
-	pixel_y = 0;
-	density = 0
-	},
-/turf/open/floor/wood/ebony,
-/area/outpost/crew/bar)
 "cb" = (
 /obj/structure/table/reinforced,
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -1035,28 +1012,14 @@
 /turf/open/floor/carpet/red_gold,
 /area/outpost/crew/library)
 "cq" = (
-/obj/machinery/recharger{
-	pixel_x = -9;
-	pixel_y = 8
-	},
-/obj/structure/table/reinforced{
-	color = "#c1b6a5"
-	},
-/obj/item/paper_bin{
-	pixel_x = 9;
-	pixel_y = 3
-	},
-/obj/item/pen{
-	pixel_x = 8;
-	pixel_y = 5
-	},
-/obj/item/radio/old{
-	pixel_x = -8;
-	pixel_y = -1
-	},
 /obj/machinery/light/dim/directional/south,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/concrete/slab_1,
+/obj/structure/fluff{
+	icon_state = "limbgrower_idleoff";
+	icon = 'icons/obj/machines/limbgrower.dmi';
+	desc = "A machine that uses a putty-like 'formula' of synthskin to print and shape custom coverings for prosthetics. Do not ingest.";
+	name = "synthskin printer"
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/outpost/security/armory)
 "cr" = (
 /obj/machinery/power/rtg/advanced{
@@ -1514,6 +1477,10 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/plating/asteroid/dirt/grass/beach,
 /area/overmap_encounter/planetoid/beachplanet/explored)
+"dt" = (
+/obj/structure/sign/warning/nosmoking/burnt,
+/turf/closed/wall/concrete/reinforced,
+/area/outpost/security/armory)
 "du" = (
 /obj/structure/platform{
 	dir = 1
@@ -2776,7 +2743,8 @@
 	},
 /obj/structure/sign/warning{
 	pixel_x = 0;
-	pixel_y = -24
+	pixel_y = -24;
+	desc = "A warning sign helpfully informing you of the extremely flammable containers below it and how sad it would be if they ignited."
 	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
@@ -3347,7 +3315,8 @@
 /obj/effect/turf_decal/techfloor,
 /obj/structure/closet/wall/red/directional/west,
 /obj/structure/salvageable/computer{
-	name = "decayed weapons computer"
+	name = "decayed weapons computer";
+	desc = "This console thankfully bears less buttons than the main one, though whether or not that is by design is uncertain. The only things you can distinguish that aren't broken or unlabelled are an isolator switch and a keypad."
 	},
 /obj/item/clothing/under/syndicate/combat{
 	name = "compression suit";
@@ -3510,6 +3479,20 @@
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/maintenance/fore)
+"hL" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1;
+	color = "#D2BC9D"
+	},
+/obj/effect/turf_decal/siding/wood{
+	color = "#D2BC9D";
+	dir = 2
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood/maple,
+/area/outpost/crew/library)
 "hM" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 5
@@ -3705,22 +3688,14 @@
 /area/hangar)
 "il" = (
 /obj/effect/turf_decal/siding/wood{
-	dir = 5;
-	color = "#D2BC9D"
+	color = "#D2BC9D";
+	dir = 9
 	},
-/obj/structure/closet/syndicate,
-/obj/item/trench_tool,
-/obj/item/clothing/under/syndicate/gorlex,
-/obj/item/clothing/gloves/combat,
-/obj/item/binoculars,
-/obj/item/clothing/under/syndicate/ngr,
-/obj/item/clothing/under/syndicate/ngr/jumpsuit,
-/obj/item/clothing/neck/shemagh/ngr,
-/obj/item/clothing/head/beret/color/maroon,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/glasses/hud/health/sunglasses,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/wood/maple,
-/area/outpost/crew/law_office)
+/area/outpost/vacant_rooms/office)
 "im" = (
 /obj/effect/turf_decal/corner/opaque/tan/full,
 /turf/open/floor/plasteel/dark,
@@ -3860,13 +3835,39 @@
 /turf/open/floor/wood/maple,
 /area/outpost/crew)
 "iB" = (
-/obj/effect/turf_decal/siding/wood/end{
-	color = "#D2BC9D"
+/obj/effect/turf_decal/corner/opaque/syndiered{
+	dir = 5
 	},
-/obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/south,
-/turf/open/floor/wood/maple,
-/area/outpost/crew/library)
+/obj/structure/cable{
+	icon_state = "1-10";
+	layer = 3.1
+	},
+/obj/effect/turf_decal/borderfloorblack,
+/obj/machinery/door/firedoor/border_only,
+/obj/item/attachment/ammo_counter,
+/obj/item/attachment/ammo_counter,
+/obj/item/attachment/rail_light,
+/obj/item/attachment/rail_light,
+/obj/item/attachment/bayonet,
+/obj/item/attachment/bayonet,
+/obj/item/attachment/scope,
+/obj/item/attachment/scope,
+/obj/structure/closet/wall/red/directional/east{
+	name = "closet (gun shit)"
+	},
+/obj/item/ammo_box/magazine/m556_42_hydra/extended,
+/obj/item/ammo_box/magazine/m556_42_hydra/extended,
+/obj/item/ammo_box/magazine/m556_42_hydra/extended,
+/obj/item/ammo_box/magazine/m57_39_sidewinder,
+/obj/item/ammo_box/magazine/m57_39_sidewinder,
+/obj/item/ammo_box/magazine/m57_39_sidewinder,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m556_42_hydra/extended,
+/obj/structure/window/reinforced/spawner,
+/turf/open/floor/plasteel/dark,
+/area/outpost/vacant_rooms/office)
 "iC" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6;
@@ -3954,6 +3955,13 @@
 /obj/item/ammo_box/magazine/m556_42_hydra,
 /obj/item/ammo_box/magazine/m556_42_hydra,
 /obj/item/ammo_box/magazine/m556_42_hydra,
+/obj/machinery/button/door{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = -12;
+	name = "armory lockdown";
+	id = "addust_bunker_armoury"
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/security/armory)
 "iL" = (
@@ -4068,23 +4076,46 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering)
 "iZ" = (
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/machinery/light_switch{
-	dir = 8;
-	pixel_x = 19;
-	pixel_y = -12
+	pixel_x = 12;
+	pixel_y = 22
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/syndiered{
+	dir = 10
+	},
+/obj/structure/table/chem,
+/obj/item/gun/ballistic/shotgun/blasting_hammer{
+	name = "LAST WORD";
+	desc = "A heavily-modified blasting hammer fitted with a revolving 12-round cylinder and a large thruster on the back, alongside a larger thruster nozzle. You feel this would pair well with a cigar.";
+	allowed_ammo_types = list(/obj/item/ammo_box/magazine/internal/shot/blasting_hammer/ramzislayer);
+	default_ammo_type = /obj/item/ammo_box/magazine/internal/shot/blasting_hammer/ramzislayer;
+	throw_min = 4;
+	throw_max = 6;
+	door_breaching_weapon = 1;
+	pixel_x = 0;
+	pixel_y = 5
+	},
+/obj/item/grenade/spawnergrenade/manhacks{
+	pixel_x = 6;
+	pixel_y = -1;
+	name = "viscerator delivery grenade (i hope you like bees)";
+	desc = "A thin plasteel case marked to contan a Viscerator, with a very tempting big red button."
+	},
+/obj/item/bombcore/large{
+	name = "low-yield fusion bomb payload";
+	desc = "An incredibly powerful explosive payload normally used in ship-to-ship munitions and self-destruct systems. Do not drop.";
+	pixel_x = -7;
+	pixel_y = 14
 	},
 /obj/structure/cable{
-	icon_state = "0-8"
+	icon_state = "0-2"
 	},
-/obj/structure/table/wood/reinforced,
-/obj/machinery/chem_dispenser/drinks/fullupgrade{
-	dir = 8;
-	pixel_x = 0;
-	pixel_y = 6
-	},
-/turf/open/floor/wood/ebony,
-/area/outpost/crew/bar)
+/turf/open/floor/plasteel/dark,
+/area/outpost/vacant_rooms/office)
 "jb" = (
 /obj/machinery/light/small/directional/south,
 /obj/structure/cable{
@@ -4295,12 +4326,22 @@
 /turf/open/floor/concrete/slab_4,
 /area/outpost/storage)
 "jy" = (
-/obj/effect/turf_decal/siding/wood/end{
+/obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
 	dir = 4
 	},
-/turf/open/floor/carpet/red_gold,
-/area/outpost/crew/law_office)
+/obj/structure/dresser,
+/obj/item/flashlight/lamp/green{
+	pixel_x = -7;
+	pixel_y = 15
+	},
+/obj/item/gun/ballistic/automatic/pistol/ringneck{
+	pixel_x = 7;
+	pixel_y = 7;
+	name = "PC-76 'Septette For a Dead Princess'"
+	},
+/turf/open/floor/wood/maple,
+/area/outpost/vacant_rooms/office)
 "jz" = (
 /obj/structure/catwalk/over,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
@@ -4398,8 +4439,8 @@
 "jH" = (
 /obj/structure/salvageable/airbase/cannon{
 	pixel_y = 16;
-	name = "outdated autocannon";
-	desc = "A rotary cannon that seems to have rusted into place over the years. Its maintenance panel is open and you can see some parts missing."
+	name = "chord autocannon";
+	desc = "An ICW-era weapon renowned for its long-range performance, usually mounted onto fighters or made into turrets against them. This one looks like it would work, but finding out would involve getting the three levels of credentials necessary to even look at the controls."
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/powered/shuttle)
@@ -4860,25 +4901,23 @@
 	},
 /area/ruin/beach/gunsmith)
 "kJ" = (
-/obj/structure/cable{
-	icon_state = "1-8"
+/obj/effect/turf_decal/siding/wood{
+	dir = 6;
+	color = "#D2BC9D"
 	},
-/obj/structure/closet/wall/red/directional/south,
-/obj/item/clothing/under/rank/civilian/bartender,
-/obj/item/clothing/suit/armor/ramzi{
-	name = "outdated armor vest";
-	desc = "An outdated, slim, type I armour vest.  The insignia of the Gorlex Marauders and the Ramzi Clique has been painted over."
+/obj/structure/bed/double,
+/obj/item/bedsheet/double/rainbow{
+	icon_state = "double_sheetsyndie";
+	name = "double coalition bedsheet";
+	desc = "A blood-red bedsheet bearing the insignia of the Syndicate Coalition. It seems to have an aura of remembrance around it."
 	},
-/obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag,
-/obj/item/ammo_box/magazine/m12g_bulldog/empty,
-/obj/item/ammo_box/magazine/m12g_bulldog/empty,
-/obj/item/ammo_box/magazine/m12g_bulldog/empty,
-/obj/item/storage/box/ammo/a12g_beanbag,
-/obj/item/storage/box/ammo/a12g_beanbag,
-/obj/item/storage/box/ammo/a12g_rubbershot,
-/obj/item/storage/box/ammo/a12g_rubbershot,
-/turf/open/floor/wood/ebony,
-/area/outpost/crew/bar)
+/obj/item/toy/plush/landmine{
+	pixel_x = 5;
+	pixel_y = -3;
+	desc = "A plushie depicting an adorable anti-infantry explosive. Rated 10^18% cuddlier than the real thing."
+	},
+/turf/open/floor/wood/maple,
+/area/outpost/vacant_rooms/office)
 "kK" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 8
@@ -5160,12 +5199,11 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
 "lh" = (
-/obj/effect/turf_decal/siding/wood/end{
-	color = "#D2BC9D";
-	dir = 8
+/obj/structure/platform{
+	dir = 4
 	},
-/turf/open/floor/carpet/red_gold,
-/area/outpost/crew/law_office)
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "li" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
@@ -5330,15 +5368,25 @@
 /turf/open/floor/carpet/red_gold,
 /area/outpost/crew/lounge)
 "lz" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#D2BC9D";
-	dir = 9
-	},
 /obj/structure/cable{
-	icon_state = "4-8"
+	icon_state = "1-8"
 	},
-/turf/open/floor/wood/maple,
-/area/outpost/crew/law_office)
+/obj/structure/closet/wall/red/directional/south,
+/obj/item/clothing/under/rank/civilian/bartender,
+/obj/item/clothing/suit/armor/ramzi{
+	name = "outdated armor vest";
+	desc = "An outdated, slim, type I armour vest.  The insignia of the Gorlex Marauders and the Ramzi Clique has been painted over."
+	},
+/obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag,
+/obj/item/ammo_box/magazine/m12g_bulldog/empty,
+/obj/item/ammo_box/magazine/m12g_bulldog/empty,
+/obj/item/ammo_box/magazine/m12g_bulldog/empty,
+/obj/item/storage/box/ammo/a12g_beanbag,
+/obj/item/storage/box/ammo/a12g_beanbag,
+/obj/item/storage/box/ammo/a12g_rubbershot,
+/obj/item/storage/box/ammo/a12g_rubbershot,
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "lA" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1;
@@ -5568,7 +5616,10 @@
 	dir = 1;
 	layer = 2.04
 	},
-/obj/item/radio/intercom/wideband/directional/east,
+/obj/item/radio/intercom/wideband/directional/east{
+	pixel_x = 26;
+	pixel_y = 3
+	},
 /obj/item/radio/intercom/directional/south,
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -5609,8 +5660,8 @@
 	desc = "A bulky turret made of broken-down equipment from the New Gorlex Republic, twin lasers humming away. Its beady camera-eye stares at you.";
 	lethal_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/laser/e40_las.ogg';
-	lethal_projectile = /obj/projectile/beam/eoehoma/heavy;
-	stun_projectile = /obj/projectile/beam/eoehoma/heavy;
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/heavy;
 	burst_size = 2;
 	burst_delay = 5
 	},
@@ -6078,6 +6129,12 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/maintenance/central)
+"nh" = (
+/obj/structure/sign/warning/electricshock{
+	desc = "A high visibility sign emblazoned with the words 'NO DIVING', under which is a smaller warning the water is 'fucking electrified'."
+	},
+/turf/closed/wall/concrete/reinforced,
+/area/outpost/cargo)
 "ni" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/plating/asteroid/sand/lit,
@@ -6150,8 +6207,7 @@
 /turf/open/floor/wood/maple,
 /area/outpost/crew/bar/cybersun_outpost)
 "nw" = (
-/obj/structure/sign/mining/survival{
-	name = "no diving sign";
+/obj/structure/sign/warning/electricshock{
 	desc = "A high visibility sign emblazoned with the words "NODIVING", under which is a smaller warning the water is 'fucking electrified'."
 	},
 /turf/closed/wall/concrete/reinforced,
@@ -6258,15 +6314,16 @@
 	},
 /area/ruin/beach/gunsmith)
 "nL" = (
-/obj/machinery/door/airlock/command{
-	name = "Warehouse Control Room"
+/obj/structure/table/wood/reinforced,
+/obj/machinery/chem_dispenser/drinks/beer/fullupgrade{
+	dir = 8;
+	pixel_x = -1;
+	pixel_y = -5;
+	layer = 4.24
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
-	dir = 1
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/outpost/security/armory)
+/obj/structure/window/reinforced/spawner/north,
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "nM" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/glass/beaker{
@@ -6445,6 +6502,31 @@
 	},
 /turf/open/floor/concrete/tiles,
 /area/ruin/beach/gunsmith)
+"og" = (
+/obj/machinery/firealarm/directional/west,
+/obj/machinery/light/small/directional/north,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/syndiered{
+	dir = 10
+	},
+/obj/structure/guncloset,
+/obj/item/gun/ballistic/shotgun/flamingarrow/conflagration/empty{
+	name = "HP-CFG 'Eternal Promise'"
+	},
+/obj/item/gun/ballistic/automatic/assault/hydra/lmg/extended{
+	name = "SAW-80 'Bloody Devotion'";
+	desc = "Scarborough Arms' premier modular assault rifle platform. This example is configured as a support weapon, with heavier components for sustained firing and a large muzzle brake. Chambered in 5.56mm CLIP. Jesus fucking christ, how did she get her hands on this?"
+	},
+/obj/item/gun/ballistic/automatic/smg/sidewinder{
+	name = "CDW-81 'Last Destiny'"
+	},
+/obj/item/gun/ballistic/automatic/assault/hydra{
+	name = "SMR-80 'FIERY DEVOTION'"
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/vacant_rooms/office)
 "oh" = (
 /obj/machinery/light/small/directional/south,
 /obj/structure/table/reinforced,
@@ -6524,25 +6606,33 @@
 	},
 /obj/item/bodypart/chest/ipc/saipc2{
 	pixel_x = 2;
-	pixel_y = 6
+	pixel_y = 6;
+	desc = "A bulky chest-piece for a full-body prosthetic. Its central components have been replaced with a heavily-armoured lump of black steel bearing the engraved insignia of Johnson & Company, surrounded by twisting wires and interlinking steel cross-beams, and there doesn't seem to be any standard mounts for positronic heads.";
+	name = "\improper JC-AC-001-OSU Chassis Core"
 	},
 /obj/item/bodypart/l_arm/ipc/saipc2{
 	pixel_x = 2;
-	pixel_y = 6
+	pixel_y = 6;
+	desc = "A sturdy cybernetic arm bearing the insignia of Johnson and Company, bearing an inactive touchscreen display and integrated keyboard just behind the wrist. Various snaking wires are exposed by an open panel behind it.";
+	name = "\improper JC-L02-ACU Augment Control Unit-Integrated Manipulator"
 	},
 /obj/item/bodypart/leg/left/ipc/saipc2{
 	pixel_x = 6;
-	pixel_y = 1
+	pixel_y = 1;
+	desc = "A standardised cybernetic leg bearing laser-engraved insignia of Johnson & Company. Its motors seem a bit big for the casing.";
+	name = "\improper JC-LG02 Leg Type 2"
 	},
 /obj/item/bodypart/leg/right/ipc/saipc2{
 	pixel_x = -1;
-	pixel_y = 1
+	pixel_y = 1;
+	desc = "A standardised cybernetic leg bearing laser-engraved insignia of Johnson & Company. Its motors seem a bit big for the casing.";
+	name = "\improper JC-LG02 Leg Type 2"
 	},
 /obj/item/bodypart/r_arm/ipc/custom_saipc2{
 	pixel_x = -2;
 	pixel_y = 3;
-	name = "heavily-moddified IPC-80 right arm";
-	desc = "A partially-dismantled right arm with laser-engraved insignia identifying it as property of Johnson and Company. Additional motors seem to have been added, alongside an extended thumb with stronger components."
+	name = "\improper JC-R04 Combat Manipulator";
+	desc = "A bulky cybernetic arm, painted in a blood-red colour scheme reminiscent of the Second Battlegroup - or the old Marauders. It seems fitted with various extra servo-motors and joints to assist in handling lever-action firearms, and its thumb is abnormally long."
 	},
 /obj/item/computer_hardware/processor_unit{
 	pixel_x = 0;
@@ -7085,15 +7175,20 @@
 /turf/closed/wall/concrete/reinforced,
 /area/ruin/icemoon/training_facility/garage)
 "pw" = (
-/obj/structure/table/reinforced{
-	color = "#c1b6a5"
+/obj/effect/turf_decal/siding/wood{
+	dir = 1;
+	color = "#D2BC9D"
 	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 4;
-	id = "addust_bunker_shutters"
+/obj/effect/turf_decal/siding/wood{
+	color = "#D2BC9D";
+	dir = 2
 	},
-/turf/open/floor/concrete/slab_1,
-/area/outpost/security/armory)
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/wood/maple,
+/area/outpost/crew/library)
 "px" = (
 /obj/structure/sign/warning/securearea{
 	pixel_y = 25;
@@ -7119,6 +7214,12 @@
 "pC" = (
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar)
+"pD" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#D2BC9D"
+	},
+/turf/open/floor/wood/maple,
+/area/outpost/vacant_rooms/office)
 "pE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/disposalpipe/segment{
@@ -7740,6 +7841,17 @@
 	},
 /turf/open/floor/plating/asteroid/sand/dense/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
+"qW" = (
+/obj/structure/sign/plaques/kiddie{
+	name = "warning signboard";
+	desc = "A sign reading 'NO ADMITTANCE - AUTHORIZED PERSONNEL ONLY', alongside a high voltage warning sign, radiation warning sign, biohazard warning sign and a toxin warning sign alongside a handful that you don't recognize and were probably made up by the GEC to sound ominous. Below, someone has scribbled 'ABANDON HOPE, ALL YE WHO ENTER HERE' in permanent marker."
+	},
+/turf/closed/wall/concrete/reinforced{
+	rad_insulation = 0;
+	name = "lead-lined hexacrete wall";
+	desc = "A thick wall made of steel-reinforced hexacrete. Sturdier than a normal concrete wall. This one seems to contain lead inside the concrete mix, protecting against radiation."
+	},
+/area/outpost/engineering)
 "qX" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 9;
@@ -7855,30 +7967,22 @@
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
 "rj" = (
-/obj/effect/turf_decal/corner/opaque/syndiered{
-	dir = 10
-	},
-/obj/structure/guncloset,
-/obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
-/obj/machinery/firealarm/directional/west,
-/obj/item/gun/ballistic/automatic/smg/cobra{
-	name = "C-20r 'Triple Goddess'"
-	},
-/obj/item/gun/ballistic/automatic/smg/sidewinder{
-	name = "CDW-81 'Last Destiny'"
-	},
-/obj/item/gun/ballistic/automatic/assault/hydra/lmg/extended{
-	name = "SAW-80 'Bloody Devotion'";
-	desc = "Scarborough Arms' premier modular assault rifle platform. This example is configured as a support weapon, with heavier components for sustained firing and a large muzzle brake. Chambered in 5.56mm CLIP. Jesus fucking christ, how did she get her hands on this?"
-	},
-/obj/item/gun/ballistic/shotgun/flamingarrow/conflagration/empty{
-	name = "HP-CFG 'Eternal Promise'"
-	},
+/obj/item/storage/toolbox/ammo/c556,
+/obj/item/storage/toolbox/ammo/c57,
+/obj/item/storage/toolbox/ammo/c10mm,
+/obj/item/storage/box/ammo/a12g_blank,
+/obj/item/storage/box/ammo/a12g_blank,
+/obj/item/storage/box/ammo/a12g_blank,
+/obj/structure/closet/secure_closet/armorycage,
+/obj/item/storage/toolbox/ammo/c556,
+/obj/item/storage/toolbox/ammo/c556,
+/obj/item/storage/toolbox/ammo/c57,
+/obj/item/storage/toolbox/ammo/c57,
+/obj/item/storage/toolbox/ammo/c556,
+/obj/item/storage/toolbox/ammo/c10mm,
+/obj/effect/turf_decal/corner/opaque/syndiered/full,
 /turf/open/floor/plasteel/dark,
-/area/outpost/crew/law_office)
+/area/outpost/vacant_rooms/office)
 "rk" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 8
@@ -7908,8 +8012,8 @@
 "ro" = (
 /obj/structure/salvageable/airbase/cannon{
 	pixel_y = -16;
-	name = "outdated autocannon";
-	desc = "A rotary cannon that seems to have rusted into place over the years. Its maintenance panel is open and you can see some parts missing."
+	name = "chord autocannon";
+	desc = "An ICW-era weapon renowned for its long-range performance, usually mounted onto fighters or made into turrets against them. This one looks like it would work, but finding out would involve getting the three levels of credentials necessary to even look at the controls."
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/powered/shuttle)
@@ -8117,47 +8221,18 @@
 /turf/open/floor/wood/maple,
 /area/outpost/crew/bar)
 "rM" = (
-/obj/effect/turf_decal/corner/opaque/syndiered{
-	dir = 10
+/obj/effect/turf_decal/siding/wood{
+	color = "#D2BC9D"
 	},
-/obj/structure/table/chem,
-/obj/item/gun/ballistic/shotgun/blasting_hammer{
-	name = "LAST WORD";
-	desc = "A heavily-modified blasting hammer fitted with a revolving 12-round cylinder and a large thruster on the back, alongside a larger thruster nozzle. You feel this would pair well with a cigar.";
-	allowed_ammo_types = list(/obj/item/ammo_box/magazine/internal/shot/blasting_hammer/ramzislayer);
-	default_ammo_type = /obj/item/ammo_box/magazine/internal/shot/blasting_hammer/ramzislayer;
-	throw_min = 4;
-	throw_max = 6;
-	door_breaching_weapon = 1;
-	pixel_x = 0;
-	pixel_y = 5
+/obj/machinery/button/door{
+	pixel_x = -9;
+	pixel_y = -20;
+	dir = 1;
+	id = "tokamak_windows"
 	},
-/obj/machinery/light_switch{
-	pixel_x = 12;
-	pixel_y = 22
-	},
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
-/obj/item/grenade/spawnergrenade/manhacks{
-	pixel_x = 6;
-	pixel_y = -1;
-	name = "viscerator delivery grenade (i hope you like bees)";
-	desc = "A thin plasteel case marked to contan a Viscerator, with a very tempting big red button."
-	},
-/obj/item/bombcore/large{
-	name = "low-yield fusion bomb payload";
-	desc = "An incredibly powerful explosive payload normally used in ship-to-ship munitions and self-destruct systems. Do not drop.";
-	pixel_x = -7;
-	pixel_y = 14
-	},
-/obj/item/radio/intercom/directional/east,
-/turf/open/floor/plasteel/dark,
-/area/outpost/crew/law_office)
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/wood/maple,
+/area/outpost/vacant_rooms/office)
 "rN" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/catwalk/over,
@@ -8213,7 +8288,8 @@
 /obj/structure/hazard_shutoff/electrical_shutoff{
 	id = "addust_bunker_cargomoat";
 	pixel_x = 0;
-	pixel_y = 10
+	pixel_y = 10;
+	desc = "An old emergency shutoff switch for industrial power sources. Turn this off if you want to actually catch any fish."
 	},
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -8441,7 +8517,7 @@
 /obj/item/storage/belt/security/military/frontiersmen,
 /obj/item/melee/energy/sword/saber/blue{
 	name = "salvaged energy sword";
-	desc = "A mint-condition energy sword produced by Nanotrasen. For when you need to cut through particularly cold butter."
+	desc = "A mint-condition energy sword produced by Makosso-Warra. For when you need to cut through particularly cold butter."
 	},
 /obj/item/clothing/mask/gas/sechailer,
 /obj/item/clothing/gloves/color/yellow,
@@ -9273,14 +9349,16 @@
 /turf/open/floor/wood/walnut,
 /area/ruin/beach/gunsmith)
 "uo" = (
-/obj/structure/table/reinforced{
-	color = "#c1b6a5"
+/obj/structure/table/chem,
+/obj/item/storage/toolbox/syndicate{
+	pixel_x = -3;
+	pixel_y = 0
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/fax{
-	fax_name = "Architect Base Cargo Bay"
+/obj/item/storage/box/stockparts/t3{
+	pixel_x = 13;
+	pixel_y = 2
 	},
-/turf/open/floor/concrete/slab_1,
+/turf/open/floor/mineral/plastitanium,
 /area/outpost/security/armory)
 "uq" = (
 /obj/effect/turf_decal/siding/wood/end{
@@ -9365,21 +9443,17 @@
 /turf/open/floor/noslip,
 /area/outpost/crew/bar/cybersun_outpost)
 "uD" = (
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
-	dir = 8
-	},
-/obj/machinery/door/airlock/grunge{
-	dir = 4;
-	id_tag = "tokamak_dorm"
+/obj/effect/turf_decal/siding/wood{
+	dir = 8;
+	color = "#332521"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/tech/grid,
-/area/outpost/crew/law_office)
+/obj/machinery/light/directional/south,
+/obj/machinery/door/window/brigdoor/westleft,
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "uE" = (
 /obj/structure/flora/rock/jungle,
 /turf/open/floor/plating/asteroid/dirt/grass/jungle{
@@ -9725,8 +9799,7 @@
 /turf/open/floor/wood/birch,
 /area/outpost/engineering)
 "vz" = (
-/obj/structure/sign/mining/survival{
-	name = "no diving sign";
+/obj/structure/sign/warning/electricshock{
 	desc = "A high visibility sign emblazoned with the words "NODIVING", under which is a smaller warning the water is 'fucking electrified'."
 	},
 /turf/closed/wall/concrete/reinforced,
@@ -9875,22 +9948,9 @@
 /turf/open/water/beach/deep,
 /area/ruin/beach/gunsmith)
 "vS" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#D2BC9D";
-	dir = 4
-	},
-/obj/structure/dresser,
-/obj/item/flashlight/lamp/green{
-	pixel_x = -7;
-	pixel_y = 15
-	},
-/obj/item/gun/ballistic/automatic/pistol/ringneck{
-	pixel_x = 7;
-	pixel_y = 7;
-	name = "PC-76 'Septette For a Dead Princess'"
-	},
-/turf/open/floor/wood/maple,
-/area/outpost/crew/law_office)
+/obj/effect/turf_decal/corner/opaque/syndiered/full,
+/turf/open/floor/plasteel/dark,
+/area/outpost/vacant_rooms/office)
 "vT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
@@ -10378,7 +10438,7 @@
 /obj/structure/plaque{
 	color = #222222;
 	name = "memorial plaque";
-	desc = "A plastitanium plaque.  It has been engraved with a list of ships on the left side and names on the right, with the Scarlet Sky insignia taking up the middle. "FINDSOLACEUNDERASCARLETSKY" runs the length of the bottom."
+	desc = "A plastitanium plaque.  It has been engraved with a list of ships on the left side and names on the right, with the Scarlet Sky insignia taking up the middle. 'FINDSOLACEUNDERASCARLETSKY' runs the length of the bottom."
 	},
 /turf/closed/wall/r_wall/syndicate{
 	name = "obelisk";
@@ -10467,18 +10527,13 @@
 /turf/open/floor/plating,
 /area/outpost/security/checkpoint)
 "xj" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#D2BC9D"
+/obj/item/radio/intercom/directional/east,
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
-/obj/machinery/button/door{
-	pixel_x = -9;
-	pixel_y = -20;
-	dir = 1;
-	id = "tokamak_windows"
-	},
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/wood/maple,
-/area/outpost/crew/law_office)
+/obj/effect/turf_decal/corner/opaque/syndiered/full,
+/turf/open/floor/plasteel/dark,
+/area/outpost/vacant_rooms/office)
 "xk" = (
 /obj/effect/turf_decal/road/stripes{
 	dir = 8
@@ -11042,9 +11097,8 @@
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/ruin/beach/gunsmith)
 "yD" = (
-/obj/structure/sign/mining/survival{
-	name = "no diving sign";
-	desc = "A high visibility sign emblazoned with the words "NODIVING", under which is a smaller warning the water is 'fucking electrified'."
+/obj/structure/sign/warning/electricshock{
+	desc = "A high visibility sign emblazoned with the words 'NO DIVING', under which is a smaller warning the water is 'fucking electrified'."
 	},
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/security/armory)
@@ -11106,11 +11160,24 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/lavaland/factory/dorms)
 "yI" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 5;
-	color = "#332521"
+/obj/structure/table/chem,
+/obj/item/computer_hardware/hard_drive/advanced{
+	pixel_x = 7;
+	pixel_y = 11
 	},
-/turf/open/floor/wood/ebony,
+/obj/item/computer_hardware/hard_drive/small{
+	pixel_x = 12;
+	pixel_y = 2
+	},
+/obj/item/computer_hardware/processor_unit{
+	pixel_x = -8;
+	pixel_y = 10
+	},
+/obj/item/organ/stomach/cell{
+	pixel_x = -11;
+	pixel_y = 0
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/outpost/security/armory)
 "yJ" = (
 /obj/machinery/light/directional/south,
@@ -11275,17 +11342,6 @@
 /obj/item/food/meat/slab,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/crew/canteen)
-"yY" = (
-/obj/structure/table/wood/reinforced,
-/obj/machinery/chem_dispenser/drinks/beer/fullupgrade{
-	dir = 8;
-	pixel_x = -1;
-	pixel_y = -5;
-	layer = 4.24
-	},
-/obj/structure/window/reinforced/spawner/north,
-/turf/open/floor/wood/ebony,
-/area/outpost/crew/bar)
 "yZ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -11310,13 +11366,13 @@
 /turf/open/water/beach/deep,
 /area/ruin/beach/gunsmith)
 "zc" = (
+/obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor/shutters{
-	dir = 4;
-	id = "addust_bunker_exchangewindows"
+/obj/machinery/door/poddoor/preopen{
+	id = "tokamak_windows"
 	},
-/turf/open/floor/concrete/slab_1,
-/area/outpost/security/armory)
+/turf/open/floor/plating,
+/area/outpost/vacant_rooms/office)
 "zd" = (
 /obj/structure/table/reinforced,
 /obj/item/ammo_casing/shotgun/techshell,
@@ -11600,6 +11656,13 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/overmap_encounter/planetoid/beachplanet/explored)
+"zK" = (
+/obj/effect/turf_decal/siding/wood/end{
+	color = "#D2BC9D";
+	dir = 4
+	},
+/turf/open/floor/carpet/red_gold,
+/area/outpost/vacant_rooms/office)
 "zL" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -11837,14 +11900,18 @@
 	pixel_y = 14
 	},
 /obj/item/stack/tape/industrial{
-	pixel_x = -5;
-	pixel_y = 6
+	pixel_x = 2;
+	pixel_y = 12
 	},
 /obj/item/clothing/suit/space/hardsuit/stealth{
 	pixel_x = 9;
 	pixel_y = 4;
 	name = "INF-JC restored tactical hardsuit";
 	desc = "An ICW-era stealth hardsuit rebuilt by Johnson and Company's remnants from one that was once tainted by the Ramzi Clique. It's in pristine condition, and you can see a little Johnson and Company patch on the right shoulder."
+	},
+/obj/machinery/recharger{
+	pixel_x = -9;
+	pixel_y = 0
 	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
@@ -12491,15 +12558,13 @@
 /turf/open/water/beach,
 /area/ruin/beach/gunsmith)
 "BH" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1;
-	color = "#D2BC9D"
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 1
 	},
-/obj/structure/cable{
-	icon_state = "5-8"
-	},
-/turf/open/floor/wood/maple,
-/area/outpost/crew/law_office)
+/obj/machinery/door/airlock/engineering,
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/security/armory)
 "BJ" = (
 /obj/machinery/light/dim/directional/south,
 /turf/open/water/beach,
@@ -13021,7 +13086,8 @@
 	dir = 8
 	},
 /obj/machinery/computer/helm/retro{
-	dir = 8
+	dir = 8;
+	desc = "A computer with an ungodly platter of switches and buttons among other avionics, some seeming newer than others. The only thing you can recognize are control joysticks and a stylized depiction of a dusty pink-haired woman in a cardigan taped under one of the displays. What madman would even use analog controls in this day and age???"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
@@ -13389,6 +13455,13 @@
 	dir = 8
 	},
 /area/ruin/beach/gunsmith)
+"Dr" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1;
+	color = "#D2BC9D"
+	},
+/turf/open/floor/wood/maple,
+/area/outpost/vacant_rooms/office)
 "Dt" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "addust_bunker_maincheck_exterior"
@@ -13893,6 +13966,25 @@
 /obj/structure/railing,
 /obj/effect/turf_decal/techfloor,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table,
+/obj/item/storage/box/fishing_hooks{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/obj/item/storage/box/fishing_hooks{
+	pixel_x = 7;
+	pixel_y = 21
+	},
+/obj/item/storage/toolbox/fishing{
+	pixel_x = 2;
+	pixel_y = -2
+	},
+/obj/item/fishing_rod/tech{
+	name = "prototype fishing rod";
+	desc = "A Johnson & Co product that never left the prototyping stage, a fishing rod that never runs out of bait. Ever. A radioactivity warning sticker above the handle gives a hint as to why.";
+	pixel_x = -13;
+	pixel_y = 3
+	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/cargo)
 "Ev" = (
@@ -14650,11 +14742,12 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Gc" = (
 /obj/effect/turf_decal/siding/wood{
-	dir = 1;
-	color = "#D2BC9D"
+	color = "#D2BC9D";
+	dir = 10
 	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/wood/maple,
-/area/outpost/crew/law_office)
+/area/outpost/vacant_rooms/office)
 "Gd" = (
 /obj/machinery/door/airlock,
 /obj/structure/cable{
@@ -14791,16 +14884,12 @@
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/aft)
 "Gv" = (
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8;
-	color = "#332521"
-	},
-/obj/effect/turf_decal/siding/wood{
-	color = "#332521"
-	},
 /obj/machinery/holopad,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/ebony,
+/obj/item/organ/eyes/robotic{
+	pixel_x = 39;
+	pixel_y = 25
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/outpost/security/armory)
 "Gy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -15279,6 +15368,22 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/crew/canteen)
+"HK" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 9;
+	layer = 2.030
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 8
+	},
+/obj/structure/closet/crate/bin{
+	desc = "A trash bin. The inside and rim are covered in dust with a strange aura. You decide not to think too hard about the origin of such a quantity of dust in a room this tidy."
+	},
+/turf/open/floor/plasteel/dark,
+/area/outpost/engineering)
 "HL" = (
 /obj/effect/turf_decal/box/white,
 /obj/machinery/porta_turret/ship/ngr{
@@ -15488,13 +15593,27 @@
 /turf/open/floor/concrete/tiles,
 /area/outpost/storage)
 "If" = (
-/obj/structure/grille,
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor/preopen{
-	id = "tokamak_windows"
+/obj/effect/turf_decal/siding/wood{
+	dir = 5;
+	color = "#D2BC9D"
 	},
-/turf/open/floor/plating,
-/area/outpost/crew/law_office)
+/obj/structure/closet/syndicate,
+/obj/item/trench_tool,
+/obj/item/clothing/under/syndicate/gorlex,
+/obj/item/clothing/gloves/combat,
+/obj/item/binoculars,
+/obj/item/clothing/head/beret/color/maroon,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/glasses/hud/health/sunglasses,
+/obj/item/clothing/head/soft/inteq,
+/obj/item/clothing/under/syndicate/inteq,
+/obj/item/clothing/under/syndicate/inteq/skirt,
+/obj/item/encryptionkey/inteq,
+/obj/item/clothing/under/shorts/miniskirt,
+/obj/item/clothing/under/shorts/skirt,
+/obj/item/clothing/mask/gas/inteq,
+/turf/open/floor/wood/maple,
+/area/outpost/vacant_rooms/office)
 "Ig" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
@@ -15657,6 +15776,14 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/door{
+	name = "emergency blast door";
+	desc = "A door remote control switch. It is not a matter of if the workshop explodes, but when.";
+	dir = 8;
+	pixel_x = 21;
+	pixel_y = 10;
+	id = "addust_fuck"
+	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
 "IC" = (
@@ -15674,44 +15801,17 @@
 /turf/open/floor/carpet/green,
 /area/outpost/crew/dorm)
 "ID" = (
+/obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/window/eastleft{
 	name = "Armoury";
 	dir = 2
 	},
+/obj/effect/turf_decal/borderfloorblack,
 /obj/effect/turf_decal/corner/opaque/syndiered{
 	dir = 5
 	},
-/obj/structure/cable{
-	icon_state = "1-10";
-	layer = 3.1
-	},
-/obj/effect/turf_decal/borderfloorblack,
-/obj/machinery/door/firedoor/border_only,
-/obj/item/attachment/ammo_counter,
-/obj/item/attachment/ammo_counter,
-/obj/item/attachment/rail_light,
-/obj/item/attachment/rail_light,
-/obj/item/attachment/bayonet,
-/obj/item/attachment/bayonet,
-/obj/item/attachment/scope,
-/obj/item/attachment/scope,
-/obj/structure/closet/wall/red/directional/east{
-	name = "closet (gun shit)"
-	},
-/obj/item/ammo_box/magazine/m556_42_hydra/extended,
-/obj/item/ammo_box/magazine/m556_42_hydra/extended,
-/obj/item/ammo_box/magazine/m556_42_hydra/extended,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m57_39_sidewinder,
-/obj/item/ammo_box/magazine/m57_39_sidewinder,
-/obj/item/ammo_box/magazine/m57_39_sidewinder,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
 /turf/open/floor/plasteel/dark,
-/area/outpost/crew/law_office)
+/area/outpost/vacant_rooms/office)
 "IE" = (
 /obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/east,
@@ -15917,6 +16017,22 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/starboard)
+"Jp" = (
+/obj/effect/turf_decal/siding/wood/end{
+	color = "#D2BC9D"
+	},
+/obj/structure/noticeboard{
+	dir = 1;
+	pixel_x = 1;
+	pixel_y = -26
+	},
+/obj/item/mob_trophy/blaster_tubes{
+	pixel_x = 0;
+	pixel_y = -25;
+	desc = "The divine weapon of a fallen god, apparently. Reclaimed from NGR R&D for display purposes after being deemed inert and "far less cool than the vocal cords". Nearby signage indicates in no uncertain terms that Hecatia Tokamak fought and slew a God with a hunting rifle meant for small game and that you should totally ask her about it."
+	},
+/turf/open/floor/wood/maple,
+/area/outpost/crew/library)
 "Jq" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -16121,45 +16237,21 @@
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
 "Kd" = (
-/obj/structure/window/reinforced/spawner,
-/obj/structure/closet/secure_closet/armorycage,
-/obj/item/clothing/mask/gas/syndicate,
-/obj/item/clothing/under/syndicate/combat,
-/obj/effect/turf_decal/corner/opaque/syndiered{
-	dir = 6
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 4
 	},
-/obj/item/storage/toolbox/ammo/c10mm,
-/obj/effect/turf_decal/borderfloorblack{
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 8
 	},
-/obj/item/storage/box/ammo/a12g_blank,
-/obj/item/storage/box/ammo/a12g_blank,
-/obj/item/storage/box/ammo/a12g_blank,
-/obj/machinery/door/firedoor/border_only,
-/obj/item/clothing/suit/space/hardsuit/syndi/old{
-	alt_desc = "A dual-mode, once advanced hardsuit designed for special combat operations. So severely damaged, it is no longer spaceproof. It is in travel mode. Produced by the Gorlex Marauders. A patch bearing the insignia of Scarlet Sky and the words 'SCARLET DREAMS' is visible on the shoulder.";
-	desc = "A dual-mode, once advanced hardsuit designed for special combat operations. So severely damaged, it is no longer spaceproof. It is in what was once EVA mode. Produced by the Gorlex Marauders. A patch bearing the insignia of Scarlet Sky and the words 'SCARLET DREAMS' is visible on the shoulder."
+/obj/machinery/door/airlock/grunge{
+	dir = 4;
+	id_tag = "tokamak_dorm"
 	},
-/obj/item/clothing/suit/armor/vest/marine/medium,
-/obj/item/clothing/head/helmet/riot{
-	name = "medium tactical helmet";
-	desc = "A reinforced helmet meant for crowd control, with a bulletproof plexiglass visor to shield the face. Now used as part of the ass-kicking outfit."
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
-/obj/item/clothing/suit/armor/ngr,
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr{
-	desc = "A modified version of widely-used optical meson scanners, with a flash-proof tint and integrated security HUD. Unfortunately, the opaque visor disables the meson functionality. Mount on helmet for maximum fashion."
-	},
-/obj/item/clothing/head/helmet/ngr,
-/obj/item/storage/toolbox/ammo/c45,
-/obj/item/storage/toolbox/ammo/c57,
-/obj/item/storage/toolbox/ammo/c556,
-/obj/item/shield/heavy{
-	name = "Iron Horus";
-	desc = "A huge lump of plasteel designed to protect its carrier. IRON HORUS is engraved on it, alongside the insignia of Scarlet Sky Securities."
-	},
-/obj/item/storage/toolbox/ammo/shotgun,
-/turf/open/floor/plasteel/dark,
-/area/outpost/crew/law_office)
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/vacant_rooms/office)
 "Kg" = (
 /obj/machinery/atmospherics/components/unary/vent_pump,
 /obj/machinery/button/door{
@@ -16351,6 +16443,16 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/outpost/maintenance/starboard)
+"Ky" = (
+/obj/machinery/button/door{
+	dir = 4;
+	pixel_x = 12;
+	pixel_y = 1;
+	name = "armory lockdown";
+	id = "addust_bunker_armoury"
+	},
+/turf/closed/wall/concrete/reinforced,
+/area/outpost/crew/lounge)
 "Kz" = (
 /turf/open/floor/plating/asteroid/sand/dense/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -16465,6 +16567,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/chair/plastic,
 /turf/open/floor/concrete/tiles,
 /area/outpost/cargo)
 "KP" = (
@@ -16568,10 +16671,6 @@
 	},
 /obj/effect/turf_decal/box/corners{
 	dir = 1
-	},
-/obj/structure/sign/warning{
-	pixel_x = 0;
-	pixel_y = -24
 	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
@@ -17068,22 +17167,25 @@
 	},
 /turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"Mk" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#D2BC9D";
+"Mj" = (
+/obj/structure/disposalpipe/segment{
 	dir = 8
 	},
-/obj/machinery/button/door{
-	dir = 4;
-	pixel_x = -20;
-	pixel_y = 6;
-	id = "tokamak_dorm";
-	name = "quarters lock";
-	specialfunctions = 4
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
-/obj/machinery/light/small/directional/west,
-/turf/open/floor/wood/maple,
-/area/outpost/crew/law_office)
+/obj/machinery/light/dim/directional/south,
+/turf/open/floor/wood/walnut,
+/area/ruin/beach/gunsmith)
+"Mk" = (
+/obj/structure/table/wood/reinforced,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8;
+	color = "#332521"
+	},
+/obj/structure/window/reinforced/spawner,
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "Ml" = (
 /obj/structure/table/wood/reinforced,
 /obj/machinery/computer/libraryconsole,
@@ -17815,12 +17917,21 @@
 	id = "addust_bunker_panic";
 	name = "Emergency Shelter Lockdown";
 	pixel_x = -20;
-	pixel_y = 7
+	pixel_y = 10
 	},
 /obj/machinery/modular_computer/console/preset/command{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/door{
+	name = "workshop blast door override";
+	desc = "A door remote control switch. It is not a matter of if the workshop explodes, but when.";
+	pixel_x = -20;
+	pixel_y = -8;
+	dir = 4;
+	id = "addust_fuck";
+	layer = 2.8
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/dorm)
 "NL" = (
@@ -18237,13 +18348,14 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/maintenance/starboard)
 "OC" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#D2BC9D";
-	dir = 10
+/obj/machinery/vending/boozeomat/all_access{
+	dir = 8;
+	pixel_x = 8;
+	pixel_y = 0;
+	density = 0
 	},
-/obj/machinery/firealarm/directional/west,
-/turf/open/floor/wood/maple,
-/area/outpost/crew/law_office)
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "OD" = (
 /turf/open/floor/plasteel/stairs/wood/walnut/right,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -20071,6 +20183,17 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/ruin/beach/piratecrash/storage)
+"SF" = (
+/obj/machinery/button/door{
+	name = "emergency blast door";
+	desc = "A door remote control switch. It is not a matter of if the workshop explodes, but when.";
+	pixel_x = 11;
+	pixel_y = 10;
+	dir = 4;
+	id = "addust_fuck"
+	},
+/turf/closed/wall/concrete/reinforced,
+/area/outpost/security/armory)
 "SG" = (
 /obj/structure/railing{
 	dir = 10;
@@ -20398,33 +20521,11 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "Tr" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1;
-	color = "#332521"
+/obj/item/computer_hardware/battery{
+	pixel_x = 31;
+	pixel_y = -2
 	},
-/obj/structure/filingcabinet/double{
-	pixel_x = 0;
-	pixel_y = 19;
-	density = 0
-	},
-/obj/item/clipboard{
-	pixel_x = 0;
-	pixel_y = 2
-	},
-/obj/item/paper/fluff/ruins{
-	pixel_x = -11;
-	pixel_y = 5;
-	default_raw_text = "<h1>TODO:</h1>-Remind the new people that love is one of us<br>-Negotiate hydra shipment proceeds with love's boss<br>-See about getting a new salt supplier<br>-Plaster more warning signs by the explosives";
-	name = "old to-do list";
-	desc = "Probably from the last owners."
-	},
-/obj/item/paper/fluff/ruins{
-	pixel_x = -11;
-	pixel_y = -9;
-	default_raw_text = "remind rei to replace my damn stash floorboards by the south wall";
-	name = "reminder"
-	},
-/turf/open/floor/wood/ebony,
+/turf/open/floor/mineral/plastitanium,
 /area/outpost/security/armory)
 "Ts" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20530,6 +20631,38 @@
 	},
 /turf/open/water/beach/deep,
 /area/ruin/beach/gunsmith)
+"TD" = (
+/obj/structure/window/reinforced/spawner,
+/obj/structure/closet/secure_closet/armorycage,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/under/syndicate/combat,
+/obj/machinery/door/firedoor/border_only,
+/obj/item/clothing/suit/space/hardsuit/syndi/old{
+	alt_desc = "A dual-mode, once advanced hardsuit designed for special combat operations. So severely damaged, it is no longer spaceproof. It is in travel mode. Produced by the Gorlex Marauders. A patch bearing the insignia of Scarlet Sky and the words 'SCARLET DREAMS' is visible on the shoulder.";
+	desc = "A dual-mode, once advanced hardsuit designed for special combat operations. So severely damaged, it is no longer spaceproof. It is in what was once EVA mode. Produced by the Gorlex Marauders. A patch bearing the insignia of Scarlet Sky and the words 'SCARLET DREAMS' is visible on the shoulder."
+	},
+/obj/item/clothing/suit/armor/vest/marine/medium,
+/obj/item/clothing/head/helmet/riot{
+	name = "medium tactical helmet";
+	desc = "A reinforced helmet meant for crowd control, with a bulletproof plexiglass visor to shield the face. Now used as part of the ass-kicking outfit."
+	},
+/obj/item/shield/heavy{
+	name = "Iron Horus";
+	desc = "A huge lump of plasteel designed to protect its carrier. IRON HORUS is engraved on it, alongside the insignia of Scarlet Sky Securities."
+	},
+/obj/effect/turf_decal/borderfloorblack,
+/obj/effect/turf_decal/corner/opaque/syndiered{
+	dir = 5
+	},
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
+/obj/item/clothing/head/helmet/m10/inteq,
+/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
+/obj/item/storage/belt/security/webbing/inteq/alt,
+/obj/item/storage/belt/military/assault,
+/obj/item/clothing/suit/armor/vest,
+/obj/item/clothing/suit/armor/vest/bulletproof,
+/turf/open/floor/plasteel/dark,
+/area/outpost/vacant_rooms/office)
 "TE" = (
 /obj/effect/turf_decal/stairs_wood{
 	dir = 1;
@@ -20938,7 +21071,7 @@
 	color = "#D2BC9D"
 	},
 /obj/structure/cable{
-	icon_state = "1-2"
+	icon_state = "1-4"
 	},
 /turf/open/floor/wood/maple,
 /area/outpost/crew/library)
@@ -21034,15 +21167,6 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/aft)
-"UJ" = (
-/obj/structure/table/wood/reinforced,
-/obj/effect/turf_decal/siding/wood{
-	dir = 8;
-	color = "#332521"
-	},
-/obj/structure/window/reinforced/spawner,
-/turf/open/floor/wood/ebony,
-/area/outpost/crew/bar)
 "UK" = (
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/crew)
@@ -21164,14 +21288,12 @@
 	},
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "UY" = (
-/obj/structure/window/reinforced/spawner,
-/obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
-	dir = 4
+/obj/effect/turf_decal/siding/wood/end{
+	color = "#D2BC9D";
+	dir = 8
 	},
-/obj/effect/turf_decal/borderfloorblack/corner,
-/obj/machinery/door/firedoor/border_only,
-/turf/open/floor/plasteel/dark,
-/area/outpost/crew/law_office)
+/turf/open/floor/carpet/red_gold,
+/area/outpost/vacant_rooms/office)
 "UZ" = (
 /obj/structure/flora/driftwood,
 /turf/open/water/beach/deep,
@@ -21196,15 +21318,40 @@
 /turf/open/floor/engine/air,
 /area/outpost/maintenance/starboard)
 "Vc" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4;
-	color = "#332521"
+/obj/structure/table/chem,
+/obj/item/bodypart/head/ipc/humaniform{
+	pixel_x = 0;
+	pixel_y = 2;
+	name = "\improper HT-C03H: Hecate";
+	desc = "The face of a goddess. The eyes and insides of the mouth are missing. At least it has hair."
 	},
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8;
-	color = "#332521"
+/obj/item/bodypart/chest/ipc/custombishop{
+	name = "\improper HT-C03C: Hecate";
+	desc = "The chest of a goddess. Maybe. Hard to tell with the chest hatch open and every internal component except for the framework missing."
 	},
-/turf/open/floor/wood/ebony,
+/obj/item/bodypart/l_arm/ipc/customatua{
+	name = "\improper HT-C03A: Hecate";
+	desc = "The hand of a goddess. Mounted to the core, but with the bolts missing you could just take it off and go slap someone with it."
+	},
+/obj/item/bodypart/leg/left/ipc/customatua{
+	pixel_x = 0;
+	pixel_y = -4;
+	name = "\improper HT-C03L: Hecate";
+	desc = "The legs of a goddess. This one is actually complete and could be used right now."
+	},
+/obj/item/bodypart/leg/right/ipc/customatua{
+	pixel_x = -2;
+	pixel_y = -3;
+	name = "\improper HT-C03L: Hecate";
+	desc = "The legs of a goddess. The skin has been taken off, revealing what seems to be a suspension strut. Dear god."
+	},
+/obj/item/bodypart/r_arm/ipc/customatua{
+	pixel_x = -3;
+	pixel_y = -2;
+	name = "\improper HT-C03A: Hecate";
+	desc = "The hand of a goddess, but not really since the skin and everything below the wrist is missing."
+	},
+/turf/open/floor/mineral/plastitanium,
 /area/outpost/security/armory)
 "Vd" = (
 /obj/structure/chair/plastic{
@@ -21316,11 +21463,23 @@
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/lounge)
 "Vs" = (
-/mob/living/simple_animal/hostile/asteroid/lobstrosity/beach{
-	desc = "A marvel of evolution gone wrong, on the tropical beaches, it's diet of crabs makes it have a red hued shell. This poor bastard probably got lit up by the turrets."
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_x = 19;
+	pixel_y = -12
 	},
-/turf/open/floor/plating/asteroid/dirt/grass/beach,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/table/wood/reinforced,
+/obj/machinery/chem_dispenser/drinks/fullupgrade{
+	dir = 8;
+	pixel_x = 0;
+	pixel_y = 6
+	},
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "Vt" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile/shuttle,
@@ -21550,12 +21709,15 @@
 /turf/open/floor/wood/maple,
 /area/ruin/beach/gunsmith)
 "VS" = (
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/machinery/door/poddoor/shutters{
-	id = "exchangewindows"
+/obj/effect/turf_decal/siding/wood{
+	dir = 1;
+	color = "#D2BC9D"
 	},
-/turf/open/floor/plating,
-/area/outpost/security/armory)
+/obj/structure/cable{
+	icon_state = "5-8"
+	},
+/turf/open/floor/wood/maple,
+/area/outpost/vacant_rooms/office)
 "VT" = (
 /obj/effect/turf_decal/road{
 	dir = 4
@@ -21857,7 +22019,10 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east{
+	pixel_x = 25;
+	pixel_y = 1
+	},
 /obj/machinery/light_switch{
 	dir = 8;
 	pixel_x = 19;
@@ -22575,14 +22740,8 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/central)
 "Yk" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 10;
-	color = "#332521"
-	},
-/obj/structure/chair/office/dark,
 /obj/item/radio/intercom/wideband/directional/west,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood/ebony,
+/turf/open/floor/mineral/plastitanium,
 /area/outpost/security/armory)
 "Ym" = (
 /obj/structure/cable{
@@ -22728,19 +22887,10 @@
 /turf/open/floor/suns,
 /area/ruin/beach/gunsmith)
 "YF" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 9;
-	color = "#332521"
-	},
-/obj/structure/noticeboard{
-	pixel_x = -28;
-	pixel_y = -1;
-	dir = 4
-	},
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2{
 	dir = 1
 	},
-/turf/open/floor/wood/ebony,
+/turf/open/floor/mineral/plastitanium,
 /area/outpost/security/armory)
 "YG" = (
 /obj/structure/platform/wood{
@@ -22759,21 +22909,20 @@
 /area/ruin/beach/gunsmith)
 "YH" = (
 /obj/effect/turf_decal/siding/wood{
-	dir = 6;
-	color = "#D2BC9D"
+	color = "#D2BC9D";
+	dir = 8
 	},
-/obj/structure/bed/double,
-/obj/item/bedsheet/double/rainbow{
-	icon_state = "double_sheetsyndie";
-	name = "double coalition bedsheet";
-	desc = "A blood-red bedsheet bearing the insignia of the Syndicate Coalition. It seems to have an aura of remembrance around it."
+/obj/machinery/button/door{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 6;
+	id = "tokamak_dorm";
+	name = "quarters lock";
+	specialfunctions = 4
 	},
-/obj/item/toy/plush/landmine{
-	pixel_x = 5;
-	pixel_y = -3
-	},
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/wood/maple,
-/area/outpost/crew/law_office)
+/area/outpost/vacant_rooms/office)
 "YI" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -23422,6 +23571,16 @@ Za
 Za
 Za
 Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
 "}
 (2,1,1) = {"
 Za
@@ -23429,23 +23588,20 @@ MP
 MP
 MP
 MP
+MP
+MP
+MP
+MP
+MP
 Xu
 Xu
-Xu
+am
+am
 am
 Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-am
-am
-am
-am
-am
-am
-am
 am
 am
 MP
@@ -23515,11 +23671,24 @@ MP
 MP
 MP
 MP
-Hk
-Hk
-Hk
-Hk
-Hk
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+Kz
+Kz
+am
+am
+am
+am
 Hk
 Hk
 Hk
@@ -23546,8 +23715,13 @@ MP
 MP
 MP
 MP
+MP
+MP
+MP
+MP
 Xu
 Xu
+Xu
 am
 am
 Hk
@@ -23555,14 +23729,6 @@ Hk
 Hk
 Hk
 Hk
-Hk
-am
-am
-am
-am
-am
-am
-am
 am
 MP
 MP
@@ -23630,13 +23796,26 @@ MP
 MP
 MP
 MP
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+Kz
+Kz
+am
+am
+am
+am
 Hk
 Hk
 Hk
@@ -23662,6 +23841,11 @@ Za
 MP
 MP
 MP
+MP
+MP
+MP
+MP
+MP
 Xu
 Xu
 Xu
@@ -23672,88 +23856,93 @@ Hk
 Hk
 Hk
 Hk
-Hk
+am
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+So
+Kz
+Kz
 am
 am
 am
 am
-am
-am
-am
-am
-am
-Xu
-Xu
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-Os
-Os
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-MP
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
 Hk
 Hk
 Hk
@@ -23779,6 +23968,1276 @@ Za
 MP
 MP
 MP
+MP
+MP
+MP
+MP
+Xu
+Xu
+Xu
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+am
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+Kz
+Kz
+Kz
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Za
+"}
+(6,1,1) = {"
+Za
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+Xu
+Xu
+Xu
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+am
+am
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+So
+Kz
+Kz
+Kz
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Za
+"}
+(7,1,1) = {"
+Za
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+Xu
+Xu
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+am
+am
+am
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+Kz
+Kz
+Kz
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Za
+"}
+(8,1,1) = {"
+Za
+MP
+MP
+MP
+MP
+MP
+MP
+Xu
+Xu
+Xu
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+am
+am
+am
+am
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+Kz
+Kz
+Kz
+am
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Za
+"}
+(9,1,1) = {"
+Za
+MP
+MP
+MP
+MP
+MP
+MP
+Xu
+Xu
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+am
+am
+am
+am
+am
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+Kz
+Kz
+Kz
+Kz
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Za
+"}
+(10,1,1) = {"
+Za
+MP
+MP
+MP
+MP
+MP
+Xu
+Xu
+Xu
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+am
+am
+am
+am
+am
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+Kz
+Kz
+Kz
+Kz
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Za
+"}
+(11,1,1) = {"
+Za
+MP
+MP
+MP
+MP
+MP
+Xu
+Xu
+Xu
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+am
+am
+am
+am
+am
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+Kz
+Kz
+Kz
+Kz
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Za
+"}
+(12,1,1) = {"
+Za
+MP
+MP
+MP
+MP
+Xu
+Xu
+Xu
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+am
+am
+am
+am
+am
+am
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+So
+Kz
+Kz
+Kz
+Kz
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Za
+"}
+(13,1,1) = {"
+Za
+MP
+MP
+MP
+MP
+Xu
+Xu
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+am
+am
+am
+am
+am
+am
+am
+am
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+So
+Kz
+Kz
+Kz
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Za
+"}
+(14,1,1) = {"
+Za
+MP
+MP
+MP
+Xu
+Xu
+Xu
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+am
+am
+am
+am
+am
+am
+am
+am
+am
+Xu
+Xu
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+Os
+Os
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+MP
+So
+So
+So
+So
+Kz
+Kz
+Kz
+Kz
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Za
+"}
+(15,1,1) = {"
+Za
+MP
+MP
+MP
 Xu
 Xu
 am
@@ -23860,8 +25319,18 @@ MP
 MP
 MP
 MP
+So
+So
+So
+So
+Kz
+Kz
+Kz
+Kz
 am
-Hk
+am
+am
+am
 Hk
 Hk
 Hk
@@ -23891,7 +25360,7 @@ Hk
 Hk
 Za
 "}
-(6,1,1) = {"
+(16,1,1) = {"
 Za
 MP
 MP
@@ -23976,6 +25445,16 @@ MP
 xQ
 MP
 MP
+So
+So
+So
+So
+Kz
+Kz
+Kz
+Kz
+am
+am
 am
 am
 Hk
@@ -24008,7 +25487,7 @@ Hk
 Hk
 Za
 "}
-(7,1,1) = {"
+(17,1,1) = {"
 Za
 MP
 MP
@@ -24092,10 +25571,20 @@ JT
 xQ
 JT
 MP
+So
+So
+So
+So
+Kz
+Kz
+Kz
+Kz
 am
 am
 am
 am
+Hk
+Hk
 Hk
 Hk
 Hk
@@ -24125,7 +25614,7 @@ Hk
 Hk
 Za
 "}
-(8,1,1) = {"
+(18,1,1) = {"
 Za
 MP
 MP
@@ -24208,11 +25697,21 @@ xQ
 xQ
 xQ
 xQ
+So
+So
+So
+So
+Kz
+Kz
 Kz
 Kz
 am
 am
 am
+am
+Hk
+Hk
+Hk
 Hk
 Hk
 Hk
@@ -24242,7 +25741,7 @@ Hk
 Hk
 Za
 "}
-(9,1,1) = {"
+(19,1,1) = {"
 Za
 MP
 MP
@@ -24325,11 +25824,21 @@ JT
 xQ
 xQ
 So
+So
+So
+So
+Kz
+Kz
 Kz
 Kz
 am
 am
 am
+Hk
+Hk
+Hk
+Hk
+Hk
 Hk
 Hk
 Hk
@@ -24359,7 +25868,7 @@ Hk
 Hk
 Za
 "}
-(10,1,1) = {"
+(20,1,1) = {"
 Za
 MP
 MP
@@ -24442,11 +25951,21 @@ xQ
 JT
 So
 So
+So
+So
 Kz
 Kz
+Kz
 am
 am
 am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Hk
 Hk
 Hk
@@ -24476,7 +25995,7 @@ Hk
 Hk
 Za
 "}
-(11,1,1) = {"
+(21,1,1) = {"
 Za
 MP
 MP
@@ -24559,12 +26078,22 @@ MP
 MP
 So
 So
+So
+Kz
 Kz
 Kz
 Kz
 am
 am
 am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Hk
 Hk
 Hk
@@ -24593,7 +26122,7 @@ Hk
 Hk
 Za
 "}
-(12,1,1) = {"
+(22,1,1) = {"
 Za
 MP
 MP
@@ -24676,7 +26205,7 @@ MP
 So
 So
 So
-Kz
+So
 Kz
 Kz
 Kz
@@ -24708,9 +26237,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(13,1,1) = {"
+(23,1,1) = {"
 Za
 MP
 MP
@@ -24825,9 +26364,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(14,1,1) = {"
+(24,1,1) = {"
 Za
 MP
 MP
@@ -24942,9 +26491,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(15,1,1) = {"
+(25,1,1) = {"
 Za
 MP
 Xu
@@ -25059,9 +26618,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(16,1,1) = {"
+(26,1,1) = {"
 Za
 MP
 Xu
@@ -25176,9 +26745,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(17,1,1) = {"
+(27,1,1) = {"
 Za
 MP
 Xu
@@ -25293,9 +26872,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(18,1,1) = {"
+(28,1,1) = {"
 Za
 MP
 Xu
@@ -25410,9 +26999,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(19,1,1) = {"
+(29,1,1) = {"
 Za
 MP
 Xu
@@ -25527,9 +27126,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(20,1,1) = {"
+(30,1,1) = {"
 Za
 MP
 Xu
@@ -25644,9 +27253,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(21,1,1) = {"
+(31,1,1) = {"
 Za
 Xu
 Xu
@@ -25761,9 +27380,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(22,1,1) = {"
+(32,1,1) = {"
 Za
 Xu
 Xu
@@ -25878,9 +27507,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(23,1,1) = {"
+(33,1,1) = {"
 Za
 Xu
 Xu
@@ -25995,9 +27634,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(24,1,1) = {"
+(34,1,1) = {"
 Za
 Xu
 Xu
@@ -26112,9 +27761,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(25,1,1) = {"
+(35,1,1) = {"
 Za
 Xu
 Xu
@@ -26217,7 +27876,7 @@ Hd
 bU
 ac
 bk
-OM
+HK
 Rp
 zW
 Hk
@@ -26229,9 +27888,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(26,1,1) = {"
+(36,1,1) = {"
 Za
 Xu
 Xu
@@ -26346,9 +28015,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(27,1,1) = {"
+(37,1,1) = {"
 Za
 Xu
 am
@@ -26463,9 +28142,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(28,1,1) = {"
+(38,1,1) = {"
 Za
 Xu
 am
@@ -26580,9 +28269,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(29,1,1) = {"
+(39,1,1) = {"
 Za
 Xu
 am
@@ -26697,9 +28396,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(30,1,1) = {"
+(40,1,1) = {"
 Za
 Xu
 am
@@ -26814,9 +28523,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(31,1,1) = {"
+(41,1,1) = {"
 Za
 Xu
 am
@@ -26931,9 +28650,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(32,1,1) = {"
+(42,1,1) = {"
 Za
 Xu
 am
@@ -27048,9 +28777,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(33,1,1) = {"
+(43,1,1) = {"
 Za
 Xu
 am
@@ -27165,9 +28904,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(34,1,1) = {"
+(44,1,1) = {"
 Za
 am
 am
@@ -27207,7 +28956,7 @@ uh
 IN
 wB
 Lc
-zm
+dt
 iK
 jD
 Js
@@ -27282,9 +29031,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(35,1,1) = {"
+(45,1,1) = {"
 Za
 am
 am
@@ -27399,9 +29158,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(36,1,1) = {"
+(46,1,1) = {"
 Za
 am
 am
@@ -27441,7 +29210,7 @@ Lq
 DY
 pV
 Gl
-nL
+BH
 YF
 Yk
 cq
@@ -27516,9 +29285,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(37,1,1) = {"
+(47,1,1) = {"
 Za
 am
 am
@@ -27562,7 +29341,7 @@ zm
 Tr
 Gv
 uo
-VS
+zm
 HU
 HU
 HU
@@ -27633,9 +29412,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(38,1,1) = {"
+(48,1,1) = {"
 Za
 am
 am
@@ -27679,7 +29468,7 @@ zm
 yI
 Vc
 bN
-zm
+yD
 HU
 eo
 HU
@@ -27750,9 +29539,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(39,1,1) = {"
+(49,1,1) = {"
 Za
 am
 Hk
@@ -27791,12 +29590,12 @@ zm
 zm
 zm
 aa
+SF
 zm
 zm
-pw
-zc
 zm
-yD
+zm
+zm
 HU
 Kk
 eV
@@ -27867,9 +29666,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(40,1,1) = {"
+(50,1,1) = {"
 Za
 am
 Hk
@@ -27984,9 +29793,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(41,1,1) = {"
+(51,1,1) = {"
 Za
 am
 Hk
@@ -28037,13 +29856,13 @@ uX
 hO
 xS
 WI
-Md
-zf
-zf
-uD
-zf
-zf
-zf
+aL
+aL
+aL
+Kd
+aL
+aL
+aL
 Uk
 kI
 VO
@@ -28075,7 +29894,7 @@ Rg
 Rg
 Rg
 Rg
-Ub
+qW
 bp
 RI
 Is
@@ -28101,9 +29920,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(42,1,1) = {"
+(52,1,1) = {"
 Za
 am
 Hk
@@ -28153,14 +29982,14 @@ NP
 NP
 NP
 ul
-lJ
-zf
-zf
-Kd
-lz
-Mk
-OC
-If
+aL
+aL
+rj
+TD
+il
+YH
+Gc
+zc
 KW
 IQ
 Su
@@ -28218,9 +30047,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(43,1,1) = {"
+(53,1,1) = {"
 Za
 am
 Hk
@@ -28269,15 +30108,15 @@ hO
 hO
 hO
 qk
-sk
-co
-zf
-rj
+Mj
+aL
+og
+vS
+ID
+VS
 UY
-BH
-lh
-OQ
-If
+pD
+zc
 KW
 TG
 VO
@@ -28335,9 +30174,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(44,1,1) = {"
+(54,1,1) = {"
 Za
 am
 Hk
@@ -28387,17 +30236,17 @@ He
 cg
 hO
 sk
-Md
-zf
-rM
-ID
-Gc
-jy
+aL
+iZ
 xj
-zf
+iB
+Dr
+zK
+rM
+aL
 Ih
 dz
-Bk
+nw
 oP
 xK
 xK
@@ -28452,9 +30301,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(45,1,1) = {"
+(55,1,1) = {"
 Za
 Hk
 Hk
@@ -28508,10 +30367,10 @@ PJ
 PJ
 PJ
 PJ
-il
-vS
-YH
-zf
+If
+jy
+kJ
+aL
 TA
 jE
 Bk
@@ -28569,9 +30428,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(46,1,1) = {"
+(56,1,1) = {"
 Za
 Hk
 Hk
@@ -28614,7 +30483,7 @@ Pz
 Pz
 Pz
 Pz
-Pz
+nh
 HU
 zb
 Fe
@@ -28626,9 +30495,9 @@ se
 GC
 PJ
 PJ
-zf
-zf
-zf
+aL
+aL
+aL
 yW
 mM
 xn
@@ -28686,9 +30555,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(47,1,1) = {"
+(57,1,1) = {"
 Za
 Hk
 Hk
@@ -28803,9 +30682,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(48,1,1) = {"
+(58,1,1) = {"
 Za
 Hk
 Hk
@@ -28858,7 +30747,7 @@ YI
 Cr
 iU
 Uw
-iB
+Jp
 PJ
 gs
 xa
@@ -28920,9 +30809,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(49,1,1) = {"
+(59,1,1) = {"
 Za
 Hk
 Hk
@@ -28974,7 +30873,7 @@ hO
 sk
 PJ
 cp
-ZE
+hL
 gX
 PJ
 UO
@@ -29037,9 +30936,19 @@ Ux
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(50,1,1) = {"
+(60,1,1) = {"
 Za
 Hk
 Hk
@@ -29091,7 +31000,7 @@ eA
 tp
 dJ
 qH
-ZE
+pw
 hb
 PJ
 NH
@@ -29154,9 +31063,19 @@ Sd
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(51,1,1) = {"
+(61,1,1) = {"
 Za
 Hk
 Hk
@@ -29271,9 +31190,19 @@ gQ
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(52,1,1) = {"
+(62,1,1) = {"
 Za
 Hk
 Hk
@@ -29388,9 +31317,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(53,1,1) = {"
+(63,1,1) = {"
 Za
 Hk
 Hk
@@ -29502,12 +31441,22 @@ am
 am
 am
 am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Hk
 Hk
 Hk
 Za
 "}
-(54,1,1) = {"
+(64,1,1) = {"
 Za
 Hk
 Hk
@@ -29619,12 +31568,22 @@ am
 am
 am
 am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Hk
 Hk
 Hk
 Za
 "}
-(55,1,1) = {"
+(65,1,1) = {"
 Za
 Hk
 Hk
@@ -29737,11 +31696,21 @@ am
 am
 am
 am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Hk
 Hk
 Za
 "}
-(56,1,1) = {"
+(66,1,1) = {"
 Za
 Hk
 Hk
@@ -29855,10 +31824,20 @@ am
 am
 am
 am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Hk
 Za
 "}
-(57,1,1) = {"
+(67,1,1) = {"
 Za
 Hk
 Hk
@@ -29973,9 +31952,19 @@ am
 am
 am
 am
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(58,1,1) = {"
+(68,1,1) = {"
 Za
 Hk
 Hk
@@ -30090,9 +32079,19 @@ am
 am
 am
 am
+am
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(59,1,1) = {"
+(69,1,1) = {"
 Za
 Hk
 Hk
@@ -30207,9 +32206,19 @@ am
 am
 am
 am
+am
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(60,1,1) = {"
+(70,1,1) = {"
 Za
 Hk
 Hk
@@ -30324,9 +32333,19 @@ am
 am
 Kz
 Kz
+Kz
+Kz
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(61,1,1) = {"
+(71,1,1) = {"
 Za
 Hk
 Hk
@@ -30441,9 +32460,19 @@ Kz
 Kz
 Kz
 Kz
+Kz
+Kz
+Kz
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(62,1,1) = {"
+(72,1,1) = {"
 Za
 Hk
 Hk
@@ -30558,9 +32587,19 @@ Kz
 Kz
 Kz
 So
+Kz
+Kz
+Kz
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(63,1,1) = {"
+(73,1,1) = {"
 Za
 Hk
 Hk
@@ -30675,9 +32714,19 @@ So
 Kz
 So
 So
+So
+Kz
+Kz
+Kz
+Kz
+am
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(64,1,1) = {"
+(74,1,1) = {"
 Za
 Hk
 Hk
@@ -30792,9 +32841,19 @@ So
 So
 So
 So
+So
+Kz
+Kz
+Kz
+Kz
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(65,1,1) = {"
+(75,1,1) = {"
 Za
 Hk
 Hk
@@ -30903,15 +32962,25 @@ VW
 Tj
 Tj
 VW
-TF
-TF
+Tj
+Tj
 VW
 TF
 TF
 VW
+TF
+TF
+VW
+Pw
+Pw
+VW
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(66,1,1) = {"
+(76,1,1) = {"
 Za
 Hk
 Hk
@@ -31026,9 +33095,19 @@ WN
 WN
 ZI
 So
+So
+So
+So
+Kz
+Kz
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(67,1,1) = {"
+(77,1,1) = {"
 Za
 Hk
 Hk
@@ -31143,9 +33222,19 @@ WN
 WN
 WN
 WN
+So
+So
+Kz
+Kz
+am
+am
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(68,1,1) = {"
+(78,1,1) = {"
 Za
 Hk
 Hk
@@ -31260,9 +33349,19 @@ WN
 WN
 ju
 WN
+WN
+So
+Kz
+Kz
+Kz
+am
+am
+Hk
+Hk
+Hk
 Za
 "}
-(69,1,1) = {"
+(79,1,1) = {"
 Za
 Hk
 Hk
@@ -31377,9 +33476,19 @@ Rg
 XZ
 WN
 WN
+WN
+So
+Kz
+Kz
+Kz
+Kz
+am
+Hk
+Hk
+Hk
 Za
 "}
-(70,1,1) = {"
+(80,1,1) = {"
 Za
 Hk
 Hk
@@ -31494,9 +33603,19 @@ Rg
 WN
 WN
 Um
+So
+So
+Kz
+Kz
+Kz
+Kz
+am
+Hk
+Hk
+Hk
 Za
 "}
-(71,1,1) = {"
+(81,1,1) = {"
 Za
 Hk
 Hk
@@ -31611,9 +33730,19 @@ Rg
 WN
 WN
 WN
+So
+So
+So
+Kz
+Kz
+Kz
+am
+am
+Hk
+Hk
 Za
 "}
-(72,1,1) = {"
+(82,1,1) = {"
 Za
 Hk
 Hk
@@ -31728,9 +33857,19 @@ Rg
 Zc
 WN
 WN
+WN
+lh
+lh
+JV
+JV
+JV
+GA
+GA
+Ls
+Ls
 Za
 "}
-(73,1,1) = {"
+(83,1,1) = {"
 Za
 Hk
 Hk
@@ -31845,9 +33984,19 @@ Rg
 Rg
 Rg
 Rg
+Rg
+Rg
+Rg
+Rg
+Rg
+Rg
+Rg
+Rg
+Rg
+Rg
 Za
 "}
-(74,1,1) = {"
+(84,1,1) = {"
 Za
 Hk
 Hk
@@ -31883,8 +34032,8 @@ Sa
 Rr
 hW
 Ci
-UJ
-aL
+Mk
+uD
 ft
 aw
 aw
@@ -31962,9 +34111,19 @@ sU
 CZ
 Mh
 Mh
+Mh
+Mh
+sU
+sU
+Mh
+Mh
+Mh
+Mh
+sU
+sU
 Za
 "}
-(75,1,1) = {"
+(85,1,1) = {"
 Za
 Hk
 Hk
@@ -32001,7 +34160,7 @@ Rr
 GF
 pC
 cP
-kJ
+lz
 ft
 MP
 zP
@@ -32079,9 +34238,19 @@ PZ
 PZ
 QW
 QW
+QW
+QW
+PZ
+PZ
+QW
+QW
+QW
+QW
+PZ
+PZ
 Za
 "}
-(76,1,1) = {"
+(86,1,1) = {"
 Za
 Hk
 Hk
@@ -32116,9 +34285,9 @@ ft
 rK
 Lo
 wp
-yY
-iZ
-ca
+nL
+Vs
+OC
 ft
 MP
 SU
@@ -32196,9 +34365,19 @@ Rg
 Rg
 Rg
 Rg
+Rg
+Rg
+Rg
+Rg
+Rg
+Rg
+Rg
+Rg
+Rg
+Rg
 Za
 "}
-(77,1,1) = {"
+(87,1,1) = {"
 Za
 Hk
 Hk
@@ -32313,9 +34492,19 @@ WN
 WN
 XZ
 ds
+WN
+AQ
+AQ
+AQ
+AQ
+iF
+iF
+vc
+qz
+qz
 Za
 "}
-(78,1,1) = {"
+(88,1,1) = {"
 Za
 Hk
 Hk
@@ -32428,11 +34617,21 @@ qN
 qN
 WN
 WN
-Vs
 WN
+WN
+So
+So
+So
+So
+So
+Kz
+Kz
+am
+Hk
+Hk
 Za
 "}
-(79,1,1) = {"
+(89,1,1) = {"
 Za
 Hk
 Hk
@@ -32486,7 +34685,7 @@ ki
 NE
 Gg
 fl
-Dv
+Ky
 Dv
 kS
 cm
@@ -32547,9 +34746,19 @@ ZI
 ds
 WN
 So
+So
+So
+So
+So
+Kz
+Kz
+am
+am
+Hk
+Hk
 Za
 "}
-(80,1,1) = {"
+(90,1,1) = {"
 Za
 Hk
 Hk
@@ -32664,9 +34873,19 @@ So
 So
 So
 So
+So
+So
+So
+Kz
+Kz
+Kz
+am
+Hk
+Hk
+Hk
 Za
 "}
-(81,1,1) = {"
+(91,1,1) = {"
 Za
 Hk
 Hk
@@ -32781,9 +35000,19 @@ Kz
 Kz
 Kz
 So
+So
+So
+Kz
+Kz
+Kz
+am
+am
+Hk
+Hk
+Hk
 Za
 "}
-(82,1,1) = {"
+(92,1,1) = {"
 Za
 Hk
 Hk
@@ -32898,9 +35127,19 @@ Kz
 Kz
 Kz
 Kz
+So
+Kz
+Kz
+Kz
+am
+am
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(83,1,1) = {"
+(93,1,1) = {"
 Za
 Hk
 Hk
@@ -33015,9 +35254,19 @@ Kz
 Ws
 Kz
 Kz
+Kz
+Kz
+Kz
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(84,1,1) = {"
+(94,1,1) = {"
 Za
 Hk
 Hk
@@ -33132,9 +35381,19 @@ Kz
 Kz
 am
 Kz
+Kz
+Kz
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(85,1,1) = {"
+(95,1,1) = {"
 Za
 Hk
 Hk
@@ -33249,9 +35508,19 @@ Gm
 am
 am
 am
+am
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(86,1,1) = {"
+(96,1,1) = {"
 Za
 Hk
 Hk
@@ -33365,10 +35634,20 @@ am
 am
 am
 am
+am
+am
+am
+am
+am
+Hk
+Hk
+Hk
+Hk
+Hk
 Hk
 Za
 "}
-(87,1,1) = {"
+(97,1,1) = {"
 Za
 Hk
 Hk
@@ -33483,9 +35762,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(88,1,1) = {"
+(98,1,1) = {"
 Za
 Hk
 Hk
@@ -33600,9 +35889,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(89,1,1) = {"
+(99,1,1) = {"
 Za
 Hk
 Hk
@@ -33717,9 +36016,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(90,1,1) = {"
+(100,1,1) = {"
 Za
 Hk
 Hk
@@ -33834,9 +36143,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(91,1,1) = {"
+(101,1,1) = {"
 Za
 Hk
 Hk
@@ -33951,9 +36270,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(92,1,1) = {"
+(102,1,1) = {"
 Za
 Hk
 Hk
@@ -34068,9 +36397,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(93,1,1) = {"
+(103,1,1) = {"
 Za
 Hk
 Hk
@@ -34185,9 +36524,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(94,1,1) = {"
+(104,1,1) = {"
 Za
 Hk
 Hk
@@ -34302,9 +36651,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(95,1,1) = {"
+(105,1,1) = {"
 Za
 Hk
 Hk
@@ -34419,9 +36778,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(96,1,1) = {"
+(106,1,1) = {"
 Za
 Hk
 Hk
@@ -34536,9 +36905,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(97,1,1) = {"
+(107,1,1) = {"
 Za
 Hk
 Hk
@@ -34653,9 +37032,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(98,1,1) = {"
+(108,1,1) = {"
 Za
 Hk
 Hk
@@ -34770,9 +37159,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(99,1,1) = {"
+(109,1,1) = {"
 Za
 Hk
 Hk
@@ -34887,9 +37286,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(100,1,1) = {"
+(110,1,1) = {"
 Za
 Hk
 Hk
@@ -35004,9 +37413,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(101,1,1) = {"
+(111,1,1) = {"
 Za
 Hk
 Hk
@@ -35121,9 +37540,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(102,1,1) = {"
+(112,1,1) = {"
 Za
 Hk
 Hk
@@ -35238,9 +37667,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(103,1,1) = {"
+(113,1,1) = {"
 Za
 Hk
 Hk
@@ -35355,9 +37794,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(104,1,1) = {"
+(114,1,1) = {"
 Za
 Hk
 Hk
@@ -35472,9 +37921,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(105,1,1) = {"
+(115,1,1) = {"
 Za
 Hk
 Hk
@@ -35589,9 +38048,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(106,1,1) = {"
+(116,1,1) = {"
 Za
 Hk
 Hk
@@ -35706,9 +38175,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(107,1,1) = {"
+(117,1,1) = {"
 Za
 Hk
 Hk
@@ -35823,9 +38302,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(108,1,1) = {"
+(118,1,1) = {"
 Za
 Hk
 Hk
@@ -35940,9 +38429,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(109,1,1) = {"
+(119,1,1) = {"
 Za
 Hk
 Hk
@@ -36057,9 +38556,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(110,1,1) = {"
+(120,1,1) = {"
 Za
 Hk
 Hk
@@ -36174,9 +38683,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(111,1,1) = {"
+(121,1,1) = {"
 Za
 Hk
 Hk
@@ -36291,9 +38810,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(112,1,1) = {"
+(122,1,1) = {"
 Za
 Hk
 Hk
@@ -36408,9 +38937,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(113,1,1) = {"
+(123,1,1) = {"
 Za
 Hk
 Hk
@@ -36525,9 +39064,19 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(114,1,1) = {"
+(124,1,1) = {"
 Za
 Hk
 Hk
@@ -36642,9 +39191,29 @@ Hk
 Hk
 Hk
 Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
+Hk
 Za
 "}
-(115,1,1) = {"
+(125,1,1) = {"
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
 Za
 Za
 Za
