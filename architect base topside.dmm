@@ -392,6 +392,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light/directional/south,
+/obj/machinery/door/window/brigdoor/westleft,
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar)
 "aN" = (
@@ -4063,6 +4064,12 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
+/obj/structure/table/wood/reinforced,
+/obj/machinery/chem_dispenser/drinks/fullupgrade{
+	dir = 8;
+	pixel_x = 0;
+	pixel_y = 6
+	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar)
 "jb" = (
@@ -4511,6 +4518,15 @@
 "jT" = (
 /turf/open/floor/plasteel/stairs/wood/walnut/right,
 /area/ruin/beach/gunsmith)
+"jV" = (
+/obj/structure/table/wood/reinforced,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8;
+	color = "#332521"
+	},
+/obj/structure/window/reinforced/spawner,
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "jW" = (
 /obj/structure/platform/wood,
 /obj/structure/platform/wood{
@@ -4843,6 +4859,20 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/structure/closet/wall/red/directional/south,
+/obj/item/clothing/under/rank/civilian/bartender,
+/obj/item/clothing/suit/armor/ramzi{
+	name = "outdated armor vest";
+	desc = "An outdated, slim, type I armour vest.  The insignia of the Gorlex Marauders and the Ramzi Clique has been painted over."
+	},
+/obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag,
+/obj/item/ammo_box/magazine/m12g_bulldog/empty,
+/obj/item/ammo_box/magazine/m12g_bulldog/empty,
+/obj/item/ammo_box/magazine/m12g_bulldog/empty,
+/obj/item/storage/box/ammo/a12g_beanbag,
+/obj/item/storage/box/ammo/a12g_beanbag,
+/obj/item/storage/box/ammo/a12g_rubbershot,
+/obj/item/storage/box/ammo/a12g_rubbershot,
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar)
 "kK" = (
@@ -14922,6 +14952,7 @@
 /turf/open/floor/plating,
 /area/outpost/engineering)
 "Hc" = (
+/obj/structure/curtain/cloth/grey,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/crew/bar/cybersun_outpost)
 "Hd" = (
@@ -16839,6 +16870,17 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/crew)
+"LM" = (
+/obj/structure/table/wood/reinforced,
+/obj/machinery/chem_dispenser/drinks/beer/fullupgrade{
+	dir = 8;
+	pixel_x = -1;
+	pixel_y = -5;
+	layer = 4.24
+	},
+/obj/structure/window/reinforced/spawner/north,
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "LO" = (
 /turf/open/water/beach/deep,
 /area/ruin/beach/gunsmith)
@@ -19615,6 +19657,11 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering)
+"RK" = (
+/turf/open/floor/wood/walnut{
+	icon_state = "wood-broken5"
+	},
+/area/ruin/beach/gunsmith)
 "RL" = (
 /obj/structure/table/reinforced,
 /obj/structure/closet/secure_closet/wall/directional/south,
@@ -21285,6 +21332,15 @@
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/crew/law_office)
+"Vw" = (
+/obj/machinery/vending/boozeomat/all_access{
+	dir = 8;
+	pixel_x = 8;
+	pixel_y = 0;
+	density = 0
+	},
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "Vx" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/concrete/slab_4/rockplanet/lit{
@@ -28905,7 +28961,7 @@ LF
 aw
 MW
 uX
-hO
+RK
 sk
 PJ
 cp
@@ -31818,7 +31874,7 @@ Sa
 Rr
 hW
 Ci
-Ci
+jV
 aL
 ft
 aw
@@ -32051,9 +32107,9 @@ ft
 rK
 Lo
 wp
-pC
+LM
 iZ
-pC
+Vw
 ft
 MP
 SU

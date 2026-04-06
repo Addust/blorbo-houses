@@ -1,0 +1,61 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/item/storage/belt/military,
+/obj/item/storage/belt/security/military/frontiersmen,
+/obj/item/clothing/mask/breath/ngr,
+/obj/item/storage/belt/utility/syndicate,
+/obj/item/trench_tool,
+/obj/item/binoculars,
+/turf/template_noop,
+/area/template_noop)
+"c" = (
+/obj/item/clothing/head/helmet/riot,
+/obj/item/clothing/suit/armor/vest/marine/medium,
+/obj/item/clothing/suit/space/hardsuit/syndi/ngr,
+/obj/item/clothing/head/helmet/ngr/swat,
+/obj/item/clothing/mask/breath/ngr,
+/obj/item/clothing/neck/shemagh/ngr,
+/obj/item/clothing/glasses/hud/security/sunglasses/ngr,
+/obj/item/clothing/suit/armor/ngr,
+/turf/template_noop,
+/area/template_noop)
+"I" = (
+/obj/structure/guncloset,
+/obj/item/gun/ballistic/automatic/assault/hydra/no_mag,
+/obj/item/gun/ballistic/shotgun/flamingarrow/conflagration/empty,
+/obj/item/gun/ballistic/automatic/marksman/boomslang/no_mag,
+/obj/item/gun/ballistic/revolver/viper/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/ringneck/no_mag,
+/turf/template_noop,
+/area/template_noop)
+"O" = (
+/obj/structure/closet/secure_closet/armorycage{
+	req_access = null
+	},
+/obj/item/ammo_box/magazine/m556_42_hydra,
+/obj/item/ammo_box/magazine/m556_42_hydra,
+/obj/item/ammo_box/magazine/m556_42_hydra,
+/obj/item/storage/toolbox/ammo/shotgun,
+/obj/item/storage/toolbox/ammo/c556,
+/obj/item/ammo_box/magazine/boomslang,
+/obj/item/ammo_box/magazine/boomslang,
+/obj/item/ammo_box/magazine/boomslang,
+/obj/item/grenade/frag,
+/obj/item/shield/heavy,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/storage/toolbox/ammo/c10mm,
+/obj/item/storage/toolbox/ammo/c10mm,
+/obj/item/storage/toolbox/ammo/c357,
+/turf/template_noop,
+/area/template_noop)
+
+(1,1,1) = {"
+I
+a
+"}
+(2,1,1) = {"
+O
+c
+"}
