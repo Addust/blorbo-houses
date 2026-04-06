@@ -392,6 +392,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light/directional/south,
+/obj/machinery/door/window/brigdoor/westleft,
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar)
 "aN" = (
@@ -839,6 +840,15 @@
 /obj/structure/cable,
 /turf/open/floor/plating/rust,
 /area/outpost/engineering)
+"ca" = (
+/obj/machinery/vending/boozeomat/all_access{
+	dir = 8;
+	pixel_x = 8;
+	pixel_y = 0;
+	density = 0
+	},
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "cb" = (
 /obj/structure/table/reinforced,
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -4067,6 +4077,12 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
+/obj/structure/table/wood/reinforced,
+/obj/machinery/chem_dispenser/drinks/fullupgrade{
+	dir = 8;
+	pixel_x = 0;
+	pixel_y = 6
+	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar)
 "jb" = (
@@ -4847,6 +4863,20 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
+/obj/structure/closet/wall/red/directional/south,
+/obj/item/clothing/under/rank/civilian/bartender,
+/obj/item/clothing/suit/armor/ramzi{
+	name = "outdated armor vest";
+	desc = "An outdated, slim, type I armour vest.  The insignia of the Gorlex Marauders and the Ramzi Clique has been painted over."
+	},
+/obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag,
+/obj/item/ammo_box/magazine/m12g_bulldog/empty,
+/obj/item/ammo_box/magazine/m12g_bulldog/empty,
+/obj/item/ammo_box/magazine/m12g_bulldog/empty,
+/obj/item/storage/box/ammo/a12g_beanbag,
+/obj/item/storage/box/ammo/a12g_beanbag,
+/obj/item/storage/box/ammo/a12g_rubbershot,
+/obj/item/storage/box/ammo/a12g_rubbershot,
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar)
 "kK" = (
@@ -11245,6 +11275,17 @@
 /obj/item/food/meat/slab,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/crew/canteen)
+"yY" = (
+/obj/structure/table/wood/reinforced,
+/obj/machinery/chem_dispenser/drinks/beer/fullupgrade{
+	dir = 8;
+	pixel_x = -1;
+	pixel_y = -5;
+	layer = 4.24
+	},
+/obj/structure/window/reinforced/spawner/north,
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "yZ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -20993,6 +21034,15 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/aft)
+"UJ" = (
+/obj/structure/table/wood/reinforced,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8;
+	color = "#332521"
+	},
+/obj/structure/window/reinforced/spawner,
+/turf/open/floor/wood/ebony,
+/area/outpost/crew/bar)
 "UK" = (
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/crew)
@@ -31833,7 +31883,7 @@ Sa
 Rr
 hW
 Ci
-Ci
+UJ
 aL
 ft
 aw
@@ -32066,9 +32116,9 @@ ft
 rK
 Lo
 wp
-pC
+yY
 iZ
-pC
+ca
 ft
 MP
 SU
