@@ -3422,10 +3422,6 @@
 	pixel_x = -7;
 	pixel_y = 10
 	},
-/obj/item/storage/box/ammo/ferropellet{
-	pixel_x = -8;
-	pixel_y = 2
-	},
 /turf/open/floor/plating,
 /area/outpost/crew/dorm)
 "hF" = (
@@ -6537,8 +6533,8 @@
 /obj/item/reagent_containers/syringe/contraband/morphine{
 	name = "morphine syringe";
 	desc = "A clearly-marked syringe loaded with morphine. Anaesthetic use only.";
-	pixel_x = 16;
-	pixel_y = 6
+	pixel_x = 0;
+	pixel_y = -2
 	},
 /turf/open/floor/suns,
 /area/outpost/medical)
@@ -8090,7 +8086,7 @@
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/ruin/beach/gunsmith)
 "rx" = (
-/obj/structure/table/reinforced,
+/obj/machinery/limbgrower,
 /turf/open/floor/suns,
 /area/outpost/medical)
 "rz" = (
@@ -16029,7 +16025,7 @@
 /obj/item/mob_trophy/blaster_tubes{
 	pixel_x = 0;
 	pixel_y = -25;
-	desc = "The divine weapon of a fallen god, apparently. Reclaimed from NGR R&D for display purposes after being deemed inert and "far less cool than the vocal cords". Nearby signage indicates in no uncertain terms that Hecatia Tokamak fought and slew a God with a hunting rifle meant for small game and that you should totally ask her about it."
+	desc = "The divine weapon of a fallen god, apparently. Reclaimed from NGR R&D for display purposes after being deemed inert and "farlesscoolthanthevocalcords". Nearby signage indicates in no uncertain terms that Hecatia Tokamak fought and slew a God with a hunting rifle meant for small game and that you should totally ask her about it."
 	},
 /turf/open/floor/wood/maple,
 /area/outpost/crew/library)
