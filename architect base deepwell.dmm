@@ -1243,7 +1243,7 @@
 	},
 /obj/item/clothing/head/helmet/space/syndicate/engie{
 	name = "J&C Pattern 489 softsuit helmet";
-	desc = "The hazard-yellow helmet of a Pattern 489 soft-suit developed by Johnson and Company before its collpase. Graded by the GEC to be of high-quality."
+	desc = "The hazard-yellow helmet of a Pattern 489 soft-suit developed by Johnson and Company before its collapse. Graded by the GEC to be of high-quality."
 	},
 /obj/item/clothing/mask/breath/facemask,
 /turf/open/floor/plasteel/patterned/cargo_one,
@@ -1746,6 +1746,14 @@
 	dir = 8
 	},
 /obj/structure/table/wood/reinforced,
+/obj/item/paper_bin{
+	pixel_x = 3;
+	pixel_y = 0
+	},
+/obj/item/pen/fourcolor{
+	pixel_x = 2;
+	pixel_y = 1
+	},
 /turf/open/floor/wood/birch,
 /area/outpost/crew/canteen)
 "nD" = (
@@ -3784,6 +3792,36 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
+"CX" = (
+/obj/structure/table/wood/reinforced,
+/obj/item/radio/intercom/wideband/table{
+	dir = 1;
+	pixel_y = 6;
+	pixel_x = 9
+	},
+/obj/item/radio/intercom/table{
+	dir = 1;
+	pixel_x = -10;
+	pixel_y = 6
+	},
+/obj/item/stamp{
+	pixel_x = 4;
+	pixel_y = 22
+	},
+/obj/item/stamp/denied{
+	pixel_x = -5;
+	pixel_y = 22
+	},
+/obj/item/stamp/ngr/foreman{
+	pixel_x = 13;
+	pixel_y = 22
+	},
+/obj/item/stamp/ce{
+	pixel_x = -14;
+	pixel_y = 22
+	},
+/turf/open/floor/wood/birch,
+/area/outpost/crew/canteen)
 "Di" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -5957,7 +5995,7 @@
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/clothing/head/helmet/space/syndicate/engie{
 	name = "J&C Pattern 489 softsuit helmet";
-	desc = "The hazard-yellow helmet of a Pattern 489 soft-suit developed by Johnson and Company before its collpase. Graded by the GEC to be of high-quality."
+	desc = "The hazard-yellow helmet of a Pattern 489 soft-suit developed by Johnson and Company before its collapse. Graded by the GEC to be of high-quality."
 	},
 /obj/item/clothing/suit/space/syndicate/engie{
 	name = "J&C Pattern 489 softsuit";
@@ -9331,7 +9369,7 @@ lZ
 lZ
 JW
 ru
-vM
+CX
 DR
 hM
 Nu
@@ -9562,8 +9600,8 @@ bq
 bq
 bq
 bq
-NH
-NH
+bq
+bq
 NH
 NH
 Wx
@@ -9637,7 +9675,7 @@ Wx
 Wx
 UK
 Wx
-bq
+NH
 bU
 SU
 wD
@@ -9704,7 +9742,7 @@ qk
 gQ
 kJ
 is
-bq
+NH
 bU
 Ht
 uV
@@ -9771,7 +9809,7 @@ IG
 us
 WO
 is
-bq
+NH
 bU
 aq
 aq
@@ -9838,7 +9876,7 @@ gf
 Qs
 IB
 NH
-bq
+NH
 bq
 QI
 QI
@@ -10032,12 +10070,12 @@ is
 NH
 bq
 bq
-NH
+bq
 mW
 fI
 FQ
 mW
-NH
+bq
 bq
 bq
 bq
@@ -10099,7 +10137,7 @@ oe
 NH
 bq
 bq
-NH
+bq
 mW
 KL
 KL
@@ -10166,7 +10204,7 @@ NH
 NH
 bq
 bq
-NH
+bq
 mW
 mW
 mW
