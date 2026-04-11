@@ -5659,12 +5659,6 @@
 /obj/item/storage/toolbox/ammo/a12g_slug,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
-"lh" = (
-/obj/structure/platform{
-	dir = 4
-	},
-/turf/open/floor/plating/asteroid/sand/lit,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "li" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
@@ -7195,6 +7189,15 @@
 	pixel_x = -2;
 	pixel_y = -4
 	},
+/obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag{
+	pixel_x = -1;
+	pixel_y = 10;
+	gun_firemodes = list("single","burst");
+	burst_delay = 2;
+	burst_size = 2;
+	name = "JC-60db 'Two-Step Goodbye'";
+	desc = "A bullpup combat shotgun custom-made by the loyalist remnants of Johnson and Company as a superior alternative to the Ramzi Clique's Bockadam, now with such wonders as a fire selector and not jamming every fourth round. Chambered in 12g."
+	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
 "ot" = (
@@ -7539,6 +7542,12 @@
 /obj/item/gun/ballistic/automatic/assault/e40{
 	pixel_x = -15;
 	pixel_y = -1
+	},
+/obj/item/gun/ballistic/automatic/pistol/himehabu{
+	pixel_x = 6;
+	pixel_y = 12;
+	name = "PC-83 'Himejin'";
+	desc = "A limited production run of the 'Himehabu' catered towards Cybersun Executives. It has an engraving of two women kissing each other across the handle."
 	},
 /turf/open/floor/carpet/red_gold,
 /area/outpost/crew/lounge)
@@ -10012,14 +10021,15 @@
 	color = "#c1b6a5"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag{
-	pixel_x = -1;
-	pixel_y = 3;
-	gun_firemodes = list("single","burst");
-	burst_delay = 2;
-	burst_size = 2;
-	name = "JC-60db 'Two-Step Goodbye'";
-	desc = "A bullpup combat shotgun custom-made by the loyalist remnants of Johnson and Company as a superior alternative to the Ramzi Clique's Bockadam, now with such wonders as a fire selector and not jamming every fourth round. Chambered in 12g."
+/obj/item/gun/ballistic/automatic/assault/hydra/no_mag{
+	pixel_x = -7;
+	pixel_y = 5;
+	name = "HVR-99 Trioditis Variable Rifle 'ETERNAL DEVOTION'";
+	gun_firemodes = list("single","burst","auto");
+	desc = "A refitted Scarborough assault rifle, trading modularity and ergonomics for on-the-go firemode switching. Features automatic, three-round burst and single fire modes alongside reinforced components for sustained fire, though mercifully it remains in line with an assault rifle rather than a dedicated LMG. The buttstamp branding has been replaced with the outline of a chibi twintailed woman holding up a double peace sign.";
+	burst_size = 3;
+	burst_delay = 0.5;
+	fire_delay = 1.2
 	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
@@ -21963,7 +21973,7 @@
 /obj/structure/fluff{
 	icon_state = "humanipc_head";
 	icon = 'icons/mob/species/ipc/bodyparts.dmi';
-	desc = "<i>"I'veseenpeoplewithpalerskincomplexions,Addust.Justputonsunglassesfortheeyesandyou'llbefiiine."</i>";
+	desc = "A synthskin imitation of a tired old face, smoothed out in assembly. Its eyes are shut; for the better.";
 	name = "Addust Johnson"
 	},
 /obj/structure/fluff{
@@ -32462,7 +32472,7 @@ Hk
 Hk
 Hk
 Hk
-Hk
+am
 Za
 "}
 (58,1,1) = {"
@@ -32589,7 +32599,7 @@ Hk
 Hk
 Hk
 Hk
-Hk
+am
 Za
 "}
 (59,1,1) = {"
@@ -32715,8 +32725,8 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
+am
+am
 Za
 "}
 (60,1,1) = {"
@@ -32842,8 +32852,8 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
+am
+am
 Za
 "}
 (61,1,1) = {"
@@ -32969,8 +32979,8 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
+am
+am
 Za
 "}
 (62,1,1) = {"
@@ -33096,8 +33106,8 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
+am
+am
 Za
 "}
 (63,1,1) = {"
@@ -33221,10 +33231,10 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+am
 Za
 "}
 (64,1,1) = {"
@@ -33348,10 +33358,10 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+am
 Za
 "}
 (65,1,1) = {"
@@ -33475,10 +33485,10 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+Kz
 Za
 "}
 (66,1,1) = {"
@@ -33601,11 +33611,11 @@ am
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+am
+Kz
 Za
 "}
 (67,1,1) = {"
@@ -33727,12 +33737,12 @@ am
 am
 am
 am
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+am
+am
+Kz
 Za
 "}
 (68,1,1) = {"
@@ -33855,11 +33865,11 @@ am
 am
 am
 am
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+Kz
+Kz
 Za
 "}
 (69,1,1) = {"
@@ -33982,11 +33992,11 @@ am
 am
 am
 am
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+Kz
+Kz
 Za
 "}
 (70,1,1) = {"
@@ -34110,10 +34120,10 @@ am
 am
 am
 am
-Hk
-Hk
-Hk
-Hk
+am
+Kz
+Kz
+Kz
 Za
 "}
 (71,1,1) = {"
@@ -34237,10 +34247,10 @@ Kz
 am
 am
 am
-Hk
-Hk
-Hk
-Hk
+Kz
+Kz
+Kz
+So
 Za
 "}
 (72,1,1) = {"
@@ -34362,12 +34372,12 @@ Kz
 Kz
 Kz
 am
-am
-am
-Hk
-Hk
-Hk
-Hk
+Kz
+Kz
+Kz
+So
+So
+So
 Za
 "}
 (73,1,1) = {"
@@ -34490,11 +34500,11 @@ Kz
 Kz
 Kz
 Kz
-am
-Hk
-Hk
-Hk
-Hk
+Kz
+Kz
+So
+So
+So
 Za
 "}
 (74,1,1) = {"
@@ -34617,11 +34627,11 @@ Kz
 Kz
 Kz
 Kz
-Hk
-Hk
-Hk
-Hk
-Hk
+So
+So
+So
+So
+So
 Za
 "}
 (75,1,1) = {"
@@ -34742,13 +34752,13 @@ VW
 TF
 TF
 VW
-Pw
-Pw
+TF
+TF
 VW
-Hk
-Hk
-Hk
-Hk
+TF
+TF
+VW
+Tj
 Za
 "}
 (76,1,1) = {"
@@ -34869,13 +34879,13 @@ So
 So
 So
 So
-Kz
-Kz
-Hk
-Hk
-Hk
-Hk
-Hk
+So
+So
+So
+So
+WN
+WN
+ZI
 Za
 "}
 (77,1,1) = {"
@@ -34995,14 +35005,14 @@ WN
 WN
 So
 So
-Kz
-Kz
-am
-am
-Hk
-Hk
-Hk
-Hk
+So
+Ki
+So
+So
+WN
+WN
+WN
+WN
 Za
 "}
 (78,1,1) = {"
@@ -35121,15 +35131,15 @@ WN
 ju
 WN
 WN
-So
-Kz
-Kz
-Kz
-am
-am
-Hk
-Hk
-Hk
+ZI
+WN
+WN
+WN
+WN
+WN
+ju
+WN
+WN
 Za
 "}
 (79,1,1) = {"
@@ -35248,15 +35258,15 @@ XZ
 WN
 WN
 WN
-So
-Kz
-Kz
-Kz
-Kz
-am
-Hk
-Hk
-Hk
+WN
+WN
+WN
+WN
+WN
+WN
+WN
+ZI
+WN
 Za
 "}
 (80,1,1) = {"
@@ -35374,16 +35384,16 @@ Rg
 WN
 WN
 Um
-So
-So
-Kz
-Kz
-Kz
-Kz
-am
-Hk
-Hk
-Hk
+Zc
+WN
+WN
+WN
+WN
+WN
+WN
+WN
+WN
+WN
 Za
 "}
 (81,1,1) = {"
@@ -35501,16 +35511,16 @@ Rg
 WN
 WN
 WN
-So
-So
-So
-Kz
-Kz
-Kz
-am
-am
-Hk
-Hk
+WN
+WN
+ju
+WN
+WN
+WN
+ZI
+WN
+WN
+WN
 Za
 "}
 (82,1,1) = {"
@@ -35629,15 +35639,15 @@ Zc
 WN
 WN
 WN
-lh
-lh
-JV
-JV
-JV
-GA
-GA
-Ls
-Ls
+WN
+WN
+WN
+Zc
+WN
+WN
+WN
+WN
+WN
 Za
 "}
 (83,1,1) = {"
@@ -36264,15 +36274,15 @@ WN
 XZ
 ds
 WN
-AQ
-AQ
-AQ
-AQ
-iF
-iF
-vc
-qz
-qz
+WN
+WN
+WN
+WN
+Zc
+WN
+WN
+WN
+WN
 Za
 "}
 (88,1,1) = {"
@@ -36390,16 +36400,16 @@ WN
 WN
 WN
 WN
-So
-So
-So
-So
-So
-Kz
-Kz
-am
-Hk
-Hk
+WN
+Ki
+WN
+WN
+WN
+WN
+WN
+ZI
+WN
+WN
 Za
 "}
 (89,1,1) = {"
@@ -36521,12 +36531,12 @@ So
 So
 So
 So
-Kz
-Kz
-am
-am
-Hk
-Hk
+ZI
+WN
+WN
+WN
+WN
+WN
 Za
 "}
 (90,1,1) = {"
@@ -36647,13 +36657,13 @@ So
 So
 So
 So
-Kz
-Kz
-Kz
-am
-Hk
-Hk
-Hk
+So
+So
+WN
+WN
+WN
+Zc
+WN
 Za
 "}
 (91,1,1) = {"
@@ -36773,14 +36783,14 @@ Kz
 So
 So
 So
-Kz
-Kz
-Kz
-am
-am
-Hk
-Hk
-Hk
+So
+So
+So
+So
+ZI
+WN
+Ki
+WN
 Za
 "}
 (92,1,1) = {"
@@ -36901,13 +36911,13 @@ Kz
 So
 Kz
 Kz
-Kz
-am
-am
-Hk
-Hk
-Hk
-Hk
+So
+So
+So
+So
+WN
+WN
+WN
 Za
 "}
 (93,1,1) = {"
@@ -37028,13 +37038,13 @@ Kz
 Kz
 Kz
 Kz
-am
-am
-am
-Hk
-Hk
-Hk
-Hk
+Kz
+So
+So
+So
+So
+WN
+ZI
 Za
 "}
 (94,1,1) = {"
@@ -37154,14 +37164,14 @@ am
 Kz
 Kz
 Kz
-am
-am
-am
-am
-Hk
-Hk
-Hk
-Hk
+Kz
+Kz
+Kz
+So
+So
+So
+WN
+WN
 Za
 "}
 (95,1,1) = {"
@@ -37282,13 +37292,13 @@ am
 am
 am
 am
-am
-am
-Hk
-Hk
-Hk
-Hk
-Hk
+Kz
+Kz
+Kz
+So
+So
+So
+WN
 Za
 "}
 (96,1,1) = {"
@@ -37410,12 +37420,12 @@ am
 am
 am
 am
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+Kz
+Kz
+Kz
+So
+WN
 Za
 "}
 (97,1,1) = {"
@@ -37532,17 +37542,17 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+am
+am
+am
+Kz
+Kz
+Kz
+So
+WN
 Za
 "}
 (98,1,1) = {"
@@ -37661,15 +37671,15 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+am
+am
+Kz
+Kz
+So
+So
 Za
 "}
 (99,1,1) = {"
@@ -37790,13 +37800,13 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+am
+Kz
+Kz
+So
 Za
 "}
 (100,1,1) = {"
@@ -37917,13 +37927,13 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+am
+Kz
+Kz
+So
 Za
 "}
 (101,1,1) = {"
@@ -38045,12 +38055,12 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+am
+Kz
+Kz
 Za
 "}
 (102,1,1) = {"
@@ -38173,11 +38183,11 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+Kz
+Kz
 Za
 "}
 (103,1,1) = {"
@@ -38300,11 +38310,11 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+am
+Kz
 Za
 "}
 (104,1,1) = {"
@@ -38428,10 +38438,10 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
+am
+am
+am
+Kz
 Za
 "}
 (105,1,1) = {"
@@ -38556,9 +38566,9 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
+am
+am
+am
 Za
 "}
 (106,1,1) = {"
@@ -38683,9 +38693,9 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
-Hk
+am
+am
+am
 Za
 "}
 (107,1,1) = {"
@@ -38811,8 +38821,8 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Hk
+am
+am
 Za
 "}
 (108,1,1) = {"
@@ -38939,7 +38949,7 @@ Hk
 Hk
 Hk
 Hk
-Hk
+am
 Za
 "}
 (109,1,1) = {"
