@@ -2101,7 +2101,7 @@
 	icon_state = "computer-left";
 	dir = 1
 	},
-/turf/open/floor/plasteel/tech,
+/turf/open/floor/plasteel/mono/dark,
 /area/ruin/beach/gunsmith/electrical)
 "ey" = (
 /obj/structure/table{
@@ -2385,12 +2385,6 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
-"fa" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/sand/lit,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "fb" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8;
@@ -2536,13 +2530,6 @@
 	},
 /turf/open/floor/carpet/red,
 /area/outpost/crew)
-"fo" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 10
-	},
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/sand/lit,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "fp" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
@@ -4006,8 +3993,11 @@
 /turf/open/floor/suns,
 /area/outpost/medical)
 "ii" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/structure/barricade/sandbags,
+/mob/living/simple_animal/crab/kreb{
+	name = "random ass crab";
+	desc = "HOLY SHIT"
+	},
+/obj/structure/platform/corner,
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "ij" = (
@@ -4408,8 +4398,10 @@
 /turf/open/floor/wood/maple,
 /area/outpost/crew/library)
 "iV" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 10
+/obj/structure/barricade/sandbags,
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/platform{
+	dir = 8
 	},
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -4873,12 +4865,6 @@
 /obj/structure/platform/wood/corner,
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood/walnut,
-/area/overmap_encounter/planetoid/beachplanet/explored)
-"jM" = (
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "jN" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5936,13 +5922,6 @@
 /obj/structure/closet/wall/orange/directional/east,
 /turf/open/floor/carpet/orange,
 /area/outpost/crew)
-"lL" = (
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8
-	},
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/sand/lit,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "lM" = (
 /obj/structure/platform{
 	dir = 10
@@ -6177,7 +6156,7 @@
 	name = "J&C Pattern 489 softsuit helmet";
 	desc = "The hazard-yellow helmet of a Pattern 489 soft-suit developed by Johnson and Company before its collapse. Graded by the GEC to be of high-quality."
 	},
-/turf/open/floor/plasteel/tech,
+/turf/open/floor/plasteel/mono/dark,
 /area/ruin/beach/gunsmith/electrical)
 "mo" = (
 /obj/structure/cable{
@@ -6235,14 +6214,6 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/outpost/maintenance/starboard)
-"mv" = (
-/obj/structure/platform/wood{
-	dir = 1
-	},
-/turf/open/floor/concrete/slab_1/jungleplanet/lit{
-	initial_gas_mix = "BEACHPLANET_ATMOS"
-	},
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "mw" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
@@ -7126,7 +7097,7 @@
 	dir = 1;
 	icon_state = "computer-right"
 	},
-/turf/open/floor/plasteel/tech,
+/turf/open/floor/plasteel/mono/dark,
 /area/ruin/beach/gunsmith/electrical)
 "os" = (
 /obj/effect/turf_decal/techfloor{
@@ -8461,10 +8432,10 @@
 /turf/open/floor/suns,
 /area/ruin/beach/gunsmith)
 "qV" = (
-/obj/structure/platform/wood{
-	dir = 1
+/obj/structure/platform{
+	dir = 4
 	},
-/turf/open/floor/plating/asteroid/sand/dense/lit,
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "qW" = (
 /obj/structure/sign/plaques/kiddie{
@@ -9140,10 +9111,6 @@
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/red/line{
-	dir = 8;
-	layer = 2.040
-	},
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2{
 	dir = 1
 	},
@@ -9201,6 +9168,9 @@
 	desc = "A post-ICW modification to Johnson and Company's standardised command mantles, the blood-red variation is frequently worn by NGR-affiliated J&C remnant officers. One shoulder bears the rectangle logo of J&C - the other the insignia of the Second Battlegroup."
 	},
 /obj/item/clothing/mask/breath/ngr,
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/dorm)
 "sx" = (
@@ -9360,11 +9330,10 @@
 /turf/open/floor/wood/birch,
 /area/outpost/crew/dorm)
 "sN" = (
-/obj/structure/platform/wood/corner{
-	dir = 8
+/turf/open/floor/plasteel/stairs/old{
+	dir = 8;
+	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
-/obj/structure/platform/wood,
-/turf/open/floor/plating/asteroid/sand/dense/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "sO" = (
 /mob/living/simple_animal/bot/cleanbot{
@@ -9593,12 +9562,10 @@
 /turf/open/floor/wood/walnut,
 /area/ruin/beach/gunsmith)
 "tq" = (
-/obj/structure/platform/wood{
-	dir = 8
+/obj/structure/platform/corner{
+	dir = 1
 	},
-/turf/open/floor/concrete/slab_1/jungleplanet/lit{
-	initial_gas_mix = "BEACHPLANET_ATMOS"
-	},
+/turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "tr" = (
 /obj/structure/closet/crate/secure/weapon,
@@ -11631,12 +11598,6 @@
 /obj/item/storage/box/ammo/a65clip,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/storage)
-"xX" = (
-/obj/structure/platform/wood/corner{
-	dir = 4
-	},
-/turf/open/floor/plating/asteroid/sand/dense/lit,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "xY" = (
 /obj/effect/turf_decal/road/stripes{
 	dir = 8
@@ -12300,7 +12261,7 @@
 	desc = "The hazard-yellow helmet of a Pattern 489 soft-suit developed by Johnson and Company before its collapse. Graded by the GEC to be of high-quality."
 	},
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/turf/open/floor/plasteel/tech,
+/turf/open/floor/plasteel/mono/dark,
 /area/ruin/beach/gunsmith/electrical)
 "zs" = (
 /obj/machinery/door/airlock/grunge{
@@ -12390,14 +12351,13 @@
 	dir = 9;
 	layer = 2.030
 	},
-/obj/effect/turf_decal/trimline/opaque/red/line{
-	dir = 8;
-	layer = 2.040
-	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
 	},
 /obj/machinery/light/directional/west,
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/lounge)
 "zB" = (
@@ -12756,7 +12716,6 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Ap" = (
 /obj/effect/turf_decal/siding/wood{
-	color = "#543C30";
 	dir = 1
 	},
 /turf/open/floor/plating/asteroid/sand/lit,
@@ -13342,14 +13301,6 @@
 	},
 /turf/open/water/beach/deep,
 /area/ruin/beach/gunsmith)
-"BE" = (
-/obj/effect/turf_decal/stairs{
-	dir = 9
-	},
-/turf/open/floor/concrete/slab_1/jungleplanet/lit{
-	initial_gas_mix = "BEACHPLANET_ATMOS"
-	},
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "BF" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -13983,9 +13934,6 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/red/line{
-	layer = 2.040
-	},
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2{
 	dir = 1
 	},
@@ -14023,6 +13971,7 @@
 /obj/item/storage/box/ammo/a65clip,
 /obj/item/gun/ballistic/shotgun/automatic/m11/empty,
 /obj/item/storage/box/ammo/a12g_buckshot,
+/obj/effect/turf_decal/trimline/opaque/orange/line,
 /turf/open/floor/plating,
 /area/outpost/crew/dorm)
 "CQ" = (
@@ -15414,9 +15363,6 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/red/line{
-	layer = 2.040
-	},
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = -12;
@@ -15459,6 +15405,7 @@
 	desc = "A bulletproof combat helmet originally used by salvage teams of Johnson and Company, then the Rangers of Requiem's old colonial militia. Much like the dusters, these helmets remain an incredibly rare sight, especially since the militia's disbanding, but some are still held by former Rangers."
 	},
 /obj/item/clothing/suit/space/hardsuit/stealth,
+/obj/effect/turf_decal/trimline/opaque/orange/line,
 /turf/open/floor/plating,
 /area/outpost/crew/dorm)
 "FH" = (
@@ -15972,7 +15919,7 @@
 /obj/machinery/light/directional/west,
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/structure/railing,
-/turf/open/floor/plasteel/tech,
+/turf/open/floor/plasteel/mono/dark,
 /area/ruin/beach/gunsmith/electrical)
 "GS" = (
 /obj/structure/table/reinforced{
@@ -16515,6 +16462,9 @@
 	dir = 1
 	},
 /obj/structure/platform/wood,
+/obj/structure/platform/corner{
+	dir = 4
+	},
 /turf/open/floor/plating/asteroid/sand/dense/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "HS" = (
@@ -17609,14 +17559,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/starboard)
-"KE" = (
-/obj/structure/platform/wood{
-	dir = 9
-	},
-/turf/open/floor/concrete/slab_1/jungleplanet/lit{
-	initial_gas_mix = "BEACHPLANET_ATMOS"
-	},
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "KG" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 10
@@ -18180,12 +18122,6 @@
 "LQ" = (
 /turf/open/floor/concrete/slab_1,
 /area/outpost/crew)
-"LR" = (
-/obj/structure/platform/wood{
-	dir = 5
-	},
-/turf/open/floor/plating/asteroid/sand/dense/lit,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "LS" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -18576,13 +18512,6 @@
 	},
 /turf/open/floor/wood/maple,
 /area/outpost/crew)
-"MO" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 6
-	},
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/sand/lit,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "MP" = (
 /turf/closed/mineral/random/beach,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -19148,11 +19077,6 @@
 /obj/structure/girder/displaced,
 /turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"NO" = (
-/obj/effect/turf_decal/siding/wood/corner,
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/sand/lit,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "NP" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -19593,10 +19517,6 @@
 	dir = 9;
 	layer = 2.030
 	},
-/obj/effect/turf_decal/trimline/opaque/red/line{
-	dir = 8;
-	layer = 2.040
-	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
 	},
@@ -19610,6 +19530,9 @@
 	pixel_y = -12
 	},
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2,
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/lounge)
 "OG" = (
@@ -21715,16 +21638,15 @@
 	dir = 9;
 	layer = 2.030
 	},
-/obj/effect/turf_decal/trimline/opaque/red/line{
-	dir = 8;
-	layer = 2.040
-	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
 	},
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/lounge)
@@ -25002,12 +24924,6 @@
 /obj/structure/flora/rock/beach,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
-"Zw" = (
-/obj/structure/platform/wood/corner{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/sand/dense/lit,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "Zy" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -25175,14 +25091,6 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/ruin/jungle/paradise/comms)
-"ZW" = (
-/obj/structure/platform/wood{
-	dir = 5
-	},
-/turf/open/floor/concrete/slab_1/jungleplanet/lit{
-	initial_gas_mix = "BEACHPLANET_ATMOS"
-	},
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "ZX" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 9;
@@ -29075,7 +28983,7 @@ Kz
 So
 So
 So
-NO
+So
 MP
 MP
 MP
@@ -29201,9 +29109,9 @@ Kz
 Kz
 So
 So
-NO
-MO
-IM
+So
+So
+So
 MP
 MP
 aw
@@ -29328,11 +29236,11 @@ Kz
 So
 So
 So
-ii
-IM
-xX
-KE
-tq
+So
+So
+So
+MP
+MP
 aw
 aw
 OO
@@ -29452,14 +29360,14 @@ am
 am
 Kz
 Kz
-cd
+So
 So
 So
 ii
 qV
-Kz
-mv
-zp
+qV
+qV
+MP
 MP
 aw
 aw
@@ -29582,11 +29490,11 @@ Kz
 So
 So
 So
-ii
-qV
-Kz
-ZW
-BE
+AE
+zp
+zp
+zp
+zp
 MP
 MP
 aw
@@ -29709,12 +29617,12 @@ Kz
 So
 So
 So
-ii
-LR
-Zw
-Kz
-Kz
-Fl
+AE
+zp
+zp
+zp
+zp
+zp
 MP
 MP
 aw
@@ -29836,11 +29744,11 @@ Kz
 So
 So
 So
-lL
-fo
-LR
-gR
-gR
+AE
+zp
+zp
+zp
+zp
 sN
 Ap
 MP
@@ -29963,10 +29871,10 @@ Kz
 So
 So
 So
-So
-jM
-fa
-fa
+tq
+AQ
+AQ
+AQ
 iV
 HR
 Nz
