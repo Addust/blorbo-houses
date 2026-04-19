@@ -3120,6 +3120,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
+/obj/machinery/button/door{
+	id = "addust_bunker_hangar_maingate";
+	pixel_x = -7;
+	pixel_y = 21
+	},
 /turf/open/floor/concrete/pavement,
 /area/hangar)
 "gr" = (
@@ -3993,12 +3998,12 @@
 /turf/open/floor/suns,
 /area/outpost/medical)
 "ii" = (
-/mob/living/simple_animal/crab/kreb{
-	name = "random ass crab";
-	desc = "HOLY SHIT"
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
 	},
-/obj/structure/platform/corner,
-/turf/open/floor/plating/asteroid/sand/lit,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "ij" = (
 /obj/structure/table/reinforced,
@@ -4398,10 +4403,13 @@
 /turf/open/floor/wood/maple,
 /area/outpost/crew/library)
 "iV" = (
-/obj/structure/barricade/sandbags,
-/obj/effect/turf_decal/siding/wood,
-/obj/structure/platform{
-	dir = 8
+/obj/effect/turf_decal/stairs_wood{
+	dir = 6;
+	color = "#55391A"
+	},
+/obj/structure/platform/wood/corner,
+/obj/structure/platform/wood/corner{
+	dir = 1
 	},
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -8432,11 +8440,13 @@
 /turf/open/floor/suns,
 /area/ruin/beach/gunsmith)
 "qV" = (
-/obj/structure/platform{
-	dir = 4
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
 	},
-/turf/open/floor/plating/asteroid/sand/lit,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
+/area/hangar)
 "qW" = (
 /obj/structure/sign/plaques/kiddie{
 	name = "warning signboard";
@@ -9330,10 +9340,13 @@
 /turf/open/floor/wood/birch,
 /area/outpost/crew/dorm)
 "sN" = (
-/turf/open/floor/plasteel/stairs/old{
-	dir = 8;
-	initial_gas_mix = "BEACHPLANET_ATMOS"
+/obj/structure/platform/wood{
+	dir = 10
 	},
+/obj/structure/platform/wood/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/sand/dense/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "sO" = (
 /mob/living/simple_animal/bot/cleanbot{
@@ -9562,10 +9575,12 @@
 /turf/open/floor/wood/walnut,
 /area/ruin/beach/gunsmith)
 "tq" = (
-/obj/structure/platform/corner{
-	dir = 1
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
 	},
-/turf/open/floor/plating/asteroid/sand/lit,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating/rust,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "tr" = (
 /obj/structure/closet/crate/secure/weapon,
@@ -9923,6 +9938,21 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/icemoon/training_facility/garage)
+"tZ" = (
+/obj/effect/turf_decal/trimline/opaque/orange/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 5
+	},
+/obj/machinery/button/door{
+	pixel_x = -9;
+	pixel_y = -20;
+	dir = 1;
+	id = "addust_bunker_hangar_maingate"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/hangar)
 "ua" = (
 /obj/structure/platform/corner,
 /obj/structure/platform/corner{
@@ -11111,6 +11141,10 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
+	},
 /turf/open/floor/concrete/tiles,
 /area/hangar)
 "wT" = (
@@ -11420,6 +11454,10 @@
 "xF" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
 	},
 /turf/open/floor/concrete/tiles,
 /area/hangar)
@@ -11829,6 +11867,19 @@
 "yy" = (
 /turf/open/floor/engine,
 /area/outpost/engineering)
+"yz" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
+/obj/machinery/door/poddoor/shutters{
+	id = "addust_bunker_hangar_maingate"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/hangar)
 "yA" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5;
@@ -16462,9 +16513,6 @@
 	dir = 1
 	},
 /obj/structure/platform/wood,
-/obj/structure/platform/corner{
-	dir = 4
-	},
 /turf/open/floor/plating/asteroid/sand/dense/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "HS" = (
@@ -17675,6 +17723,13 @@
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/engineering/atmospherics)
+"KV" = (
+/obj/effect/turf_decal/trimline/opaque/orange/corner,
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 9
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/hangar)
 "KW" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -24297,9 +24352,11 @@
 /turf/open/floor/wood/maple,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Yb" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/concrete/tiles,
-/area/hangar)
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "Yc" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
@@ -29363,10 +29420,10 @@ Kz
 So
 So
 So
-ii
-qV
-qV
-qV
+cd
+So
+So
+So
 MP
 MP
 aw
@@ -29490,11 +29547,11 @@ Kz
 So
 So
 So
-AE
-zp
-zp
-zp
-zp
+So
+So
+So
+So
+So
 MP
 MP
 aw
@@ -29617,12 +29674,12 @@ Kz
 So
 So
 So
-AE
-zp
-zp
-zp
-zp
-zp
+So
+So
+So
+So
+ni
+Yb
 MP
 MP
 aw
@@ -29744,11 +29801,11 @@ Kz
 So
 So
 So
-AE
-zp
-zp
-zp
-zp
+So
+So
+So
+So
+iV
 sN
 Ap
 MP
@@ -29871,11 +29928,11 @@ Kz
 So
 So
 So
-tq
-AQ
-AQ
-AQ
-iV
+So
+So
+So
+So
+ce
 HR
 Nz
 MP
@@ -34421,8 +34478,8 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Iu
+xO
+EB
 nD
 nD
 nD
@@ -34544,12 +34601,12 @@ Za
 "}
 (75,1,1) = {"
 Za
-Hk
-Hk
-Hk
-Hk
-Hk
-Iu
+Ls
+Ls
+Ls
+Ls
+EB
+KV
 nD
 Ue
 Ue
@@ -34671,13 +34728,13 @@ Za
 "}
 (76,1,1) = {"
 Za
-Hk
-Hk
-Hk
-Hk
-Hk
-Iu
-nD
+lY
+fd
+fd
+lY
+lY
+ze
+ak
 dY
 dY
 dY
@@ -34798,17 +34855,17 @@ Za
 "}
 (77,1,1) = {"
 Za
-Hk
-Hk
-Hk
-Hk
-Hk
-Iu
-nD
+tq
+ii
+ii
+tq
+tq
+qV
+yz
 xF
-Yb
-Yb
-Yb
+ao
+ao
+ao
 wS
 ao
 ot
@@ -34925,12 +34982,12 @@ Za
 "}
 (78,1,1) = {"
 Za
-Hk
-Hk
-Hk
-Hk
-Hk
-Iu
+qz
+qz
+qz
+qz
+TY
+tZ
 nD
 gq
 xY
@@ -35056,8 +35113,8 @@ Hk
 Hk
 Hk
 Hk
-Hk
-Iu
+Ao
+TY
 nD
 hq
 gO
