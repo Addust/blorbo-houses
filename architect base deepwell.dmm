@@ -31,9 +31,19 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/deepstorage/security)
 "aq" = (
-/obj/structure/barricade/sandbags,
+/obj/structure/barricade/concrete,
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
+"as" = (
+/obj/structure/table/optable,
+/obj/machinery/defibrillator_mount/charging{
+	pixel_x = 0;
+	pixel_y = -27
+	},
+/obj/item/tank/internals/anesthetic,
+/obj/item/clothing/mask/breath/medical,
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/lavaland/factory)
 "ax" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -125,6 +135,20 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/crew/cryo)
+"bf" = (
+/obj/structure/plasticflaps,
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "addust_deepwell_conveyor"
+	},
+/obj/machinery/door/poddoor/preopen{
+	dir = 4;
+	armor = list("melee" = 50, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70);
+	name = "computer core blast door";
+	id = "addust_abyss_ai_robo"
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/lavaland/factory)
 "bi" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -177,36 +201,25 @@
 	},
 /area/overmap_encounter/planetoid/cave/explored)
 "bw" = (
-/obj/structure/railing/thin/corner{
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
-	},
-/obj/structure/railing/thin/corner{
-	dir = 8;
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/hatch{
-	name = "Computer Core"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/poddoor/preopen{
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Nephthys Turret";
+	id = "addust_abyss_ai_antechamber";
+	desc = "A turret manufactured specifically to defend critical areas of the Deepwell. Optimized for rapid target acquisition and suppression above all else, given that there is no way a vehicle would be able to even fit down here. Surely.";
+	lethal_projectile = /obj/projectile/bullet/c556mm;
+	stun_projectile = /obj/projectile/bullet/c556mm/rubber;
+	lethal_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
+	stun_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
 	dir = 1;
-	armor = list("melee" = 50, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70);
-	name = "computer core blast door"
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	integrity_failure = 0.35;
+	burst_delay = 2.5;
+	spread = 2;
+	shot_delay = 10;
+	lethal = 1;
+	reaction_time = 2
 	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 4
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ruin/space/has_grav/deepstorage/security/vault)
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/deepstorage/security)
 "by" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 6
@@ -248,12 +261,36 @@
 	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/maintenance/port)
+"bR" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/plasteel/patterned/cargo_one,
+/area/outpost/engineering)
 "bU" = (
 /turf/closed/indestructible/rock/beach{
 	name = "abyssal rock";
 	desc = "Densely-packed rock, miles below the surface."
 	},
 /area/outpost/maintenance/starboard)
+"bV" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Nephthys Turret";
+	id = "addust_abyss_cargo";
+	desc = "A turret manufactured specifically to defend critical areas of the Deepwell. Optimized for rapid target acquisition and suppression above all else, given that there is no way a vehicle would be able to even fit down here. Surely.";
+	lethal_projectile = /obj/projectile/bullet/c556mm;
+	stun_projectile = /obj/projectile/bullet/c556mm/rubber;
+	lethal_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
+	stun_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	integrity_failure = 0.35;
+	burst_delay = 2.5;
+	spread = 2;
+	shot_delay = 10;
+	dir = 1;
+	reaction_time = 2;
+	lethal = 1
+	},
+/turf/closed/wall/concrete/reinforced,
+/area/outpost/cargo)
 "bX" = (
 /obj/structure/platform{
 	dir = 4
@@ -312,10 +349,13 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
 "cn" = (
-/obj/structure/barricade/sandbags,
 /obj/structure/cable{
 	icon_state = "2-5"
 	},
+/obj/structure/barricade/concrete{
+	dir = 8
+	},
+/obj/structure/barricade/concrete,
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
 "cq" = (
@@ -369,6 +409,20 @@
 /obj/item/clothing/gloves/color/yellow,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
+"cv" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Robotics Workshop";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "cC" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_1,
@@ -474,6 +528,23 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
+"dk" = (
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "dl" = (
 /obj/structure/railing{
 	dir = 6
@@ -531,6 +602,19 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"dq" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/outpost/engineering)
 "dw" = (
 /obj/effect/turf_decal/corner_steel_grid/full{
 	layer = 2.030;
@@ -569,6 +653,15 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating/rust,
 /area/outpost/hallway/central)
+"dF" = (
+/obj/structure/platform/industrial{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/engineering)
 "dH" = (
 /obj/effect/turf_decal/borderfloorblack/corner{
 	dir = 4
@@ -590,10 +683,20 @@
 /turf/open/floor/plating/asteroid/dirt/grass/dark/beach,
 /area/outpost/crew/garden)
 "dR" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/railing/thin{
-	dir = 5;
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+/obj/structure/railing/thin/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/lattice/catwalk{
+	layer = 2.5
 	},
 /turf/open/chasm{
 	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
@@ -619,6 +722,55 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/crew/canteen)
+"dV" = (
+/obj/structure/crate_shelf,
+/obj/structure/closet/crate/secure/engineering{
+	desc = "A crate with a lock on it, painted in the scheme of the Makosso-Warra's engineering ivision.";
+	name = "stock parts crate"
+	},
+/obj/item/storage/box/stockparts/t3,
+/obj/item/storage/box/stockparts/t3,
+/obj/item/storage/box/stockparts/t3/capacitor,
+/obj/item/storage/box/stockparts/t3/capacitor,
+/obj/item/storage/box/stockparts/t3/laser,
+/obj/item/storage/box/stockparts/t3/laser,
+/obj/item/storage/box/stockparts/t3/manipulator,
+/obj/item/storage/box/stockparts/t3/manipulator,
+/obj/item/storage/box/stockparts/t3/matter,
+/obj/item/storage/box/stockparts/t3/matter,
+/obj/item/storage/box/stockparts/t3/scan,
+/obj/item/storage/box/stockparts/t3/scan,
+/turf/open/floor/plating,
+/area/ruin/lavaland/factory/warehouse)
+"dY" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-6"
+	},
+/obj/structure/catwalk/over/plated_catwalk,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/outpost/engineering)
+"dZ" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 4
+	},
+/obj/machinery/telecomms/processor/preset_one/birdstation{
+	name = "processor unit";
+	network = "jnc_commnet"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/engineering)
 "eb" = (
 /obj/structure/platform{
 	dir = 1
@@ -668,7 +820,6 @@
 /obj/structure/closet/secure_closet/armorycage,
 /obj/item/storage/belt/security/military/frontiersmen,
 /obj/item/melee/energy/flyssa,
-/obj/item/gun/ballistic/shotgun/brimstone/empty,
 /obj/item/attachment/bayonet,
 /obj/item/storage/box/ammo/a12g_buckshot,
 /obj/item/storage/box/ammo/a12g_buckshot,
@@ -689,6 +840,7 @@
 /obj/item/ammo_box/a300,
 /obj/item/ammo_box/a300,
 /obj/item/ammo_box/a300,
+/obj/item/gun/ballistic/shotgun/flamingarrow/conflagration/empty,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
 "eq" = (
@@ -754,6 +906,16 @@
 /obj/structure/platform,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/cargo)
+"eO" = (
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/catwalk/over/plated_catwalk,
+/turf/open/floor/plating,
+/area/outpost/engineering)
 "eR" = (
 /obj/machinery/button/door{
 	id = "addust_abyss_ai_entrance";
@@ -763,6 +925,24 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/crew/dorm)
+"eT" = (
+/obj/machinery/camera{
+	dir = 4
+	},
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = -12
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory/warehouse)
 "eU" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -774,6 +954,17 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
 /area/outpost/engineering)
+"fa" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/belt/utility,
+/obj/item/storage/belt/utility{
+	pixel_x = 0;
+	pixel_y = 7
+	},
+/obj/item/clothing/glasses/welding,
+/obj/item/clothing/glasses/welding,
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "fc" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 8;
@@ -876,6 +1067,30 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/hallway/central)
+"fi" = (
+/obj/structure/table/chem,
+/obj/item/storage/backpack/duffelbag/med/surgery{
+	pixel_x = 5;
+	pixel_y = -11
+	},
+/obj/item/stack/sticky_tape/surgical{
+	pixel_y = 9;
+	pixel_x = 6
+	},
+/obj/item/stack/medical/bone_gel/four{
+	pixel_y = 9;
+	pixel_x = -10
+	},
+/obj/item/reagent_containers/medigel/sterilizine{
+	pixel_x = -4;
+	pixel_y = 2
+	},
+/obj/item/flashlight/pen{
+	pixel_x = 5;
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/lavaland/factory)
 "fn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/industrial/traffic{
@@ -912,6 +1127,13 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/cryo)
 "fs" = (
+/obj/structure/catwalk/over/plated_catwalk,
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/outpost/engineering)
 "fz" = (
@@ -931,11 +1153,16 @@
 /area/outpost/engineering/atmospherics)
 "fC" = (
 /obj/machinery/door/window/brigdoor/northleft,
-/obj/item/storage/toolbox/syndicate{
-	pixel_x = 6;
-	pixel_y = -10
-	},
 /turf/open/floor/plasteel/tech,
+/area/outpost/engineering)
+"fD" = (
+/obj/structure/platform/industrial{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/engineering)
 "fG" = (
 /obj/structure/flora/ash/tall_shroom,
@@ -960,30 +1187,77 @@
 /turf/open/floor/concrete/reinforced,
 /area/outpost/cargo)
 "fU" = (
-/obj/item/radio/intercom/directional/west,
-/obj/item/radio/intercom/wideband/directional/north{
-	pixel_x = 9;
-	pixel_y = 26
+/obj/structure/railing/thin/corner{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
 	},
-/obj/item/radio/intercom/directional/north{
-	pixel_x = -10;
-	pixel_y = 31
+/obj/structure/railing/thin/corner{
+	dir = 8;
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
 	},
-/obj/machinery/camera/all,
-/obj/structure/AIcore,
-/obj/item/stack/sheet/rglass{
-	amount = 2;
-	pixel_x = 10;
-	pixel_y = -3;
-	desc = "It is two sheets, right?"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/circuit/red,
+/obj/machinery/door/airlock/hatch{
+	name = "Computer Core"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/poddoor/preopen{
+	dir = 1;
+	armor = list("melee" = 50, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70);
+	name = "computer core blast door";
+	id = "addust_abyss_ai_core"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/tech/grid,
 /area/ruin/space/has_grav/deepstorage/security/vault)
+"fY" = (
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
+"ga" = (
+/obj/structure/fluff{
+	icon = 'icons/obj/machines/telecomms.dmi';
+	icon_state = "hub";
+	name = "server rack";
+	desc = "A very large machine that handles most of Architect Base's computing. The faint thrum of cooling fans adds to the ambience of the enormous hole room.";
+	density = 1
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/space/has_grav/deepstorage/security/vault)
+"ge" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/outpost/engineering)
 "gf" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden{
 	dir = 4
@@ -1004,6 +1278,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
+"gh" = (
+/obj/item/disk/surgery/t3,
+/obj/machinery/computer/operating{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/lavaland/factory)
 "go" = (
 /obj/structure/platform{
 	dir = 10
@@ -1040,6 +1322,15 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"gy" = (
+/obj/structure/barricade/concrete{
+	dir = 8
+	},
+/obj/structure/barricade/concrete{
+	dir = 1
+	},
+/turf/open/floor/concrete/reinforced,
+/area/outpost/maintenance/starboard)
 "gA" = (
 /obj/structure/platform{
 	dir = 4
@@ -1187,6 +1478,13 @@
 /obj/machinery/camera,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
+"hF" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/outpost/engineering)
 "hH" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 4
@@ -1223,6 +1521,19 @@
 	icon_state = "wood-broken5"
 	},
 /area/outpost/crew/canteen)
+"hO" = (
+/obj/machinery/flasher{
+	name = "meatbag pacifier";
+	desc = "A device specifically made to out anyone unfashionable from the computer core.";
+	dir = 4;
+	pixel_x = 0;
+	pixel_y = -29
+	},
+/turf/closed/wall/r_wall/syndicate/nodiagonal{
+	name = "plastitanium bulkhead";
+	desc = "A multi-ton lump of plastitanium and plasteel."
+	},
+/area/ruin/space/has_grav/deepstorage/security)
 "hU" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
@@ -1285,6 +1596,19 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
+"if" = (
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = -12
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "ig" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1344,6 +1668,20 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/canteen)
+"iq" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#D2BC9D";
+	dir = 5
+	},
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
+"ir" = (
+/obj/machinery/computer/security{
+	icon_state = "computer-right"
+	},
+/obj/machinery/camera,
+/turf/open/floor/plasteel/patterned/cargo_one,
+/area/outpost/engineering)
 "is" = (
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
@@ -1389,17 +1727,6 @@
 	dir = 1;
 	layer = 2.7
 	},
-/obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/tank/internals/oxygen,
-/obj/item/clothing/suit/space/syndicate/engie{
-	name = "J&C Pattern 489 softsuit";
-	desc = "A hazard-orange softsuit developed by Johnson and Company prior to the ICW, graded by the GEC for its high radiation resistance and reliability. Similar, though not totally identical, to most modern ex-Coalition engineering suits."
-	},
-/obj/item/clothing/head/helmet/space/syndicate/engie{
-	name = "J&C Pattern 489 softsuit helmet";
-	desc = "The hazard-yellow helmet of a Pattern 489 soft-suit developed by Johnson and Company before its collapse. Graded by the GEC to be of high-quality."
-	},
-/obj/item/clothing/mask/breath/facemask,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/engineering)
 "iR" = (
@@ -1484,6 +1811,20 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
+"jb" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/deepstorage/security/vault)
+"jc" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 10
+	},
+/obj/machinery/blackbox_recorder{
+	name = "type 2 data recorder";
+	desc = "An incredibly outdated blackbox recorder bearing the insignia of Johnson and Company."
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/engineering)
 "jd" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/plating/asteroid/waterplanet{
@@ -1517,6 +1858,25 @@
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/outpost/engineering)
+"jk" = (
+/obj/structure/barricade/concrete{
+	dir = 4
+	},
+/turf/open/floor/concrete/reinforced,
+/area/outpost/maintenance/starboard)
+"jr" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#D2BC9D";
+	dir = 10
+	},
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
+"js" = (
+/turf/closed/indestructible/rock/beach{
+	name = "abyssal rock";
+	desc = "Densely-packed rock, miles below the surface."
+	},
+/area/ruin/lavaland/factory)
 "ju" = (
 /obj/machinery/door/poddoor/preopen{
 	dir = 4;
@@ -1565,14 +1925,25 @@
 /turf/open/floor/concrete/reinforced,
 /area/outpost/cargo)
 "jG" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/railing/thin{
-	dir = 10;
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Nephthys Turret";
+	id = "addust_abyss_ai_core";
+	desc = "A turret manufactured specifically to defend critical areas of the Deepwell. Optimized for rapid target acquisition and suppression above all else, given that there is no way a vehicle would be able to even fit down here. Surely.";
+	lethal_projectile = /obj/projectile/bullet/c556mm;
+	stun_projectile = /obj/projectile/bullet/c556mm/rubber;
+	lethal_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
+	stun_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	integrity_failure = 0.35;
+	burst_delay = 2.5;
+	spread = 2;
+	shot_delay = 10;
+	dir = 1;
+	reaction_time = 2;
+	lethal = 1
 	},
-/turf/open/chasm{
-	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
-	},
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/plasteel/mono/dark,
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "jI" = (
 /obj/structure/disposalpipe/segment{
@@ -1589,12 +1960,25 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/hallway/central)
+"jN" = (
+/obj/machinery/recharge_station,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "jO" = (
 /obj/structure/platform{
 	dir = 4
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"jQ" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal{
+	name = "plastitanium bulkhead";
+	desc = "A multi-ton lump of plastitanium and plasteel."
+	},
+/area/ruin/lavaland/factory/warehouse)
 "jU" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer4{
 	dir = 6
@@ -1640,6 +2024,9 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "kg" = (
@@ -1648,6 +2035,17 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/cargo)
+"kh" = (
+/obj/structure/fluff{
+	icon = 'icons/obj/machines/telecomms.dmi';
+	icon_state = "hub";
+	name = "server rack";
+	desc = "A very large machine that handles most of Architect Base's computing. The faint thrum of cooling fans adds to the ambience of the enormous hole room.";
+	density = 1
+	},
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "kq" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -1704,6 +2102,16 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/crew/canteen)
+"kA" = (
+/obj/structure/hazard_shutoff/electrical_shutoff{
+	pixel_x = 1;
+	pixel_y = -34;
+	desc = "An actually very new emergency shutoff switch for industrial power sources.";
+	id = "sparebody_workshop";
+	name = "circuit breaker"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/lavaland/factory)
 "kF" = (
 /obj/structure/platform{
 	dir = 5
@@ -1742,6 +2150,15 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
+"kQ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "kW" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -1769,6 +2186,14 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/outpost/engineering/atmospherics)
+"ld" = (
+/obj/machinery/camera{
+	dir = 4
+	},
+/obj/machinery/light/small/directional/west,
+/obj/machinery/autolathe/hacked,
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "lt" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -1782,27 +2207,29 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
 "lv" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
-	icon_state = "1-2"
+	icon_state = "2-8"
 	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal{
-	name = "plastitanium bulkhead";
-	desc = "A multi-ton lump of plastitanium and plasteel."
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
 	},
-/area/ruin/space/has_grav/deepstorage/security/vault)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/machinery/camera,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
+/area/outpost/engineering)
 "lD" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/window/reinforced/spawner/north,
-/obj/structure/frame/machine,
-/obj/item/stack/cable_coil/random/five,
-/obj/item/circuitboard/machine/rdserver,
-/obj/item/stack/cable_coil/cut/red,
-/obj/item/stock_parts/scanning_module/phasic,
+/obj/machinery/ntnet_relay{
+	name = "ARMSnet emergency relay";
+	desc = "An auxiliary wireless relay built for the ARMS-net protocol, bearing the insignia of Johnson & Company. Will beam shitposts into Hecatia's mind someday, just give it time or a catastrophic failure of all infrastructure outside the Deepwell."
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering)
 "lF" = (
@@ -1871,24 +2298,39 @@
 	desc = "A deposit of shallow water deep below Requiem's surface."
 	},
 /area/outpost/crew/canteen)
-"mb" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Nephthys Turret";
-	id = "addust_abyss_ai_antechamber";
-	desc = "A turret manufactured specifically to defend critical areas of the Deepwell. Optimized for rapid target acquisition and suppression above all else, given that there is no way a vehicle would be able to even fit down here. Surely.";
-	lethal_projectile = /obj/projectile/bullet/c556mm;
-	stun_projectile = /obj/projectile/bullet/c556mm/rubber;
-	lethal_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
-	stun_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
-	dir = 1;
-	armor = list("melee" = 60, "bullet" = 50, "laser" = 50, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	integrity_failure = 0.35;
-	burst_delay = 2.5;
-	spread = 2;
-	shot_delay = 10
+"ma" = (
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/dark,
-/area/ruin/space/has_grav/deepstorage/security)
+/turf/closed/wall/concrete/reinforced,
+/area/overmap_encounter/planetoid/cave/explored)
+"mb" = (
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
+"md" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/overmap_encounter/planetoid/cave/explored)
 "mh" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 6;
@@ -1931,15 +2373,15 @@
 	},
 /area/ruin/space/has_grav/deepstorage/security)
 "ml" = (
-/obj/structure/lattice,
-/obj/machinery/firealarm/directional/north{
-	pixel_x = 0;
-	pixel_y = 32
+/obj/structure/cable{
+	icon_state = "1-2";
+	layer = 3.1
 	},
-/turf/open/chasm{
-	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
-	},
-/area/ruin/space/has_grav/deepstorage/security/vault)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
+/area/outpost/engineering)
 "mm" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1999,6 +2441,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/reinforced,
 /area/outpost/cargo)
+"mC" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "mJ" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -2039,11 +2494,27 @@
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering)
 "mQ" = (
-/obj/structure/lattice,
-/obj/machinery/light/small/directional/east,
-/turf/open/chasm{
-	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Nephthys Turret";
+	id = "addust_abyss_ai_core";
+	desc = "A turret manufactured specifically to defend critical areas of the Deepwell. Optimized for rapid target acquisition and suppression above all else, given that there is no way a vehicle would be able to even fit down here. Surely.";
+	lethal_projectile = /obj/projectile/bullet/c556mm;
+	stun_projectile = /obj/projectile/bullet/c556mm/rubber;
+	lethal_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
+	stun_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	integrity_failure = 0.35;
+	burst_delay = 2.5;
+	spread = 2;
+	shot_delay = 10;
+	reaction_time = 2;
+	lethal = 1
 	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/plasteel/mono/dark,
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "mW" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal{
@@ -2051,9 +2522,37 @@
 	desc = "A multi-ton lump of plastitanium and plasteel."
 	},
 /area/outpost/engineering/atmospherics)
-"nk" = (
-/obj/machinery/camera,
+"ni" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plating,
+/area/outpost/engineering)
+"nk" = (
+/obj/effect/turf_decal/box/white,
+/obj/structure/closet/secure_closet/engineering_electrical,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/engineering)
+"no" = (
+/obj/effect/turf_decal/stairs{
+	dir = 5;
+	color = "#575757"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/engineering)
 "nq" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
@@ -2067,6 +2566,69 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering)
+"nr" = (
+/obj/structure/fluff{
+	icon_state = "humanipc_head";
+	icon = 'icons/mob/species/ipc/bodyparts.dmi';
+	desc = "A synthskin imitation of a tired old face, smoothed out in assembly. Its eyes are shut; for the better.";
+	name = "Addust Johnson"
+	},
+/obj/structure/fluff{
+	icon = 'icons/mob/species/ipc/bodyparts.dmi';
+	icon_state = "saipc2_l_leg";
+	desc = "The boot that shall be planted within the ass of the poor sod that necessitated the use of this body.";
+	name = "Addust Johnson"
+	},
+/obj/structure/fluff{
+	icon = 'icons/mob/species/ipc/bodyparts.dmi';
+	icon_state = "saipc2_r_leg";
+	desc = "The boot that shall be planted within the ass of the poor sod that necessitated the use of this body.";
+	name = "Addust Johnson"
+	},
+/obj/structure/fluff{
+	icon = 'icons/mob/species/ipc/bodyparts.dmi';
+	icon_state = "saipc_l_arm";
+	desc = "Chains hanging from the ceiling hook into mounting points on the arms, holding the body upright enough to loom over you.";
+	name = "Addust Johnson"
+	},
+/obj/structure/fluff{
+	icon = 'icons/mob/species/ipc/bodyparts.dmi';
+	icon_state = "customsa_r_arm";
+	desc = "Chains hanging from the ceiling hook into mounting points on the arms, holding the body upright enough to loom over you.";
+	pixel_x = 0;
+	pixel_y = 0;
+	name = "Addust Johnson"
+	},
+/obj/structure/fluff{
+	icon = 'icons/mob/species/ipc/bodyparts.dmi';
+	icon_state = "saipc2_chest";
+	desc = "A modified version of Addust's augments, using the HECATE modifications to support an MMI. The chest hatch lies open, revealing an empty socket.";
+	name = "Addust Johnson"
+	},
+/obj/item/clothing/head/wig{
+	hairstyle = "Business Hair";
+	icon_state = "hair_business";
+	pixel_x = 0;
+	layer = 4;
+	desc = "Now it will never need combing again.";
+	color = "#FF9900"
+	},
+/obj/effect/turf_decal/techfloor,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/lavaland/factory)
+"nu" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/baseturf_helper/asteroid,
+/obj/structure/cable{
+	icon_state = "4-10"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory/warehouse)
 "nA" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
@@ -2130,6 +2692,18 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"nR" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "nS" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2155,6 +2729,28 @@
 	desc = "A deposit of shallow water deep below Requiem's surface."
 	},
 /area/outpost/hallway/central)
+"oc" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Exalren Turret";
+	id = "addust_hoohehehehe";
+	desc = "A six-barreled monstrosity of a turret, sweeping side to side in eternal vigilance. Its ballistic shield belies its agility and power, featureless save for an engraved Johnson & Company logo and a slit glowing a baleful crimson. Whatever it guards is best left undisturbed.";
+	lethal_projectile_sound = sound/weapons/gun/smg/sidewinder.ogg;
+	stun_projectile_sound = sound/creatures/sidewinder.ogg;
+	dir = 1;
+	burst_delay = 1;
+	burst_size = 15;
+	shot_delay = 15;
+	spread = 3;
+	pixel_x = 0;
+	pixel_y = 4;
+	armor = list("melee" = 30, "bullet" = 80, "laser" = 80, "energy" = 60, "bomb" = 80, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 100);
+	integrity_failure = 0.3;
+	lethal = 1;
+	layer = 3.1;
+	reaction_time = 5
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "oe" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
@@ -2196,6 +2792,10 @@
 /obj/effect/mapping_helpers/crate_shelve,
 /turf/open/floor/concrete/reinforced,
 /area/outpost/cargo)
+"or" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/outpost/engineering)
 "ot" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -2267,6 +2867,35 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/deepstorage/security)
+"oW" = (
+/obj/structure/platform/industrial{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "5-9"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-5"
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/engineering)
+"oX" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
+/area/ruin/lavaland/factory)
 "oY" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1;
@@ -2285,6 +2914,15 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
+"pb" = (
+/obj/structure/cable{
+	icon_state = "0-6"
+	},
+/obj/machinery/computer/monitor{
+	icon_state = "computer-left"
+	},
+/turf/open/floor/plasteel/patterned/cargo_one,
+/area/outpost/engineering)
 "pd" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 1
@@ -2304,11 +2942,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/hallway/central)
+"pi" = (
+/obj/machinery/rnd/production/circuit_imprinter,
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "pl" = (
-/obj/structure/barricade/sandbags,
 /obj/machinery/camera{
 	dir = 4
 	},
+/obj/structure/barricade/concrete,
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
 "po" = (
@@ -2440,36 +3082,32 @@
 	},
 /area/outpost/maintenance/starboard)
 "pX" = (
-/obj/structure/lattice/catwalk{
-	layer = 2.5
+/obj/item/circuitboard/aicore{
+	pixel_x = 13;
+	pixel_y = 10
 	},
-/obj/structure/railing/thin/corner{
-	dir = 1;
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 5;
+	pixel_y = -6
 	},
-/obj/structure/railing/thin/corner{
-	dir = 4;
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+/obj/item/mmi/posibrain{
+	pixel_x = -8;
+	pixel_y = 10
 	},
-/obj/machinery/flasher{
-	name = "meatbag pacifier";
-	desc = "A device specifically made to out anyone unfashionable from the computer core.";
-	dir = 4;
-	pixel_x = 0;
-	pixel_y = -29
-	},
-/mob/living/simple_animal/bot/secbot/grievous{
-	desc = "A passion project of a bored engineer, the arbiter of the will of Architect Base's AI. Four humming blades of light stand poised to cleave any threats in twain.";
-	name = "Carmilla"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
-	icon_state = "1-2"
+	icon_state = "2-8"
 	},
-/turf/open/chasm{
-	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/structure/railing/thin/corner{
+	dir = 8
+	},
+/obj/structure/railing/thin/corner,
+/turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "pY" = (
 /obj/effect/turf_decal/stairs{
@@ -2485,30 +3123,18 @@
 /turf/open/floor/plating/rust,
 /area/outpost/hallway/central)
 "qe" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Nephthys Turret";
-	id = "addust_abyss_ai_antechamber";
-	desc = "A turret manufactured specifically to defend critical areas of the Deepwell. Optimized for rapid target acquisition and suppression above all else, given that there is no way a vehicle would be able to even fit down here. Surely.";
-	lethal_projectile = /obj/projectile/bullet/c556mm;
-	stun_projectile = /obj/projectile/bullet/c556mm/rubber;
-	lethal_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
-	stun_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
-	dir = 1;
-	armor = list("melee" = 60, "bullet" = 50, "laser" = 50, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	integrity_failure = 0.35;
-	burst_delay = 2.5;
-	spread = 2;
-	shot_delay = 10
+/obj/machinery/door/airlock/hatch{
+	name = "Cyborg Storage"
 	},
-/obj/machinery/turretid{
-	id = "addust_abyss_ai_antechamber";
-	pixel_x = 0;
-	pixel_y = -23;
-	desc = "Used to control a room's automated defenses. This one requires you to reach over one of them, which is slightly inconvenient if they don't like you."
-	},
-/obj/machinery/airalarm/directional/east,
-/turf/open/floor/plasteel/dark,
-/area/ruin/space/has_grav/deepstorage/security)
+/obj/structure/fans/tiny,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/deepstorage/security/vault)
+"qh" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
+/area/outpost/engineering)
 "qk" = (
 /obj/structure/cable{
 	icon_state = "1-6";
@@ -2525,6 +3151,11 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/engineering)
+"qm" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/plating,
+/area/outpost/crew/dorm)
 "qq" = (
 /obj/structure/platform,
 /obj/machinery/light/directional/north,
@@ -2541,18 +3172,16 @@
 	layer = 2.5
 	},
 /obj/structure/railing/thin{
-	dir = 4;
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
-	},
-/obj/structure/railing/thin{
-	dir = 8;
 	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
 	},
 /obj/structure/cable{
-	icon_state = "1-2"
+	icon_state = "1-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/chasm{
 	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
 	},
@@ -2613,6 +3242,35 @@
 /obj/structure/closet/emcloset/wall/directional/east,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
+"qM" = (
+/obj/machinery/recharge_station,
+/obj/machinery/camera{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/deepstorage/security/vault)
+"qQ" = (
+/obj/machinery/button/door{
+	dir = 4;
+	pixel_x = -22;
+	pixel_y = 0;
+	id = "addust_abyss_ai_med"
+	},
+/obj/structure/table/chem,
+/obj/item/storage/toolbox/syndicate{
+	pixel_x = -1;
+	pixel_y = 9
+	},
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 3;
+	pixel_y = 0
+	},
+/obj/item/clothing/glasses/welding{
+	pixel_x = -4;
+	pixel_y = -10
+	},
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/lavaland/factory)
 "qT" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
@@ -2622,6 +3280,28 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/hallway/central)
+"qU" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/preopen{
+	dir = 4;
+	armor = list("melee" = 50, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70);
+	name = "computer core blast door";
+	id = "addust_abyss_ai_robo"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/lavaland/factory)
 "rc" = (
 /obj/machinery/power/compressor{
 	dir = 1
@@ -2633,24 +3313,23 @@
 /turf/open/floor/engine/airless,
 /area/outpost/engineering)
 "ri" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Nephthys Turret";
-	id = "addust_abyss_ai_core";
-	desc = "A turret manufactured specifically to defend critical areas of the Deepwell. Optimized for rapid target acquisition and suppression above all else, given that there is no way a vehicle would be able to even fit down here. Surely.";
-	lethal_projectile = /obj/projectile/bullet/c556mm;
-	stun_projectile = /obj/projectile/bullet/c556mm/rubber;
-	lethal_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
-	stun_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
-	armor = list("melee" = 60, "bullet" = 50, "laser" = 50, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	integrity_failure = 0.35;
-	burst_delay = 2.5;
-	spread = 2;
-	shot_delay = 10;
+/obj/structure/railing/thin/corner{
 	dir = 1
 	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal{
-	name = "plastitanium bulkhead";
-	desc = "A multi-ton lump of plastitanium and plasteel."
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
 	},
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "rl" = (
@@ -2689,6 +3368,42 @@
 "ru" = (
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/crew/canteen)
+"rA" = (
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 8
+	},
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/obj/item/aicard/aitater{
+	pixel_x = 4;
+	pixel_y = -6
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
+"rE" = (
+/obj/structure/fluff{
+	icon = 'icons/obj/machines/telecomms.dmi';
+	icon_state = "hub";
+	name = "server rack";
+	desc = "A very large machine that handles most of Architect Base's computing. The faint thrum of cooling fans adds to the ambience of the enormous hole room.";
+	density = 1
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "rG" = (
 /obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -2704,6 +3419,23 @@
 /obj/effect/mapping_helpers/crate_shelve,
 /turf/open/floor/concrete/reinforced,
 /area/outpost/cargo)
+"rO" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Storage Room";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "rS" = (
 /obj/structure/platform{
 	dir = 1
@@ -2712,6 +3444,13 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/hallway/central)
+"rW" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "addust_deepwell_conveyor"
+	},
+/turf/open/floor/plating,
+/area/ruin/lavaland/factory)
 "rY" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 8
@@ -2780,25 +3519,37 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
 "sc" = (
-/obj/structure/cable{
-	icon_state = "2-8"
+/obj/machinery/turretid{
+	id = "addust_abyss_ai_core";
+	pixel_x = -1;
+	pixel_y = 25;
+	lethal = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
+/obj/machinery/computer/aifixer{
+	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 10
+/obj/structure/window/reinforced{
+	dir = 4
 	},
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/camera,
-/turf/open/floor/plating,
-/area/outpost/engineering)
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "se" = (
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
+"sf" = (
+/obj/effect/turf_decal/box/white,
+/obj/structure/closet/secure_closet/engineering_welding,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/engineering)
 "sm" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2855,6 +3606,23 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"sG" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 4
+	},
+/obj/machinery/telecomms/bus/preset_one/birdstation{
+	name = "bus mainframe";
+	network = "jnc_commnet"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/engineering)
+"sL" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/rust,
+/area/ruin/lavaland/factory)
 "sN" = (
 /obj/structure/grille,
 /obj/structure/window/plasma/reinforced/plastitanium,
@@ -2880,10 +3648,42 @@
 /obj/structure/closet/wall/red/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/canteen)
+"sU" = (
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/small/directional/south,
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "sW" = (
 /obj/structure/flora/ash/stem_shroom,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"sZ" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 4
+	},
+/obj/machinery/telecomms/broadcaster/preset_left/birdstation{
+	name = "subspace broadcaster";
+	network = "jnc_commnet"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/engineering)
 "ta" = (
 /obj/structure/cable{
 	icon_state = "1-2";
@@ -2896,6 +3696,12 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"tg" = (
+/obj/item/defibrillator/loaded,
+/obj/structure/table/chem,
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/lavaland/factory)
 "tk" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
@@ -2952,6 +3758,19 @@
 	},
 /turf/open/space/basic,
 /area/overmap_encounter/planetoid/cave/explored)
+"tx" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/catwalk/over/plated_catwalk,
+/turf/open/floor/plating,
+/area/outpost/engineering)
 "ty" = (
 /obj/structure/platform{
 	dir = 4
@@ -2963,6 +3782,26 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"tz" = (
+/obj/structure/table/reinforced,
+/obj/item/stack/cable_coil/red{
+	pixel_x = 9;
+	pixel_y = -5
+	},
+/obj/item/stack/cable_coil/red{
+	pixel_x = 10;
+	pixel_y = 4
+	},
+/obj/item/stack/sheet/glass/fifty{
+	pixel_x = -8;
+	pixel_y = 0
+	},
+/obj/item/stack/sheet/metal/fifty{
+	pixel_x = -8;
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "tA" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4;
@@ -3128,6 +3967,19 @@
 	desc = "A deposit of shallow water deep below Requiem's surface."
 	},
 /area/outpost/cargo)
+"ue" = (
+/obj/machinery/light/small/directional/south,
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = 2;
+	pixel_y = 11
+	},
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 1;
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory/warehouse)
 "uf" = (
 /obj/structure/platform{
 	dir = 4
@@ -3228,9 +4080,12 @@
 /turf/closed/indestructible/reinforced/rust,
 /area/overmap_encounter/planetoid/cave/explored)
 "uz" = (
-/obj/structure/barricade/sandbags,
 /obj/structure/cable{
 	icon_state = "6-9"
+	},
+/obj/structure/barricade/concrete,
+/obj/structure/barricade/concrete{
+	dir = 4
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
@@ -3266,6 +4121,24 @@
 	desc = "A toasty warm deposit of shallow water, heated by the geothermal power systems below."
 	},
 /area/outpost/engineering)
+"uH" = (
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/obj/structure/railing/thin/corner,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "uJ" = (
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
@@ -3275,6 +4148,16 @@
 	},
 /turf/open/floor/carpet/nanoweave/red,
 /area/outpost/crew/canteen)
+"uQ" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 4
+	},
+/obj/machinery/telecomms/receiver/preset_left/birdstation{
+	name = "subspace receiver";
+	network = "jnc_commnet"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/engineering)
 "uV" = (
 /obj/structure/cable{
 	icon_state = "0-6"
@@ -3329,8 +4212,21 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/dorm)
 "vh" = (
-/obj/structure/lattice,
-/obj/machinery/light/small/directional/west,
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/chasm{
 	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
 	},
@@ -3358,12 +4254,23 @@
 "vj" = (
 /turf/open/floor/plating,
 /area/outpost/crew/dorm)
+"vn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/flora/ash/cacti{
+	name = "abyssal fruiting cacti";
+	desc = "Genetically-modified fruiting cacti frequently found in the Deepwell facility, covered in a thin layer of rock dust.";
+	harvested_desc = "Genetically-modified fruiting cacti frequently found in the Deepwell facility, covered in a thin layer of rock dust. This set seems to have been harvested.";
+	harvested_name = "abyssal cacti"
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/outpost/hallway/central)
 "vp" = (
 /obj/machinery/rnd/production/protolathe/department/engineering{
 	pixel_x = 0;
 	pixel_y = 4
 	},
 /obj/structure/railing,
+/obj/effect/turf_decal/box/white,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/engineering)
 "vq" = (
@@ -3403,6 +4310,27 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/hallway/central)
+"vD" = (
+/obj/structure/table/chem,
+/obj/structure/closet/wall/white/directional/west,
+/obj/item/storage/firstaid/medical{
+	pixel_x = -5;
+	pixel_y = 6
+	},
+/obj/item/storage/firstaid/regular{
+	pixel_y = 0;
+	pixel_x = -5
+	},
+/obj/item/reagent_scanner{
+	pixel_x = 2;
+	pixel_y = 0
+	},
+/obj/item/healthanalyzer/advanced{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/lavaland/factory)
 "vF" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -3432,6 +4360,13 @@
 /obj/structure/table/wood/reinforced,
 /turf/open/floor/wood/birch,
 /area/outpost/crew/canteen)
+"vP" = (
+/obj/machinery/recharge_station,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "wh" = (
 /obj/structure/fluff/steam_vent/low{
 	pixel_x = 0;
@@ -3457,24 +4392,21 @@
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
 "wm" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Nephthys Turret";
-	id = "addust_abyss_ai_core";
-	desc = "A turret manufactured specifically to defend critical areas of the Deepwell. Optimized for rapid target acquisition and suppression above all else, given that there is no way a vehicle would be able to even fit down here. Surely.";
-	lethal_projectile = /obj/projectile/bullet/c556mm;
-	stun_projectile = /obj/projectile/bullet/c556mm/rubber;
-	lethal_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
-	stun_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
-	armor = list("melee" = 60, "bullet" = 50, "laser" = 50, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	integrity_failure = 0.35;
-	burst_delay = 2.5;
-	spread = 2;
-	shot_delay = 10
+/obj/structure/lattice/catwalk{
+	layer = 2.5
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 8
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 4
 	},
-/turf/open/floor/plasteel/mono/dark,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "wn" = (
 /obj/effect/turf_decal/borderfloorblack{
@@ -3592,6 +4524,13 @@
 	},
 /turf/open/floor/plating/rust,
 /area/ruin/space/has_grav/deepstorage/security)
+"wT" = (
+/obj/machinery/light/small/directional/east,
+/turf/closed/wall/r_wall/syndicate/nodiagonal{
+	name = "plastitanium bulkhead";
+	desc = "A multi-ton lump of plastitanium and plasteel."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "wU" = (
 /turf/closed/indestructible/rock/beach{
 	name = "abyssal rock";
@@ -3622,6 +4561,15 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/hallway/central)
+"wZ" = (
+/obj/machinery/power/smes/engineering{
+	charge = 7.5e+006;
+	input_level = 200000
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/engineering)
 "xb" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -3662,6 +4610,13 @@
 /obj/machinery/camera,
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
+"xg" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "addust_abyss_ai_med"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/lavaland/factory)
 "xi" = (
 /obj/machinery/light/dim/directional/west,
 /obj/effect/turf_decal/corner_steel_grid{
@@ -3693,6 +4648,20 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"xn" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/mob/living/simple_animal/bot/secbot/grievous{
+	desc = "A passion project of a bored engineer, the arbiter of the will of Architect Base's AI. Four humming blades of light stand poised to cleave any threats in twain.";
+	name = "Carmilla"
+	},
+/obj/effect/baseturf_helper/asteroid,
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/deepstorage/security)
 "xp" = (
 /obj/structure/cable{
 	icon_state = "2-9"
@@ -3728,15 +4697,59 @@
 /obj/machinery/computer/station_alert/retro,
 /turf/open/floor/plating,
 /area/outpost/hallway/central)
-"xC" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/railing/thin{
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+"xA" = (
+/obj/structure/hazard/electrical/electrified_water{
+	id = "sparebody_workshop";
+	contact_damage = 30;
+	desc = "crispy"
 	},
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/ruin/lavaland/factory)
+"xC" = (
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 8
+	},
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/chasm{
 	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
 	},
 /area/ruin/space/has_grav/deepstorage/security/vault)
+"xG" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/effect/turf_decal/borderfloorblack,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/airlock/engineering{
+	name = "Secondary Workshop Access"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/lavaland/factory)
 "xH" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -3746,6 +4759,21 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/engineering)
+"xI" = (
+/obj/structure/hazard/electrical/electrified_water{
+	id = "sparebody_workshop";
+	contact_damage = 30;
+	desc = "crispy"
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/ruin/lavaland/factory)
 "xN" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -3817,7 +4845,13 @@
 	dir = 2;
 	name = "SCSE-000 'LAST KNIGHT'";
 	desc = "An ICW-era, decades-outdated exosuit bearing the insignia of Scarlet Sky Securities. Being the last surviving Mannerheim, it bears years of battle-scars and many notches line its hull. Its hydrogen power system has been removed and replaced with an electrical one.";
-	armor = list("melee" = 80, "bullet" = 75, "laser" = 50, "energy" = 10, "bomb" = 70, "bio" = 0, "rad" = 50, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 80, "bullet" = 75, "laser" = 50, "energy" = 10, "bomb" = 70, "bio" = 0, "rad" = 50, "fire" = 100, "acid" = 100);
+	step_in = 3;
+	bumpsmash = 1;
+	max_equip = 5;
+	force = 45;
+	max_integrity = 400;
+	deflect_chance = 20
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/cargo)
@@ -3831,28 +4865,27 @@
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
 "yq" = (
-/obj/item/circuitboard/aicore{
-	pixel_x = 13;
-	pixel_y = 10
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Nephthys Turret";
+	id = "addust_abyss_ai_core";
+	desc = "A turret manufactured specifically to defend critical areas of the Deepwell. Optimized for rapid target acquisition and suppression above all else, given that there is no way a vehicle would be able to even fit down here. Surely.";
+	lethal_projectile = /obj/projectile/bullet/c556mm;
+	stun_projectile = /obj/projectile/bullet/c556mm/rubber;
+	lethal_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
+	stun_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	integrity_failure = 0.35;
+	burst_delay = 2.5;
+	spread = 2;
+	shot_delay = 10;
+	reaction_time = 2;
+	lethal = 1
 	},
-/obj/item/storage/toolbox/electrical{
-	pixel_x = 5;
-	pixel_y = -6
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
 	},
-/obj/item/mmi/posibrain{
-	pixel_x = -8;
-	pixel_y = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 5
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/open/floor/plasteel/tech,
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/plasteel/mono/dark,
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "ys" = (
 /obj/structure/cable{
@@ -3863,6 +4896,10 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
+"yu" = (
+/obj/machinery/atmospherics/components/unary/tank/air,
+/turf/open/floor/plating,
+/area/ruin/lavaland/factory/warehouse)
 "yw" = (
 /obj/structure/platform{
 	dir = 9
@@ -3874,22 +4911,21 @@
 	},
 /area/outpost/engineering)
 "yx" = (
-/obj/machinery/turretid{
-	id = "addust_abyss_ai_antechamber";
-	pixel_x = -1;
-	pixel_y = 25
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = 2;
+	pixel_y = 11
 	},
-/obj/machinery/computer/aifixer{
-	dir = 8
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 1;
+	pixel_y = 0
 	},
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/item/multitool{
+	pixel_x = -11;
+	pixel_y = 8
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech,
-/area/ruin/space/has_grav/deepstorage/security/vault)
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "yz" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -3920,6 +4956,24 @@
 	desc = "Densely-packed rock, miles below the surface."
 	},
 /area/overmap_encounter/planetoid/cave/explored)
+"yL" = (
+/obj/structure/hazard/electrical/electrified_water{
+	id = "sparebody_workshop";
+	contact_damage = 30;
+	desc = "crispy"
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-10"
+	},
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/ruin/lavaland/factory)
 "yM" = (
 /obj/effect/baseturf_helper/asteroid,
 /turf/open/floor/plating/asteroid/dirt/beach,
@@ -4045,6 +5099,14 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/canteen)
+"zp" = (
+/obj/effect/turf_decal/trimline/transparent/solgovgold/filled/warning{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "zr" = (
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -4187,13 +5249,33 @@
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
 "zU" = (
-/obj/machinery/turretid{
-	pixel_x = -1;
-	pixel_y = 25;
-	id = "addust_abyss_ai_entrance"
+/obj/item/radio/intercom/directional/west,
+/obj/item/radio/intercom/wideband/directional/north{
+	pixel_x = 9;
+	pixel_y = 26
 	},
-/turf/open/floor/plasteel/dark,
-/area/ruin/space/has_grav/deepstorage/security)
+/obj/item/radio/intercom/directional/north{
+	pixel_x = -10;
+	pixel_y = 31
+	},
+/obj/machinery/camera/all,
+/obj/structure/AIcore,
+/obj/item/stack/sheet/rglass{
+	amount = 2;
+	pixel_x = 10;
+	pixel_y = -3;
+	desc = "It is two sheets, right?"
+	},
+/obj/machinery/button/door{
+	dir = 8;
+	pixel_x = 21;
+	pixel_y = 4;
+	id = "addust_abyss_ai_core";
+	name = "Core Lockdown"
+	},
+/obj/effect/baseturf_helper/asteroid,
+/turf/open/floor/circuit/red,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "zY" = (
 /obj/machinery/atmospherics/components/unary/tank/nitrogen,
 /turf/open/floor/plating/asteroid/dirt/beach,
@@ -4394,6 +5476,9 @@
 	pixel_x = -5;
 	pixel_y = 12
 	},
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
 "Bt" = (
@@ -4408,6 +5493,16 @@
 "Bx" = (
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/maintenance/starboard)
+"By" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "2-5"
+	},
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/turf/open/floor/plating,
+/area/ruin/lavaland/factory)
 "Bz" = (
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/hallway/central)
@@ -4420,6 +5515,35 @@
 	desc = "A multi-ton lump of plastitanium and plasteel."
 	},
 /area/outpost/engineering)
+"BJ" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1;
+	color = "#D2BC9D"
+	},
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
+"BK" = (
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "BN" = (
 /obj/effect/turf_decal/industrial/warning/corner{
 	color = "#eeac2e";
@@ -4427,6 +5551,51 @@
 	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/maintenance/port)
+"BV" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#D2BC9D";
+	dir = 9
+	},
+/obj/structure/closet/cabinet,
+/obj/item/card/id/captains_spare{
+	registered_age = 61;
+	registered_name = "Addust Johnson";
+	assignment = "Architect";
+	officer = 1
+	},
+/obj/item/clothing/under/overalls/olive{
+	desc = "A durable pair of overalls with a removable white work shirt. Perfect for outdoor labor. These have a faded patch of Johnson & Company on the shoulder, alongside rank markings indicating a Chief Executive.";
+	name = "chief's overalls"
+	},
+/obj/item/clothing/under/syndicate/ngr/officer,
+/obj/item/clothing/mask/breath/ngr,
+/obj/item/clothing/suit/armor/ngr/captain,
+/obj/item/clothing/head/ngr/peaked,
+/obj/item/clothing/head/beret/eng/hazard{
+	pixel_x = -2;
+	pixel_y = 6;
+	desc = "An old, hazard-orange beret bearing Johnson and Company's insignia, embossed in tarnished silver.";
+	name = "johnson and company beret"
+	},
+/obj/item/clothing/suit/armor/vest/capcarapace/duster,
+/obj/item/storage/belt/sabre,
+/obj/item/storage/belt/utility/chief/full{
+	icon_state = "utility";
+	name = "toolbelt";
+	desc = "Holds tools."
+	},
+/obj/item/clothing/glasses/hud/security/sunglasses/ramzi{
+	name = "johnson and company hazard goggles";
+	desc = "Durable, hazard-orange derivatives of meson scanners manufactured by Johnson & Company in days gone by. While the use of similar designs by the Ramzi Clique has caused these to fall out of fashion, they remain protective of the eyes and just as durable as they were back in the day.";
+	flash_protect = 3
+	},
+/obj/item/clothing/glasses/sunglasses,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/storage/wallet,
+/obj/item/card/bank,
+/obj/item/clothing/shoes/jackboots/knife,
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
 "BY" = (
 /obj/structure/platform{
 	dir = 6
@@ -4469,6 +5638,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/outpost/engineering)
 "Co" = (
@@ -4578,19 +5748,21 @@
 /turf/open/floor/carpet/nanoweave/red,
 /area/outpost/crew/canteen)
 "CK" = (
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 6
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 6
+	dir = 9
 	},
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/camera,
-/turf/open/floor/plating,
-/area/outpost/hallway/central)
+/turf/closed/wall/r_wall/syndicate/nodiagonal{
+	name = "plastitanium bulkhead";
+	desc = "A multi-ton lump of plastitanium and plasteel."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
+"CL" = (
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/ruin/lavaland/factory)
 "CM" = (
 /obj/machinery/conveyor_switch/oneway{
 	id = "deepwell_refinery";
@@ -4666,27 +5838,29 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/outpost/engineering)
 "Dt" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Nephthys Turret";
-	id = "addust_abyss_ai_core";
-	desc = "A turret manufactured specifically to defend critical areas of the Deepwell. Optimized for rapid target acquisition and suppression above all else, given that there is no way a vehicle would be able to even fit down here. Surely.";
-	lethal_projectile = /obj/projectile/bullet/c556mm;
-	stun_projectile = /obj/projectile/bullet/c556mm/rubber;
-	lethal_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
-	stun_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
-	armor = list("melee" = 60, "bullet" = 50, "laser" = 50, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
-	integrity_failure = 0.35;
-	burst_delay = 2.5;
-	spread = 2;
-	shot_delay = 10
+/obj/structure/lattice/catwalk{
+	layer = 2.5
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/turf/open/floor/plasteel/mono/dark,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "Du" = (
 /obj/structure/rack{
@@ -4710,6 +5884,7 @@
 	dir = 8
 	},
 /obj/machinery/camera,
+/obj/effect/turf_decal/box/white,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/engineering)
 "DC" = (
@@ -4775,13 +5950,46 @@
 	},
 /turf/open/floor/carpet/red_gold,
 /area/outpost/crew/canteen)
+"DU" = (
+/obj/structure/railing/thin/corner{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "DV" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/barricade/sandbags,
+/obj/structure/barricade/concrete{
+	dir = 8
+	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
+"DZ" = (
+/obj/machinery/power/smes/engineering{
+	charge = 7.5e+006;
+	input_level = 200000
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/engineering)
 "Eb" = (
 /obj/machinery/light/directional/east,
 /obj/machinery/camera{
@@ -4817,6 +6025,19 @@
 /obj/structure/platform,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
+"Em" = (
+/obj/structure/lattice,
+/obj/structure/marker_beacon,
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
+"Ep" = (
+/obj/machinery/light/small/directional/north,
+/obj/structure/table/reinforced,
+/obj/machinery/cell_charger,
+/turf/open/floor/plating,
+/area/ruin/lavaland/factory/warehouse)
 "Et" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer4,
 /turf/closed/indestructible/rock/beach{
@@ -4838,7 +6059,8 @@
 	integrity_failure = 0.35;
 	burst_delay = 2.5;
 	spread = 2;
-	shot_delay = 10
+	shot_delay = 10;
+	reaction_time = 2
 	},
 /turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "BEACHPLANET_ATMOS"
@@ -4858,6 +6080,44 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
+"EI" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/structure/table/reinforced,
+/obj/item/multitool{
+	pixel_x = -11;
+	pixel_y = 8
+	},
+/obj/item/weldingtool/abductor{
+	icon = 'icons/obj/tools.dmi';
+	icon_state = "upindwelder";
+	name = "JC-506 nuclear welder";
+	desc = "An experimental prototype based on rejected ICW-era designs from Johnson & Company's Industrial Supply team, the Pattern 506 nuclear-powered welder, sourcing its fuel from 'I Can't Believe It's Not Exotic Matter'-brand compact nuclear fuel rods, is rated for several decades of constant welding work in the frame of a high-capacity traditional welder. However, don't expect to be having children anytime soon.";
+	pixel_x = -6;
+	pixel_y = -4
+	},
+/obj/item/wrench/abductor{
+	icon = 'icons/obj/tools.dmi';
+	desc = "A pre-NOF miracle tool that can spin back so you don't have to take the socket off the bolt. Much more convenient since GEC pushed for a universal bolt size for literally everything, from pipe fittings to industrial mining drills. Has a radiation trefoil on the handle, for some reason.";
+	name = "ratchet";
+	usesound = 'sound/items/ratchet.ogg';
+	pixel_x = 6;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory/warehouse)
+"EL" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 8
+	},
+/obj/structure/frame/machine,
+/obj/item/stock_parts/scanning_module/phasic,
+/obj/item/stack/cable_coil/cut/red,
+/obj/item/circuitboard/machine/rdserver,
+/obj/item/stack/cable_coil/random/five,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/engineering)
 "EM" = (
 /obj/structure/fluff{
 	icon = 'icons/obj/platform.dmi';
@@ -4931,6 +6191,17 @@
 /area/outpost/crew/canteen)
 "EX" = (
 /obj/structure/railing,
+/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/item/tank/internals/oxygen,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/suit/space/syndicate/engie{
+	name = "J&C Pattern 489 softsuit";
+	desc = "A hazard-orange softsuit developed by Johnson and Company prior to the ICW, graded by the GEC for its high radiation resistance and reliability. Similar, though not totally identical, to most modern ex-Coalition engineering suits."
+	},
+/obj/item/clothing/head/helmet/space/syndicate/engie{
+	name = "J&C Pattern 489 softsuit helmet";
+	desc = "The hazard-yellow helmet of a Pattern 489 soft-suit developed by Johnson and Company before its collapse. Graded by the GEC to be of high-quality."
+	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/engineering)
 "EY" = (
@@ -4974,6 +6245,47 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
+"Fi" = (
+/obj/structure/dresser{
+	dir = 4;
+	pixel_x = 6;
+	pixel_y = 0
+	},
+/obj/item/flashlight/lamp/green{
+	pixel_x = 9;
+	pixel_y = 11
+	},
+/turf/open/floor/carpet/green,
+/area/outpost/crew/dorm)
+"Fj" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
+/area/ruin/lavaland/factory)
+"Fk" = (
+/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/item/tank/internals/oxygen,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/clothing/suit/space/syndicate/engie{
+	name = "J&C Pattern 489 softsuit";
+	desc = "A hazard-orange softsuit developed by Johnson and Company prior to the ICW, graded by the GEC for its high radiation resistance and reliability. Similar, though not totally identical, to most modern ex-Coalition engineering suits."
+	},
+/obj/item/clothing/head/helmet/space/syndicate/engie{
+	name = "J&C Pattern 489 softsuit helmet";
+	desc = "The hazard-yellow helmet of a Pattern 489 soft-suit developed by Johnson and Company before its collapse. Graded by the GEC to be of high-quality."
+	},
+/turf/open/floor/plasteel/patterned/cargo_one,
+/area/outpost/engineering)
 "Fo" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -5041,6 +6353,26 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/hallway/central)
+"FV" = (
+/obj/machinery/light/small/directional/east,
+/obj/machinery/conveyor_switch{
+	id = "addust_deepwell_conveyor"
+	},
+/obj/effect/turf_decal/trimline/transparent/solgovgold/filled/warning{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 1
+	},
+/obj/machinery/button/door{
+	id = "addust_deepwell_ai_robo";
+	desc = "I WONDER";
+	name = "button that toggles the conveyors probably";
+	dir = 8;
+	pixel_x = 21;
+	pixel_y = -8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "Ga" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 6;
@@ -5095,16 +6427,38 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"Gl" = (
+/obj/effect/turf_decal/trimline/transparent/solgovgold/filled/warning{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "Gq" = (
-/obj/structure/lattice,
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/chasm{
 	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
 	},
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "Gw" = (
-/obj/structure/barricade/sandbags,
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/structure/barricade/concrete{
+	dir = 4
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
@@ -5152,6 +6506,15 @@
 	desc = "A deposit of shallow water deep below Requiem's surface."
 	},
 /area/outpost/crew/dorm)
+"GM" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 9
+	},
+/obj/machinery/telecomms/message_server/preset{
+	network = "jnc_commnet"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/engineering)
 "GP" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 6;
@@ -5177,6 +6540,14 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering)
+"GT" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/turf/open/floor/plating,
+/area/outpost/crew/dorm)
 "Hb" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -5233,6 +6604,25 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
+"Ho" = (
+/obj/structure/hazard/electrical/electrified_water{
+	id = "sparebody_workshop";
+	contact_damage = 30;
+	desc = "crispy"
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-6"
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/ruin/lavaland/factory)
 "Hp" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -5244,12 +6634,19 @@
 /turf/open/floor/plating,
 /area/outpost/engineering)
 "Hq" = (
-/obj/structure/lattice,
-/obj/machinery/airalarm/directional/north,
-/turf/open/chasm{
-	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+/obj/structure/cable{
+	icon_state = "2-4"
 	},
-/area/ruin/space/has_grav/deepstorage/security/vault)
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/machinery/camera,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
+/area/outpost/hallway/central)
 "Ht" = (
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
@@ -5305,6 +6702,15 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/cargo)
+"HH" = (
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/obj/structure/chair/office{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/outpost/engineering)
 "HM" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/cryopod{
@@ -5360,12 +6766,27 @@
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/outpost/engineering)
+"Ib" = (
+/obj/structure/flora/rock/pile,
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/ruin/lavaland/factory)
 "Ic" = (
 /obj/structure/flora/rock/pile,
 /turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"Ig" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/auto_name/directional/south,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/engineering)
 "Ih" = (
 /obj/machinery/door/firedoor/heavy,
 /obj/effect/turf_decal/industrial/traffic/corner,
@@ -5381,41 +6802,16 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 9
 	},
-/obj/structure/closet/cabinet,
-/obj/item/clothing/head/beret/eng/hazard{
-	pixel_x = -2;
-	pixel_y = 6;
-	desc = "A beret with the engineering insignia emblazoned on it. For engineers that are more inclined towards style than safety. This one seems to be colored differently. Its badge bears the insignia of Johnson & Company."
-	},
-/obj/item/clothing/gloves/color/yellow,
-/obj/item/clothing/suit/jacket/leather/duster,
-/obj/item/clothing/under/overalls/olive{
-	desc = "A durable pair of overalls with a removable white work shirt. Perfect for outdoor labor. These have a faded patch of Johnson & Company on the shoulder, alongside rank markings indicating a Chief Executive.";
-	name = "chief's overalls"
-	},
-/obj/item/clothing/suit/armor/vest/capcarapace/duster,
-/obj/item/clothing/head/beret/captain,
-/obj/item/storage/belt/sabre,
-/obj/item/clothing/head/ngr/peaked,
-/obj/item/clothing/suit/armor/ngr/captain,
-/obj/item/clothing/mask/gas/sechailer,
-/obj/item/clothing/neck/shemagh,
-/obj/item/clothing/neck/shemagh/ngr,
-/obj/item/storage/belt/utility/full/ert,
-/obj/item/tank/internals/oxygen,
-/obj/item/tank/internals/emergency_oxygen/double,
-/obj/item/card/id/captains_spare{
-	registered_age = 61;
-	registered_name = "Addust Johnson";
-	assignment = "Architect";
-	officer = 1
-	},
 /obj/effect/turf_decal/corner_steel_grid{
 	layer = 2.030
 	},
-/obj/item/clothing/under/syndicate/ngr/jumpsuit,
-/obj/item/clothing/under/syndicate/ngr/officer,
-/obj/item/clothing/mask/breath/facemask,
+/obj/structure/fluff{
+	icon = 'icons/obj/machines/telecomms.dmi';
+	icon_state = "hub";
+	name = "server rack";
+	desc = "A very large machine with authority over much of Architect Base's computer.";
+	density = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
 "Il" = (
@@ -5427,14 +6823,36 @@
 /obj/machinery/camera,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
+"Ip" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
+/turf/open/floor/plating,
+/area/outpost/crew/dorm)
 "Iq" = (
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/crew/garden)
 "Ir" = (
-/obj/structure/lattice/catwalk,
+/obj/machinery/firealarm/directional/north{
+	pixel_x = 0;
+	pixel_y = 32
+	},
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
 /obj/structure/railing/thin{
-	dir = 4;
 	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/chasm{
 	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
@@ -5448,6 +6866,24 @@
 "Iv" = (
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"Iy" = (
+/obj/machinery/light/small/directional/east,
+/obj/structure/table/reinforced,
+/obj/machinery/cell_charger,
+/obj/item/stock_parts/cell/high/plus{
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/obj/item/stock_parts/cell/high/plus{
+	pixel_x = -9;
+	pixel_y = -8
+	},
+/obj/item/stock_parts/cell/high/plus{
+	pixel_x = 9;
+	pixel_y = -9
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "IA" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5483,10 +6919,18 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
+"IO" = (
+/obj/structure/crate_shelf{
+	capacity = 4
+	},
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/plasteel/patterned/cargo_one,
+/area/outpost/engineering)
 "IQ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/outpost/engineering)
 "IW" = (
@@ -5496,6 +6940,23 @@
 	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/maintenance/port)
+"IZ" = (
+/obj/structure/table/chem,
+/obj/item/mmi{
+	pixel_x = -3;
+	pixel_y = 12
+	},
+/obj/item/mmi{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/item/mmi{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/obj/machinery/camera/motion,
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/lavaland/factory)
 "Ja" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -5549,6 +7010,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
+"Jn" = (
+/turf/closed/wall/concrete/reinforced,
+/area/ruin/lavaland/factory)
 "Jo" = (
 /obj/structure/cable{
 	icon_state = "4-9"
@@ -5557,6 +7021,14 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"Jv" = (
+/obj/machinery/firealarm/directional/north{
+	pixel_x = 0;
+	pixel_y = 32
+	},
+/obj/machinery/mecha_part_fabricator,
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "Jz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/industrial/traffic{
@@ -5601,6 +7073,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
+"JP" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal{
+	name = "plastitanium bulkhead";
+	desc = "A multi-ton lump of plastitanium and plasteel."
+	},
+/area/ruin/lavaland/factory)
 "JR" = (
 /obj/structure/cable{
 	icon_state = "1-2";
@@ -5719,6 +7197,27 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/hallway/central)
+"KI" = (
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/small/directional/north,
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "KK" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 4;
@@ -5747,6 +7246,26 @@
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/engineering)
+"KN" = (
+/obj/structure/platform/industrial{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
+/area/ruin/lavaland/factory)
+"KR" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/flora/ash/cacti{
+	name = "abyssal fruiting cacti";
+	desc = "Genetically-modified fruiting cacti frequently found in the Deepwell facility, covered in a thin layer of rock dust.";
+	harvested_desc = "Genetically-modified fruiting cacti frequently found in the Deepwell facility, covered in a thin layer of rock dust. This set seems to have been harvested.";
+	harvested_name = "abyssal cacti"
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/overmap_encounter/planetoid/cave/explored)
 "La" = (
 /obj/structure/table,
 /obj/item/phone{
@@ -5779,6 +7298,12 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/hallway/central)
+"Ld" = (
+/obj/structure/barricade/concrete{
+	dir = 1
+	},
+/turf/open/floor/concrete/reinforced,
+/area/outpost/maintenance/starboard)
 "Le" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -5796,6 +7321,30 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/engineering)
+"Ll" = (
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "Lq" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -5811,12 +7360,23 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
+"Lt" = (
+/obj/effect/turf_decal/industrial/warning,
+/turf/open/floor/plating,
+/area/ruin/lavaland/factory/warehouse)
 "Lu" = (
 /obj/structure/platform{
 	dir = 8
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
+"Lx" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "addust_deepwell_conveyor"
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ruin/lavaland/factory)
 "Lz" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/camera,
@@ -5830,6 +7390,18 @@
 /obj/structure/platform,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/port)
+"LT" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "LV" = (
 /obj/structure/platform{
 	layer = 3.07;
@@ -6009,6 +7581,30 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
+"MG" = (
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "MI" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	layer = 2.030
@@ -6058,6 +7654,39 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating/rust,
 /area/outpost/crew/canteen)
+"MU" = (
+/obj/structure/closet/crate/secure/plasma{
+	name = "bulk materials crate";
+	desc = "Contains materials. Generally inert metals, but keep away from fire in case it's full of plasma."
+	},
+/obj/item/stack/sheet/plastitaniumglass{
+	amount = 50
+	},
+/obj/item/stack/sheet/plastitaniumglass{
+	amount = 50
+	},
+/obj/item/stack/sheet/mineral/plastitanium/fifty,
+/obj/item/stack/sheet/mineral/plastitanium/fifty,
+/obj/item/stack/sheet/mineral/plastitanium/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/item/stack/sheet/plasteel/fifty,
+/obj/effect/turf_decal/industrial/warning,
+/obj/effect/mapping_helpers/crate_shelve,
+/turf/open/floor/plating,
+/area/ruin/lavaland/factory/warehouse)
+"MV" = (
+/obj/structure/platform/industrial{
+	dir = 8
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/engineering)
 "Na" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 1;
@@ -6186,6 +7815,27 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/crew/canteen)
+"ND" = (
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "NH" = (
 /turf/closed/indestructible/rock/beach{
 	name = "abyssal rock";
@@ -6212,6 +7862,12 @@
 	},
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 4
+	},
+/obj/machinery/turretid{
+	id = "addust_abyss_cargo";
+	pixel_x = -1;
+	pixel_y = 25;
+	lethal = 1
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
@@ -6256,6 +7912,12 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"Ou" = (
+/obj/structure/barricade/concrete{
+	dir = 8
+	},
+/turf/open/floor/concrete/reinforced,
+/area/outpost/maintenance/starboard)
 "Ow" = (
 /obj/structure/fluff{
 	icon = 'icons/obj/platform.dmi';
@@ -6271,6 +7933,20 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"OB" = (
+/obj/machinery/button/door{
+	id = "addust_deepwell_conveyor";
+	desc = "I WONDER";
+	name = "button that toggles the conveyors probably";
+	dir = 8;
+	pixel_x = -11;
+	pixel_y = 10
+	},
+/turf/closed/wall/r_wall/syndicate/nodiagonal{
+	name = "plastitanium bulkhead";
+	desc = "A multi-ton lump of plastitanium and plasteel."
+	},
+/area/ruin/lavaland/factory)
 "OG" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -6279,8 +7955,14 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/components/binary/valve/digital/layer2{
+	color = "#0000ff";
+	pipe_color = "#0000ff"
+	},
+/obj/machinery/atmospherics/components/binary/valve/digital/layer4{
+	pipe_color = "#ff0000";
+	color = "#ff0000"
+	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/deepstorage/security)
 "OM" = (
@@ -6352,6 +8034,15 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating,
 /area/outpost/crew/canteen)
+"Po" = (
+/obj/structure/bed/double,
+/obj/item/bedsheet/double/orange{
+	name = "johnson and company command bedsheet";
+	desc = "A hefty cloth bedsheet with hazard-yellow canvas cover, with a label identifying it as property of Johnson & Company.";
+	dream_messages = list("building a better future","embers that never burn out","orange beret","orange","health and safety violations","a better tomorrow","machinations beyond name","chaingun turrets","the Canterbury")
+	},
+/turf/open/floor/carpet/green,
+/area/outpost/crew/dorm)
 "PA" = (
 /obj/structure/flora/rock/pile,
 /turf/open/floor/plating/asteroid/dirt/beach,
@@ -6521,6 +8212,9 @@
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
+"QA" = (
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "QC" = (
 /obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/dirt,
@@ -6528,6 +8222,22 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/cargo)
+"QG" = (
+/obj/structure/hazard/electrical/electrified_water{
+	id = "sparebody_workshop";
+	contact_damage = 30;
+	desc = "crispy"
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/machinery/light/small/directional/east,
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/ruin/lavaland/factory)
 "QI" = (
 /obj/structure/platform{
 	dir = 8
@@ -6582,6 +8292,18 @@
 /obj/machinery/camera,
 /turf/open/floor/plating/rust,
 /area/outpost/hallway/central)
+"Ra" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory/warehouse)
 "Rb" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -6620,6 +8342,10 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/hallway/central)
+"Rl" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/engineering)
 "Rn" = (
 /obj/structure/platform,
 /turf/open/water/beach{
@@ -6654,6 +8380,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
+"Rw" = (
+/turf/open/floor/plasteel/tech,
+/area/ruin/lavaland/factory)
 "RD" = (
 /obj/structure/cable{
 	icon_state = "1-2";
@@ -6698,6 +8427,14 @@
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
+"RK" = (
+/obj/machinery/door/poddoor{
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70);
+	desc = "An incredibly reinforced blast door bearing the insignia of Johnson & Company. The words 'AUTHORISED ACCESS ONLY' are laser-engraved and painted in on it.";
+	id = "deepwell_sparebody_workshop"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/lavaland/factory)
 "RL" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 4
@@ -6729,6 +8466,18 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/hallway/central)
+"RM" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "RN" = (
 /obj/structure/platform,
 /obj/structure/disposalpipe/trunk{
@@ -6852,6 +8601,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
+"St" = (
+/obj/effect/turf_decal/industrial/warning,
+/obj/machinery/atmospherics/components/binary/valve/digital/layer2{
+	color = "#0000ff";
+	pipe_color = "#0000ff"
+	},
+/turf/open/floor/plating,
+/area/ruin/lavaland/factory/warehouse)
 "Su" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/drill{
@@ -6860,6 +8617,68 @@
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
+"Sy" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/machinery/light/small/directional/west,
+/obj/structure/table/reinforced,
+/obj/machinery/recharger{
+	pixel_x = -9;
+	pixel_y = 6
+	},
+/obj/item/assembly/flash{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/obj/item/assembly/flash{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/obj/item/assembly/flash{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/obj/item/assembly/flash{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/obj/item/assembly/flash{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/obj/item/assembly/flash{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/obj/item/assembly/prox_sensor,
+/obj/item/assembly/prox_sensor,
+/obj/item/assembly/prox_sensor,
+/obj/item/assembly/prox_sensor,
+/obj/item/assembly/prox_sensor,
+/obj/item/assembly/prox_sensor,
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
+"SA" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/obj/machinery/airalarm/directional/south,
+/obj/machinery/power/port_gen/pacman{
+	desc = "free plasmer... waka waka..."
+	},
+/obj/item/stack/sheet/mineral/plasma/fifty,
+/obj/structure/cable{
+	icon_state = "0-5"
+	},
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory/warehouse)
+"SC" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/outpost/engineering)
 "SF" = (
 /obj/structure/platform{
 	dir = 8
@@ -6958,6 +8777,25 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
+"Tl" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/trimline/transparent/solgovgold/filled/corner{
+	dir = 4
+	},
+/obj/effect/baseturf_helper/asteroid,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "Tp" = (
 /obj/structure/catwalk/over,
 /obj/structure/railing{
@@ -6981,20 +8819,14 @@
 	},
 /area/overmap_encounter/planetoid/cave/explored)
 "Tt" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/railing/thin{
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+/obj/machinery/turretid{
+	pixel_x = -1;
+	pixel_y = 25;
+	id = "addust_abyss_ai_entrance";
+	lethal = 1
 	},
-/obj/item/aicard/aitater{
-	pixel_x = -9;
-	pixel_y = 9;
-	desc = "BECAUSE I'M A POTATO.";
-	name = "potato battery"
-	},
-/turf/open/chasm{
-	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
-	},
-/area/ruin/space/has_grav/deepstorage/security/vault)
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/deepstorage/security)
 "Tu" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1;
@@ -7113,17 +8945,6 @@
 /area/outpost/maintenance/starboard)
 "Ub" = (
 /obj/machinery/light/directional/west,
-/obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/head/helmet/space/syndicate/engie{
-	name = "J&C Pattern 489 softsuit helmet";
-	desc = "The hazard-yellow helmet of a Pattern 489 soft-suit developed by Johnson and Company before its collapse. Graded by the GEC to be of high-quality."
-	},
-/obj/item/clothing/suit/space/syndicate/engie{
-	name = "J&C Pattern 489 softsuit";
-	desc = "A hazard-orange softsuit developed by Johnson and Company prior to the ICW, graded by the GEC for its high radiation resistance and reliability. Similar, though not totally identical, to most modern ex-Coalition engineering suits."
-	},
-/obj/item/clothing/mask/breath/facemask,
-/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/engineering)
 "Ug" = (
@@ -7137,11 +8958,23 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/canteen)
 "Uk" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/railing/thin{
-	dir = 8;
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+/obj/structure/lattice/catwalk{
+	layer = 2.5
 	},
+/obj/structure/railing/thin/corner{
+	dir = 1
+	},
+/obj/structure/railing/thin/corner{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
 /turf/open/chasm{
 	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
 	},
@@ -7180,6 +9013,31 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/crew/canteen)
+"Uz" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 8
+	},
+/obj/machinery/telecomms/server/presets/common/birdstation{
+	network = "jnc_commnet"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/outpost/engineering)
+"UC" = (
+/obj/structure/catwalk/over,
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/overmap_encounter/planetoid/cave/explored)
 "UG" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2{
 	dir = 8
@@ -7220,6 +9078,12 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/engineering/atmospherics)
+"UM" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Surgery"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ruin/lavaland/factory)
 "UN" = (
 /turf/open/floor/concrete/reinforced,
 /area/outpost/cargo)
@@ -7256,6 +9120,7 @@
 /area/outpost/crew/cryo)
 "Vl" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/outpost/engineering)
 "Vv" = (
@@ -7301,10 +9166,41 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
+"VC" = (
+/obj/effect/turf_decal/siding/wood/corner{
+	color = "#D2BC9D"
+	},
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 8;
+	color = "#D2BC9D"
+	},
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
 "VD" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/cargo)
+"VG" = (
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light/small/directional/north,
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "VI" = (
 /obj/machinery/computer/atmos_control/external{
 	icon_state = "computer-right"
@@ -7322,6 +9218,20 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/cargo)
+"VS" = (
+/obj/effect/turf_decal/siding/wood{
+	color = "#D2BC9D";
+	dir = 6
+	},
+/obj/machinery/button/door{
+	id = "deepwell_sparebody_workshop";
+	name = "Plan C";
+	pixel_x = 22;
+	pixel_y = -21;
+	dir = 1
+	},
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
 "VU" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -7336,8 +9246,14 @@
 	pixel_x = 0;
 	pixel_y = 4
 	},
+/obj/effect/turf_decal/box/white,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/engineering)
+"VZ" = (
+/obj/machinery/airalarm/directional/north,
+/obj/machinery/mecha_part_fabricator,
+/turf/open/floor/plasteel/dark,
+/area/ruin/lavaland/factory)
 "Wa" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/cryopod{
@@ -7383,6 +9299,18 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/cargo)
+"Wn" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/box/white,
+/obj/structure/closet/toolcloset,
+/obj/machinery/light/directional/east,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/engineering)
 "Wo" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -7405,6 +9333,25 @@
 "Wx" = (
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/engineering/atmospherics)
+"WC" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-10"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/outpost/engineering)
 "WD" = (
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plating/asteroid/waterplanet{
@@ -7499,7 +9446,13 @@
 /obj/machinery/camera{
 	dir = 4
 	},
-/turf/open/floor/plating,
+/obj/effect/turf_decal/techfloor{
+	dir = 4
+	},
+/obj/machinery/telecomms/hub/preset{
+	network = "jnc_commnet"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/engineering)
 "Xj" = (
 /obj/effect/turf_decal/borderfloorblack{
@@ -7507,19 +9460,35 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/hallway/central)
+"Xr" = (
+/turf/open/floor/plasteel/mono/white,
+/area/ruin/lavaland/factory)
 "Xs" = (
 /obj/effect/baseturf_helper/asteroid,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /turf/open/floor/plating,
 /area/outpost/crew/dorm)
+"Xw" = (
+/obj/structure/railing/thin{
+	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/lattice/catwalk{
+	layer = 2.5
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "XA" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2,
 /obj/machinery/atmospherics/components/unary/passive_vent,
@@ -7759,15 +9728,33 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
 "YB" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/railing/thin{
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
-	dir = 9
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Nephthys Turret";
+	id = "addust_abyss_ai_antechamber";
+	desc = "A turret manufactured specifically to defend critical areas of the Deepwell. Optimized for rapid target acquisition and suppression above all else, given that there is no way a vehicle would be able to even fit down here. Surely.";
+	lethal_projectile = /obj/projectile/bullet/c556mm;
+	stun_projectile = /obj/projectile/bullet/c556mm/rubber;
+	lethal_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
+	stun_projectile_sound = sound/weapons/gun/rifle/hydra.ogg;
+	dir = 1;
+	armor = list("melee" = 60, "bullet" = 40, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	integrity_failure = 0.35;
+	burst_delay = 2.5;
+	spread = 2;
+	shot_delay = 10;
+	lethal = 1;
+	reaction_time = 2
 	},
-/turf/open/chasm{
-	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+/obj/machinery/turretid{
+	id = "addust_abyss_ai_antechamber";
+	pixel_x = 0;
+	pixel_y = -23;
+	desc = "Used to control a room's automated defenses. This one requires you to reach over one of them, which is slightly inconvenient if they don't like you.";
+	lethal = 1
 	},
-/area/ruin/space/has_grav/deepstorage/security/vault)
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/deepstorage/security)
 "YD" = (
 /obj/structure/platform{
 	dir = 6
@@ -7826,6 +9813,10 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/cargo)
+"YR" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating/rust,
+/area/ruin/lavaland/factory)
 "YW" = (
 /obj/structure/fluff{
 	icon_state = "ladder10";
@@ -7838,12 +9829,21 @@
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/port)
 "YZ" = (
+/obj/machinery/airalarm/directional/north,
 /obj/structure/lattice/catwalk{
-	dir = 7
+	layer = 2.5
 	},
 /obj/structure/railing/thin{
-	dir = 6;
 	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/chasm{
 	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
@@ -7865,6 +9865,27 @@
 	},
 /turf/open/floor/circuit/green/anim,
 /area/outpost/crew/cryo)
+"Zg" = (
+/obj/structure/barricade/concrete{
+	dir = 1
+	},
+/obj/structure/barricade/concrete{
+	dir = 4
+	},
+/turf/open/floor/concrete/reinforced,
+/area/outpost/maintenance/starboard)
+"Zi" = (
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/item/storage/toolbox/syndicate{
+	pixel_x = 6;
+	pixel_y = -10
+	},
+/turf/open/floor/plating,
+/area/outpost/engineering)
+"Zj" = (
+/obj/machinery/recharge_station,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "Zq" = (
 /obj/effect/turf_decal/industrial/traffic/corner,
 /turf/open/floor/engine/airless,
@@ -7906,6 +9927,19 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
+"ZB" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/catwalk/over/plated_catwalk,
+/turf/open/floor/plating,
+/area/outpost/engineering)
 "ZE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -7918,15 +9952,29 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering)
+"ZF" = (
+/obj/machinery/computer/apc_control{
+	icon_state = "computer-middle"
+	},
+/obj/item/reagent_containers/food/drinks/mug{
+	pixel_x = -16;
+	pixel_y = -3;
+	name = "NGR mug";
+	desc = "A mug. Engraved with the insignia of the NGR."
+	},
+/turf/open/floor/plasteel/patterned/cargo_one,
+/area/outpost/engineering)
 "ZV" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/railing/thin{
-	dir = 1;
-	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down."
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
 	},
-/turf/open/chasm{
-	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "ZX" = (
 /obj/machinery/camera,
@@ -7934,6 +9982,66 @@
 /area/outpost/crew/dorm)
 
 (1,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -8066,8 +10174,128 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
 (3,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -8200,8 +10428,128 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
 (5,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -8334,15 +10682,72 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
 (7,1,1) = {"
 bq
 bq
 bq
 bq
-HO
-HO
-HO
 bq
 bq
 bq
@@ -8354,12 +10759,75 @@ bq
 bq
 bq
 bq
-kv
-kv
-fJ
-fJ
-kv
-kv
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -8403,6 +10871,1942 @@ bq
 bq
 "}
 (8,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(9,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(10,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(11,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(12,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(13,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(14,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(15,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(16,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(17,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(18,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(19,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(20,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(21,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(22,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+HO
+HO
+HO
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+kv
+kv
+fJ
+fJ
+kv
+kv
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(23,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -8468,8 +12872,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(9,1,1) = {"
+(24,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -8535,8 +12999,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(10,1,1) = {"
+(25,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Bg
 xe
 xe
@@ -8602,8 +13126,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(11,1,1) = {"
+(26,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Tz
 bq
 bq
@@ -8669,8 +13253,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(12,1,1) = {"
+(27,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Tz
 bq
 bq
@@ -8736,8 +13380,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(13,1,1) = {"
+(28,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Tz
 bq
 bq
@@ -8803,8 +13507,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(14,1,1) = {"
+(29,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Tz
 bq
 bq
@@ -8870,8 +13634,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(15,1,1) = {"
+(30,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Tz
 bq
 bq
@@ -8937,8 +13761,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(16,1,1) = {"
+(31,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Tz
 bq
 bq
@@ -9004,8 +13888,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(17,1,1) = {"
+(32,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Tz
 bq
 bq
@@ -9071,8 +14015,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(18,1,1) = {"
+(33,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Tz
 bq
 bq
@@ -9138,8 +14142,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(19,1,1) = {"
+(34,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Tz
 bq
 Iv
@@ -9205,8 +14269,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(20,1,1) = {"
+(35,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 uy
 bq
 iF
@@ -9217,7 +14341,7 @@ jO
 jO
 jO
 jO
-jO
+KR
 FA
 FA
 FA
@@ -9233,7 +14357,7 @@ jO
 jO
 jO
 jO
-iF
+bV
 bq
 bq
 bq
@@ -9272,8 +14396,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(21,1,1) = {"
+(36,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 uy
 SF
 SF
@@ -9339,8 +14523,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(22,1,1) = {"
+(37,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 uy
 Iv
 Iv
@@ -9406,8 +14650,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(23,1,1) = {"
+(38,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 uy
 jO
 jO
@@ -9473,35 +14777,95 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(24,1,1) = {"
+(39,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 uy
 bq
 iF
 Bs
-SF
-iF
-SF
-SF
-SF
-SF
-SF
-SF
-SF
-SF
-SF
-SF
-SF
-SF
-SF
-SF
+md
+ma
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
 EM
 Uo
 SF
 SF
 SF
 SF
-iF
+bV
 bq
 bq
 bq
@@ -9540,8 +14904,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(25,1,1) = {"
+(40,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Tz
 bq
 sW
@@ -9562,7 +14986,7 @@ Iv
 XC
 Iv
 vK
-Tp
+UC
 ee
 Iv
 Iv
@@ -9607,8 +15031,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(26,1,1) = {"
+(41,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Tz
 bq
 bq
@@ -9674,8 +15158,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(27,1,1) = {"
+(42,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 Ro
 yK
 yK
@@ -9741,8 +15285,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(28,1,1) = {"
+(43,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 bq
 yI
@@ -9808,8 +15412,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(29,1,1) = {"
+(44,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 bq
 yI
@@ -9822,11 +15486,11 @@ BE
 yI
 bq
 hk
-fs
-fs
+sZ
+sG
 Xi
-fs
-fs
+dZ
+uQ
 hk
 XR
 tm
@@ -9875,8 +15539,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(30,1,1) = {"
+(45,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 bq
 yI
@@ -9889,11 +15613,11 @@ UG
 yI
 bq
 hk
-fs
+Zi
 Vl
 Dr
 IQ
-fs
+qh
 hk
 qq
 eG
@@ -9942,8 +15666,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(31,1,1) = {"
+(46,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 bq
 yI
@@ -9956,11 +15740,11 @@ sN
 yI
 hk
 hk
-fs
-fs
+EL
+jc
 Ci
-fs
-fs
+GM
+Uz
 hk
 XR
 tm
@@ -10009,8 +15793,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(32,1,1) = {"
+(47,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 bq
 yI
@@ -10076,11 +15920,71 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(33,1,1) = {"
+(48,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 bq
-qr
+hk
 YO
 mP
 wh
@@ -10143,8 +16047,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(34,1,1) = {"
+(49,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 hk
 hk
@@ -10163,7 +16127,7 @@ dm
 hk
 hk
 hk
-CK
+Hq
 DI
 xN
 Fo
@@ -10210,21 +16174,81 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(35,1,1) = {"
+(50,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 hk
-fs
-fs
-fs
-fs
-fs
+pb
+or
+ZB
+eO
+eO
 ss
 Ms
 lR
 uF
 hk
-WS
+Fk
 EX
 ax
 iQ
@@ -10277,15 +16301,75 @@ gP
 gP
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(36,1,1) = {"
+(51,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 hk
-fs
-fs
-fs
-fs
-fs
+ZF
+HH
+tx
+yJ
+bR
 hk
 hk
 hk
@@ -10344,15 +16428,75 @@ Zf
 gP
 gP
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(37,1,1) = {"
+(52,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 hk
-fs
-fs
-fs
-fs
-fs
+ir
+hF
+ni
+yJ
+IO
 hk
 Mt
 CA
@@ -10411,13 +16555,73 @@ gg
 DP
 gP
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(38,1,1) = {"
+(53,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 hk
-nk
-fs
-fs
+hk
+SC
+dY
 fs
 fs
 RD
@@ -10478,15 +16682,75 @@ Fb
 Sf
 gP
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(39,1,1) = {"
+(54,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 hk
-fs
-fs
-fs
-fs
-fs
+MV
+fD
+no
+oW
+dF
 hk
 Ji
 Ji
@@ -10545,15 +16809,75 @@ So
 DP
 gP
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(40,1,1) = {"
+(55,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 hk
-fs
-fs
-fs
-fs
-fs
+Rl
+dq
+WC
+ge
+Ig
 hk
 qr
 Bq
@@ -10612,15 +16936,75 @@ en
 gP
 gP
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(41,1,1) = {"
+(56,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 hk
-fs
-fs
-fs
-fs
-fs
+sf
+DZ
+Wn
+wZ
+nk
 hk
 bq
 bq
@@ -10679,8 +17063,68 @@ gP
 gP
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(42,1,1) = {"
+(57,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 hk
 hk
@@ -10699,8 +17143,8 @@ Wx
 UK
 Wx
 hk
-sc
-Hp
+lv
+ml
 Hp
 eU
 Hp
@@ -10710,7 +17154,7 @@ bq
 XE
 vC
 Hh
-Hh
+vn
 bq
 bq
 bq
@@ -10746,8 +17190,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(43,1,1) = {"
+(58,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 bq
 bq
@@ -10813,8 +17317,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(44,1,1) = {"
+(59,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 bq
 bq
@@ -10880,8 +17444,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(45,1,1) = {"
+(60,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 bq
 bq
@@ -10947,8 +17571,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(46,1,1) = {"
+(61,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 bq
 bq
@@ -11014,8 +17698,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(47,1,1) = {"
+(62,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 eD
 bq
 Wx
@@ -11035,15 +17779,15 @@ WO
 is
 NH
 bU
-aq
-aq
+jk
+jk
 uz
 Gi
 Zw
 Mm
 pV
 SV
-aq
+Ld
 tM
 bq
 bq
@@ -11081,8 +17825,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(48,1,1) = {"
+(63,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 zg
 Et
 eh
@@ -11110,7 +17914,7 @@ Oo
 Mm
 Mm
 SV
-aq
+Zg
 Gw
 bq
 bq
@@ -11130,8 +17934,8 @@ xO
 vj
 oF
 mJ
-vj
-EV
+qm
+Ip
 mJ
 oF
 vj
@@ -11148,8 +17952,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(49,1,1) = {"
+(64,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 Wx
@@ -11215,8 +18079,68 @@ bq
 bq
 bq
 bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(50,1,1) = {"
+(65,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11264,12 +18188,41 @@ xO
 vj
 FB
 mJ
-vj
+qm
 Xs
 mJ
 FB
 vj
 xO
+bq
+bq
+bq
+bq
+bq
+jQ
+jQ
+jQ
+jQ
+jQ
+jQ
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11283,7 +18236,38 @@ bq
 bq
 bq
 "}
-(51,1,1) = {"
+(66,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11342,6 +18326,35 @@ bq
 bq
 bq
 bq
+jQ
+yu
+St
+eT
+SA
+jQ
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11350,7 +18363,38 @@ bq
 bq
 bq
 "}
-(52,1,1) = {"
+(67,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11393,7 +18437,7 @@ bq
 bq
 bq
 bq
-bq
+xO
 xO
 xO
 xO
@@ -11409,6 +18453,35 @@ bq
 bq
 bq
 bq
+jQ
+Ep
+Lt
+nu
+ue
+jQ
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11417,7 +18490,38 @@ bq
 bq
 bq
 "}
-(53,1,1) = {"
+(68,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11460,15 +18564,44 @@ bq
 bq
 bq
 bq
-bq
-bq
-bq
+xO
+BV
+jr
 xO
 vj
 vj
 EV
 vj
 xO
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+jQ
+dV
+MU
+Ra
+EI
+jQ
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11484,7 +18617,38 @@ bq
 bq
 bq
 "}
-(54,1,1) = {"
+(69,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11507,7 +18671,7 @@ bq
 Mm
 Zw
 Zw
-uJ
+pp
 uJ
 dh
 PO
@@ -11527,15 +18691,44 @@ bq
 bq
 bq
 bq
-bq
-bq
-bq
 xO
+BJ
+VC
+mJ
 vj
 vj
-EV
+GT
 vj
 xO
+bq
+bq
+bq
+bq
+bq
+bq
+Hk
+Hk
+Hk
+Hk
+rO
+Hk
+Hk
+Hk
+Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11551,7 +18744,38 @@ bq
 bq
 bq
 "}
-(55,1,1) = {"
+(70,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11579,9 +18803,9 @@ Ut
 Zw
 Zw
 SV
-aq
+gy
 DV
-aq
+Ou
 bq
 bq
 bq
@@ -11594,15 +18818,44 @@ bq
 bq
 bq
 bq
-bq
-bq
-bq
+xO
+iq
+VS
 xO
 vj
 eR
 EV
 uA
 xO
+bq
+bq
+bq
+bq
+bq
+Hk
+Hk
+ga
+rE
+ga
+RM
+ga
+rE
+ga
+Hk
+Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11618,7 +18871,38 @@ bq
 bq
 bq
 "}
-(56,1,1) = {"
+(71,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11646,7 +18930,7 @@ Zw
 Mm
 Mm
 SV
-aq
+Ld
 tp
 bq
 bq
@@ -11661,9 +18945,9 @@ bq
 bq
 bq
 bq
-bq
-bq
-bq
+xO
+Po
+Fi
 xO
 xO
 xO
@@ -11676,16 +18960,45 @@ zk
 zk
 zk
 Hk
+uH
+wm
+mb
+wm
+MG
+fY
+wm
+Xw
+dR
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(57,1,1) = {"
+(72,1,1) = {"
 bq
 bq
 bq
@@ -11704,7 +19017,38 @@ bq
 bq
 bq
 bq
-aq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+Ou
 cn
 XO
 Zw
@@ -11728,10 +19072,10 @@ bq
 bq
 bq
 bq
-bq
-bq
-bq
-bq
+xO
+xO
+xO
+xO
 No
 PH
 xb
@@ -11742,17 +19086,77 @@ zk
 am
 hY
 zk
-Dt
-PB
+yq
 vh
 PB
 PB
 PB
-vh
 PB
+PB
+PB
+PB
+ND
+jG
 Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(58,1,1) = {"
+(73,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11808,18 +19212,78 @@ zk
 zk
 qA
 zr
-zk
+hO
 vF
+KI
 PB
-YB
-Uk
-Uk
-Uk
-jG
 PB
+PB
+Em
+PB
+PB
+PB
+BK
 Hk
+Hk
+Hk
+Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(59,1,1) = {"
+(74,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11872,21 +19336,81 @@ xb
 TX
 vi
 zk
-zU
+Tt
 eq
 RF
-mb
+bw
 vF
-ml
-ZV
-ri
+Ir
+PB
+PB
+Hk
 Hk
 kc
-xC
-Gq
+PB
+PB
+Dt
 Hk
+vP
+qM
+Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(60,1,1) = {"
+(75,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -11936,24 +19460,84 @@ No
 No
 mk
 wR
-Jg
+Bt
 Jg
 sm
 OG
-Bt
+xn
 nG
 Bt
-bw
-qv
-pX
-lv
 fU
-yq
-Tt
+qv
 PB
+oc
 Hk
+zU
+pX
+rA
+xC
+Uk
+qe
+kQ
+jb
+Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(61,1,1) = {"
+(76,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -12009,18 +19593,78 @@ mK
 Ok
 eq
 Sc
-qe
+YB
 Sg
-Hq
-ZV
-ri
+YZ
+PB
+PB
 Hk
-yx
-xC
-Gq
 Hk
+sc
+PB
+PB
+Dt
+Hk
+jN
+Zj
+Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(62,1,1) = {"
+(77,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -12076,18 +19720,78 @@ zk
 zk
 za
 Nt
-zk
+hO
 Sg
+VG
 PB
-dR
-Ir
-Ir
-Ir
-YZ
 PB
+PB
+Em
+PB
+PB
+PB
+sU
 Hk
+Hk
+Hk
+Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(63,1,1) = {"
+(78,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -12144,17 +19848,77 @@ zk
 oS
 La
 zk
-wm
-PB
 mQ
+vh
 PB
 PB
 PB
-mQ
 PB
+PB
+PB
+PB
+ND
+jG
 Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(64,1,1) = {"
+(79,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq
@@ -12212,16 +19976,5820 @@ zk
 zk
 zk
 Hk
+DU
+dk
+dk
+Gq
+Ll
+Gq
+Gq
+Gq
+ri
 Hk
 Hk
-Hk
-Hk
-Hk
-Hk
-Hk
-Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 "}
-(65,1,1) = {"
+(80,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+Hk
+Hk
+ga
+ga
+ga
+ZV
+ga
+kh
+ga
+CK
+Hk
+Hk
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(81,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+JP
+JP
+JP
+JP
+js
+Jn
+js
+Hk
+Hk
+wT
+Hk
+cv
+Hk
+Hk
+Hk
+Hk
+Hk
+JP
+JP
+JP
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(82,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+JP
+JP
+Rw
+kA
+JP
+xI
+Ho
+xI
+xI
+JP
+pi
+Sy
+mC
+if
+ld
+fa
+xg
+qQ
+vD
+gh
+JP
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(83,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+JP
+nr
+Rw
+Rw
+RK
+YR
+YR
+By
+sL
+xG
+Gl
+Gl
+Tl
+LT
+QA
+QA
+UM
+Xr
+Xr
+as
+JP
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(84,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+JP
+JP
+Rw
+Rw
+JP
+xA
+yL
+QG
+xA
+JP
+Jv
+Lx
+zp
+nR
+QA
+tz
+JP
+IZ
+fi
+tg
+JP
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(85,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+JP
+JP
+JP
+JP
+js
+js
+Jn
+js
+JP
+VZ
+Lx
+FV
+nR
+Iy
+yx
+JP
+JP
+JP
+JP
+JP
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(86,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+JP
+JP
+bf
+OB
+qU
+JP
+JP
+JP
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(87,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+rW
+KN
+oX
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(88,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+rW
+KN
+oX
+Ib
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(89,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+rW
+KN
+oX
+CL
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(90,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+rW
+KN
+Fj
+iF
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(91,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+rW
+KN
+oX
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(92,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+rW
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(93,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(94,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(95,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(96,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(97,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(98,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(99,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(100,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(101,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(102,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(103,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(104,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(105,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(106,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(107,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(108,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(109,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(110,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(111,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(112,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(113,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(114,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(115,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(116,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(117,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(118,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(119,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(120,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(121,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(122,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(123,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(124,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+"}
+(125,1,1) = {"
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
+bq
 bq
 bq
 bq

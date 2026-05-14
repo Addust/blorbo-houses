@@ -1,0 +1,1005 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aW" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/machinery/button/door{
+	id = "addust_flail_starboard_engine_blast";
+	name = "Engine Shutters";
+	dir = 1;
+	pixel_y = -20
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"bs" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	id = "addust_flail_window_shut"
+	},
+/obj/machinery/atmospherics/pipe/layer_manifold,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"ci" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/techfloor/corner,
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"cX" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	id = "addust_flail_window_shut"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"dz" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/power/port_gen/pacman/super,
+/obj/structure/cable/yellow,
+/obj/structure/extinguisher_cabinet/directional/west{
+	pixel_y = -6
+	},
+/obj/machinery/firealarm/directional/west{
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"hX" = (
+/obj/machinery/atmospherics/components/binary/pump/layer4{
+	dir = 8;
+	name = "Waste to Dock";
+	layer = 2.43
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	id = "flail_holo"
+	},
+/obj/docking_port/mobile{
+	dir = 4;
+	name = "Flail-class Shuttle";
+	preferred_direction = 4;
+	port_direction = 2
+	},
+/obj/machinery/door/poddoor/preopen{
+	dir = 8;
+	id = "flail_door_blast"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"jM" = (
+/obj/machinery/light/small/directional/north,
+/obj/machinery/computer/helm{
+	dir = 8
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
+"jT" = (
+/obj/machinery/power/terminal,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
+/area/ship/bridge)
+"jZ" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on,
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 1
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
+"md" = (
+/obj/structure/platform/ship{
+	dir = 1
+	},
+/obj/machinery/power/ship_gravity{
+	layer = 3.09
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
+"mG" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 5
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line,
+/obj/effect/turf_decal/siding/thinplating/dark,
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/ship/bridge)
+"mY" = (
+/obj/machinery/power/shuttle/engine/electric,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/bridge)
+"nn" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/button/door{
+	id = "addust_flail_port_engine_blast";
+	name = "Engine Shutters";
+	dir = 2;
+	pixel_y = 20
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"oB" = (
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	id = "flail_holo";
+	dir = 1
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/door/poddoor/preopen{
+	dir = 8;
+	id = "flail_door_blast"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "5-8"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"oK" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/light/small/directional/east,
+/obj/machinery/telecomms/relay/preset/ngr,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
+"ri" = (
+/obj/structure/chair/handrail{
+	dir = 1;
+	layer = 2.89
+	},
+/obj/machinery/light/small/directional/south,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 5
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line,
+/obj/effect/turf_decal/siding/thinplating/dark,
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/ship/bridge)
+"sy" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "addust_flail_port_engine_blast";
+	dir = 4;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ship/bridge)
+"tm" = (
+/obj/effect/turf_decal/box,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
+	dir = 8
+	},
+/obj/machinery/light/small/directional/east,
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
+"ux" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
+	id = "addust_flail_tachi_guns";
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 5;
+	burst_delay = 2;
+	burst_size = 4
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"uB" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
+	id = "addust_flail_tachi_guns";
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 6;
+	burst_delay = 2;
+	burst_size = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line,
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
+"vz" = (
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 2
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"vA" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 5
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 5
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"vP" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "addust_flail_starboard_engine_blast";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ship/bridge)
+"wr" = (
+/obj/effect/turf_decal/techfloor/orange{
+	dir = 8
+	},
+/obj/effect/turf_decal/techfloor/orange{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/door/airlock/maintenance/external/glass{
+	dir = 4;
+	req_ship_access = 0;
+	name = "Cabin"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "5-9"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
+"xj" = (
+/obj/structure/crate_shelf,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/structure/closet/crate/secure/plasma,
+/obj/item/stack/sheet/mineral/plasma/twenty,
+/obj/item/stack/sheet/mineral/uranium/twenty,
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"xA" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 10
+	},
+/obj/structure/closet/crate/rations,
+/obj/effect/mapping_helpers/crate_shelve,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"xJ" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 10
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
+"ys" = (
+/obj/structure/table/reinforced{
+	color = "#c1b6a5"
+	},
+/obj/item/radio/intercom/wideband/table{
+	dir = 4;
+	pixel_x = 4;
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
+"yA" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
+	id = "addust_flail_tachi_guns";
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 10;
+	burst_delay = 2;
+	burst_size = 4
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"zC" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 10
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/ship/bridge)
+"BE" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "6-8"
+	},
+/obj/machinery/light_switch{
+	pixel_x = -10;
+	pixel_y = 22
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 10
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/structure/closet/emcloset/wall/directional/north{
+	pixel_x = 3;
+	pixel_y = 28
+	},
+/obj/item/clothing/head/helmet/space/syndicate/engie{
+	name = "J&C Pattern 489 softsuit helmet";
+	desc = "The hazard-yellow helmet of a Pattern 489 soft-suit developed by Johnson and Company before its collapse. Graded by the GEC to be of high-quality."
+	},
+/obj/item/clothing/suit/space/syndicate/engie{
+	name = "J&C Pattern 489 softsuit";
+	desc = "A hazard-orange softsuit developed by Johnson and Company prior to the ICW, graded by the GEC for its high radiation resistance and reliability. Similar, though not totally identical, to most modern ex-Coalition engineering suits."
+	},
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/tank/internals/oxygen,
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/ship/bridge)
+"Ct" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	id = "addust_flail_window_shut";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"Cx" = (
+/turf/template_noop,
+/area/template_noop)
+"CJ" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/firealarm/directional/south,
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 10
+	},
+/obj/effect/turf_decal/siding/thinplating/dark,
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/ship/bridge)
+"Dz" = (
+/obj/machinery/power/shuttle/engine/electric,
+/obj/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/bridge)
+"Fl" = (
+/obj/machinery/power/smes/engineering{
+	input_level = 5000;
+	output_level = 15000
+	},
+/obj/machinery/light/small/directional/south,
+/obj/effect/turf_decal/techfloor,
+/obj/structure/cable{
+	icon_state = "0-9"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
+"HY" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/stairs{
+	dir = 2;
+	color = "#575757"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/computer/helm/viewscreen/directional/west,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
+"IN" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Exalren Turret";
+	id = "addust_flail_tachi_guns";
+	desc = "A six-barreled monstrosity of a turret, sweeping side to side in eternal vigilance. Its ballistic shield belies its agility and power, featureless save for an engraved Johnson & Company logo and a slit glowing a baleful crimson. Whatever it guards is best left undisturbed.";
+	lethal_projectile_sound = sound/weapons/gun/smg/sidewinder.ogg;
+	stun_projectile_sound = sound/creatures/sidewinder.ogg;
+	dir = 5;
+	burst_delay = 1;
+	burst_size = 15;
+	shot_delay = 15;
+	spread = 3;
+	pixel_x = 0;
+	armor = list("melee" = 30, "bullet" = 80, "laser" = 80, "energy" = 60, "bomb" = 80, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 100);
+	integrity_failure = 0.3;
+	lethal = 1;
+	layer = 3.1;
+	reaction_time = 5
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 1
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ship/external/dark)
+"Jz" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-6"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-5"
+	},
+/obj/item/stock_parts/cell/gun/pgf{
+	pixel_x = -3;
+	pixel_y = 4
+	},
+/obj/item/gun/energy/kalix/pgf/pdw/empty_cell{
+	pixel_x = -4;
+	pixel_y = 9
+	},
+/obj/structure/closet/wall/red/directional/west,
+/obj/item/ammo_box/magazine/skm_762_40,
+/obj/item/ammo_box/magazine/skm_762_40,
+/obj/item/gun/ballistic/automatic/assault/skm/no_mag,
+/obj/item/ammo_box/magazine/skm_762_40,
+/obj/item/storage/toolbox/ammo/a762_40,
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"JZ" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"LJ" = (
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 8
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"Od" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 6
+	},
+/obj/structure/table/reinforced{
+	color = "#c1b6a5"
+	},
+/obj/machinery/recharger{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/obj/machinery/recharger{
+	pixel_x = 0;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"QN" = (
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 9
+	},
+/obj/effect/turf_decal/steeldecal/steel_decals_central7{
+	dir = 8
+	},
+/obj/structure/chair/comfy/shuttle{
+	layer = 3.1
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/light/small/directional/north,
+/obj/machinery/light_switch{
+	pixel_x = -10;
+	pixel_y = 22
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"Re" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 2
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "6-10"
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 10
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"Ro" = (
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/structure/cable/yellow,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/obj/machinery/power/port_gen/pacman,
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"RE" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-10"
+	},
+/obj/machinery/button/door{
+	id = "flail_door_blast";
+	name = "Flail Blast Doors";
+	dir = 2;
+	pixel_y = 20;
+	pixel_x = 4
+	},
+/obj/machinery/button/shieldwallgen{
+	id = "flail_holo";
+	dir = 2;
+	pixel_x = -6;
+	pixel_y = 19;
+	name = "Holofield Switch"
+	},
+/obj/effect/turf_decal/corner/opaque/tan,
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 9
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/ship/bridge)
+"RG" = (
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 6
+	},
+/obj/structure/chair/handrail{
+	dir = 4
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/machinery/turretid/ship{
+	id = "addust_flail_tachi_guns";
+	pixel_x = 9;
+	pixel_y = 25
+	},
+/obj/machinery/button/door{
+	id = "addust_flail_window_shut";
+	pixel_x = -8;
+	pixel_y = 24;
+	name = "Window Covers"
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
+"Sl" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 5
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line,
+/obj/effect/turf_decal/siding/thinplating/dark,
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/ship/bridge)
+"SI" = (
+/obj/structure/chair/comfy/shuttle{
+	layer = 3.1
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
+"Td" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Rampage Turret";
+	id = "addust_flail_tachi_guns";
+	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 9;
+	burst_delay = 2;
+	burst_size = 4
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"Tu" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 6
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"TA" = (
+/obj/effect/turf_decal/techfloor/orange{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/turf_decal/techfloor/orange,
+/obj/machinery/door/airlock/grunge{
+	name = "Port Nacelle"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/bridge)
+"TB" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/ship/bridge)
+"UN" = (
+/obj/machinery/holopad/emergency,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 8
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
+"VC" = (
+/obj/structure/table/reinforced{
+	color = "#c1b6a5"
+	},
+/obj/machinery/fax{
+	fax_name = "Tachi Bridge";
+	pixel_x = 3;
+	pixel_y = 20
+	},
+/obj/item/paper_bin{
+	pixel_x = -6;
+	pixel_y = 5
+	},
+/obj/item/pen/fourcolor{
+	pixel_x = -7;
+	pixel_y = 7
+	},
+/obj/item/stamp/ngr/lieutenant{
+	pixel_x = 11;
+	pixel_y = 6
+	},
+/obj/item/stamp/ce{
+	pixel_x = 9;
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
+"WY" = (
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "9-10"
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 2
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"Xt" = (
+/obj/structure/chair/handrail{
+	dir = 2;
+	layer = 2.89
+	},
+/obj/machinery/light/small/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/corner/opaque/tan{
+	dir = 10
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/ship/bridge)
+"Xv" = (
+/obj/effect/turf_decal/trimline/opaque/orange/line,
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/external/dark)
+
+(1,1,1) = {"
+Cx
+Cx
+JZ
+hX
+oB
+JZ
+Cx
+Cx
+"}
+(2,1,1) = {"
+Cx
+mY
+JZ
+RE
+CJ
+JZ
+Dz
+Cx
+"}
+(3,1,1) = {"
+Td
+sy
+LJ
+Xt
+ri
+JZ
+vP
+yA
+"}
+(4,1,1) = {"
+JZ
+nn
+TA
+zC
+mG
+HY
+aW
+JZ
+"}
+(5,1,1) = {"
+JZ
+oK
+JZ
+BE
+Sl
+md
+tm
+JZ
+"}
+(6,1,1) = {"
+JZ
+JZ
+JZ
+TB
+wr
+JZ
+JZ
+JZ
+"}
+(7,1,1) = {"
+IN
+JZ
+QN
+Re
+vz
+Jz
+dz
+JZ
+"}
+(8,1,1) = {"
+jZ
+bs
+xj
+xA
+WY
+jT
+Fl
+JZ
+"}
+(9,1,1) = {"
+Cx
+cX
+SI
+vA
+Tu
+ci
+Ro
+JZ
+"}
+(10,1,1) = {"
+Cx
+JZ
+RG
+UN
+xJ
+Od
+cX
+cX
+"}
+(11,1,1) = {"
+Cx
+JZ
+jM
+ys
+VC
+cX
+cX
+uB
+"}
+(12,1,1) = {"
+Cx
+ux
+Ct
+Ct
+JZ
+cX
+Cx
+Xv
+"}
