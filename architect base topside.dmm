@@ -123,6 +123,23 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
+"aj" = (
+/mob/living/simple_animal/hostile/automated/bipedal{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 traffic warden";
+	desc = "An intimidating, lumbering automaton with the engraved insignia of Johnson and Company on its hefty right arm and the flag of the New Gorlex Republic laser-engraved on the energy machine-gun taking up the stump of its left arm. It sweeps the area around it calmly, an antenna mounted to its back humming quietly - chirping away over ARMS-net, waiting for orders.";
+	projectilesound = 'sound/weapons/laser4.ogg';
+	rapid_fire_delay = 1;
+	ranged_cooldown_time = 10;
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/laser/eoehoma/wasp;
+	aggro_say_chance = 25;
+	on_aggro_say = list("ENGAGING HOSTILE TARGET.","BUILDING A BETER FUTURE.","TARGET DESIGNATED.","FOR THE REPUBLIC.","TARGET LOCKED.","ENGAGING.","DO NOT RESIST.","INVALID IFF DETECTED.","INTRUDER.");
+	spread = 10;
+	wander = 0
+	},
+/turf/open/floor/concrete/slab_4/beachplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "ak" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
@@ -169,9 +186,9 @@
 "aq" = (
 /obj/machinery/holosign{
 	icon_state = "switchadvert";
-	desc_add = "This one appears to be out of order. Fuck.";
 	pixel_x = -32;
-	pixel_y = 0
+	pixel_y = 0;
+	desc = "A sign with weak holoemitters on the front, designed to display information in enviroments with many distractions. This one is out of order. Fuck."
 	},
 /turf/open/floor/concrete/pavement,
 /area/ruin/moon/moonbase/cargo)
@@ -433,6 +450,12 @@
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/engineering/atmospherics)
+"aQ" = (
+/obj/structure/platform/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/ruin/beach/gunsmith)
 "aR" = (
 /obj/machinery/atmospherics/components/unary/passive_vent,
 /turf/open/floor/plating/asteroid/waterplanet{
@@ -595,47 +618,6 @@
 	},
 /turf/open/water/beach/deep,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"bn" = (
-/obj/structure/railing/thin{
-	dir = 8
-	},
-/obj/structure/window/plasma/reinforced{
-	dir = 4
-	},
-/obj/structure/table/reinforced,
-/obj/structure/cable/cyan{
-	icon_state = "0-2"
-	},
-/obj/item/radio/intercom/wideband/directional/north,
-/obj/item/paper_bin{
-	pixel_x = 5
-	},
-/obj/item/clipboard{
-	pixel_y = 6;
-	pixel_x = -5
-	},
-/obj/item/pen/sleepy{
-	pixel_y = 6;
-	pixel_x = -5
-	},
-/obj/machinery/button/door{
-	id = "bam2";
-	pixel_y = 23;
-	pixel_x = -15;
-	name = "engine shutter control"
-	},
-/obj/item/megaphone/command{
-	pixel_x = -8;
-	pixel_y = -5
-	},
-/obj/machinery/atmospherics/pipe/simple/orange/hidden{
-	dir = 10
-	},
-/obj/structure/cable/cyan{
-	icon_state = "2-9"
-	},
-/turf/open/floor/plasteel/patterned/brushed,
-/area/ship/bridge)
 "bp" = (
 /obj/effect/turf_decal/trimline/opaque/orange/corner{
 	dir = 1
@@ -723,10 +705,14 @@
 /turf/open/floor/concrete/slab_1,
 /area/ruin/beach/gunsmith)
 "by" = (
-/obj/effect/turf_decal/industrial/warning{
-	color = "#eeac2e"
+/obj/structure/railing{
+	dir = 1;
+	layer = 2.7
 	},
-/turf/open/floor/concrete/tiles,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
 /area/outpost/storage)
 "bz" = (
 /obj/structure/cable{
@@ -764,20 +750,6 @@
 	},
 /turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"bC" = (
-/obj/structure/platform/ship_two{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/unary/shuttle/fire_heater,
-/obj/machinery/door/poddoor{
-	name = "engine cover";
-	id = "bam2";
-	dir = 4;
-	icon = 'icons/obj/doors/shutters.dmi';
-	desc = "Heavy duty metal shutters that open mechanically."
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
 "bD" = (
 /obj/structure/hazard/electrical/electrified_water{
 	id = "addust_bunker_cargomoat";
@@ -862,27 +834,6 @@
 "bM" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/outpost/maintenance/starboard)
-"bN" = (
-/obj/structure/table/chem,
-/obj/item/clothing/head/wig{
-	hairstyle = "Twintails (Long)";
-	icon_state = "hair_twintaillong";
-	pixel_x = 0;
-	pixel_y = 34;
-	layer = 4;
-	desc = "The hair of a goddess. Actually just a wig that is yet to be fixed on."
-	},
-/obj/item/stack/cable_coil/red{
-	pixel_x = 0;
-	pixel_y = 32
-	},
-/obj/item/modular_computer/laptop/preset{
-	desc = "A portable laptop computer. It seems to be used exclusively for diagnostics on other hardware.";
-	pixel_x = 1;
-	pixel_y = 0
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/outpost/security/armory)
 "bO" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -951,6 +902,14 @@
 /obj/structure/cable,
 /turf/open/floor/plating/rust,
 /area/outpost/engineering)
+"ca" = (
+/obj/structure/salvageable/airbase/cannon{
+	pixel_y = -16;
+	name = "chord autocannon";
+	desc = "An ICW-era weapon renowned for its long-range performance, usually mounted onto fighters or made into turrets against them. This one looks like it would work, but finding out would involve getting the three levels of credentials necessary to even look at the controls."
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ruin/powered/shuttle)
 "cb" = (
 /obj/structure/table/reinforced,
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -1158,14 +1117,7 @@
 /area/outpost/crew/library)
 "cq" = (
 /obj/machinery/light/dim/directional/south,
-/obj/structure/fluff{
-	icon_state = "limbgrower_idleoff";
-	icon = 'icons/obj/machines/limbgrower.dmi';
-	desc = "A machine that uses a putty-like 'formula' of synthskin to print and shape custom coverings for prosthetics. Do not ingest.";
-	name = "synthskin printer";
-	density = 1
-	},
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/plating,
 /area/outpost/security/armory)
 "cr" = (
 /obj/machinery/power/rtg/advanced{
@@ -1428,6 +1380,10 @@
 	pixel_x = 21;
 	dir = 8
 	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8;
+	color = "#eeac2e"
+	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/storage)
 "cU" = (
@@ -1520,6 +1476,19 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/law_office)
+"de" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/obj/effect/turf_decal/stairs{
+	dir = 1;
+	color = "#575757"
+	},
+/turf/open/floor/concrete/slab_4/beachplanet/interior,
+/area/ruin/beach/gunsmith)
 "df" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1578,6 +1547,12 @@
 /obj/effect/turf_decal/corner/opaque/tan{
 	dir = 1
 	},
+/obj/structure/fluff{
+	icon = 'icons/obj/machines/smes.dmi';
+	icon_state = "smes";
+	name = "very large power bank";
+	desc = "A very, very large capacitor bank handling the Misono Turret's gargantuan power draw without blowing every fuse."
+	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/port)
 "dl" = (
@@ -1610,25 +1585,6 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/overmap_encounter/planetoid/cave/explored)
-"do" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	cell_type = /obj/item/stock_parts/cell/gun/large
-	},
-/obj/machinery/light_switch{
-	dir = 2;
-	pixel_x = -12;
-	pixel_y = 20
-	},
-/obj/machinery/light/floor,
-/obj/structure/cable/cyan{
-	icon_state = "0-2"
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/arrow_cw,
-/obj/effect/turf_decal/trimline/opaque/orange/arrow_ccw{
-	dir = 1
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "dp" = (
 /obj/effect/turf_decal/corner/opaque/tan/full,
 /obj/structure/closet/crate/trashcart/laundry,
@@ -1668,7 +1624,17 @@
 	icon_state = "1-10";
 	layer = 3.1
 	},
-/turf/open/floor/wood/walnut,
+/obj/effect/turf_decal/road/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/road/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/road,
+/obj/effect/turf_decal/road{
+	dir = 1
+	},
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "ds" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -1738,6 +1704,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/checkpoint)
+"dC" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/concrete/pavement/beachplanet/interior,
+/area/ruin/beach/gunsmith)
 "dD" = (
 /obj/structure/platform{
 	dir = 4
@@ -2247,18 +2222,20 @@
 	},
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "eI" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Rampage Turret";
+/obj/machinery/porta_turret/ship/ngr/heavy{
+	name = "Onura Turret";
 	id = "addust_camp";
-	desc = "A custom-made energy turret made of surplus NGR parts quite clearly pulled from a scrapyard and Frontiersman energy weapons. It scans the area around it with a certain fortitude, ready to set out a blaze of lasers in the blink of an eye.";
-	lethal_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	stun_projectile = /obj/projectile/beam/laser/eoehoma/wasp;
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	dir = 6;
+	desc = "A nimble-looking turret with a single, large barrel designed to quickly acquire and obliterate targets at extreme ranges. An elongated, scarlet optic on top of the turret watches the distant horizon. A picture of rabbit with an anti-materiel rifle chasing an Elzuose in a chef hat is engraved on the side.";
+	lethal_projectile = /obj/projectile/bullet/p50;
+	stun_projectile = /obj/projectile/bullet/p50/soporific;
 	burst_delay = 2;
-	burst_size = 4;
-	use_power = 0
+	scan_range = 24;
+	dir = 6;
+	lethal_projectile_sound = 'sound/weapons/gun/sniper/shot.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/sniper/shot.ogg';
+	shot_delay = 10;
+	spread = 1;
+	reaction_time = 4
 	},
 /turf/open/floor/concrete/reinforced/jungleplanet/lit{
 	initial_gas_mix = "BEACHPLANET_ATMOS"
@@ -2346,11 +2323,39 @@
 /obj/machinery/door/airlock/maintenance_hatch,
 /turf/open/floor/concrete/slab_4,
 /area/ruin/beach/gunsmith)
+"eN" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2
+	},
+/obj/effect/turf_decal/road,
+/obj/effect/turf_decal/road{
+	dir = 1
+	},
+/obj/effect/turf_decal/road/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/road/line{
+	dir = 8
+	},
+/turf/open/floor/concrete/pavement/beachplanet/interior,
+/area/ruin/beach/gunsmith)
 "eO" = (
 /obj/structure/railing,
 /obj/machinery/light/dim/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/outpost/maintenance/starboard)
+"eQ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/concrete/slab_4/beachplanet/interior,
+/area/ruin/beach/gunsmith)
 "eS" = (
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/security/checkpoint)
@@ -2561,6 +2566,12 @@
 	},
 /turf/open/floor/carpet/red,
 /area/outpost/crew)
+"fo" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/ruin/beach/gunsmith)
 "fp" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
@@ -2642,45 +2653,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
-"fx" = (
-/obj/structure/railing/thin/corner{
-	dir = 8
-	},
-/obj/structure/railing/thin/corner{
-	dir = 1
-	},
-/obj/machinery/door/window/brigdoor/eastleft,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/obj/machinery/holopad/secure,
-/obj/machinery/atmospherics/pipe/manifold/orange/hidden{
-	dir = 4
-	},
-/obj/structure/chair/comfy/shuttle{
-	dir = 8;
-	name = "grav couch";
-	pixel_y = 0;
-	pixel_x = -3;
-	desc = "A comfortable, secure seat. I hope you're skilled at flying backwards."
-	},
-/obj/structure/cable/cyan{
-	icon_state = "2-8"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "2-4"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-8"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-4"
-	},
-/turf/open/floor/plasteel/patterned/brushed,
-/area/ship/bridge)
 "fy" = (
 /obj/structure/cable{
 	icon_state = "2-5"
@@ -2727,26 +2699,6 @@
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/storage)
-"fC" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "bam";
-	dir = 4
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4;
-	color = "#FFFFFF"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "0-2"
-	},
-/obj/machinery/power/shieldwallgen/atmos/roundstart{
-	id = "bams"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
 "fD" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -2980,11 +2932,14 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "ga" = (
 /obj/machinery/light/dim/directional/south,
-/obj/effect/turf_decal/industrial/warning/corner{
-	color = "#eeac2e";
-	dir = 1
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/railing,
+/obj/structure/chair/handrail{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 8
 	},
-/turf/open/floor/concrete/tiles,
+/turf/open/floor/plating/rust,
 /area/outpost/storage)
 "gb" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2{
@@ -2992,36 +2947,6 @@
 	},
 /turf/open/floor/concrete/slab_1,
 /area/ruin/beach/gunsmith)
-"gc" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Donnager Turret";
-	id = "addust_camp";
-	desc = "A menacing-looking counterbattery turret with two large rocket launch tubes and a single optic package, main lens glowing bright red. It sits waiting, poised.";
-	lethal_projectile = /obj/projectile/bullet/a84mm_he;
-	stun_projectile = /obj/projectile/bullet/a84mm_he;
-	lethal_projectile_sound = 'sound/weapons/gun/general/rocket_launch.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/general/rocket_launch.ogg';
-	dir = 9;
-	burst_delay = 2;
-	burst_size = 1;
-	pixel_x = 0;
-	pixel_y = 0;
-	scan_range = 12;
-	shot_delay = 10;
-	spread = 0
-	},
-/obj/structure/cable/cyan{
-	icon_state = "0-6"
-	},
-/obj/machinery/power/shuttle/engine/electric{
-	density = 0;
-	name = "integrated ion booster";
-	desc = "A compact ion booster integrated into the ship's hull.";
-	pixel_x = -27;
-	pixel_y = 0
-	},
-/turf/closed/wall/r_wall/syndicate,
-/area/ship/bridge)
 "gd" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4;
@@ -3375,9 +3300,6 @@
 /obj/effect/mapping_helpers/crate_shelve,
 /turf/open/floor/wood/maple,
 /area/outpost/crew)
-"gO" = (
-/turf/open/floor/concrete/pavement/beachplanet/lit,
-/area/hangar)
 "gP" = (
 /obj/structure/cable{
 	icon_state = "1-2";
@@ -3429,7 +3351,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/turf/open/floor/plating/asteroid/dirt/beach,
+/turf/open/floor/concrete/slab_4/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "gW" = (
 /obj/machinery/atmospherics/components/binary/pump{
@@ -3730,7 +3652,10 @@
 	},
 /obj/item/grenade/c4/x4{
 	pixel_x = 7;
-	pixel_y = 3
+	pixel_y = 3;
+	boom_sizes = list(1,3,5);
+	name = "X-40 charge";
+	desc = "A shaped high-explosive breaching charge with a few additives. Place on wall and run fuck away."
 	},
 /obj/item/spacecash/bundle/c1000{
 	pixel_x = 6;
@@ -4090,14 +4015,10 @@
 /turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/hangar)
 "il" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#332521";
-	dir = 9
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/wood/ebony,
+/turf/open/floor/plating,
 /area/outpost/vacant_rooms/office)
 "im" = (
 /obj/effect/turf_decal/corner/opaque/tan/full,
@@ -4250,44 +4171,11 @@
 /turf/open/floor/wood/maple,
 /area/outpost/crew)
 "iB" = (
-/obj/effect/turf_decal/corner/opaque/syndiered{
-	dir = 5
-	},
 /obj/structure/cable{
 	icon_state = "1-10";
 	layer = 3.1
 	},
-/obj/effect/turf_decal/borderfloorblack,
-/obj/machinery/door/firedoor/border_only,
-/obj/item/attachment/ammo_counter,
-/obj/item/attachment/ammo_counter,
-/obj/item/attachment/rail_light,
-/obj/item/attachment/rail_light,
-/obj/item/attachment/bayonet,
-/obj/item/attachment/bayonet,
-/obj/item/attachment/scope,
-/obj/item/attachment/scope,
-/obj/structure/closet/wall/red/directional/east{
-	name = "closet (gun shit)"
-	},
-/obj/item/ammo_box/magazine/m556_42_hydra/extended,
-/obj/item/ammo_box/magazine/m556_42_hydra/extended,
-/obj/item/ammo_box/magazine/m556_42_hydra/extended,
-/obj/item/ammo_box/magazine/m57_39_sidewinder,
-/obj/item/ammo_box/magazine/m57_39_sidewinder,
-/obj/item/ammo_box/magazine/m57_39_sidewinder,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/ammo_box/magazine/m556_42_hydra/extended,
-/obj/structure/window/reinforced/spawner,
-/obj/item/ammo_box/magazine/skm_762_40,
-/obj/item/ammo_box/magazine/skm_762_40,
-/obj/item/ammo_box/magazine/skm_762_40,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plating,
 /area/outpost/vacant_rooms/office)
 "iC" = (
 /obj/effect/turf_decal/siding/wood{
@@ -4507,41 +4395,10 @@
 	pixel_x = 12;
 	pixel_y = 22
 	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/syndiered{
-	dir = 10
-	},
-/obj/structure/table/chem,
-/obj/item/gun/ballistic/shotgun/blasting_hammer{
-	name = "LAST WORD";
-	desc = "A heavily-modified blasting hammer fitted with a revolving 12-round cylinder and a large thruster on the back, alongside a larger thruster nozzle. You feel this would pair well with a cigar.";
-	allowed_ammo_types = list(/obj/item/ammo_box/magazine/internal/shot/blasting_hammer/ramzislayer);
-	default_ammo_type = /obj/item/ammo_box/magazine/internal/shot/blasting_hammer/ramzislayer;
-	throw_min = 4;
-	throw_max = 6;
-	door_breaching_weapon = 1;
-	pixel_x = 0;
-	pixel_y = 5;
-	attack_verb = list("lei henged","shinned","tremor bursted","staggered")
-	},
-/obj/item/grenade/spawnergrenade/manhacks{
-	pixel_x = 6;
-	pixel_y = -1;
-	name = "viscerator delivery grenade (i hope you like bees)";
-	desc = "A thin plasteel case marked to contan a Viscerator, with a very tempting big red button."
-	},
-/obj/item/bombcore/large{
-	name = "low-yield fusion bomb payload";
-	desc = "An incredibly powerful explosive payload normally used in ship-to-ship munitions and self-destruct systems. Do not drop.";
-	pixel_x = -7;
-	pixel_y = 14
-	},
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plating,
 /area/outpost/vacant_rooms/office)
 "jb" = (
 /obj/machinery/light/small/directional/south,
@@ -4601,6 +4458,21 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/orange/line{
 	dir = 5
+	},
+/mob/living/simple_animal/hostile/automated/bipedal{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 combat walker";
+	desc = "An intimidating, lumbering automaton with the engraved insignia of Johnson and Company on its hefty right arm and the flag of the New Gorlex Republic laser-engraved on the energy machine-gun taking up the stump of its left arm. It sweeps the area around it calmly, an antenna mounted to its back humming quietly - chirping away over ARMS-net, waiting for orders.";
+	projectilesound = 'sound/weapons/laser4.ogg';
+	rapid_fire_delay = 1;
+	ranged_cooldown_time = 10;
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/laser/eoehoma/wasp;
+	aggro_say_chance = 25;
+	on_aggro_say = list("ENGAGING HOSTILE TARGET.","BUILDING A BETER FUTURE.","TARGET DESIGNATED.","FOR THE REPUBLIC.","TARGET LOCKED.","ENGAGING.","DO NOT RESIST.","INVALID IFF DETECTED.","INTRUDER.");
+	spread = 10;
+	wander = 0;
+	dir = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -4754,23 +4626,6 @@
 /obj/structure/chair/stool,
 /turf/open/floor/concrete/slab_4,
 /area/outpost/storage)
-"jy" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#332521";
-	dir = 4
-	},
-/obj/structure/dresser,
-/obj/item/flashlight/lamp/green{
-	pixel_x = -7;
-	pixel_y = 15
-	},
-/obj/item/gun/ballistic/automatic/pistol/ringneck{
-	pixel_x = 7;
-	pixel_y = 7;
-	name = "PC-76 'Septette For a Dead Princess'"
-	},
-/turf/open/floor/wood/ebony,
-/area/outpost/vacant_rooms/office)
 "jz" = (
 /obj/structure/catwalk/over,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
@@ -4991,7 +4846,22 @@
 /turf/open/floor/plating,
 /area/outpost/security/armory)
 "jT" = (
-/turf/open/floor/plasteel/stairs/wood/walnut/right,
+/obj/structure/sign/warning/securearea{
+	pixel_y = 25;
+	name = "LIVE TURRET warning sign";
+	desc = "A warning sign clearly disclosing the presence of a nearby auto-turret."
+	},
+/turf/open/floor/concrete/slab_4/beachplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"jU" = (
+/obj/structure/hazard/electrical/electrified_water{
+	id = "bunkermoat";
+	random_sparks = 0;
+	on = 0;
+	contact_damage = 25
+	},
+/obj/structure/platform/corner,
+/turf/open/water/beach,
 /area/ruin/beach/gunsmith)
 "jV" = (
 /obj/machinery/atmospherics/pipe/layer_manifold,
@@ -5100,27 +4970,9 @@
 /turf/open/water/beach/deep,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "kl" = (
-/obj/effect/turf_decal/box/white,
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Architect Turret";
-	id = "addust_camp";
-	desc = "A custom-made sentry turret built out of the remains of destroyed New Gorlex Republic and Ramzi Clique equipment. Fitted to deter intruders.";
-	lethal_projectile = /obj/projectile/beam/laser/eoehoma;
-	stun_projectile = /obj/projectile/beam/laser/eoehoma;
-	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
-	dir = 6
-	},
-/obj/structure/sign/warning/securearea{
-	pixel_y = 25;
-	name = "LIVE TURRET warning sign";
-	desc = "A warning sign clearly disclosing the presence of a nearby auto-turret."
-	},
 /obj/machinery/light/small/directional/west,
-/turf/open/floor/concrete/reinforced/jungleplanet/lit{
-	initial_gas_mix = "BEACHPLANET_ATMOS"
-	},
-/area/ruin/beach/gunsmith)
+/turf/open/floor/concrete/pavement/beachplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "km" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -5132,7 +4984,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 2
 	},
-/turf/open/floor/plating/asteroid/dirt/beach,
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "kn" = (
 /obj/structure/platform/wood{
@@ -5284,23 +5136,6 @@
 /obj/effect/mapping_helpers/crate_shelve,
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/moonbase/cargo)
-"kC" = (
-/obj/structure/platform/ship_two{
-	dir = 8
-	},
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/components/unary/shuttle/fire_heater,
-/obj/machinery/door/poddoor{
-	name = "engine cover";
-	id = "bam2";
-	dir = 4;
-	icon = 'icons/obj/doors/shutters.dmi';
-	desc = "Heavy duty metal shutters that open mechanically."
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
 "kD" = (
 /obj/effect/turf_decal/box/white,
 /obj/machinery/light/small/directional/east,
@@ -5363,6 +5198,18 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/maintenance/central)
+"kH" = (
+/obj/structure/hazard/electrical/electrified_water{
+	id = "bunkermoat";
+	random_sparks = 0;
+	on = 0;
+	contact_damage = 25
+	},
+/obj/structure/platform{
+	dir = 6
+	},
+/turf/open/water/beach,
+/area/ruin/beach/gunsmith)
 "kI" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5371,24 +5218,6 @@
 	dir = 8
 	},
 /area/ruin/beach/gunsmith)
-"kJ" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 6;
-	color = "#332521"
-	},
-/obj/structure/bed/double,
-/obj/item/bedsheet/double/rainbow{
-	icon_state = "double_sheetsyndie";
-	name = "double coalition bedsheet";
-	desc = "A blood-red bedsheet bearing the insignia of the Syndicate Coalition. It seems to have an aura of remembrance around it."
-	},
-/obj/item/toy/plush/landmine{
-	pixel_x = 5;
-	pixel_y = -3;
-	desc = "A plushie depicting an adorable anti-infantry explosive. Rated 10^18% cuddlier than the real thing."
-	},
-/turf/open/floor/wood/ebony,
-/area/outpost/vacant_rooms/office)
 "kK" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 8
@@ -5575,44 +5404,6 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"la" = (
-/obj/structure/railing/thin{
-	dir = 8
-	},
-/obj/structure/window/plasma/reinforced{
-	dir = 4
-	},
-/obj/structure/cable/cyan,
-/obj/item/radio/intercom/directional/south,
-/obj/machinery/atmospherics/pipe/simple/orange/hidden{
-	dir = 9
-	},
-/obj/machinery/power/smes/engineering,
-/obj/structure/cable/cyan{
-	icon_state = "1-10"
-	},
-/turf/open/floor/plasteel/patterned/brushed,
-/area/ship/bridge)
-"lb" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "bam";
-	dir = 4
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4;
-	color = "#FFFFFF"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/structure/cable/cyan{
-	icon_state = "2-8"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-8"
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
 "lc" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 5
@@ -6125,12 +5916,14 @@
 /turf/open/water/beach,
 /area/ruin/beach/gunsmith)
 "mb" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1;
-	color = "#eeac2e"
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
-/turf/open/floor/concrete/tiles,
-/area/outpost/storage)
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/concrete/slab_4/beachplanet/interior,
+/area/ruin/beach/gunsmith)
 "mc" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8;
@@ -6204,6 +5997,23 @@
 /turf/open/floor/concrete/slab_1,
 /area/ruin/beach/gunsmith)
 "mi" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Argus PDL";
+	id = "addust_camp";
+	desc = "A compact pulse laser turret designed to rapidly target and destroy incoming missiles and not much else. Its (insert laser colour) gaze remains still, as if waiting.";
+	lethal_projectile = /obj/projectile/beam/hitscan/kalix/pgf/assault;
+	stun_projectile = /obj/projectile/kiss;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/sharplight-fire_light.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/sharplight-fire_light.ogg';
+	burst_delay = 2;
+	burst_size = 1;
+	reaction_time = 3;
+	shot_delay = 5;
+	dir = 5;
+	base_icon_state = "standard";
+	icon_state = "standard_lethal";
+	lethal = 1
+	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ruin/powered/shuttle)
 "mj" = (
@@ -6362,6 +6172,20 @@
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/crew/canteen)
+"mz" = (
+/mob/living/simple_animal/hostile/automated/quadrotor{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 patrol drone";
+	desc = "A distant relative of the Pattern 486 developed by Johnson & Company's remnants, bearing a hazard-orange colour scheme and wielding a twin-barrel underslung laser turret, guided by a glowing orange optic gazing over its surroundings.";
+	projectilesound = 'sound/weapons/gun/pistol/shot.ogg';
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/eoehoma/wasp;
+	rapid = 2;
+	ranged_cooldown_time = 20;
+	health = 60
+	},
+/turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "mA" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -6396,14 +6220,25 @@
 	},
 /turf/open/floor/wood/maple,
 /area/ruin/lavaland/factory/dorms)
-"mD" = (
-/obj/structure/platform/wood{
-	dir = 8
+"mC" = (
+/obj/structure/fluff{
+	icon_state = "standard_off";
+	icon = 'icons/obj/turrets.dmi';
+	dir = 1;
+	name = "inactive Argus PDL";
+	desc = "A compact pulse laser turret designed to rapidly target and destroy incoming missiles and not much else. This one is offline and a hatch hangs open, revealing the inner components, or rather the lack of them."
 	},
-/turf/open/floor/plating/asteroid/dirt/beach,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/powered/shuttle)
+"mD" = (
+/turf/open/floor/concrete/slab_4/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "mE" = (
 /obj/machinery/light/small/directional/west,
+/obj/structure/hazard/electrical/conduit/corner{
+	name = "power conduit";
+	desc = "Industrial cabling used to transfer large volumes of power."
+	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/port)
 "mF" = (
@@ -6605,6 +6440,12 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/outpost/engineering)
+"mY" = (
+/obj/effect/turf_decal/road/stripes{
+	dir = 4
+	},
+/turf/open/floor/concrete/pavement/beachplanet/interior,
+/area/ruin/moon/moonbase/cargo)
 "mZ" = (
 /obj/structure/railing/thin,
 /obj/structure/cable{
@@ -6705,6 +6546,19 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/checkpoint)
+"nm" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8;
+	layer = 2.03
+	},
+/obj/effect/turf_decal/trimline/transparent/solgovgold/filled/warning{
+	dir = 1
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/storage)
 "nn" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible/layer4,
 /obj/structure/cable{
@@ -6813,13 +6667,12 @@
 /turf/open/water/beach/deep,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "nB" = (
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 5
+/obj/machinery/door/airlock/hatch{
+	name = "boring bitch pedestrian entrance";
+	desc = "A note reads: 'PLEASE DO NOT CRAM VEHICLES THROUGH DOOR THE BIG DOORS ARE RIGHT FUCKING THERE I SWEAR TO GOD'";
+	dir = 4
 	},
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/concrete/slab_4/beachplanet/lit,
 /area/outpost/storage)
 "nC" = (
 /obj/structure/cable{
@@ -6873,15 +6726,14 @@
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/crew/canteen)
 "nK" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 2
-	},
-/turf/open/floor/plasteel/stairs/wood/walnut/right{
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 1
 	},
+/obj/machinery/door/poddoor{
+	id = "addust_bunker_aux_entrance"
+	},
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "nL" = (
 /obj/structure/table/wood/reinforced,
@@ -7022,23 +6874,14 @@
 	},
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"oa" = (
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/warning{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/warning{
-	dir = 4
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "ob" = (
-/obj/structure/platform/wood{
-	dir = 4
+/obj/structure/sign/mining/survival{
+	name = "maximum height warning sign";
+	desc = "A high visibility sign that reads 'CAUTION: MAX HEIGHT: 5 M / 16.4 FT' followed by 'EXOSUITS ABOVE LIMIT MUST CROUCH'. Who the hell builds an exosuit that tall???";
+	pixel_x = -32;
+	pixel_y = 1
 	},
-/turf/open/floor/plating/asteroid/dirt/beach,
+/turf/open/floor/concrete/slab_4/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "oc" = (
 /obj/structure/fluff{
@@ -7048,6 +6891,10 @@
 	desc = "Oh, that's a long way down. There are stairs immediately below, at least, but the elevator's a quicker bet.";
 	pixel_x = 0;
 	pixel_y = 18
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8;
+	color = "#eeac2e"
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/storage)
@@ -7085,45 +6932,7 @@
 "og" = (
 /obj/machinery/firealarm/directional/west,
 /obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/syndiered{
-	dir = 10
-	},
-/obj/structure/guncloset,
-/obj/item/gun/ballistic/shotgun/flamingarrow/conflagration/empty{
-	name = "\improper HP-CFG 'ETERNAL PROMISE'"
-	},
-/obj/item/gun/ballistic/automatic/assault/hydra/lmg/extended{
-	name = "\improper SAW-80 'BLOODY DEVOTION'";
-	desc = "Scarborough Arms' premier modular assault rifle platform. This example is configured as a support weapon, with heavier components for sustained firing and a large muzzle brake. Chambered in 5.56mm CLIP. Jesus fucking christ, how did she get her hands on this?"
-	},
-/obj/item/gun/ballistic/automatic/smg/sidewinder{
-	name = "\improper CDW-81 'BORDER OF TIME'"
-	},
-/obj/item/gun/ballistic/automatic/assault/hydra{
-	name = "\improper SMR-80 'FIERY DEVOTION'"
-	},
-/obj/item/gun/ballistic/automatic/smg/resolution/inteq{
-	desc = "A seized Advantage PD46, modified (painted) to Inteq's requirements and standards. Awkward to reload, though has a powerful cartridge with good ergonomics and accuracy.";
-	name = "\improper BDM-50 'LAST DESTINY'"
-	},
-/obj/item/gun/ballistic/automatic/assault/skm/inteq{
-	name = "\improper SKM-44 'SOUND OF HEAVEN DISTANT'";
-	pixel_x = 0;
-	pixel_y = 0;
-	gun_firenames = list("single" = "single", "burst" = "burst fire", "fuck you" = "full auto", "other" = "misc. fire", "other2" = "very misc. fire", "underbarrel" = "underbarrel weapon")
-	},
-/obj/item/gun/ballistic/automatic/assault/hydra/no_mag{
-	name = "HVR-99 Trioditis Variable Rifle 'ETERNAL DEVOTION'";
-	gun_firemodes = list("single","burst","auto");
-	desc = "A refitted Scarborough assault rifle, trading modularity and ergonomics for on-the-go firemode switching. Features automatic, three-round burst and single fire modes alongside reinforced components for sustained fire, though mercifully it remains in line with an assault rifle rather than a dedicated LMG. The buttstamp branding has been replaced with the outline of a chibi twintailed woman holding up a double peace sign. A little serial number has been laser-engraved into it - HVR99-01.";
-	burst_size = 3;
-	burst_delay = 0.5;
-	fire_delay = 1.2
-	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plating,
 /area/outpost/vacant_rooms/office)
 "oh" = (
 /obj/machinery/light/small/directional/south,
@@ -7249,14 +7058,6 @@
 	name = "ARMS-OS MK-1 control board";
 	desc = "A heavily-reinforced control board with laser-engraved insignia identifying it as property of Johnson and Company, primarily used in high-redundancy control systems such as for an ARMS-A unit's organ support system."
 	},
-/obj/item/gun/ballistic/automatic/pistol/rattlesnake{
-	allowed_ammo_types = list(/obj/item/ammo_box/magazine/m10mm_cottonmouth);
-	default_ammo_type = /obj/item/ammo_box/magazine/m10mm_cottonmouth;
-	name = "MP-84j 'Rattlemouth'";
-	desc = "A professional rechambering of the MP-84 'Rattlesnake' into 10x22mm, built to compete with the Ramzi Clique's Rattlesnake machinepistol. The insignia of Johnson and Company is engraved immediately above that of Scarborough Arms.";
-	pixel_x = -2;
-	pixel_y = -4
-	},
 /obj/item/gun/ballistic/shotgun/automatic/bulldog/no_mag{
 	pixel_x = -1;
 	pixel_y = 10;
@@ -7265,6 +7066,15 @@
 	burst_size = 2;
 	name = "JC-60db 'Two-Step Goodbye'";
 	desc = "A bullpup combat shotgun custom-made by the loyalist remnants of Johnson and Company as a superior alternative to the Ramzi Clique's Bockadam, now with such wonders as a fire selector and not jamming every fourth round. Chambered in 12g."
+	},
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake/cottonmouth{
+	pixel_x = -5;
+	pixel_y = -10;
+	icon_state = "rattlesnake";
+	name = "JC-506MP 'Rattlemouth'";
+	desc = "An imposing 10x22mm machinepistol bearing the insignia of what was once Johnson and Company etched over the Scarborough Arms logo. Capable of semi-auto, burst-fire, and full-auto.";
+	wear_rate = 0.5;
+	gun_firemodes = list("single","burst","auto")
 	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
@@ -7571,6 +7381,24 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"oW" = (
+/mob/living/simple_animal/hostile/automated/bipedal{
+	faction = list("New Gorlex Republic","neutral");
+	name = "HTA-06: SWEEPER";
+	desc = "A bulky, up-armoured machine, standing steadfast and bearing the Johnson & Co insignia on its chestplate. A large antenna protrudes from its shoulder and a machine gun hangs from its left arm, connected to a belt feeding from the main body. It almost seems to fidget in place, casting its scanning gaze this way and that as it awaits for orders.";
+	projectilesound = 'sound/weapons/gun/rifle/skm.ogg';
+	rapid_fire_delay = 1;
+	ranged_cooldown_time = 10;
+	casingtype = /obj/item/ammo_casing/spent/rifle_brass;
+	projectiletype = /obj/projectile/bullet/a762_40/ap;
+	aggro_say_chance = 25;
+	on_aggro_say = list("TARGET VERIFIED.","COMMENCING HOSTILITIES.","TARGET VERIFIED, COMMENCING HOSTILITIES.","FUCK YOU.","INVALID IFF RESPONSE.","UNQUENCHING BLOODTHIRST.","CODE 32.","CODE 78.","CONTAINING SITUATION.");
+	spread = 10;
+	wander = 0;
+	armor = list("melee" = 30, "bullet" = 70, "laser" = 45, "energy" = 20, "bomb" = 50, "bio" = 30, "rad" = 30, "fire" = 90, "acid" = 100)
+	},
+/turf/open/floor/plating/asteroid/sand/dense/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "oX" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -7593,6 +7421,9 @@
 /turf/open/floor/plating/asteroid/dirt/grass/beach,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "pa" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/moonbase/cargo)
 "pb" = (
@@ -7881,12 +7712,6 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar)
-"pD" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#332521"
-	},
-/turf/open/floor/wood/ebony,
-/area/outpost/vacant_rooms/office)
 "pE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/disposalpipe/segment{
@@ -8288,25 +8113,20 @@
 /turf/open/floor/plating/asteroid/sand/dense/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "qo" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Donnager Turret";
-	id = "addust_camp";
-	desc = "A menacing-looking counterbattery turret with two large rocket launch tubes and a single optic package, main lens glowing bright red. It sits waiting, poised.";
-	lethal_projectile = /obj/projectile/bullet/a84mm_he;
-	stun_projectile = /obj/projectile/bullet/a84mm_he;
-	lethal_projectile_sound = 'sound/weapons/gun/general/rocket_launch.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/general/rocket_launch.ogg';
-	dir = 5;
-	burst_delay = 2;
-	burst_size = 1;
-	pixel_x = 0;
-	pixel_y = 0;
-	scan_range = 12;
-	shot_delay = 10;
-	spread = 0
+/mob/living/simple_animal/hostile/automated/quadrotor{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 patrol drone";
+	desc = "A distant relative of the Pattern 486 developed by Johnson & Company's remnants, bearing a hazard-orange colour scheme and wielding a twin-barrel underslung laser turret, guided by a glowing orange optic gazing over its surroundings.";
+	projectilesound = 'sound/weapons/gun/pistol/shot.ogg';
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/eoehoma/wasp;
+	rapid = 2;
+	ranged_cooldown_time = 20;
+	health = 60;
+	dir = 8
 	},
-/turf/closed/wall/r_wall/syndicate,
-/area/ship/bridge)
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "qp" = (
 /obj/effect/turf_decal/trimline/opaque/tan/end{
 	dir = 8
@@ -8367,6 +8187,13 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/port)
+"qv" = (
+/obj/effect/turf_decal/stairs{
+	dir = 9;
+	color = "#575757"
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/ruin/beach/gunsmith)
 "qw" = (
 /obj/structure/cable{
 	icon_state = "1-10"
@@ -8437,6 +8264,11 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/hazard/electrical/conduit/corner{
+	dir = 4;
+	name = "power conduit";
+	desc = "Industrial cabling used to transfer large volumes of power."
+	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/port)
 "qD" = (
@@ -8545,7 +8377,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/turf/open/floor/plating/asteroid/dirt/beach,
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "qR" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -8635,16 +8467,10 @@
 /turf/open/floor/wood/maple,
 /area/outpost/crew/lounge)
 "rc" = (
-/obj/structure/platform/wood{
-	dir = 4
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
-/obj/structure/hazard/electrical/electrified_water{
-	id = "bunkermoat";
-	random_sparks = 0;
-	on = 0;
-	contact_damage = 25
-	},
-/turf/open/water/beach,
+/turf/open/floor/concrete/slab_4/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "rd" = (
 /obj/machinery/door/poddoor{
@@ -8706,27 +8532,6 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
-"rj" = (
-/obj/item/storage/toolbox/ammo/c556,
-/obj/item/storage/toolbox/ammo/c57,
-/obj/item/storage/toolbox/ammo/c10mm,
-/obj/item/storage/box/ammo/a12g_blank,
-/obj/item/storage/box/ammo/a12g_blank,
-/obj/item/storage/box/ammo/a12g_blank,
-/obj/structure/closet/secure_closet/armorycage,
-/obj/item/storage/toolbox/ammo/c556,
-/obj/item/storage/toolbox/ammo/c57,
-/obj/item/storage/toolbox/ammo/c556,
-/obj/item/storage/toolbox/ammo/c57,
-/obj/item/storage/toolbox/ammo/c556,
-/obj/item/storage/toolbox/ammo/c10mm,
-/obj/effect/turf_decal/corner/opaque/syndiered/full,
-/obj/item/storage/toolbox/ammo/a762_40,
-/obj/item/storage/toolbox/ammo/a762_40,
-/obj/item/storage/toolbox/ammo/c46,
-/obj/item/storage/toolbox/ammo/c46,
-/turf/open/floor/plasteel/dark,
-/area/outpost/vacant_rooms/office)
 "rk" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 8
@@ -8856,6 +8661,23 @@
 /obj/machinery/limbgrower,
 /turf/open/floor/suns,
 /area/outpost/medical)
+"ry" = (
+/mob/living/simple_animal/hostile/automated/bipedal{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 combat walker";
+	desc = "An intimidating, lumbering automaton with the engraved insignia of Johnson and Company on its hefty right arm and the flag of the New Gorlex Republic laser-engraved on the energy machine-gun taking up the stump of its left arm. It sweeps the area around it calmly, an antenna mounted to its back humming quietly - chirping away over ARMS-net, waiting for orders.";
+	projectilesound = 'sound/weapons/laser4.ogg';
+	rapid_fire_delay = 1;
+	ranged_cooldown_time = 10;
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/laser/eoehoma/wasp;
+	aggro_say_chance = 25;
+	on_aggro_say = list("ENGAGING HOSTILE TARGET.","BUILDING A BETER FUTURE.","TARGET DESIGNATED.","FOR THE REPUBLIC.","TARGET LOCKED.","ENGAGING.","DO NOT RESIST.","INVALID IFF DETECTED.","INTRUDER.");
+	spread = 10;
+	wander = 0
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "rz" = (
 /obj/effect/turf_decal/corner/opaque/tan/full,
 /obj/item/computer_hardware/battery,
@@ -9002,9 +8824,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/moonbase/cargo)
 "rM" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#332521"
-	},
 /obj/machinery/button/door{
 	pixel_x = -9;
 	pixel_y = -20;
@@ -9012,7 +8831,7 @@
 	id = "tokamak_windows"
 	},
 /obj/machinery/light/small/directional/south,
-/turf/open/floor/wood/ebony,
+/turf/open/floor/plating,
 /area/outpost/vacant_rooms/office)
 "rN" = (
 /obj/structure/disposalpipe/segment,
@@ -9185,15 +9004,11 @@
 	},
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "sh" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "addust_bunker_aux_entrance"
+/obj/machinery/door/airlock/hatch{
+	name = "boring bitch pedestrian entrance";
+	desc = "A note reads: 'PLEASE DO NOT CRAM VEHICLES THROUGH DOOR THE BIG DOORS ARE RIGHT FUCKING THERE I SWEAR TO GOD'"
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/concrete/slab_1,
+/turf/open/floor/concrete/slab_4/beachplanet/lit,
 /area/ruin/beach/gunsmith)
 "sj" = (
 /obj/structure/platform/wood,
@@ -9217,6 +9032,20 @@
 	},
 /turf/open/floor/wood/maple,
 /area/ruin/jungle/paradise/comms)
+"sm" = (
+/mob/living/simple_animal/hostile/automated/quadrotor{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 patrol drone";
+	desc = "A distant relative of the Pattern 486 developed by Johnson & Company's remnants, bearing a hazard-orange colour scheme and wielding a twin-barrel underslung laser turret, guided by a glowing orange optic gazing over its surroundings.";
+	projectilesound = 'sound/weapons/gun/pistol/shot.ogg';
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/eoehoma/wasp;
+	rapid = 2;
+	ranged_cooldown_time = 20;
+	health = 60
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/ruin/beach/gunsmith)
 "sn" = (
 /obj/vehicle/ridden/secway{
 	dir = 8;
@@ -9600,7 +9429,8 @@
 	dir = 8
 	},
 /obj/structure/fluff/vehicle/crane{
-	desc = "A tracked crane for hauling a large supply of goods at once, the natural evolution of the forklift. You have no idea where the keys are."
+	desc = "A tracked crane for hauling a large supply of goods at once, the natural evolution of the forklift. You have no idea where the keys are.";
+	on = 0
 	},
 /turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -9669,32 +9499,6 @@
 /obj/machinery/atmospherics/pipe/simple,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
-"tj" = (
-/obj/effect/turf_decal/trimline/opaque/syndiered/corner{
-	dir = 8
-	},
-/obj/machinery/stasis{
-	dir = 1
-	},
-/obj/structure/platform/ship_two{
-	dir = 8
-	},
-/obj/machinery/defibrillator_mount/charging{
-	dir = 4;
-	pixel_x = 0;
-	pixel_y = -29
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/terminal{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/end{
-	dir = 8
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "tk" = (
 /obj/structure/railing{
 	dir = 4
@@ -9870,12 +9674,40 @@
 /obj/structure/closet/crate/secure/gear{
 	name = "old projects crate"
 	},
-/obj/effect/mapping_helpers/crate_shelve,
 /obj/item/shuttle_creator{
 	pixel_x = 0;
 	pixel_y = 6;
 	name = "portable bluespace pylon applicator";
 	desc = "A concerningly-thorough modification to a Rapid Construction Device, used to build and designate spacecraft. Bears the insignia of Johnson and Company."
+	},
+/obj/item/gun/ballistic/automatic/smg/skm_carbine{
+	pixel_x = -8;
+	pixel_y = 3;
+	name = "CSW-07 suppressive weapon 'Marooned Dream'";
+	default_ammo_type = /obj/item/ammo_box/magazine/skm_762_40/drum;
+	allowed_ammo_types = list(/obj/item/ammo_box/magazine/skm_762_40);
+	ammo_counter = 1;
+	recoil = 4;
+	recoil_unwielded = 8;
+	recoil_deviation = 25;
+	desc = "A mistake forged in misfired neurons and recycled components, the weapon that lies before you is an incredibly thorough refit of an SKM-24v, with a sawed-down and reinforced barrel and components chambered for 7.62 CLIP. The lack of a fire selector and a warning label disclosing it as 'exclusively full-auto' make its purpose bare as a concealable light machine gun. It would take a special kind of insanity to use this, and an even greater kind to design, prototype, and build it. This is a bad idea.";
+	spread = 14;
+	spread_unwielded = 24;
+	fire_delay = 0.2;
+	gun_firemodes = list("auto");
+	wear_rate = 2
+	},
+/obj/item/ammo_box/magazine/skm_762_40/drum{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/ammo_box/magazine/skm_762_40/drum{
+	pixel_x = 2;
+	pixel_y = 1
+	},
+/obj/effect/mapping_helpers/crate_shelve{
+	pixel_x = 0;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/cargo)
@@ -10107,6 +9939,20 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/central)
+"tX" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Architect Turret";
+	id = "addust_camp";
+	desc = "A custom-made sentry turret built out of the remains of destroyed New Gorlex Republic and Ramzi Clique equipment. Fitted to deter intruders.";
+	lethal_projectile = /obj/projectile/beam/laser/eoehoma;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 10
+	},
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/concrete/reinforced,
+/area/ruin/beach/gunsmith)
 "tY" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 5;
@@ -10199,30 +10045,17 @@
 	color = "#c1b6a5"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/gun/ballistic/automatic/smg/skm_carbine{
-	pixel_x = -8;
-	pixel_y = 3;
-	name = "CSW-07 suppressive weapon 'Marooned Dream'";
-	default_ammo_type = /obj/item/ammo_box/magazine/skm_762_40/drum;
-	allowed_ammo_types = list(/obj/item/ammo_box/magazine/skm_762_40);
-	ammo_counter = 1;
-	recoil = 4;
-	recoil_unwielded = 8;
-	recoil_deviation = 25;
-	desc = "A mistake forged in misfired neurons and recycled components, the weapon that lies before you is an incredibly thorough refit of an SKM-24v, with a sawed-down and reinforced barrel and components chambered for 7.62 CLIP. The lack of a fire selector and a warning label disclosing it as 'exclusively full-auto' make its purpose bare as a concealable light machine gun. It would take a special kind of insanity to use this, and an even greater kind to design, prototype, and build it. This is a bad idea.";
-	spread = 14;
-	spread_unwielded = 24;
-	fire_delay = 0.2;
-	gun_firemodes = list("auto");
-	wear_rate = 2
-	},
-/obj/item/ammo_box/magazine/skm_762_40/drum{
-	pixel_x = 7;
-	pixel_y = -7
-	},
-/obj/item/ammo_box/magazine/skm_762_40/drum{
-	pixel_x = 18;
-	pixel_y = -5
+/obj/item/gun/ballistic/revolver/viper/empty{
+	allowed_ammo_types = list(/obj/item/ammo_box/magazine/internal/shot/tube);
+	default_ammo_type = /obj/item/ammo_box/magazine/internal/shot/tube;
+	name = "JC-07-SGr 'Bulwark'";
+	desc = "An imposing revolver bearing the engraved insignia of Johnson and Company, with four twelve-gauge cylinders built into the thoroughly-reinforced frame of what was once a Viper. Great for self-defence, though its stubby barrel leaves slugs asking for more.";
+	spread = 5;
+	spread_unwielded = 12;
+	recoil = 2;
+	fire_sound = 'sound/weapons/gun/shotgun/shot.ogg';
+	pixel_x = 0;
+	pixel_y = 0
 	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
@@ -10253,18 +10086,6 @@
 	},
 /turf/open/floor/wood/walnut,
 /area/ruin/beach/gunsmith)
-"uo" = (
-/obj/structure/table/chem,
-/obj/item/storage/toolbox/syndicate{
-	pixel_x = -3;
-	pixel_y = 0
-	},
-/obj/item/storage/box/stockparts/t3{
-	pixel_x = 33;
-	pixel_y = 76
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/outpost/security/armory)
 "uq" = (
 /obj/effect/turf_decal/siding/wood/end{
 	color = "#D2BC9D";
@@ -10325,6 +10146,31 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "uz" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2,
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Prototype Misono Turret";
+	id = "addust_camp_gorilla_princess";
+	desc = "An unholy demon birthed from a rudimentary understanding of Solarian coilgun technology and a twisted mind. Wires snake from the barrel, feeding from very large coils which take up most of the main mass of the turret, leading to what can only be described as a component charcuterie board rated for heavy armour and fightercraft but not water. You're pretty sure going near this with a pacemaker would kill you.";
+	lethal_projectile = /obj/projectile/bullet/slug/frag12;
+	stun_projectile = /obj/projectile/bullet/slug/meteor;
+	lethal_projectile_sound = 'sound/weapons/gun/general/tank_cannon.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/general/tank_cannon.ogg';
+	dir = 1;
+	burst_delay = 0;
+	burst_size = 2;
+	use_power = 0;
+	spread = 0;
+	layer = 3;
+	pixel_x = 0;
+	pixel_y = 4;
+	lethal = 1
+	},
+/obj/structure/hazard/electrical/conduit{
+	dir = 4;
+	pixel_x = -12;
+	pixel_y = 0;
+	desc = "Cheap industrial cable used to transfer large volumes of power.";
+	name = "power conduit"
+	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/port)
 "uA" = (
@@ -10552,9 +10398,7 @@
 /turf/open/floor/concrete/slab_4,
 /area/outpost/storage)
 "vb" = (
-/turf/open/floor/wood/walnut{
-	icon_state = "wood-broken3"
-	},
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "vc" = (
 /obj/structure/platform{
@@ -10812,6 +10656,30 @@
 	pixel_x = -8;
 	pixel_y = 5
 	},
+/obj/item/ammo_box/magazine/m12_shredder{
+	pixel_x = -8;
+	pixel_y = -3
+	},
+/obj/item/grenade/c4/x4{
+	pixel_x = 5;
+	pixel_y = 0;
+	boom_sizes = list(1,3,5);
+	name = "X-40 charge";
+	desc = "A shaped high-explosive breaching charge with a few additives. Place on wall and run fuck away."
+	},
+/obj/item/grenade/c4/x4{
+	pixel_x = -7;
+	pixel_y = 0;
+	boom_sizes = list(1,3,5);
+	name = "X-40 charge";
+	desc = "A shaped high-explosive breaching charge with a few additives. Place on wall and run fuck away."
+	},
+/obj/item/gun/ballistic/automatic/hmg/shredder{
+	pixel_x = -5;
+	pixel_y = 8;
+	name = "SGMG-507 'Shredder'";
+	desc = "A custom-fabricated replica of a Shredder bearing the insignia of Johnson and Company. It seems to use a mixture of various parts - its barrel is built of several Bulldog barrels welded together, its receiver seems to be based off a pre-Night of Fire .50cal design named the M2, and its magwell seems to be a derivative of that used on the CM-40. A little drawing of a feminine positronic flipping the bird to what seems to be Agni Garrison's commanding officer has been laser-engraved on the barrel shroud, and maintenance information has been laser-engraved below its hipfiring grips. Chambered in 12ga."
+	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
 "vH" = (
@@ -10899,10 +10767,6 @@
 	},
 /turf/open/water/beach/deep,
 /area/ruin/beach/gunsmith)
-"vS" = (
-/obj/effect/turf_decal/corner/opaque/syndiered/full,
-/turf/open/floor/plasteel/dark,
-/area/outpost/vacant_rooms/office)
 "vT" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
@@ -10978,11 +10842,11 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/moonbase/cargo)
 "wd" = (
-/obj/effect/turf_decal/industrial/warning/corner{
-	color = "#eeac2e";
-	dir = 8
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8;
+	color = "#eeac2e"
 	},
-/turf/open/floor/concrete/tiles,
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/outpost/storage)
 "we" = (
 /obj/effect/decal/cleanable/dirt,
@@ -11057,7 +10921,8 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "wk" = (
 /obj/structure/fluff/vehicle/crane/cranecargo{
-	desc = "A tracked crane used to move goods around a single installation in bulk. This one works, but you'd need to find the keys."
+	desc = "A tracked crane used to move goods around a single installation in bulk. This one works, but you'd need to find the keys.";
+	on = 0
 	},
 /turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/moon/moonbase/cargo)
@@ -11129,6 +10994,21 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood/ebony,
 /area/outpost/crew/bar)
+"wq" = (
+/obj/item/storage/toolbox/ammo/shotgun{
+	pixel_x = 9;
+	pixel_y = 15
+	},
+/obj/item/storage/toolbox/ammo/shotgun{
+	pixel_x = -9;
+	pixel_y = 16
+	},
+/obj/item/storage/toolbox/ammo/shotgun{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/turf/open/floor/concrete/slab_4,
+/area/outpost/security/armory)
 "wr" = (
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
@@ -11237,9 +11117,7 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/turf/open/floor/plasteel/stairs/left{
-	dir = 4
-	},
+/turf/open/floor/concrete/tiles,
 /area/outpost/storage)
 "wA" = (
 /obj/structure/railing/thin/corner{
@@ -11280,15 +11158,6 @@
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/crew/bathroom)
-"wH" = (
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/stairs{
-	dir = 8;
-	icon = 'icons/obj/stairs.dmi'
-	},
-/area/ship/bridge)
 "wI" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -11515,7 +11384,17 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/turf/open/floor/wood/walnut,
+/obj/effect/turf_decal/road/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/road/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/road,
+/obj/effect/turf_decal/road{
+	dir = 1
+	},
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "xh" = (
 /turf/open/floor/concrete/reinforced,
@@ -11530,8 +11409,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/turf_decal/corner/opaque/syndiered/full,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plating,
 /area/outpost/vacant_rooms/office)
 "xk" = (
 /obj/effect/turf_decal/road/stripes{
@@ -11693,6 +11571,20 @@
 	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/storage)
+"xD" = (
+/mob/living/simple_animal/hostile/automated/quadrotor{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 patrol drone";
+	desc = "A distant relative of the Pattern 486 developed by Johnson & Company's remnants, bearing a hazard-orange colour scheme and wielding a twin-barrel underslung laser turret, guided by a glowing orange optic gazing over its surroundings.";
+	projectilesound = 'sound/weapons/gun/pistol/shot.ogg';
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/eoehoma/wasp;
+	rapid = 2;
+	ranged_cooldown_time = 20;
+	health = 60
+	},
+/turf/open/water/beach/deep,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "xE" = (
 /obj/structure/closet/crate/rations,
 /turf/open/floor/plating/asteroid/dirt/beach,
@@ -11886,6 +11778,8 @@
 /obj/item/storage/box/ammo/a65clip/trac,
 /obj/item/storage/box/ammo/a65clip,
 /obj/item/storage/box/ammo/a65clip,
+/obj/item/storage/toolbox/ammo/shotgun,
+/obj/item/storage/toolbox/ammo/shotgun,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/storage)
 "xY" = (
@@ -12104,7 +11998,7 @@
 	pixel_y = 1;
 	dir = 4
 	},
-/turf/open/floor/plating/asteroid/dirt/beach,
+/turf/open/floor/concrete/slab_4/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "yx" = (
 /obj/structure/cable{
@@ -12211,22 +12105,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/lavaland/factory/dorms)
-"yI" = (
-/obj/structure/table/chem,
-/obj/item/computer_hardware/hard_drive/advanced{
-	pixel_x = -7;
-	pixel_y = -42
-	},
-/obj/item/computer_hardware/hard_drive/small{
-	pixel_x = 12;
-	pixel_y = -20
-	},
-/obj/item/organ/stomach/cell{
-	pixel_x = -11;
-	pixel_y = 0
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/outpost/security/armory)
 "yJ" = (
 /turf/open/floor/concrete/slab_4/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -12458,11 +12336,8 @@
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/crew/law_office)
 "zg" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 8;
-	color = "#eeac2e"
-	},
-/turf/open/floor/concrete/tiles,
+/obj/effect/turf_decal/trimline/transparent/solgovgold/filled/warning,
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/storage)
 "zh" = (
 /obj/structure/cable{
@@ -12714,13 +12589,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/concrete/slab_4/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"zK" = (
-/obj/effect/turf_decal/siding/wood/end{
-	color = "#332521";
-	dir = 4
-	},
-/turf/open/floor/carpet/red_gold,
-/area/outpost/vacant_rooms/office)
 "zL" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -13278,6 +13146,20 @@
 /obj/structure/sign/poster/contraband/m90,
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/cargo)
+"AM" = (
+/mob/living/simple_animal/hostile/automated/quadrotor{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 patrol drone";
+	desc = "A distant relative of the Pattern 486 developed by Johnson & Company's remnants, bearing a hazard-orange colour scheme and wielding a twin-barrel underslung laser turret, guided by a glowing orange optic gazing over its surroundings.";
+	projectilesound = 'sound/weapons/gun/pistol/shot.ogg';
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/eoehoma/wasp;
+	rapid = 2;
+	ranged_cooldown_time = 20;
+	health = 60
+	},
+/turf/open/water/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "AN" = (
 /obj/structure/sink/chem,
 /obj/structure/table/wood/reinforced,
@@ -13511,6 +13393,21 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering)
+"Bn" = (
+/mob/living/simple_animal/hostile/automated/quadrotor{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 patrol drone";
+	desc = "A distant relative of the Pattern 486 developed by Johnson & Company's remnants, bearing a hazard-orange colour scheme and wielding a twin-barrel underslung laser turret, guided by a glowing orange optic gazing over its surroundings.";
+	projectilesound = 'sound/weapons/gun/pistol/shot.ogg';
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/eoehoma/wasp;
+	rapid = 2;
+	ranged_cooldown_time = 20;
+	health = 60;
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/overmap_encounter/planetoid/cave/explored)
 "Bo" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5;
@@ -13535,7 +13432,17 @@
 /obj/structure/disposalpipe/segment{
 	dir = 2
 	},
-/turf/open/floor/wood/walnut,
+/obj/effect/turf_decal/road/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/road/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/road,
+/obj/effect/turf_decal/road{
+	dir = 1
+	},
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "Br" = (
 /obj/machinery/light/small/directional/west,
@@ -13873,9 +13780,6 @@
 /obj/machinery/atmospherics/components/binary/valve/on/layer2,
 /turf/open/floor/concrete/slab_4/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"Ce" = (
-/turf/closed/wall/r_wall/syndicate,
-/area/ship/bridge)
 "Cf" = (
 /obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/trimline/opaque/orange/filled/warning{
@@ -14036,6 +13940,12 @@
 	pixel_x = -5;
 	pixel_y = 9
 	},
+/obj/item/gun/ballistic/automatic/pistol/himehabu/no_mag{
+	name = "PC-82 'Himejoshi'";
+	desc = "A limited production run of the 'Himehabu' catered towards Cybersun Executives. It has an engraving of two women kissing each other across the handle.";
+	pixel_x = -9;
+	pixel_y = 2
+	},
 /turf/open/floor/carpet/red_gold,
 /area/outpost/crew/lounge)
 "Cu" = (
@@ -14146,10 +14056,6 @@
 "CD" = (
 /obj/effect/turf_decal/siding/thinplating/dark/end{
 	dir = 4
-	},
-/mob/living/simple_animal/hostile/asteroid/wolf/hound{
-	faction = list("neutral","New Gorlex Republic");
-	desc = "A mutt breed hailing from Sol, Reisehunds are known for their territorial attitude, large size and loyal nature. This particular one wears two sets of dogtags - one laser-engraved with Johnson & Company's insignia, and the other stamped with that of the New Gorlex Republic. It seems rather calm."
 	},
 /obj/structure/bed/dogbed,
 /turf/open/floor/concrete/slab_1,
@@ -14427,25 +14333,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/checkpoint)
-"De" = (
-/obj/structure/cable/cyan,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "bam";
-	dir = 4
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4;
-	color = "#FFFFFF"
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 8
-	},
-/obj/machinery/power/shieldwallgen/atmos/roundstart{
-	id = "bams";
-	dir = 1
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
 "Df" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
@@ -14587,13 +14474,6 @@
 	dir = 8
 	},
 /area/ruin/beach/gunsmith)
-"Dr" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1;
-	color = "#332521"
-	},
-/turf/open/floor/wood/ebony,
-/area/outpost/vacant_rooms/office)
 "Ds" = (
 /obj/effect/baseturf_helper/asteroid,
 /turf/closed/wall/concrete/reinforced,
@@ -14786,10 +14666,26 @@
 /turf/open/floor/concrete/reinforced,
 /area/ruin/jungle/paradise/comms)
 "DJ" = (
-/obj/effect/turf_decal/industrial/warning/corner{
-	color = "#eeac2e"
+/obj/structure/railing{
+	dir = 8
 	},
-/turf/open/floor/concrete/tiles,
+/obj/structure/railing{
+	dir = 1;
+	layer = 2.7
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 9
+	},
+/obj/structure/table/reinforced{
+	color = "#c1b6a5";
+	pixel_x = 2;
+	pixel_y = -1
+	},
+/obj/machinery/elevator_floor_button{
+	pixel_x = 9;
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel/dark,
 /area/outpost/storage)
 "DK" = (
 /turf/closed/wall/concrete/reinforced,
@@ -15646,6 +15542,14 @@
 /area/outpost/storage)
 "Fs" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/item/storage/toolbox/ammo/a12g_slug{
+	pixel_x = -6;
+	pixel_y = 15
+	},
+/obj/item/storage/toolbox/ammo/a12g_slug{
+	pixel_x = 0;
+	pixel_y = 8
+	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
 "Ft" = (
@@ -15708,14 +15612,6 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/ruin/jungle/paradise/comms)
-"FC" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/obj/machinery/power/shuttle/engine/fire,
-/turf/open/floor/engine/hull/reinforced,
-/area/ship/bridge)
 "FE" = (
 /obj/effect/turf_decal/corner/opaque/tan/full,
 /obj/structure/table/emptycomputer{
@@ -15981,20 +15877,8 @@
 /turf/open/floor/concrete/slab_4/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "Gc" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#332521";
-	dir = 10
-	},
 /obj/machinery/firealarm/directional/west,
-/obj/item/clothing/head/wig{
-	hairstyle = "Twintails (Long)";
-	icon_state = "hair_twintaillong";
-	pixel_x = -5;
-	pixel_y = 32;
-	layer = 3.2;
-	desc = "Hecatia's spare's fancy hairdo. You contemplate pulling it off but decide it best to let sleeping dogs lie."
-	},
-/turf/open/floor/wood/ebony,
+/turf/open/floor/plating,
 /area/outpost/vacant_rooms/office)
 "Gd" = (
 /obj/machinery/door/airlock,
@@ -16018,7 +15902,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 2
 	},
-/turf/open/floor/wood/walnut,
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "Gf" = (
 /obj/structure/flora/ausbushes/leafybush,
@@ -16094,6 +15978,20 @@
 /area/outpost/security/checkpoint)
 "Gr" = (
 /obj/machinery/light/directional/north,
+/obj/machinery/porta_turret/ship/ngr{
+	name = "EXPERIMENTAL SHOTGUN TURRET ";
+	id = "addust_camp";
+	desc = "Run.";
+	lethal_projectile = /obj/projectile/bullet/pellet/buckshot;
+	stun_projectile = /obj/projectile/beam/laser/eoehoma;
+	lethal_projectile_sound = 'sound/weapons/gun/shotgun/shot.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/e-fire.ogg';
+	dir = 6;
+	spread = 30;
+	burst_delay = 0;
+	burst_size = 6;
+	lethal = 1
+	},
 /turf/open/floor/plating/asteroid/dirt/grass/beach,
 /area/outpost/maintenance/starboard)
 "Gs" = (
@@ -16129,18 +16027,6 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/aft)
-"Gv" = (
-/obj/item/organ/eyes/robotic{
-	pixel_x = 39;
-	pixel_y = 25
-	},
-/obj/machinery/holopad,
-/obj/item/computer_hardware/battery{
-	pixel_x = 25;
-	pixel_y = 8
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/outpost/security/armory)
 "Gx" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 4;
@@ -16177,33 +16063,6 @@
 	},
 /turf/open/water/beach,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"GB" = (
-/obj/structure/closet/wall/med/directional/south,
-/obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/item/storage/toolbox/electrical,
-/obj/item/storage/toolbox/syndicate,
-/obj/item/weldingtool/abductor{
-	icon = 'icons/obj/tools.dmi';
-	icon_state = "upindwelder";
-	name = "JC-506 nuclear welder";
-	desc = "An experimental prototype based on rejected ICW-era designs from Johnson & Company's Industrial Supply team, the Pattern 506 nuclear-powered welder, sourcing its fuel from 'I Can't Believe It's Not Exotic Matter'-brand compact nuclear fuel rods, is rated for several decades of constant welding work in the frame of a high-capacity traditional welder. However, don't expect to be having children anytime soon."
-	},
-/obj/item/defibrillator/loaded,
-/obj/item/defibrillator/loaded,
-/obj/machinery/light/floor,
-/obj/item/inducer/syndicate{
-	desc = "A tool for inductively charging internal power cells. Thrown in after the lack of SMES was realized.";
-	cell_type = /obj/item/stock_parts/cell/gun/large
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/arrow_cw,
-/obj/effect/turf_decal/trimline/opaque/orange/arrow_ccw{
-	dir = 1
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "GC" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1;
@@ -16313,13 +16172,6 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/concrete/reinforced,
 /area/hangar)
-"GU" = (
-/obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
-	},
-/turf/closed/wall/r_wall/syndicate,
-/area/ship/bridge)
 "GV" = (
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 1
@@ -16422,29 +16274,6 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/beach/gunsmith/electrical)
-"Hh" = (
-/obj/machinery/button/door{
-	id = "bam";
-	pixel_y = 23;
-	pixel_x = 9;
-	name = "blast shutter control"
-	},
-/obj/machinery/button/shieldwallgen{
-	pixel_y = 22;
-	id = "bams"
-	},
-/obj/structure/chair/handrail,
-/obj/effect/turf_decal/trimline/opaque/orange/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/warning{
-	dir = 4
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "Hi" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 4
@@ -16452,11 +16281,11 @@
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 8
 	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 4;
+/obj/machinery/door/poddoor/preopen{
+	dir = 8;
 	id = "architect_deepwell_personnel_lift"
 	},
-/turf/open/floor/plasteel/tech/grid,
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/outpost/storage)
 "Hj" = (
 /obj/structure/sign/warning/docking,
@@ -16579,6 +16408,14 @@
 "Hs" = (
 /obj/structure/rack,
 /obj/item/radio/intercom/directional/north,
+/obj/item/gun/ballistic/shotgun/gaboon/empty{
+	pixel_x = -1;
+	pixel_y = 5
+	},
+/obj/item/gun/ballistic/shotgun/gaboon/empty{
+	pixel_x = 0;
+	pixel_y = 1
+	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/storage)
 "Ht" = (
@@ -16608,6 +16445,26 @@
 /obj/machinery/door/airlock/atmos,
 /turf/open/floor/plasteel,
 /area/outpost/vacant_rooms)
+"Hy" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Argus PDL";
+	id = "addust_camp";
+	desc = "A compact pulse laser turret designed to rapidly target and destroy incoming missiles and not much else. Its (insert laser colour) gaze remains still, as if waiting.";
+	lethal_projectile = /obj/projectile/beam/hitscan/kalix/pgf/assault;
+	stun_projectile = /obj/projectile/kiss;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/sharplight-fire_light.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/sharplight-fire_light.ogg';
+	dir = 6;
+	burst_delay = 2;
+	burst_size = 1;
+	reaction_time = 3;
+	shot_delay = 5;
+	icon_state = "standard_lethal";
+	base_icon_state = "standard";
+	lethal = 1
+	},
+/turf/closed/wall/mineral/plastitanium,
+/area/ruin/powered/shuttle)
 "Hz" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
@@ -16977,28 +16834,6 @@
 	},
 /turf/open/floor/concrete/tiles,
 /area/outpost/storage)
-"If" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 5;
-	color = "#332521"
-	},
-/obj/structure/closet/syndicate,
-/obj/item/trench_tool,
-/obj/item/clothing/under/syndicate/gorlex,
-/obj/item/clothing/gloves/combat,
-/obj/item/binoculars,
-/obj/item/clothing/head/beret/color/maroon,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/glasses/hud/health/sunglasses,
-/obj/item/clothing/head/soft/inteq,
-/obj/item/clothing/under/syndicate/inteq,
-/obj/item/clothing/under/syndicate/inteq/skirt,
-/obj/item/encryptionkey/inteq,
-/obj/item/clothing/under/shorts/miniskirt,
-/obj/item/clothing/under/shorts/skirt,
-/obj/item/clothing/mask/gas/inteq,
-/turf/open/floor/wood/ebony,
-/area/outpost/vacant_rooms/office)
 "Ig" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
@@ -17158,7 +16993,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 1
 	},
-/turf/open/floor/plating/asteroid/dirt/beach,
+/turf/open/floor/concrete/slab_4/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "IA" = (
 /obj/effect/turf_decal/siding/wood,
@@ -17195,18 +17030,6 @@
 	},
 /turf/open/floor/carpet/green,
 /area/outpost/crew/dorm)
-"ID" = (
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/window/eastleft{
-	name = "Armoury";
-	dir = 2
-	},
-/obj/effect/turf_decal/borderfloorblack,
-/obj/effect/turf_decal/corner/opaque/syndiered{
-	dir = 5
-	},
-/turf/open/floor/plasteel/dark,
-/area/outpost/vacant_rooms/office)
 "IE" = (
 /obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/east,
@@ -17272,6 +17095,14 @@
 "IN" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/storage/box/ammo/a12g_scatter{
+	pixel_x = 9;
+	pixel_y = 15
+	},
+/obj/item/storage/box/ammo/a12g_scatter{
+	pixel_x = 18;
+	pixel_y = 6
+	},
 /turf/open/floor/concrete/slab_4,
 /area/outpost/security/armory)
 "IO" = (
@@ -17466,9 +17297,7 @@
 	color = "#D2BC9D"
 	},
 /obj/structure/noticeboard{
-	dir = 1;
-	pixel_x = 1;
-	pixel_y = -26
+	pixel_y = -30
 	},
 /obj/item/mob_trophy/blaster_tubes{
 	pixel_x = 0;
@@ -17631,18 +17460,6 @@
 	},
 /turf/open/floor/wood/birch,
 /area/outpost/engineering)
-"JR" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/fuel,
-/obj/machinery/door/poddoor{
-	name = "bonnet";
-	id = "bam2";
-	dir = 4
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/bridge)
 "JS" = (
 /obj/structure/platform/wood/corner,
 /obj/structure/platform/wood/corner{
@@ -18333,22 +18150,6 @@
 	},
 /turf/open/floor/wood/maple,
 /area/outpost/crew/bar)
-"Lp" = (
-/obj/machinery/stasis{
-	dir = 1
-	},
-/obj/structure/platform/ship_two{
-	dir = 8
-	},
-/obj/machinery/defibrillator_mount/charging{
-	pixel_x = 0;
-	pixel_y = 24
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/end{
-	dir = 8
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "Lq" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -18470,6 +18271,11 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/hazard/electrical/conduit{
+	name = "power conduit";
+	desc = "Industrial cabling used to transfer large volumes of power.";
+	layer = 2.6
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/maintenance/port)
 "LE" = (
@@ -18597,6 +18403,13 @@
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/corner/opaque/tan{
 	dir = 8
+	},
+/obj/item/paper{
+	default_raw_text = "SHUT THE FUCK UP PLEASE OH MY GODDDDDDDDDDDDDDDDD";
+	name = "cease and desist from the new gorlex court"
+	},
+/obj/structure/closet/crate/bin{
+	desc = "A trash bin. The inside and rim are covered in dust with a strange aura. You decide not to think too hard about the origin of such a quantity of dust in a room this tidy."
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/port)
@@ -18796,9 +18609,18 @@
 /turf/open/floor/concrete/slab_1,
 /area/outpost/crew)
 "Mp" = (
-/obj/structure/table,
-/turf/open/floor/concrete/slab_4,
-/area/outpost/storage)
+/obj/effect/turf_decal/road,
+/obj/effect/turf_decal/road{
+	dir = 1
+	},
+/obj/effect/turf_decal/road/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/road/line{
+	dir = 8
+	},
+/turf/open/floor/concrete/pavement/beachplanet/interior,
+/area/ruin/beach/gunsmith)
 "Mq" = (
 /obj/effect/turf_decal/road/stripes{
 	dir = 4
@@ -18820,7 +18642,8 @@
 	},
 /obj/structure/fluff/vehicle/van{
 	desc = "WHAT THE FUCK DO YOU MEAN THE NEW GORLEX REPUBLIC DON'T HAVE CARS";
-	name = "507 Plot Holer"
+	name = "507 Plot Holer";
+	on = 0
 	},
 /turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -18846,9 +18669,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
-/turf/open/floor/wood/walnut{
-	icon_state = "wood-broken2"
-	},
+/turf/open/floor/concrete/slab_4/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "My" = (
 /obj/effect/turf_decal/trimline/opaque/orange/filled/warning{
@@ -18910,10 +18731,14 @@
 /area/outpost/engineering/atmospherics)
 "MF" = (
 /obj/machinery/light/dim/directional/north,
-/obj/effect/turf_decal/industrial/warning{
-	color = "#eeac2e"
+/obj/structure/railing{
+	dir = 1;
+	layer = 2.7
 	},
-/turf/open/floor/concrete/tiles,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
 /area/outpost/storage)
 "MG" = (
 /obj/structure/table/reinforced,
@@ -19248,21 +19073,6 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/ruin/beach/gunsmith)
-"Nk" = (
-/obj/structure/chair/handrail{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/warning{
-	dir = 4
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "Nl" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 5
@@ -19400,6 +19210,20 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/outpost/maintenance/starboard)
+"Nx" = (
+/obj/machinery/door/airlock/security{
+	dir = 4;
+	name = "Checkpoint Access"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/storage)
 "Ny" = (
 /obj/structure/platform/wood/corner{
 	dir = 4
@@ -20122,12 +19946,6 @@
 "OO" = (
 /turf/closed/mineral/random/beach,
 /area/ruin/beach/gunsmith)
-"OP" = (
-/turf/closed/wall/r_wall/syndicate{
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/area/ship/bridge)
 "OQ" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D"
@@ -20420,6 +20238,10 @@
 /obj/structure/fence,
 /turf/open/floor/plating/asteroid/sand/dense/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
+"Px" = (
+/obj/structure/platform,
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/ruin/beach/gunsmith)
 "Py" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -20515,6 +20337,14 @@
 /obj/effect/turf_decal/corner/opaque/tan,
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/port)
+"PI" = (
+/obj/structure/salvageable/airbase/cannon{
+	pixel_y = 16;
+	name = "chord autocannon";
+	desc = "An ICW-era weapon renowned for its long-range performance, usually mounted onto fighters or made into turrets against them. This one looks like it would work, but finding out would involve getting the three levels of credentials necessary to even look at the controls."
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ruin/powered/shuttle)
 "PJ" = (
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/crew/library)
@@ -20623,26 +20453,6 @@
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/outpost/crew)
-"PT" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Donnager Turret";
-	id = "addust_camp";
-	desc = "A menacing-looking counterbattery turret with two large rocket launch tubes and a single optic package, main lens glowing bright red. It sits waiting, poised.";
-	lethal_projectile = /obj/projectile/bullet/a84mm_he;
-	stun_projectile = /obj/projectile/bullet/a84mm_he;
-	lethal_projectile_sound = 'sound/weapons/gun/general/rocket_launch.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/general/rocket_launch.ogg';
-	dir = 6;
-	burst_delay = 2;
-	burst_size = 1;
-	pixel_x = 0;
-	pixel_y = 0;
-	scan_range = 12;
-	shot_delay = 10;
-	spread = 0
-	},
-/turf/closed/wall/r_wall/syndicate,
-/area/ship/bridge)
 "PU" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -20886,6 +20696,12 @@
 /obj/item/storage/toolbox/ammo/a762_40,
 /turf/open/floor/circuit/green/off,
 /area/outpost/maintenance/central)
+"Qt" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/ruin/beach/gunsmith)
 "Qu" = (
 /obj/structure/platform/ship_three/corner/indestructible{
 	desc = "This is the way it should have ended.";
@@ -20899,6 +20715,20 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/concrete/pavement,
 /area/ruin/moon/moonbase/cargo)
+"Qv" = (
+/mob/living/simple_animal/hostile/automated/quadrotor{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 patrol drone";
+	desc = "A distant relative of the Pattern 486 developed by Johnson & Company's remnants, bearing a hazard-orange colour scheme and wielding a twin-barrel underslung laser turret, guided by a glowing orange optic gazing over its surroundings.";
+	projectilesound = 'sound/weapons/gun/pistol/shot.ogg';
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/eoehoma/wasp;
+	rapid = 2;
+	ranged_cooldown_time = 20;
+	health = 60
+	},
+/turf/open/floor/plating/asteroid/dirt/grass/beach,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "Qw" = (
 /obj/structure/sign/flag/ngr{
 	dir = 4;
@@ -20975,13 +20805,14 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/security/armory)
 "QF" = (
-/obj/structure/disposalpipe/segment{
-	dir = 8
+/obj/structure/sign/mining/survival{
+	name = "maximum height warning sign";
+	desc = "A high visibility sign that reads 'CAUTION: MAX HEIGHT: 5 M / 16.4 FT' followed by 'EXOSUITS ABOVE LIMIT MUST CROUCH'. Who the hell builds an exosuit that tall???";
+	pixel_x = -32;
+	pixel_y = 1
 	},
-/turf/open/floor/plasteel/stairs/right{
-	dir = 4
-	},
-/area/outpost/storage)
+/turf/open/floor/concrete/pavement/beachplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "QG" = (
 /obj/structure/chair/pew,
 /obj/effect/decal/cleanable/dirt,
@@ -21010,9 +20841,10 @@
 /turf/open/floor/plating,
 /area/outpost/maintenance/aft)
 "QJ" = (
-/turf/open/floor/plasteel/stairs/wood/walnut/left{
-	dir = 1
+/obj/structure/platform{
+	dir = 8
 	},
+/turf/open/water/beach,
 /area/ruin/beach/gunsmith)
 "QK" = (
 /obj/machinery/atmospherics/pipe/simple,
@@ -21027,28 +20859,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/icemoon/training_facility/garage)
-"QM" = (
-/obj/effect/turf_decal/industrial/warning/fulltile{
-	color = "#FFFFFF"
-	},
-/obj/machinery/computer/helm{
-	dir = 4
-	},
-/obj/structure/railing/thin{
-	dir = 1
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-4"
-	},
-/obj/structure/railing/thin,
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/bridge)
 "QN" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -21105,11 +20915,8 @@
 /turf/open/floor/wood/maple,
 /area/outpost/crew/law_office)
 "QP" = (
-/obj/structure/platform/wood{
-	dir = 6
-	},
 /obj/machinery/light/dim/directional/west,
-/turf/open/water/beach,
+/turf/open/floor/concrete/slab_4/beachplanet/interior,
 /area/outpost/storage)
 "QQ" = (
 /turf/open/water/csoutpost,
@@ -21439,6 +21246,9 @@
 /area/outpost/engineering/atmospherics)
 "Rt" = (
 /obj/machinery/light/directional/north,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/moonbase/cargo)
 "Ru" = (
@@ -22104,9 +21914,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/cargo)
 "SL" = (
-/obj/structure/platform/wood{
-	dir = 5
-	},
 /obj/structure/hazard/electrical/electrified_water{
 	id = "bunkermoat";
 	random_sparks = 0;
@@ -22116,6 +21923,13 @@
 /obj/structure/platform{
 	dir = 8
 	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 1;
+	layer = 3
+	},
 /turf/open/water/beach,
 /area/ruin/beach/gunsmith)
 "SM" = (
@@ -22123,26 +21937,10 @@
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
 "SN" = (
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 9
+/obj/effect/turf_decal/trimline/transparent/solgovgold/filled/warning{
+	dir = 1
 	},
-/obj/structure/table/reinforced{
-	color = "#c1b6a5";
-	pixel_x = 2;
-	pixel_y = -1
-	},
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/structure/railing{
-	dir = 1;
-	layer = 2.7
-	},
-/obj/machinery/elevator_floor_button{
-	pixel_x = 9;
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/storage)
 "SO" = (
 /obj/effect/turf_decal/siding/wood{
@@ -22409,7 +22207,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "Tr" = (
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/plating,
 /area/outpost/security/armory)
 "Ts" = (
 /obj/effect/decal/cleanable/dirt,
@@ -22449,6 +22247,15 @@
 /obj/item/storage/belt/sabre{
 	pixel_x = 0;
 	pixel_y = 10
+	},
+/obj/item/ammo_box/magazine/m556_42_hydra,
+/obj/item/ammo_box/magazine/m556_42_hydra{
+	pixel_x = -4;
+	pixel_y = 0
+	},
+/obj/item/ammo_box/magazine/m556_42_hydra{
+	pixel_x = -8;
+	pixel_y = 0
 	},
 /turf/open/floor/carpet/green,
 /area/outpost/crew/dorm)
@@ -22521,38 +22328,6 @@
 	},
 /turf/open/water/beach/deep,
 /area/ruin/beach/gunsmith)
-"TD" = (
-/obj/structure/window/reinforced/spawner,
-/obj/structure/closet/secure_closet/armorycage,
-/obj/item/clothing/mask/gas/syndicate,
-/obj/item/clothing/under/syndicate/combat,
-/obj/machinery/door/firedoor/border_only,
-/obj/item/clothing/suit/space/hardsuit/syndi/old{
-	alt_desc = "A dual-mode, once advanced hardsuit designed for special combat operations. So severely damaged, it is no longer spaceproof. It is in travel mode. Produced by the Gorlex Marauders. A patch bearing the insignia of Scarlet Sky and the words 'SCARLET DREAMS' is visible on the shoulder.";
-	desc = "A dual-mode, once advanced hardsuit designed for special combat operations. So severely damaged, it is no longer spaceproof. It is in what was once EVA mode. Produced by the Gorlex Marauders. A patch bearing the insignia of Scarlet Sky and the words 'SCARLET DREAMS' is visible on the shoulder."
-	},
-/obj/item/clothing/suit/armor/vest/marine/medium,
-/obj/item/clothing/head/helmet/riot{
-	name = "medium tactical helmet";
-	desc = "A reinforced helmet meant for crowd control, with a bulletproof plexiglass visor to shield the face. Now used as part of the ass-kicking outfit."
-	},
-/obj/item/shield/heavy{
-	name = "Iron Horus";
-	desc = "A huge lump of plasteel designed to protect its carrier. IRON HORUS is engraved on it, alongside the insignia of Scarlet Sky Securities."
-	},
-/obj/effect/turf_decal/borderfloorblack,
-/obj/effect/turf_decal/corner/opaque/syndiered{
-	dir = 5
-	},
-/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
-/obj/item/clothing/head/helmet/m10/inteq,
-/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/storage/belt/security/webbing/inteq/alt,
-/obj/item/storage/belt/military/assault,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/suit/armor/vest/bulletproof,
-/turf/open/floor/plasteel/dark,
-/area/outpost/vacant_rooms/office)
 "TE" = (
 /obj/effect/turf_decal/stairs_wood{
 	dir = 1;
@@ -22718,17 +22493,13 @@
 	color = "#912a2a";
 	dir = 4
 	},
+/obj/item/paper/crumpled{
+	pixel_x = -5;
+	pixel_y = 2;
+	default_raw_text = "ELEVATOR NOT IN USE - All logistical matters formerly handled through this elevator are to use the primary cargo lift instead. Only remove this note when the new workshop is done."
+	},
 /turf/open/floor/concrete/reinforced,
 /area/ruin/icemoon/training_facility/garage)
-"TU" = (
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-4"
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "TV" = (
 /obj/structure/platform{
 	dir = 1
@@ -23080,6 +22851,26 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/beach/gunsmith/electrical)
+"UE" = (
+/obj/machinery/porta_turret/ship/ngr{
+	name = "Argus PDL";
+	id = "addust_camp";
+	desc = "A compact pulse laser turret designed to rapidly target and destroy incoming missiles and not much else. Its (insert laser colour) gaze remains still, as if waiting.";
+	lethal_projectile = /obj/projectile/beam/hitscan/kalix/pgf/assault;
+	stun_projectile = /obj/projectile/kiss;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/sharplight-fire_light.ogg';
+	stun_projectile_sound = 'sound/weapons/gun/laser/sharplight-fire_light.ogg';
+	burst_delay = 2;
+	burst_size = 1;
+	reaction_time = 3;
+	shot_delay = 5;
+	dir = 2#;
+	base_icon_state = "standard";
+	icon_state = "standard_lethal";
+	lethal = 1
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ruin/powered/shuttle)
 "UF" = (
 /obj/structure/catwalk/over,
 /obj/structure/platform/industrial/corner{
@@ -23273,11 +23064,7 @@
 	},
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "UY" = (
-/obj/effect/turf_decal/siding/wood/end{
-	color = "#332521";
-	dir = 8
-	},
-/turf/open/floor/carpet/red_gold,
+/turf/open/floor/plating,
 /area/outpost/vacant_rooms/office)
 "UZ" = (
 /obj/structure/flora/driftwood,
@@ -23302,46 +23089,6 @@
 	},
 /turf/open/floor/engine/air,
 /area/outpost/maintenance/starboard)
-"Vc" = (
-/obj/structure/table/chem,
-/obj/item/bodypart/head/ipc/humaniform{
-	pixel_x = 0;
-	pixel_y = 2;
-	name = "\improper HT-C03H: Hecate";
-	desc = "The face of a goddess. The eyes and insides of the mouth are missing. At least it has hair."
-	},
-/obj/item/bodypart/chest/ipc/custombishop{
-	name = "\improper HT-C03C: Hecate";
-	desc = "The chest of a goddess. Maybe. Hard to tell with the chest hatch open and every internal component except for the framework missing."
-	},
-/obj/item/bodypart/l_arm/ipc/customatua{
-	name = "\improper HT-C03A: Hecate";
-	desc = "The hand of a goddess. Mounted to the core, but with the bolts missing you could just take it off and go slap someone with it."
-	},
-/obj/item/bodypart/leg/left/ipc/customatua{
-	pixel_x = 0;
-	pixel_y = -4;
-	name = "\improper HT-C03L: Hecate";
-	desc = "The legs of a goddess. This one is actually complete and could be used right now."
-	},
-/obj/item/bodypart/leg/right/ipc/customatua{
-	pixel_x = -2;
-	pixel_y = -3;
-	name = "\improper HT-C03L: Hecate";
-	desc = "The legs of a goddess. The skin has been taken off, revealing what seems to be a suspension strut. Dear god."
-	},
-/obj/item/bodypart/r_arm/ipc/customatua{
-	pixel_x = -3;
-	pixel_y = -2;
-	name = "\improper HT-C03A: Hecate";
-	desc = "The hand of a goddess, but not really since the skin and everything below the wrist is missing."
-	},
-/obj/item/computer_hardware/processor_unit{
-	pixel_x = 5;
-	pixel_y = -6
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/outpost/security/armory)
 "Vd" = (
 /obj/structure/chair/plastic{
 	color = "#c1b6a5";
@@ -23663,11 +23410,15 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/storage)
 "VN" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4;
-	color = "#eeac2e"
+/obj/structure/railing{
+	dir = 8
 	},
-/turf/open/floor/concrete/tiles,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8;
+	layer = 2.03
+	},
+/obj/effect/turf_decal/trimline/transparent/solgovgold/filled/warning,
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/storage)
 "VO" = (
 /obj/structure/platform{
@@ -23721,14 +23472,10 @@
 /turf/open/floor/wood/maple,
 /area/ruin/beach/gunsmith)
 "VS" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1;
-	color = "#332521"
-	},
 /obj/structure/cable{
 	icon_state = "5-8"
 	},
-/turf/open/floor/wood/ebony,
+/turf/open/floor/plating,
 /area/outpost/vacant_rooms/office)
 "VT" = (
 /obj/effect/turf_decal/road{
@@ -23773,36 +23520,6 @@
 /obj/structure/fence/door,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
-"VY" = (
-/obj/machinery/porta_turret/ship/ngr{
-	name = "Donnager Turret";
-	id = "addust_camp";
-	desc = "A menacing-looking counterbattery turret with two large rocket launch tubes and a single optic package, main lens glowing bright red. It sits waiting, poised.";
-	lethal_projectile = /obj/projectile/bullet/a84mm_he;
-	stun_projectile = /obj/projectile/bullet/a84mm_he;
-	lethal_projectile_sound = 'sound/weapons/gun/general/rocket_launch.ogg';
-	stun_projectile_sound = 'sound/weapons/gun/general/rocket_launch.ogg';
-	burst_delay = 2;
-	burst_size = 1;
-	pixel_x = 0;
-	pixel_y = 0;
-	scan_range = 12;
-	shot_delay = 10;
-	spread = 0;
-	dir = 10
-	},
-/obj/machinery/power/shuttle/engine/electric{
-	density = 0;
-	name = "integrated ion booster";
-	desc = "A compact ion booster integrated into the ship's hull.";
-	pixel_x = -27;
-	pixel_y = 5
-	},
-/obj/structure/cable/cyan{
-	icon_state = "0-5"
-	},
-/turf/closed/wall/r_wall/syndicate,
-/area/ship/bridge)
 "VZ" = (
 /obj/structure/platform/corner,
 /turf/open/floor/plating/asteroid/sand/dense/lit,
@@ -24166,7 +23883,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 2
 	},
-/turf/open/floor/plasteel/stairs/wood/walnut/left,
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "WE" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
@@ -24751,6 +24468,15 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
+/obj/structure/hazard/electrical/conduit{
+	name = "power conduit";
+	desc = "Industrial cabling used to transfer large volumes of power."
+	},
+/obj/machinery/turretid/lethal{
+	id = "addust_camp_gorilla_princess";
+	pixel_x = -28;
+	pixel_y = 0
+	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/port)
 "XS" = (
@@ -24890,10 +24616,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/central)
-"Yk" = (
-/obj/item/radio/intercom/wideband/directional/west,
-/turf/open/floor/mineral/plastitanium,
-/area/outpost/security/armory)
 "Ym" = (
 /obj/structure/cable{
 	icon_state = "5-8"
@@ -24942,7 +24664,17 @@
 /obj/structure/disposalpipe/junction{
 	dir = 4
 	},
-/turf/open/floor/wood/walnut,
+/obj/effect/turf_decal/road/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/road/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/road,
+/obj/effect/turf_decal/road{
+	dir = 1
+	},
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "Yt" = (
 /obj/structure/cable{
@@ -24951,7 +24683,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/turf/open/floor/plating/asteroid/dirt/beach,
+/turf/open/floor/concrete/pavement/beachplanet/interior,
 /area/ruin/beach/gunsmith)
 "Yv" = (
 /obj/structure/table/wood,
@@ -25041,12 +24773,9 @@
 	dir = 1
 	},
 /obj/effect/baseturf_helper/asteroid,
-/turf/open/floor/mineral/plastitanium,
+/turf/open/floor/plating,
 /area/outpost/security/armory)
 "YG" = (
-/obj/structure/platform/wood{
-	dir = 4
-	},
 /obj/structure/hazard/electrical/electrified_water{
 	id = "bunkermoat";
 	random_sparks = 0;
@@ -25056,13 +24785,12 @@
 /obj/structure/platform/corner{
 	dir = 4
 	},
+/obj/structure/platform{
+	dir = 4
+	},
 /turf/open/water/beach,
 /area/ruin/beach/gunsmith)
 "YH" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#332521";
-	dir = 8
-	},
 /obj/machinery/button/door{
 	dir = 4;
 	pixel_x = -20;
@@ -25072,61 +24800,7 @@
 	specialfunctions = 4
 	},
 /obj/machinery/light/small/directional/west,
-/obj/structure/fluff{
-	icon = 'icons/mob/species/ipc/bodyparts.dmi';
-	icon_state = "custombishop_chest";
-	name = "Hecatia Tokamak";
-	desc = "A spare body with the joints locked being used by the owner of this room as a hat rack. At least it has a turtleneck on, right? Right?";
-	pixel_x = -5;
-	pixel_y = 0;
-	density = 1
-	},
-/obj/structure/fluff{
-	icon = 'icons/mob/species/ipc/bodyparts.dmi';
-	icon_state = "humanipc_head";
-	desc = "Her eyes are closed, almost as if she's sleeping. This would be so much more serene if she wasn't stood bolt-upright.";
-	name = "Hecatia Tokamak";
-	pixel_x = -5;
-	pixel_y = 0;
-	layer = 3.1
-	},
-/obj/structure/fluff{
-	icon = 'icons/mob/species/ipc/bodyparts.dmi';
-	icon_state = "customatua_l_leg";
-	desc = "Damn.";
-	pixel_x = -5;
-	pixel_y = 0;
-	name = "Hecatia Tokamak"
-	},
-/obj/structure/fluff{
-	icon = 'icons/mob/species/ipc/bodyparts.dmi';
-	icon_state = "customatua_r_leg";
-	desc = "Damn.";
-	pixel_x = -5;
-	pixel_y = 0;
-	name = "Hecatia Tokamak"
-	},
-/obj/structure/fluff{
-	icon = 'icons/mob/species/ipc/bodyparts.dmi';
-	icon_state = "customatua_r_arm";
-	name = "Hecatia Tokamak";
-	desc = "In the corner of your eye, you think you saw the hand twitch.";
-	pixel_x = -5;
-	pixel_y = 0
-	},
-/obj/structure/fluff{
-	icon = 'icons/mob/species/ipc/bodyparts.dmi';
-	icon_state = "customatua_l_arm";
-	desc = "Lying outstretched, awaiting a hat that will never be a-racked. All is vanity.";
-	name = "Hecatia Tokamak";
-	pixel_x = -5;
-	pixel_y = 0
-	},
-/obj/item/clothing/under/syndicate/inteq/skirt{
-	pixel_x = -5;
-	pixel_y = 0
-	},
-/turf/open/floor/wood/ebony,
+/turf/open/floor/plating,
 /area/outpost/vacant_rooms/office)
 "YI" = (
 /obj/structure/disposalpipe/segment{
@@ -25442,6 +25116,10 @@
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/hazard/electrical/conduit{
+	name = "power conduit";
+	desc = "Industrial cabling used to transfer large volumes of power."
+	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/maintenance/port)
 "Zn" = (
@@ -25555,7 +25233,7 @@
 /area/outpost/crew/canteen)
 "ZC" = (
 /obj/structure/fluff/vehicle/truck{
-	desc = "An old flatbed truck. It's out of fuel.";
+	desc = "An old flatbed truck. Some idiot left it idling and now it's out of fuel.";
 	on = 0
 	},
 /turf/open/floor/concrete/pavement/beachplanet/lit,
@@ -25685,11 +25363,17 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/overmap_encounter/planetoid/cave/explored)
 "ZR" = (
-/obj/effect/turf_decal/industrial/warning/corner{
-	color = "#eeac2e";
-	dir = 4
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 8
 	},
-/turf/open/floor/concrete/tiles,
+/obj/structure/chair/handrail{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 8
+	},
+/turf/open/floor/plating/rust,
 /area/outpost/storage)
 "ZS" = (
 /obj/structure/platform/ship/corner{
@@ -25755,14 +25439,17 @@
 	pixel_y = 1
 	},
 /obj/item/gun/ballistic/automatic/assault/hydra/no_mag{
-	name = "HVR-99 Trioditis Variable Rifle";
+	name = "\improper HVR-99 Trioditis Variable Rifle";
 	gun_firemodes = list("single","burst","auto");
 	desc = "A refitted Scarborough assault rifle, trading modularity and ergonomics for on-the-go firemode switching. Features automatic, three-round burst and single fire modes alongside reinforced components for sustained fire, though mercifully it remains in line with an assault rifle rather than a dedicated LMG. The buttstamp branding has been replaced with an ARMS unit, wearing a J&C-standard beret and raising their fist triumphantly in the air. It has been engraved with the serial number JC-HVR99-02.";
 	burst_size = 3;
 	burst_delay = 0.5;
 	fire_delay = 1.2;
 	pixel_x = -15;
-	pixel_y = -4
+	pixel_y = -4;
+	spread = 0;
+	zoom_out_amt = 2;
+	zoom_amt = 6
 	},
 /turf/open/floor/carpet/green,
 /area/outpost/crew/dorm)
@@ -27147,7 +26834,7 @@ Kz
 Kz
 Kz
 am
-am
+AM
 am
 Hk
 Hk
@@ -27480,7 +27167,7 @@ MP
 MP
 cj
 MP
-xQ
+Bn
 MP
 MP
 MP
@@ -28044,7 +27731,7 @@ Hk
 Hk
 Hk
 Hk
-Hk
+xD
 Hk
 Hk
 Hk
@@ -28971,7 +28658,7 @@ Hk
 Hk
 Hk
 Hk
-Hk
+xD
 am
 am
 am
@@ -31529,12 +31216,12 @@ py
 Ww
 zm
 Lq
-DY
+wq
 pV
 Gl
 BH
 YF
-Yk
+Tr
 cq
 zm
 OO
@@ -31661,8 +31348,8 @@ AS
 qm
 BN
 Tr
-Gv
-uo
+Tr
+Tr
 zm
 HU
 HU
@@ -31787,9 +31474,9 @@ Wx
 hv
 IB
 zm
-yI
-Vc
-bN
+Tr
+Tr
+Tr
 yD
 HU
 eo
@@ -31988,7 +31675,7 @@ Hk
 Hk
 Hk
 Hk
-Hk
+xD
 Hk
 Hk
 Hk
@@ -32306,8 +31993,8 @@ NP
 ul
 aL
 aL
-rj
-TD
+UY
+UY
 il
 YH
 Gc
@@ -32433,11 +32120,11 @@ qk
 Mj
 aL
 og
-vS
-ID
+UY
+UY
 VS
 UY
-pD
+UY
 zc
 KW
 TG
@@ -32562,8 +32249,8 @@ aL
 iZ
 xj
 iB
-Dr
-zK
+UY
+UY
 rM
 aL
 Ih
@@ -32689,9 +32376,9 @@ PJ
 PJ
 PJ
 PJ
-If
-jy
-kJ
+UY
+UY
+UY
 aL
 TA
 jE
@@ -32715,7 +32402,7 @@ WN
 WN
 yJ
 yJ
-WN
+ds
 WN
 nF
 yJ
@@ -32843,7 +32530,7 @@ WN
 yJ
 yJ
 pW
-WN
+nF
 nF
 yJ
 yJ
@@ -32969,9 +32656,9 @@ WN
 WN
 yJ
 yJ
-WN
 nF
 nF
+So
 So
 So
 Kz
@@ -33096,8 +32783,8 @@ qT
 WN
 yJ
 yJ
-WN
 nF
+So
 So
 So
 Kz
@@ -33211,7 +32898,7 @@ Bk
 sQ
 Bk
 Bk
-Mp
+Vz
 sW
 Bk
 wy
@@ -33223,8 +32910,8 @@ WN
 WN
 yJ
 yJ
-qR
 nF
+So
 Kf
 So
 Kz
@@ -33338,7 +33025,7 @@ Fr
 sQ
 VI
 Bk
-Bk
+Nx
 Bk
 Bk
 MP
@@ -33351,7 +33038,7 @@ nF
 yJ
 yJ
 nF
-nF
+So
 So
 So
 Kz
@@ -33577,7 +33264,7 @@ sk
 Md
 Bk
 DJ
-VN
+nm
 VN
 ZR
 Bk
@@ -33705,8 +33392,8 @@ Md
 Bk
 MF
 SN
+zg
 yl
-mb
 Bk
 Bk
 Ie
@@ -33732,7 +33419,7 @@ QW
 QW
 QW
 yJ
-So
+nF
 So
 So
 So
@@ -33831,9 +33518,9 @@ sk
 Md
 Bk
 by
-nB
+SN
+zg
 CY
-mb
 Bk
 mR
 Ie
@@ -33859,7 +33546,7 @@ QW
 QW
 QW
 yJ
-So
+nF
 So
 So
 So
@@ -33918,7 +33605,7 @@ Hk
 Hk
 Hk
 Hk
-Hk
+xD
 Hk
 Hk
 am
@@ -33957,8 +33644,8 @@ hO
 sk
 Md
 Bk
-wd
-zg
+by
+SN
 zg
 ga
 Bk
@@ -33986,12 +33673,12 @@ QW
 QW
 QW
 yJ
-yJ
-yJ
-yJ
-yJ
-yJ
-yJ
+nF
+nF
+So
+So
+So
+Kz
 Kz
 Kz
 Kz
@@ -34085,8 +33772,8 @@ sk
 co
 Bk
 oc
-wC
-wC
+wd
+wd
 cT
 Bk
 WT
@@ -34112,13 +33799,13 @@ xk
 QW
 QW
 QW
-QW
-QW
-QW
-QW
-QW
-QW
 yJ
+nF
+nF
+nF
+So
+So
+So
 So
 Kz
 Kz
@@ -34211,20 +33898,20 @@ hO
 sk
 Md
 Bk
-Bk
+nB
 Hi
 Hi
 Bk
 Bk
 Bk
-QF
+Ie
 wz
 Oa
 BG
-nW
-nW
-iJ
-iJ
+jU
+oP
+Qt
+qv
 OO
 OO
 OO
@@ -34239,13 +33926,13 @@ Mq
 QW
 QW
 QW
-QW
-QW
-QW
-QW
-QW
-QW
 yJ
+nF
+nF
+nF
+nF
+So
+So
 So
 So
 So
@@ -34337,41 +34024,41 @@ cl
 hO
 Iv
 DX
-WL
-WL
-iJ
-iJ
+Ek
+mD
+vb
+vb
 yw
 ob
 QP
 Mx
-xS
+rc
 SL
 YG
-rc
-ob
-iJ
-iJ
+kH
+mD
+mD
+mD
 kv
 OO
 OO
-iJ
+sH
 aw
 aw
 aw
 aw
-yJ
-yJ
-yJ
-QW
-QW
-QW
-yJ
-yJ
+jT
 yJ
 yJ
 QW
 QW
+QW
+yJ
+yJ
+yJ
+yJ
+yJ
+yJ
 yJ
 So
 So
@@ -34464,39 +34151,39 @@ cl
 hO
 sk
 DX
-WL
-iJ
-iJ
-iJ
-iJ
-QJ
-hO
+Ek
+mD
+vb
+vb
+vb
+vb
+vb
 Yr
 Bq
 Ge
-NP
-NP
 WD
-vL
+WD
+WD
+eN
 km
 qQ
-iJ
-iJ
-sH
-aw
-OO
-aw
+vb
+vb
+vb
+nK
+QW
+QF
 kl
-yJ
-LG
-LG
 QW
 QW
 QW
-yJ
-Zc
-WN
-yJ
+QW
+QW
+QW
+QW
+QW
+QW
+QW
 QW
 QW
 yJ
@@ -34591,39 +34278,39 @@ cl
 KN
 JY
 zI
-iJ
-iJ
-iJ
-iJ
+Px
+mD
+vb
+vb
 Yt
-nK
-NP
+WD
+WD
 xg
 dr
-hO
 vb
-hO
-jT
-iJ
-iJ
-qF
-iJ
-iJ
-iJ
-sh
-vf
-vf
-yJ
-yJ
-Mq
-Mq
+vb
+vb
+vb
+Mp
+vb
+dC
+vb
+vb
+vb
+nK
 QW
 QW
 QW
-yJ
-WN
-ds
-yJ
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
 QW
 QW
 yJ
@@ -34718,27 +34405,26 @@ wI
 LJ
 mA
 CL
-CL
-CL
-CL
+de
+mb
+mb
 Iz
 gU
-EI
-EI
-EI
-EI
-EI
 mD
 mD
 mD
-iJ
-iJ
-qF
-iJ
-iJ
-iJ
+mD
+mD
+mD
+mD
+mD
+mD
+mD
+eQ
+mD
+mD
+mD
 sh
-vf
 yJ
 yJ
 yJ
@@ -34748,8 +34434,9 @@ yJ
 yJ
 yJ
 yJ
-WN
-WN
+yJ
+yJ
+yJ
 yJ
 QW
 QW
@@ -34845,17 +34532,17 @@ Xi
 vp
 Th
 iJ
-iJ
-iJ
-iJ
-iJ
-WL
-OO
-OO
-OO
-OO
-WL
-WL
+aQ
+fo
+fo
+fo
+QJ
+QJ
+QJ
+QJ
+QJ
+QJ
+QJ
 iJ
 iJ
 RO
@@ -34868,7 +34555,7 @@ aw
 MP
 MP
 MP
-MP
+tX
 nF
 WN
 WN
@@ -34876,7 +34563,7 @@ WN
 pW
 WN
 WN
-WN
+ds
 yJ
 QW
 QW
@@ -34965,7 +34652,7 @@ To
 iJ
 cH
 OZ
-iJ
+sm
 Md
 MM
 vR
@@ -35127,7 +34814,7 @@ Ft
 MP
 nF
 WN
-WN
+Zc
 WN
 ds
 nF
@@ -35637,7 +35324,7 @@ Bc
 Ft
 WN
 WN
-nF
+qo
 nF
 yJ
 QW
@@ -35693,11 +35380,11 @@ Ao
 TY
 nD
 hq
-gO
-FC
-JR
-FC
-gO
+NG
+NG
+NG
+NG
+NG
 Uu
 nD
 AH
@@ -35820,11 +35507,11 @@ Hk
 Iu
 nD
 NG
-gc
-kC
-QM
-bC
-VY
+NG
+NG
+NG
+NG
+NG
 eq
 nD
 UN
@@ -35947,11 +35634,11 @@ Hk
 Iu
 Hj
 NG
-Ce
-bn
-fx
-la
-Ce
+NG
+NG
+NG
+NG
+NG
 eq
 nD
 UN
@@ -36074,11 +35761,11 @@ Hk
 Iu
 nD
 NG
-Ce
-Lp
-wH
-tj
-OP
+NG
+NG
+NG
+NG
+NG
 tS
 nD
 UN
@@ -36201,11 +35888,11 @@ Hk
 Iu
 nD
 NG
-Ce
-do
-TU
-GB
-GU
+NG
+NG
+NG
+NG
+NG
 vs
 nD
 UN
@@ -36328,12 +36015,12 @@ Hk
 Iu
 nD
 NG
-Ce
-Hh
-oa
-Nk
-Ce
-ol
+NG
+NG
+NG
+NG
+NG
+NG
 nD
 Tm
 am
@@ -36455,11 +36142,11 @@ Hk
 Iu
 nD
 ZO
-qo
-fC
-lb
-De
-PT
+NG
+NG
+NG
+NG
+NG
 mF
 nD
 Tm
@@ -36584,8 +36271,8 @@ nD
 NG
 ol
 ol
-ol
-ol
+NG
+NG
 ol
 Qg
 nD
@@ -36693,8 +36380,8 @@ ET
 pK
 Fp
 Le
-JC
-JC
+mY
+mY
 Jn
 CZ
 Za
@@ -36798,7 +36485,7 @@ zi
 bB
 QW
 yJ
-yJ
+aj
 WN
 wK
 Ow
@@ -37688,7 +37375,7 @@ bB
 QW
 yJ
 nF
-nF
+ry
 nF
 So
 So
@@ -38404,11 +38091,11 @@ Kz
 uH
 BV
 QW
-hQ
+mC
 kL
 hQ
 ez
-hQ
+UE
 QW
 QW
 uH
@@ -38576,7 +38263,7 @@ yJ
 bB
 QW
 yJ
-WN
+Qv
 XZ
 So
 VW
@@ -39043,7 +38730,7 @@ mi
 UT
 CJ
 No
-mi
+Hy
 QW
 QW
 uH
@@ -39294,9 +38981,9 @@ VW
 QW
 QW
 QW
+ca
 ho
-ho
-ho
+PI
 QW
 QW
 QW
@@ -39670,7 +39357,7 @@ am
 am
 am
 Kz
-Kz
+oW
 Kz
 Kz
 Kz
@@ -41240,7 +40927,7 @@ XZ
 WN
 WN
 nF
-So
+mz
 So
 So
 Kz
