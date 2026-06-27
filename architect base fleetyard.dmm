@@ -11,7 +11,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine/air,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "al" = (
 /obj/effect/turf_decal/industrial/radiation{
 	dir = 8
@@ -47,7 +47,10 @@
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken2"
 	},
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/cargo/office)
+"az" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/outpost/cargo/office)
 "aG" = (
 /obj/effect/turf_decal/industrial/radiation{
 	dir = 4
@@ -79,7 +82,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine/airless,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "aT" = (
 /obj/effect/turf_decal/industrial/radiation{
 	dir = 4
@@ -97,7 +100,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "aZ" = (
 /obj/effect/turf_decal/industrial/radiation{
 	dir = 4
@@ -127,7 +130,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "cg" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8
@@ -152,6 +155,16 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/concrete/slab_4/beachplanet,
+/area/outpost/maintenance/central)
+"cy" = (
+/obj/structure/fluff/vehicle/crane{
+	dir = 8;
+	desc = "A rusty old industrial crane manufactured by Johnson & Company, once used for everything from freight handling to shipbuilding. Somehow, this affront to proper maintenance and safety standards has been restored to function! Just need to find the keys..."
+	},
+/obj/effect/turf_decal/road{
+	dir = 8
+	},
+/turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "cA" = (
 /obj/structure/platform{
@@ -171,7 +184,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "cO" = (
 /obj/effect/decal/cleanable/wrapping,
 /obj/structure/closet/secure_closet/armorycage,
@@ -204,11 +217,11 @@
 /obj/item/storage/toolbox/ammo/c300,
 /obj/item/storage/toolbox/ammo/a762_40,
 /turf/open/floor/circuit/green/off,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "cQ" = (
 /obj/structure/sign/poster/contraband/engis_unite,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "dx" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -222,7 +235,7 @@
 /obj/effect/turf_decal/number/left_four,
 /obj/machinery/light/dim/directional/north,
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "dB" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -235,7 +248,7 @@
 	dir = 1;
 	icon = 'icons/obj/stairs.dmi'
 	},
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "dF" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -264,7 +277,7 @@
 	pixel_y = -7
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "dS" = (
 /obj/machinery/light/small/directional/north{
 	pixel_x = -6
@@ -279,12 +292,12 @@
 	fax_name = "Architect Base Instructor's Office"
 	},
 /turf/open/floor/plasteel/telecomms_floor,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/cargo/office)
 "dT" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "ee" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden,
 /obj/machinery/door/firedoor/border_only,
@@ -301,7 +314,10 @@
 	name = "Port Thrusters"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
+"eE" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/outpost/security/armory)
 "eH" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
@@ -316,12 +332,12 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/rust,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "eN" = (
 /obj/machinery/light/small/directional/west,
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/open/floor/concrete/slab_4/beachplanet,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "fo" = (
 /obj/structure/platform/industrial{
 	dir = 9
@@ -353,14 +369,14 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "fT" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden{
 	dir = 4
 	},
 /obj/effect/turf_decal/hardline_small,
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "fY" = (
 /obj/effect/turf_decal/industrial/radiation{
 	dir = 10
@@ -390,7 +406,7 @@
 	pixel_y = 27
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/cargo/office)
 "ga" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8;
@@ -398,7 +414,7 @@
 	},
 /obj/effect/turf_decal/techfloor,
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "gg" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
@@ -425,7 +441,7 @@
 	},
 /obj/machinery/pipedispenser,
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "gR" = (
 /obj/machinery/power/shuttle/engine/fire,
 /turf/open/floor/engine/hull,
@@ -435,7 +451,7 @@
 /obj/item/radio/intercom/directional/east,
 /obj/effect/turf_decal/corner/opaque/red/full,
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "hg" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -456,7 +472,7 @@
 	color = "#eeac2e"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "hm" = (
 /obj/effect/turf_decal/industrial/radiation{
 	dir = 8
@@ -484,7 +500,7 @@
 	pixel_x = 26
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "hP" = (
 /obj/structure/platform,
 /turf/open/floor/plating/asteroid/sand/lit,
@@ -507,7 +523,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "im" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/o2{
 	dir = 8;
@@ -529,7 +545,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "ir" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
@@ -544,7 +560,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "iE" = (
 /obj/effect/turf_decal/corner_steel_grid/diagonal,
 /obj/effect/turf_decal/techfloor{
@@ -558,11 +574,17 @@
 	req_access_txt = "11"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "iS" = (
 /obj/effect/turf_decal/corner_steel_grid/diagonal,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
+/area/outpost/maintenance/central)
+"iW" = (
+/obj/effect/turf_decal/road/edge{
+	dir = 4
+	},
+/turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "jd" = (
 /obj/effect/decal/cleanable/glass{
@@ -594,7 +616,7 @@
 	spread_unwielded = 12
 	},
 /turf/open/floor/circuit/green/off,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "jm" = (
 /obj/structure/table/emptycomputer{
 	icon_state = "emptycomputer-right"
@@ -604,7 +626,7 @@
 	dir = 1
 	},
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "jv" = (
 /turf/open/water/beach/deep,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -620,7 +642,7 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "jO" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "jW" = (
 /obj/machinery/atmospherics/components/unary/shuttle/fire_heater,
 /obj/structure/window/reinforced{
@@ -631,10 +653,13 @@
 	id = "kali_starboard_engine_blast"
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "jZ" = (
 /turf/closed/indestructible/edge,
 /area/outpost/external)
+"kk" = (
+/turf/closed/wall/concrete/reinforced,
+/area/outpost/security/armory)
 "kD" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 9
@@ -647,7 +672,7 @@
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "lk" = (
 /turf/open/floor/concrete/reinforced,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "lp" = (
 /obj/structure/salvageable/airbase/cannon{
 	pixel_y = -15
@@ -686,7 +711,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "lR" = (
 /obj/effect/turf_decal/industrial/radiation,
 /turf/open/floor/concrete/reinforced,
@@ -697,7 +722,7 @@
 	},
 /obj/effect/turf_decal/hardline_small/left,
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "mb" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -716,7 +741,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "mf" = (
 /obj/structure/platform{
 	dir = 8
@@ -773,7 +798,7 @@
 /obj/machinery/atmospherics/components/trinary/mixer/flipped/layer2,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "mP" = (
 /obj/structure/chair/plastic{
 	color = "#c1b6a5";
@@ -804,7 +829,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "na" = (
 /obj/effect/decal/cleanable/oil{
 	icon_state = "floor4"
@@ -839,11 +864,11 @@
 	pixel_y = 9
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/cargo/office)
 "nk" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden,
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "no" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/pipe/manifold/orange/hidden{
@@ -875,7 +900,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/concrete/reinforced,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "nU" = (
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -908,7 +933,7 @@
 	id = "architect_training_kali_eng_shut"
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "oJ" = (
 /obj/effect/turf_decal/industrial/radiation{
 	dir = 8
@@ -928,11 +953,11 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "pm" = (
 /obj/effect/turf_decal/corner_steel_grid/diagonal,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "pp" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -949,7 +974,7 @@
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/structure/salvageable/server,
 /turf/open/floor/plasteel/telecomms_floor,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "pq" = (
 /turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "BEACHPLANET_ATMOS"
@@ -964,13 +989,13 @@
 "pT" = (
 /obj/structure/closet/secure_closet/engineering_welding,
 /turf/open/floor/concrete/slab_1/beachplanet,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "pW" = (
 /obj/effect/turf_decal/corner/opaque/tan/three_quarters{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "qn" = (
 /turf/open/water/beach/deep,
 /area/ruin/rockplanet/distillery/office)
@@ -982,7 +1007,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "qr" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1;
@@ -993,14 +1018,14 @@
 	},
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "qu" = (
 /obj/machinery/airalarm/directional/west,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "qE" = (
 /obj/effect/turf_decal/steeldecal/steel_decals_central4{
 	dir = 4
@@ -1011,7 +1036,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "qI" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating/rust,
@@ -1042,7 +1067,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "qY" = (
 /obj/machinery/power/port_gen/pacman/super,
 /obj/structure/cable/yellow,
@@ -1052,7 +1077,7 @@
 /obj/effect/turf_decal/radiation/white,
 /obj/structure/railing,
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "qZ" = (
 /obj/effect/turf_decal/industrial/radiation{
 	dir = 1
@@ -1074,7 +1099,7 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "re" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible/layer4{
 	dir = 9
@@ -1084,7 +1109,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "rm" = (
 /obj/effect/turf_decal/industrial/radiation/corner,
 /obj/effect/turf_decal/industrial/radiation/corner{
@@ -1104,7 +1129,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "rC" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1120,7 +1145,7 @@
 	pixel_y = 22
 	},
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "rJ" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 4
@@ -1130,7 +1155,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "rW" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/effect/decal/cleanable/dirt,
@@ -1156,6 +1181,12 @@
 	pixel_y = 5
 	},
 /turf/open/floor/concrete/reinforced,
+/area/outpost/security/armory)
+"sp" = (
+/obj/effect/turf_decal/road{
+	dir = 8
+	},
+/turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "sB" = (
 /turf/closed/mineral/random/beach,
@@ -1163,7 +1194,7 @@
 "sC" = (
 /obj/structure/railing/corner,
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "sD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/techfloor{
@@ -1185,7 +1216,7 @@
 	network = list("architect_base_riot_dummy")
 	},
 /turf/open/floor/plasteel/telecomms_floor,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "sH" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/mono,
 /obj/structure/chair/comfy/shuttle{
@@ -1216,7 +1247,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "te" = (
 /obj/structure/platform/industrial{
 	dir = 4
@@ -1258,6 +1289,12 @@
 	reagent_to_extract = /datum/reagent/toxin
 	},
 /area/ruin/wasteplanet/facility/northwing)
+"tC" = (
+/obj/effect/turf_decal/road{
+	dir = 4
+	},
+/turf/open/floor/concrete/pavement/beachplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "tO" = (
 /obj/effect/turf_decal/corner_steel_grid/diagonal,
 /obj/effect/turf_decal/techfloor{
@@ -1267,7 +1304,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "tQ" = (
 /obj/machinery/atmospherics/pipe/manifold/orange/hidden{
 	dir = 4
@@ -1289,7 +1326,7 @@
 	desc = "A plasteel plaque listing the number of personnel dead to avoidable munitions accidents, and how to avoid joining them. You can see the insignia of the SCSV Raven on it."
 	},
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "uq" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/waterbottle{
@@ -1311,7 +1348,7 @@
 	dir = 1
 	},
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "uF" = (
 /obj/machinery/light/directional/north,
 /turf/open/floor/concrete/reinforced,
@@ -1330,12 +1367,16 @@
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "vh" = (
 /obj/structure/platform{
 	dir = 1
 	},
 /turf/open/floor/plating/asteroid/sand/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
+"vq" = (
+/obj/effect/turf_decal/road/edge,
+/turf/open/floor/concrete/pavement/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "vr" = (
 /obj/effect/turf_decal/industrial/radiation/corner{
@@ -1343,6 +1384,9 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/ruin/wasteplanet/facility/northwing)
+"vI" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/outpost/maintenance/central)
 "vU" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -1353,7 +1397,7 @@
 	},
 /obj/effect/turf_decal/corner/opaque/red/full,
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "vV" = (
 /obj/effect/turf_decal/industrial/radiation/corner{
 	dir = 8
@@ -1372,7 +1416,7 @@
 "wg" = (
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "wk" = (
 /obj/structure/railing{
 	dir = 1
@@ -1387,7 +1431,7 @@
 	dir = 8;
 	icon = 'icons/obj/stairs.dmi'
 	},
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "wr" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /obj/structure/cable{
@@ -1408,7 +1452,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "ww" = (
 /obj/structure/platform{
 	dir = 9
@@ -1441,7 +1485,7 @@
 	layer = 2.6
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "wH" = (
 /obj/item/paper/crumpled/muddy{
 	pixel_x = 11;
@@ -1460,7 +1504,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "xd" = (
 /obj/effect/turf_decal/industrial/radiation/corner,
 /obj/effect/turf_decal/industrial/radiation{
@@ -1477,7 +1521,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "xo" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8;
@@ -1487,7 +1531,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "xy" = (
 /obj/machinery/atmospherics/components/unary/shuttle/fire_heater,
 /obj/structure/window/reinforced{
@@ -1498,7 +1542,7 @@
 	id = "kali_port_engine_blast"
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "xV" = (
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -1513,7 +1557,7 @@
 	},
 /obj/structure/closet/crate/bin,
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "yr" = (
 /obj/structure/fluff/vehicle/crane{
 	dir = 4;
@@ -1547,7 +1591,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "zf" = (
 /obj/machinery/computer/security{
 	icon_state = "computer-left";
@@ -1558,7 +1602,7 @@
 	dir = 1
 	},
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "zw" = (
 /turf/closed/wall/concrete,
 /area/ruin/wasteplanet/facility/northwing)
@@ -1586,7 +1630,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/wood/walnut,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/cargo/office)
 "Ai" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/cable{
@@ -1611,7 +1655,7 @@
 	name = "Life Support"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Ar" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8;
@@ -1627,7 +1671,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "AD" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -1638,7 +1682,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/turf_decal/corner_steel_grid/diagonal,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "AJ" = (
 /obj/structure/cable{
 	icon_state = "1-2";
@@ -1659,7 +1703,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Bf" = (
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/trimline/opaque/orange/corner{
@@ -1680,7 +1724,7 @@
 	network = list("architect_base_riot_dummy")
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Bi" = (
 /obj/effect/turf_decal/corner/opaque/tan{
 	dir = 10
@@ -1691,7 +1735,7 @@
 	desc = "Industrial cabling used to transfer large volumes of power."
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "BD" = (
 /obj/structure/sign/warning/longtermwaste{
 	pixel_y = 32
@@ -1710,7 +1754,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "BO" = (
 /mob/living/simple_animal/hostile/automated/quadrotor{
 	faction = list("New Gorlex Republic","neutral");
@@ -1727,11 +1771,11 @@
 /obj/machinery/light/small/directional/east,
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "BS" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
 /turf/open/floor/concrete/slab_1/beachplanet,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "BZ" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor/shutters{
@@ -1740,7 +1784,7 @@
 /obj/structure/cable,
 /obj/structure/grille,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Ca" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible/layer4,
 /obj/machinery/atmospherics/pipe/simple/cyan/visible/layer4{
@@ -1750,7 +1794,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Ch" = (
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
@@ -1766,7 +1810,7 @@
 	name = "Starboard Thrusters"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Cs" = (
 /obj/structure/railing{
 	dir = 4
@@ -1776,7 +1820,7 @@
 	},
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Cu" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 9
@@ -1784,7 +1828,7 @@
 /obj/effect/turf_decal/techfloor,
 /obj/structure/cable,
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "CA" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/concrete/reinforced,
@@ -1802,7 +1846,7 @@
 	},
 /obj/effect/turf_decal/corner/opaque/red/full,
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "DK" = (
 /obj/structure/platform/industrial{
 	dir = 5
@@ -1819,7 +1863,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "DR" = (
 /obj/structure/platform{
 	dir = 8
@@ -1845,7 +1889,7 @@
 	pixel_y = 15
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Eh" = (
 /obj/machinery/button/door{
 	id = "johnson_and_company_siteoffice";
@@ -1882,7 +1926,7 @@
 	name = "Port Thrusters"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Ex" = (
 /obj/structure/railing{
 	dir = 1
@@ -1904,7 +1948,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "ED" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -1923,7 +1967,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "EJ" = (
 /obj/structure/fluff/vehicle/crane{
 	dir = 2;
@@ -1959,7 +2003,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Fp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
@@ -1970,7 +2014,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "FE" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2{
 	dir = 8;
@@ -1983,7 +2027,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Gg" = (
 /obj/structure/window/plasma/reinforced{
 	dir = 8
@@ -1995,7 +2039,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine/air,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Gh" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2,
 /obj/machinery/porta_turret/ship/ngr{
@@ -2006,7 +2050,7 @@
 	stun_projectile = /obj/projectile/bullet/slug/meteor;
 	lethal_projectile_sound = 'sound/weapons/gun/general/tank_cannon.ogg';
 	stun_projectile_sound = 'sound/weapons/gun/general/tank_cannon.ogg';
-	dir = 1;
+	dir = 4;
 	burst_delay = 0;
 	burst_size = 2;
 	use_power = 0;
@@ -2024,7 +2068,7 @@
 	name = "power conduit"
 	},
 /turf/open/floor/concrete/reinforced,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Gi" = (
 /obj/machinery/atmospherics/components/unary/tank{
 	dir = 8
@@ -2045,14 +2089,14 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Gp" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1;
 	color = "#eeac2e"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Gz" = (
 /obj/effect/turf_decal/industrial/radiation,
 /obj/effect/turf_decal/industrial/radiation{
@@ -2085,7 +2129,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "GP" = (
 /obj/effect/turf_decal/industrial/radiation/corner{
 	dir = 4
@@ -2108,7 +2152,7 @@
 	},
 /obj/item/stack/sheet/glass/twenty,
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Hh" = (
 /obj/structure/fluff/big_chain{
 	name = "broken-down crane";
@@ -2138,10 +2182,14 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Ho" = (
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"Hq" = (
+/obj/effect/turf_decal/road,
+/turf/open/floor/concrete/pavement/beachplanet/lit,
+/area/overmap_encounter/planetoid/beachplanet/explored)
 "HB" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8;
@@ -2150,7 +2198,7 @@
 /obj/effect/turf_decal/techfloor,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "HD" = (
 /obj/structure/platform,
 /turf/open/floor/concrete/pavement/beachplanet/lit,
@@ -2165,7 +2213,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "HO" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible/layer2{
 	dir = 4
@@ -2178,7 +2226,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "HU" = (
 /obj/structure/platform,
 /turf/open/floor/plating/asteroid/sand/dense/lit,
@@ -2196,12 +2244,12 @@
 	network = list("architect_base_riot_dummy")
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Ie" = (
 /obj/structure/railing,
 /obj/machinery/light/dim/directional/east,
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Iu" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Instructor's Office";
@@ -2222,14 +2270,14 @@
 	layer = 3.1
 	},
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/cargo/office)
 "IH" = (
 /obj/effect/turf_decal/corner/opaque/tan{
 	dir = 10
 	},
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "IL" = (
 /turf/open/floor/concrete/slab_4/beachplanet/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -2249,7 +2297,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "IS" = (
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/corner/opaque/red/half{
@@ -2276,7 +2324,7 @@
 	pixel_y = 13
 	},
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "IZ" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -2291,7 +2339,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Jh" = (
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 8;
@@ -2307,7 +2355,7 @@
 /obj/item/storage/belt/utility/chief/full,
 /obj/item/flashlight,
 /turf/open/floor/wood/walnut,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/cargo/office)
 "Jl" = (
 /obj/effect/turf_decal/industrial/radiation{
 	dir = 6
@@ -2331,7 +2379,7 @@
 	dir = 9
 	},
 /turf/open/floor/concrete/slab_4/beachplanet,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Ju" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/oil,
@@ -2340,7 +2388,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Jv" = (
 /obj/machinery/atmospherics/pipe/simple/dark/visible/layer4,
 /obj/machinery/atmospherics/components/binary/pump/layer2{
@@ -2351,7 +2399,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Jx" = (
 /obj/machinery/light/small/directional/west,
 /obj/structure/hazard/electrical/conduit/corner{
@@ -2359,7 +2407,7 @@
 	desc = "Industrial cabling used to transfer large volumes of power."
 	},
 /turf/open/floor/concrete/reinforced,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "JV" = (
 /obj/effect/turf_decal/industrial/radiation{
 	dir = 8
@@ -2380,11 +2428,11 @@
 	name = "Port Thrusters"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Kh" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Kk" = (
 /turf/closed/wall/concrete/reinforced,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -2400,7 +2448,10 @@
 	name = "Starboard Thrusters"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
+"Ko" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/outpost/cargo/office)
 "Kp" = (
 /turf/closed/mineral/random/beach,
 /area/ruin/wasteplanet/facility/northwing)
@@ -2412,7 +2463,7 @@
 	layer = 3.1
 	},
 /turf/open/floor/concrete/slab_4/beachplanet,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "KP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
@@ -2428,7 +2479,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Lj" = (
 /obj/structure/platform{
 	dir = 4
@@ -2460,12 +2511,12 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "LB" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "LU" = (
 /obj/structure/closet/crate,
 /turf/open/floor/concrete/pavement/beachplanet/lit,
@@ -2478,7 +2529,7 @@
 /obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden,
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Mv" = (
 /obj/structure/platform{
 	dir = 8
@@ -2496,7 +2547,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/concrete/slab_4/beachplanet,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "MX" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden,
 /obj/machinery/door/firedoor/border_only,
@@ -2512,11 +2563,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "MZ" = (
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/concrete/slab_4/beachplanet,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Ng" = (
 /obj/structure/fluff/vehicle/truck/truckcargo{
 	dir = 1;
@@ -2551,7 +2602,7 @@
 	dir = 1
 	},
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "No" = (
 /obj/structure/cable{
 	icon_state = "1-2";
@@ -2560,7 +2611,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /turf/open/floor/concrete/slab_4/beachplanet,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Nt" = (
 /obj/structure/closet/secure_closet/engineering_personal{
 	populate = 0
@@ -2587,7 +2638,7 @@
 /obj/item/storage/backpack/duffelbag/engineering,
 /obj/item/clothing/glasses/welding,
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "NC" = (
 /obj/effect/turf_decal/industrial/radiation/corner{
 	dir = 1
@@ -2615,7 +2666,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Of" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -2631,7 +2682,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Oq" = (
 /obj/machinery/button/door{
 	id = "johnson_and_company_siteoffice";
@@ -2666,7 +2717,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/plasteel/telecomms_floor,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/cargo/office)
 "OA" = (
 /obj/structure/window/plasma/reinforced{
 	dir = 8
@@ -2692,7 +2743,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/concrete/reinforced,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "OL" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating/rust,
@@ -2709,13 +2760,16 @@
 /obj/effect/turf_decal/radiation/white,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "OY" = (
 /obj/structure/platform{
 	dir = 4
 	},
 /turf/open/water/beach/deep,
 /area/overmap_encounter/planetoid/beachplanet/explored)
+"Pj" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/outpost/security/armory)
 "PE" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2736,7 +2790,7 @@
 	name = "Control Room"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "PJ" = (
 /turf/open/floor/plating/asteroid/sand/dense/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
@@ -2755,7 +2809,7 @@
 /obj/effect/turf_decal/corner_steel_grid/diagonal,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "PN" = (
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/corner/opaque/tan{
@@ -2769,7 +2823,7 @@
 	desc = "A trash bin. The inside and rim are covered in dust with a strange aura. You decide not to think too hard about the origin of such a quantity of dust in a room this tidy."
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "PQ" = (
 /obj/machinery/camera/autoname{
 	dir = 10;
@@ -2789,7 +2843,7 @@
 	desc = "Industrial cabling used to transfer large volumes of power."
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "PS" = (
 /obj/effect/turf_decal/corner/opaque/red/mono,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -2797,14 +2851,14 @@
 	},
 /obj/effect/turf_decal/corner/opaque/red/full,
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Qb" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/structure/chair/office{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/cargo/office)
 "Qn" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Fieldwork Training"
@@ -2819,7 +2873,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Qo" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 10
@@ -2829,7 +2883,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Qy" = (
 /turf/open/water/tar{
 	name = "waste confinement pit";
@@ -2842,7 +2896,7 @@
 /obj/structure/tank_dispenser/oxygen,
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/open/floor/concrete/slab_4/beachplanet,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Rf" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/atmospherics/components/unary/passive_vent,
@@ -2859,7 +2913,7 @@
 	},
 /obj/effect/turf_decal/corner/opaque/tan,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "RC" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible/layer4,
 /obj/structure/cable{
@@ -2873,7 +2927,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "RF" = (
 /obj/machinery/power/ship_gravity,
 /obj/structure/cable{
@@ -2885,7 +2939,7 @@
 /obj/machinery/light/dim/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "RH" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2940,7 +2994,7 @@
 	default_raw_text = "CLEAN UP YOUR SPENT CASINGS. PLEASE. I NEED TO RECYCLE THE DAMN THINGS. -A"
 	},
 /turf/open/floor/concrete/reinforced,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "SG" = (
 /obj/structure/salvageable/computer{
 	dir = 8
@@ -2949,7 +3003,7 @@
 /area/ruin/wasteplanet/facility/northwing)
 "SK" = (
 /turf/open/floor/concrete/slab_4/beachplanet,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "SL" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor/shutters{
@@ -2961,7 +3015,7 @@
 /obj/structure/grille,
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "SS" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/concrete/reinforced,
@@ -2971,7 +3025,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "SY" = (
 /obj/structure/platform{
 	dir = 5
@@ -2984,7 +3038,7 @@
 	color = "#eeac2e"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Tv" = (
 /obj/structure/window/plasma/reinforced{
 	dir = 8
@@ -2996,7 +3050,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine/airless,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Tz" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters{
@@ -3004,7 +3058,7 @@
 	dir = 4
 	},
 /turf/open/floor/concrete/reinforced,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Ue" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -3012,7 +3066,7 @@
 /obj/structure/cable,
 /obj/machinery/power/smes/engineering,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Ul" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible/layer4,
 /obj/structure/cable{
@@ -3021,13 +3075,13 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Uv" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "UQ" = (
 /obj/structure/platform/ship/corner{
 	dir = 8
@@ -3062,7 +3116,7 @@
 	pixel_y = 9
 	},
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Vy" = (
 /obj/effect/turf_decal/corner/opaque/tan{
 	dir = 1
@@ -3074,7 +3128,7 @@
 	desc = "A very, very large capacitor bank handling the Misono Turret's gargantuan power draw without blowing every fuse."
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "VU" = (
 /obj/effect/turf_decal/industrial/warning{
 	color = "#912a2a";
@@ -3086,13 +3140,13 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Wb" = (
 /obj/effect/turf_decal/corner/opaque/tan{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "Wm" = (
 /obj/structure/cable,
 /obj/machinery/power/rtg/abductor{
@@ -3119,7 +3173,7 @@
 	layer = 2.030
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "WT" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "johnson_and_company_siteoffice"
@@ -3139,7 +3193,7 @@
 	layer = 3.1
 	},
 /turf/open/floor/plasteel/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Xr" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/machinery/power/apc/auto_name/directional/east,
@@ -3147,7 +3201,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/cargo/office)
 "Xu" = (
 /turf/closed/wall/concrete/reinforced{
 	rad_insulation = 0;
@@ -3183,7 +3237,7 @@
 	network = list("architect_base_riot_dummy")
 	},
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "XW" = (
 /obj/effect/turf_decal/corner/opaque/red/mono,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -3191,11 +3245,11 @@
 	},
 /obj/effect/turf_decal/corner/opaque/red/full,
 /turf/open/floor/pod/dark,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "YA" = (
 /obj/structure/closet/toolcloset,
 /turf/open/floor/concrete/slab_1/beachplanet,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "YD" = (
 /obj/effect/decal/cleanable/shreds,
 /obj/machinery/airalarm/directional/north,
@@ -3209,11 +3263,14 @@
 	pixel_y = 2
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "YH" = (
 /obj/machinery/light/dim/directional/south,
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
+"YN" = (
+/turf/closed/wall/concrete/reinforced,
+/area/outpost/maintenance/central)
 "YP" = (
 /obj/effect/turf_decal/corner_steel_grid/diagonal,
 /obj/structure/closet/secure_closet/engineering_welding{
@@ -3221,11 +3278,11 @@
 	req_access_txt = "11"
 	},
 /turf/open/floor/plasteel/tech,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "YY" = (
 /obj/machinery/power/shuttle/engine/fire,
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Zb" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3240,7 +3297,7 @@
 	dir = 4;
 	color = "#575757"
 	},
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "Zy" = (
 /obj/machinery/portable_atmospherics/canister/hydrogen,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
@@ -3252,7 +3309,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/maintenance/central)
 "ZE" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/concrete/pavement/beachplanet/lit,
@@ -3275,7 +3332,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/overmap_encounter/planetoid/beachplanet/explored)
+/area/outpost/security/armory)
 "ZU" = (
 /obj/structure/platform/industrial{
 	dir = 8
@@ -5125,7 +5182,7 @@ NH
 HD
 fx
 fx
-dF
+vI
 sK
 qE
 HB
@@ -5138,7 +5195,7 @@ jO
 sK
 qE
 ga
-dF
+vI
 xV
 xV
 oA
@@ -5378,22 +5435,22 @@ jJ
 Lj
 jO
 Es
-dF
-dF
-dF
-dF
-dF
-dF
+vI
+vI
+vI
+vI
+vI
+vI
 fT
 sC
 gF
 Cs
-dF
-dF
-dF
-dF
-dF
-dF
+vI
+vI
+vI
+vI
+vI
+vI
 Km
 jO
 NH
@@ -5637,7 +5694,7 @@ Fp
 rv
 RC
 im
-dF
+vI
 Od
 ig
 Ue
@@ -5891,7 +5948,7 @@ Hk
 Ca
 Jv
 re
-dF
+vI
 dx
 Xl
 tO
@@ -5899,7 +5956,7 @@ pm
 pm
 iS
 PL
-dF
+vI
 uq
 PS
 IS
@@ -6014,11 +6071,11 @@ NH
 jO
 aP
 Tv
-dF
+vI
 Gg
 ai
-dF
-dF
+vI
+vI
 rC
 Ie
 iE
@@ -6026,7 +6083,7 @@ YP
 iS
 OV
 RF
-dF
+vI
 Vv
 he
 Nt
@@ -6141,22 +6198,22 @@ NH
 jO
 jO
 jO
-dF
-dF
-dF
-dF
-dF
+vI
+vI
+vI
+vI
+vI
 lH
-dF
-dF
-dF
-dF
-dF
-dF
-dF
-dF
-dF
-dF
+vI
+vI
+vI
+vI
+vI
+vI
+vI
+vI
+vI
+vI
 jO
 NH
 NH
@@ -6271,14 +6328,14 @@ NH
 NH
 NH
 NH
-Kk
+YN
 Re
 Jp
 eN
-Kk
-Kk
-Kk
-Kk
+YN
+YN
+YN
+YN
 NH
 NH
 NH
@@ -6392,20 +6449,20 @@ NH
 NH
 NH
 NH
-jO
-dF
-dF
-dF
-dF
+az
+Ko
+Ko
+Ko
+Ko
 NH
-Kk
+YN
 SK
 ML
 SK
-Kk
+YN
 IP
 IP
-Kk
+YN
 NH
 NH
 NH
@@ -6519,20 +6576,20 @@ NH
 NH
 NH
 NH
-jO
+az
 dS
 na
 Jh
-dF
+Ko
 SK
 SK
 SK
 ML
-Kk
-Kk
+YN
+YN
 VU
 VU
-Kk
+YN
 NH
 NH
 NH
@@ -6646,7 +6703,7 @@ NH
 NH
 NH
 NH
-jO
+az
 fZ
 Qb
 ax
@@ -6773,11 +6830,11 @@ NH
 NH
 NH
 NH
-jO
+az
 Ou
 Xr
 zY
-dF
+Ko
 SK
 SK
 SK
@@ -6900,16 +6957,16 @@ NH
 NH
 NH
 NH
-jO
-dF
-dF
+Pj
+eE
+eE
 Fj
-dF
+eE
 SK
 SK
 SK
 SK
-Kk
+YN
 IL
 IL
 IL
@@ -7027,7 +7084,7 @@ NH
 NH
 NH
 NH
-jO
+Pj
 sD
 pp
 Ex
@@ -7036,7 +7093,7 @@ YA
 SK
 SK
 pT
-Kk
+YN
 NH
 IL
 IL
@@ -7154,16 +7211,16 @@ NH
 NH
 NH
 NH
-jO
+Pj
 tS
 Ju
 KP
-dF
+eE
 YA
 MZ
 SK
 BS
-Kk
+YN
 NH
 IL
 IL
@@ -7281,16 +7338,16 @@ NH
 NH
 NH
 NH
-jO
+Pj
 cO
 jd
 wk
-dF
-Kk
-Kk
-Kk
-Kk
-Kk
+eE
+YN
+YN
+YN
+YN
+YN
 NH
 IL
 IL
@@ -7408,13 +7465,13 @@ NH
 NH
 NH
 NH
-jO
+Pj
 uS
 AU
 Of
 qr
 Bh
-Kk
+kk
 NH
 NH
 NH
@@ -7535,13 +7592,13 @@ NH
 NH
 NH
 NH
-jO
+Pj
 YD
 eL
 ZT
 Gp
 YH
-Kk
+kk
 NH
 NH
 NH
@@ -7662,13 +7719,13 @@ NH
 NH
 NH
 NH
-Kk
-Kk
+kk
+kk
 xg
 hs
 Lz
 Tr
-Kk
+kk
 NH
 NH
 NH
@@ -7790,14 +7847,14 @@ NH
 NH
 NH
 NH
-Kk
-Kk
-Kk
+kk
+kk
+kk
 Ar
 Ar
-Kk
-Kk
-Kk
+kk
+kk
+kk
 NH
 NH
 IL
@@ -7919,12 +7976,12 @@ NH
 NH
 NH
 NH
-Kk
+kk
 Ro
 xo
 wS
 DU
-Kk
+kk
 IL
 IL
 IL
@@ -8046,7 +8103,7 @@ NH
 NH
 NH
 NH
-Kk
+kk
 PN
 SU
 pW
@@ -8171,14 +8228,14 @@ NH
 NH
 NH
 NH
-Kk
-Kk
-Kk
-Kk
-Kk
+kk
+kk
+kk
+kk
+kk
 IH
 fP
-Kk
+kk
 IL
 IL
 IL
@@ -8298,14 +8355,14 @@ NH
 NH
 NH
 NH
-Kk
+kk
 lk
 Jx
 OH
 wB
 Bi
 PQ
-Kk
+kk
 NH
 NH
 IL
@@ -8425,14 +8482,14 @@ NH
 NH
 NH
 NH
-Kk
+kk
 lk
 Gh
 Sp
-Kk
+kk
 Wb
 Vy
-Kk
+kk
 NH
 NH
 NH
@@ -8552,14 +8609,14 @@ NH
 NH
 NH
 NH
-Kk
+kk
 lk
 so
 nE
-Kk
+kk
 BP
 Kh
-Kk
+kk
 NH
 NH
 NH
@@ -8677,16 +8734,16 @@ NH
 NH
 NH
 NH
-NH
-NH
 LX
+Kk
+kk
 Tz
 Tz
 Tz
-Kk
-Kk
-Kk
-Kk
+kk
+kk
+kk
+kk
 LX
 NH
 NH
@@ -8806,11 +8863,11 @@ NH
 NH
 NH
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 NH
 NH
@@ -8933,11 +8990,11 @@ cA
 cA
 XA
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 ww
 cA
@@ -9060,11 +9117,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -9187,11 +9244,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -9314,11 +9371,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -9441,11 +9498,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -9568,11 +9625,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -9695,11 +9752,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -9822,11 +9879,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -9949,11 +10006,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -10076,11 +10133,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -10203,11 +10260,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -10330,11 +10387,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -10457,11 +10514,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -10584,11 +10641,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -10711,11 +10768,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -10838,11 +10895,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 EJ
 vX
 GS
@@ -10965,11 +11022,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -11092,11 +11149,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -11219,11 +11276,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -11346,11 +11403,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -11473,11 +11530,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -11600,11 +11657,11 @@ GS
 GS
 mr
 NH
+cy
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -11727,11 +11784,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vX
 GS
@@ -11854,11 +11911,11 @@ GS
 GS
 mr
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 Vr
 GS
@@ -11981,11 +12038,11 @@ GS
 GS
 HU
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 Vr
 PJ
@@ -12108,11 +12165,11 @@ GS
 PJ
 HU
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vh
 PJ
@@ -12235,11 +12292,11 @@ GS
 PJ
 hP
 NH
+sp
 NH
 NH
 NH
-NH
-NH
+tC
 NH
 vh
 PJ
@@ -12362,11 +12419,11 @@ PJ
 PJ
 hP
 NH
-NH
-NH
-NH
-NH
-NH
+iW
+Hq
+Hq
+Hq
+vq
 NH
 vh
 nU

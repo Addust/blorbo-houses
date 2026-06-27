@@ -1,0 +1,349 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/techfloor,
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/closet/wall/orange/directional/west,
+/obj/item/storage/ration/pepperoni_pizza_slice{
+	desc = "A drab black package bearing the words 'FIELD RATION - MENU 23 - NEW GORLEX REPUBLIC MINISTRY OF AGRICULTURE AND FOOD - PEPPERONI PIZZA RATION - FOR USE BY SECOND BATTLEGROUP FORCES ONLY - RESALE PROHIBITED'."
+	},
+/obj/item/gun/ballistic/revolver/ashhand,
+/obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570,
+/obj/item/ammo_box/magazine/ammo_stack/prefilled/a4570,
+/obj/item/clothing/suit/jacket/leather/duster,
+/obj/item/clothing/head/beret/eng/hazard{
+	pixel_x = -2;
+	pixel_y = 6;
+	desc = "An old, hazard-orange beret bearing Johnson and Company's insignia, embossed in tarnished silver.";
+	name = "johnson and company beret"
+	},
+/obj/item/clothing/suit/armor/ngr,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/glasses/hud/security/sunglasses/ramzi{
+	flash_protect = 2;
+	name = "johnson and company service goggles";
+	desc = "Hefty, faded-orange goggles produced by Johnson and Company during the ICW, based off meson goggles. Rated to protect against welding-induced arc-eye."
+	},
+/obj/item/clothing/accessory/holster,
+/obj/item/card/id/captains_spare{
+	registered_age = 61;
+	registered_name = "Addust Johnson";
+	assignment = "Lieutenant-Commander";
+	officer = 1
+	},
+/obj/item/card/bank{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/obj/item/storage/wallet{
+	pixel_x = -9;
+	pixel_y = 9
+	},
+/obj/item/clothing/gloves/insulated,
+/obj/item/storage/belt/utility/syndicate,
+/obj/item/clothing/mask/breath/facemask,
+/obj/item/trench_tool,
+/obj/item/storage/box/survival/clip/minutemen,
+/obj/item/clothing/under/overalls/olive{
+	desc = "A durable pair of overalls with a removable white work shirt. Perfect for outdoor labor. These have a faded patch of Johnson & Company on the shoulder, alongside rank markings indicating a Chief Executive.";
+	name = "chief's overalls"
+	},
+/obj/item/storage/box/flares,
+/turf/open/floor/plasteel/patterned/brushed,
+/area/ship/bridge)
+"e" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/traffic,
+/obj/machinery/bluespace_drive,
+/obj/machinery/bluespace_drive{
+	icon_state = "bsdrive_left_screen"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-10"
+	},
+/turf/open/floor/plasteel/patterned/brushed,
+/area/ship/bridge)
+"k" = (
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 8
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "pod_aft"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/docking_port/mobile{
+	dir = 4;
+	name = "tanto pod";
+	port_direction = 2;
+	preferred_direction = 4
+	},
+/turf/open/floor/engine/hull/reinforced/interior,
+/area/ship/bridge)
+"l" = (
+/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/grille,
+/obj/machinery/door/poddoor{
+	id = "cometwindow";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
+"n" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-6"
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"q" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-5"
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"r" = (
+/obj/effect/turf_decal/siding/white,
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/item/storage/toolbox/syndicate{
+	pixel_x = -12;
+	pixel_y = 5
+	},
+/turf/open/floor/pod,
+/area/ship/bridge)
+"u" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/bridge)
+"v" = (
+/obj/effect/turf_decal/siding/white,
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/obj/machinery/computer/helm{
+	dir = 8;
+	layer = 3.3;
+	pixel_x = 15;
+	pixel_y = -2;
+	density = 0
+	},
+/obj/machinery/button/door{
+	pixel_y = 23;
+	pixel_x = -6;
+	name = "Aft Door";
+	id = "pod_aft"
+	},
+/obj/machinery/button/door{
+	pixel_y = 23;
+	pixel_x = 4;
+	name = "Window Covers";
+	id = "cometwindow"
+	},
+/obj/item/radio/intercom/wideband/directional/south{
+	pixel_x = -5;
+	pixel_y = -30
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4;
+	layer = 3.3;
+	pixel_x = -9
+	},
+/obj/item/radio/intercom/directional/north{
+	pixel_x = 5;
+	pixel_y = 41
+	},
+/obj/machinery/light_switch{
+	pixel_x = -9;
+	pixel_y = 33
+	},
+/turf/open/floor/pod,
+/area/ship/bridge)
+"w" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4;
+	layer = 3;
+	pixel_x = -4;
+	pixel_y = 0
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/bridge)
+"E" = (
+/obj/machinery/power/smes/shuttle/micro/precharged{
+	dir = 4;
+	pixel_x = -7;
+	pixel_y = 0
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"I" = (
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4;
+	pixel_x = -4;
+	pixel_y = 6;
+	layer = 3
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine/hull/reinforced,
+/area/ship/bridge)
+"L" = (
+/obj/effect/turf_decal/siding/white,
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/item/folder/documents/syndicate/ngr{
+	pixel_x = -6;
+	pixel_y = -3
+	},
+/turf/open/floor/pod,
+/area/ship/bridge)
+"N" = (
+/obj/effect/turf_decal/siding/white,
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/power/ship_gravity{
+	pixel_x = 0;
+	pixel_y = 27;
+	density = 0;
+	name = "hull-mounted gravity generator";
+	desc = "A concerningly-unreliable modification of a gravity generator meant to sit flush with a ship's bulkhead. There's a reason they aren't built this slim."
+	},
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable/yellow{
+	icon_state = "0-5"
+	},
+/turf/open/floor/pod,
+/area/ship/bridge)
+"O" = (
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/east{
+	pixel_y = -6
+	},
+/obj/effect/turf_decal/techfloor,
+/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "1-10"
+	},
+/obj/machinery/power/smes/engineering,
+/obj/item/radio/intercom/directional/south{
+	pixel_x = -2;
+	pixel_y = -31
+	},
+/turf/open/floor/plasteel/patterned/brushed,
+/area/ship/bridge)
+"P" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/effect/turf_decal/industrial/traffic,
+/obj/structure/cable/yellow{
+	icon_state = "2-9"
+	},
+/obj/machinery/bluespace_drive{
+	icon_state = "bsdrive_right"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/patterned/brushed,
+/area/ship/bridge)
+"R" = (
+/obj/machinery/power/smes/shuttle/micro/precharged{
+	dir = 4;
+	pixel_x = -7;
+	pixel_y = 6
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"V" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge)
+"Y" = (
+/turf/template_noop,
+/area/template_noop)
+
+(1,1,1) = {"
+w
+V
+k
+V
+I
+"}
+(2,1,1) = {"
+E
+V
+N
+V
+R
+"}
+(3,1,1) = {"
+n
+e
+L
+a
+q
+"}
+(4,1,1) = {"
+V
+P
+r
+O
+V
+"}
+(5,1,1) = {"
+u
+V
+v
+V
+u
+"}
+(6,1,1) = {"
+Y
+u
+l
+u
+Y
+"}

@@ -68,6 +68,13 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"ak" = (
+/obj/structure/table/reinforced{
+	color = "#c1b6a5"
+	},
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/outpost/maintenance/starboard)
 "am" = (
 /obj/machinery/computer/transponder{
 	desc = "Does something. It's logged out, though.";
@@ -93,25 +100,11 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/lavaland/factory)
 "ao" = (
-/obj/item/radio/intercom/directional/north{
-	pixel_y = -9;
-	dir = 8;
-	pixel_x = -31
+/obj/machinery/light/directional/east,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
-/obj/item/radio/intercom/wideband/directional/north{
-	pixel_y = 10;
-	pixel_x = -25;
-	dir = 8
-	},
-/obj/item/radio/intercom/directional/north,
-/obj/machinery/camera{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/circuit/green,
-/area/ruin/space/has_grav/deepstorage/security/vault)
+/area/outpost/hallway/starboard)
 "aq" = (
 /obj/structure/barricade/concrete,
 /turf/open/floor/concrete/reinforced,
@@ -212,8 +205,7 @@
 /area/outpost/engineering)
 "aU" = (
 /obj/structure/cable{
-	icon_state = "1-10";
-	layer = 3.1
+	icon_state = "1-10"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -231,8 +223,7 @@
 "bc" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
@@ -260,14 +251,8 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ruin/lavaland/factory)
 "bi" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
-/turf/open/floor/plating/asteroid/dirt/beach,
-/area/outpost/maintenance/starboard)
+/turf/closed/wall/concrete/reinforced,
+/area/outpost/hallway/starboard)
 "bj" = (
 /obj/structure/platform{
 	dir = 1
@@ -277,18 +262,16 @@
 	},
 /area/outpost/maintenance/starboard)
 "bk" = (
-/obj/structure/disposalpipe/segment{
-	dir = 8
+/obj/structure/flora/ash/tall_shroom,
+/obj/structure/platform{
+	dir = 1
 	},
 /turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
 "bn" = (
-/obj/structure/platform{
-	dir = 9
-	},
-/turf/open/floor/plating/asteroid/dirt/beach,
+/turf/closed/wall/concrete/reinforced,
 /area/outpost/maintenance/starboard)
 "bo" = (
 /obj/machinery/light/dim/directional/east,
@@ -418,6 +401,18 @@
 	},
 /turf/closed/wall/concrete/reinforced,
 /area/outpost/cargo)
+"bW" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/turf/open/floor/carpet/green,
+/area/outpost/crew/dorm)
 "bX" = (
 /obj/structure/platform{
 	dir = 4
@@ -429,15 +424,18 @@
 	},
 /area/outpost/crew/canteen)
 "cg" = (
-/obj/structure/platform/corner{
-	dir = 1
-	},
 /obj/structure/hazard/electrical/electrified_water{
 	id = "aientrance";
 	random_sparks = 0;
 	on = 0;
 	contact_damage = 30;
 	desc = "crispy"
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 4
 	},
 /turf/open/water/beach{
 	color = "#617B64";
@@ -512,20 +510,21 @@
 	},
 /obj/item/clothing/head/ngr,
 /obj/item/clothing/neck/shemagh,
-/obj/item/gun/ballistic/automatic/pistol/rattlesnake/cottonmouth{
-	pixel_x = 2;
-	pixel_y = 0;
-	icon_state = "rattlesnake";
-	name = "JC-84mB Rattlemouth";
-	desc = "A thoroughly-modified Rattlesnake machine-pistol rechambered to 10mm, bearing the insignia of the long-dead engineering firm Johnson and Company. Unlike its Ramzi Clique counterpart, it maintains the 3-round burst of the original, and is renowned across Johnson and Company's remnants for its reliability compared to its Ramzi competitor.";
-	burst_size = 3;
-	wear_rate = 0.5
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake{
+	allowed_ammo_types = list(/obj/item/ammo_box/magazine/m10mm_cottonmouth);
+	default_ammo_type = /obj/item/ammo_box/magazine/m10mm_cottonmouth;
+	name = "JC-84mp 'Rattlemouth'";
+	desc = "An imposing 10mm machinepistol based off the Rattlesnake design by Scarborough and the Cottonmouth modification by the Ramzi Clique, tailor-made for close-quarters use by assets of the Johnson and Company Remnants and the New Gorlex Republic. Capable of firing semi-auto, two-shot burst, and fully-automatic, with an incredibly smooth mechanism tailor-made for fast shots in any mode.";
+	pixel_x = -2;
+	pixel_y = -4;
+	gun_firemodes = list("single","burst","auto");
+	fire_delay = 0.1
 	},
 /obj/item/ammo_box/magazine/m10mm_cottonmouth,
 /obj/item/ammo_box/magazine/m10mm_cottonmouth,
 /obj/item/storage/toolbox/ammo/c10mm,
 /obj/item/clothing/shoes/jackboots/knife,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
 "cu" = (
@@ -622,19 +621,24 @@
 	},
 /turf/open/floor/carpet/black,
 /area/ruin/lavaland/factory/manager_office)
+"cz" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/machinery/light/directional/south,
+/obj/structure/flora/ash/tall_shroom,
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/outpost/hallway/starboard)
 "cC" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
 "cE" = (
-/obj/structure/cable{
-	icon_state = "0-9"
+/turf/closed/indestructible/rock/beach{
+	name = "abyssal rock";
+	desc = "Densely-packed rock, miles below the surface."
 	},
-/obj/machinery/power/floodlight{
-	anchored = 1
-	},
-/turf/open/floor/plating/asteroid/dirt/beach,
-/area/outpost/maintenance/starboard)
+/area/outpost/hallway/starboard)
 "cI" = (
 /obj/structure/platform,
 /obj/effect/decal/cleanable/dirt,
@@ -672,8 +676,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering)
@@ -691,6 +694,12 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/hallway/central)
+"de" = (
+/obj/machinery/computer/mech_bay_power_console/retro{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/maintenance/starboard)
 "df" = (
 /obj/structure/railing{
 	dir = 1
@@ -769,8 +778,8 @@
 /obj/item/storage/toolbox/electrical,
 /obj/item/storage/toolbox/syndicate,
 /obj/item/storage/toolbox/syndicate,
-/obj/item/clothing/gloves/color/yellow,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
+/obj/item/clothing/gloves/insulated,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/engineering)
 "dm" = (
@@ -813,6 +822,19 @@
 	},
 /turf/open/floor/plating,
 /area/outpost/engineering)
+"ds" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/outpost/hallway/starboard)
+"dt" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/maintenance/starboard)
 "dw" = (
 /obj/effect/turf_decal/corner_steel_grid/full{
 	layer = 2.030;
@@ -844,13 +866,27 @@
 "dB" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plating/rust,
 /area/outpost/hallway/central)
+"dC" = (
+/obj/structure/platform/industrial{
+	dir = 4
+	},
+/turf/open/floor/plating{
+	smoothing_flags = 10;
+	smoothing_groups = list(0,1,5);
+	icon = 'icons/turf/floors/chasms.dmi';
+	icon_state = "chasms-255";
+	base_icon_state = "chasms";
+	name = "chasm";
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
+	attachment_holes = 0
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "dF" = (
 /obj/structure/platform/industrial{
 	dir = 8
@@ -971,6 +1007,10 @@
 /obj/item/storage/part_replacer,
 /turf/open/floor/plating,
 /area/ruin/lavaland/factory/warehouse)
+"dX" = (
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/plating,
+/area/outpost/crew/dorm)
 "dY" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1072,6 +1112,12 @@
 /obj/item/gun/ballistic/shotgun/flamingarrow/conflagration/empty,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
+"eo" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 8
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/maintenance/starboard)
 "eq" = (
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/deepstorage/security)
@@ -1086,6 +1132,19 @@
 /obj/item/gun/ballistic/shotgun/flamingarrow/conflagration/empty,
 /obj/item/gun/ballistic/automatic/smg/sidewinder/no_mag,
 /obj/item/gun/ballistic/automatic/pistol/asp/no_mag,
+/obj/item/gun/ballistic/automatic/assault/hydra/no_mag{
+	name = "\improper HVR-99 Trioditis Variable Rifle";
+	gun_firemodes = list("single","burst","auto");
+	desc = "A refitted Scarborough assault rifle, trading modularity and ergonomics for on-the-go firemode switching. Features automatic, three-round burst and single fire modes alongside reinforced components for sustained fire, though mercifully it remains in line with an assault rifle rather than a dedicated LMG. The buttstamp branding has been removed and replaced with the insignia of Johnson and Company and Scarlet Sky, broken in twain and merged. It has been engraved with the serial number JC-HVR99-03.";
+	burst_size = 3;
+	burst_delay = 0.5;
+	fire_delay = 1.2;
+	pixel_x = -15;
+	pixel_y = -4;
+	spread = 0;
+	zoom_out_amt = 2;
+	zoom_amt = 6
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/canteen)
 "et" = (
@@ -1095,6 +1154,11 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/cargo)
+"ev" = (
+/obj/effect/turf_decal/rechargefloor,
+/obj/machinery/light/directional/west,
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/maintenance/starboard)
 "eA" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	layer = 2.030
@@ -1107,6 +1171,16 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
+"eB" = (
+/obj/structure/platform/corner{
+	dir = 1
+	},
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/outpost/hallway/starboard)
 "eD" = (
 /obj/machinery/atmospherics/pipe/simple/general/hidden/layer4{
 	dir = 4
@@ -1122,10 +1196,11 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/hallway/central)
 "eI" = (
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plating/asteroid/waterplanet{
-	initial_gas_mix = "BEACHPLANET_ATMOS"
+/obj/structure/barricade/concrete{
+	dir = 8
 	},
+/obj/structure/barricade/concrete,
+/turf/open/floor/concrete/reinforced,
 /area/ruin/space/has_grav/deepstorage/security)
 "eJ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -1164,8 +1239,7 @@
 /area/outpost/cargo)
 "eO" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -1179,7 +1253,9 @@
 	pixel_x = 22;
 	pixel_y = -8
 	},
-/turf/open/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/carpet/green,
 /area/outpost/crew/dorm)
 "eT" = (
 /obj/machinery/camera{
@@ -1202,8 +1278,7 @@
 "eU" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -1299,20 +1374,21 @@
 	},
 /obj/item/clothing/head/ngr,
 /obj/item/clothing/neck/shemagh,
-/obj/item/gun/ballistic/automatic/pistol/rattlesnake/cottonmouth{
-	pixel_x = 2;
-	pixel_y = 0;
-	icon_state = "rattlesnake";
-	name = "JC-84mB Rattlemouth";
-	desc = "A thoroughly-modified Rattlesnake machine-pistol rechambered to 10mm, bearing the insignia of the long-dead engineering firm Johnson and Company. Unlike its Ramzi Clique counterpart, it maintains the 3-round burst of the original, and is renowned across Johnson and Company's remnants for its reliability compared to its Ramzi competitor.";
-	burst_size = 3;
-	wear_rate = 0.5
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake{
+	allowed_ammo_types = list(/obj/item/ammo_box/magazine/m10mm_cottonmouth);
+	default_ammo_type = /obj/item/ammo_box/magazine/m10mm_cottonmouth;
+	name = "JC-84mp 'Rattlemouth'";
+	desc = "An imposing 10mm machinepistol based off the Rattlesnake design by Scarborough and the Cottonmouth modification by the Ramzi Clique, tailor-made for close-quarters use by assets of the Johnson and Company Remnants and the New Gorlex Republic. Capable of firing semi-auto, two-shot burst, and fully-automatic, with an incredibly smooth mechanism tailor-made for fast shots in any mode.";
+	pixel_x = -2;
+	pixel_y = -4;
+	gun_firemodes = list("single","burst","auto");
+	fire_delay = 0.1
 	},
 /obj/item/ammo_box/magazine/m10mm_cottonmouth,
 /obj/item/ammo_box/magazine/m10mm_cottonmouth,
 /obj/item/storage/toolbox/ammo/c10mm,
 /obj/item/clothing/shoes/jackboots/knife,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
 "fe" = (
@@ -1484,8 +1560,7 @@
 "fs" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -1535,6 +1610,23 @@
 	desc = "Densely-packed rock, miles below the surface."
 	},
 /area/outpost/maintenance/port)
+"fK" = (
+/obj/structure/hazard/electrical/electrified_water{
+	id = "aientrance";
+	random_sparks = 0;
+	on = 0;
+	contact_damage = 30;
+	desc = "crispy"
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/ruin/space/has_grav/deepstorage/security)
 "fM" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -1564,6 +1656,12 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/space/has_grav/deepstorage/security/vault)
+"fV" = (
+/obj/machinery/mech_bay_recharge_port{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/maintenance/starboard)
 "fY" = (
 /obj/structure/railing/thin{
 	desc = "Basic railing meant to prevent workplace incidents such as falling into bottomless pits. Please do not lean on the railing, it's a long way down.";
@@ -1664,11 +1762,31 @@
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ruin/lavaland/factory)
-"go" = (
-/obj/structure/platform{
-	dir = 10
+"gj" = (
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/obj/structure/platform/corner,
+/obj/structure/platform/corner{
+	dir = 1
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
+/area/outpost/maintenance/starboard)
+"go" = (
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
 /area/outpost/maintenance/starboard)
 "gp" = (
 /obj/effect/turf_decal/corner_steel_grid{
@@ -1776,8 +1894,7 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "hs" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -1792,6 +1909,10 @@
 /obj/machinery/door/airlock/public/glass,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/hallway/central)
+"ht" = (
+/obj/effect/turf_decal/borderfloorblack,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/maintenance/starboard)
 "hu" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1875,6 +1996,12 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/cargo)
+"hI" = (
+/obj/effect/turf_decal/borderfloorblack/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/hallway/starboard)
 "hM" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1;
@@ -1914,6 +2041,14 @@
 	name = "chasm";
 	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
 	attachment_holes = 0
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
+"hQ" = (
+/obj/structure/platform/industrial{
+	dir = 1
+	},
+/turf/open/chasm{
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
 	},
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "hS" = (
@@ -1974,6 +2109,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/deepstorage/security)
+"hZ" = (
+/obj/effect/turf_decal/borderfloorblack{
+	layer = 2.038;
+	dir = 4
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/hallway/starboard)
 "ib" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 10;
@@ -2085,6 +2227,9 @@
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
 	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
 	},
 /turf/open/floor/wood/birch,
 /area/outpost/crew/dorm)
@@ -2275,6 +2420,12 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/hallway/central)
+"jh" = (
+/obj/structure/chair/office{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/maintenance/starboard)
 "jj" = (
 /obj/machinery/power/shuttle/engine/turbine{
 	dir = 2
@@ -2310,6 +2461,10 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/lavaland/factory/manager_office)
+"jo" = (
+/obj/effect/turf_decal/borderfloorblack,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/hallway/starboard)
 "jr" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
@@ -2385,16 +2540,22 @@
 	shot_delay = 10;
 	dir = 1;
 	reaction_time = 2;
-	lethal = 1
+	lethal = 1;
+	pixel_y = -4;
+	layer = 3.1
 	},
 /obj/effect/turf_decal/box/white,
+/obj/structure/barricade/concrete{
+	dir = 1
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "jI" = (
-/obj/structure/disposalpipe/segment{
-	dir = 8
+/obj/structure/flora/ash/tall_shroom,
+/obj/structure/platform,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
-/turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
 "jM" = (
 /obj/effect/turf_decal/borderfloorblack{
@@ -2409,20 +2570,6 @@
 /obj/machinery/recharge_station,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
-	},
-/mob/living/simple_animal/hostile/automated/bipedal{
-	faction = list("New Gorlex Republic","neutral");
-	name = "Pattern 507 combat walker";
-	desc = "An intimidating, lumbering automaton with the engraved insignia of Johnson and Company on its hefty right arm and the flag of the New Gorlex Republic laser-engraved on the energy machine-gun taking up the stump of its left arm. It sweeps the area around it calmly, an antenna mounted to its back humming quietly - chirping away over ARMS-net, waiting for orders.";
-	projectilesound = 'sound/weapons/laser4.ogg';
-	rapid_fire_delay = 1;
-	ranged_cooldown_time = 10;
-	casingtype = null;
-	projectiletype = /obj/projectile/beam/laser/eoehoma/wasp;
-	aggro_say_chance = 25;
-	on_aggro_say = list("ENGAGING HOSTILE TARGET.","BUILDING A BETER FUTURE.","TARGET DESIGNATED.","FOR THE REPUBLIC.","TARGET LOCKED.","ENGAGING.","DO NOT RESIST.","INVALID IFF DETECTED.","INTRUDER.");
-	spread = 10;
-	wander = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/deepstorage/security/vault)
@@ -2446,8 +2593,7 @@
 /area/outpost/engineering/atmospherics)
 "jX" = (
 /obj/structure/cable{
-	icon_state = "1-6";
-	layer = 3.1
+	icon_state = "1-6"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 1
@@ -2475,11 +2621,12 @@
 /area/ruin/lavaland/factory)
 "ka" = (
 /obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable{
-	icon_state = "0-10"
-	},
 /obj/machinery/camera,
-/turf/open/floor/plating/asteroid/dirt/beach,
+/obj/effect/turf_decal/borderfloorblack,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/maintenance/starboard)
 "kc" = (
 /obj/machinery/computer/upload/ai{
@@ -2501,11 +2648,18 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "kf" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal{
-	name = "plastitanium bulkhead";
-	desc = "A multi-ton lump of plastitanium and plasteel."
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
 	},
-/area/overmap_encounter/planetoid/cave/explored)
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/outpost/maintenance/starboard)
 "kg" = (
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 4
@@ -2523,6 +2677,12 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ruin/space/has_grav/deepstorage/security/vault)
+"ko" = (
+/obj/effect/turf_decal/siding/wood/birch{
+	dir = 4
+	},
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
 "kq" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -2531,8 +2691,7 @@
 /area/outpost/hallway/central)
 "kt" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/structure/fence/door{
 	desc = "Not very useful without a real lock. Unless you're a bear.";
@@ -2571,8 +2730,7 @@
 "kz" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
@@ -2735,25 +2893,25 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/lavaland/factory/manager_office)
 "lk" = (
-/obj/item/radio/intercom/wideband/directional/north{
-	pixel_y = 10;
-	pixel_x = 25;
-	dir = 4
+/mob/living/simple_animal/hostile/automated/bipedal{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 combat walker";
+	desc = "An intimidating, lumbering automaton with the engraved insignia of Johnson and Company on its hefty right arm and the flag of the New Gorlex Republic laser-engraved on the energy machine-gun taking up the stump of its left arm. It sweeps the area around it calmly, an antenna mounted to its back humming quietly - chirping away over ARMS-net, waiting for orders.";
+	projectilesound = 'sound/weapons/laser4.ogg';
+	rapid_fire_delay = 1.5;
+	ranged_cooldown_time = 10;
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/laser/eoehoma/wasp;
+	aggro_say_chance = 100;
+	on_aggro_say = list("ENGAGING HOSTILE TARGET.","BUILDING A BETER FUTURE.","TARGET DESIGNATED.","FOR THE REPUBLIC.","TARGET LOCKED.","ENGAGING.","DO NOT RESIST.","INVALID IFF DETECTED.","INTRUDER.","VIOLATION OF DEEPWELL SECURITY PERIMETER.","YOU ARE IN A RESTRICTED AREA.","SECURING SITE.","DEEPWELL INTRUSION.","TERMINATING.","DEFENDING AREA.");
+	spread = 10;
+	wander = 0;
+	rapid = 3;
+	dir = 1
 	},
-/obj/item/radio/intercom/directional/north{
-	pixel_y = -9;
-	dir = 4;
-	pixel_x = 31
-	},
-/obj/item/radio/intercom/directional/north,
-/obj/machinery/camera{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/floor/circuit,
-/area/ruin/space/has_grav/deepstorage/security/vault)
+/obj/effect/turf_decal/rechargefloor,
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/maintenance/starboard)
 "lr" = (
 /obj/structure/closet/syndicate,
 /obj/item/clothing/mask/gas/inteq,
@@ -2802,6 +2960,25 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/outpost/engineering)
+"lw" = (
+/obj/effect/turf_decal/rechargefloor,
+/mob/living/simple_animal/hostile/automated/bipedal{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 combat walker";
+	desc = "An intimidating, lumbering automaton with the engraved insignia of Johnson and Company on its hefty right arm and the flag of the New Gorlex Republic laser-engraved on the energy machine-gun taking up the stump of its left arm. It sweeps the area around it calmly, an antenna mounted to its back humming quietly - chirping away over ARMS-net, waiting for orders.";
+	projectilesound = 'sound/weapons/laser4.ogg';
+	rapid_fire_delay = 1.5;
+	ranged_cooldown_time = 10;
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/laser/eoehoma/wasp;
+	aggro_say_chance = 100;
+	on_aggro_say = list("ENGAGING HOSTILE TARGET.","BUILDING A BETER FUTURE.","TARGET DESIGNATED.","FOR THE REPUBLIC.","TARGET LOCKED.","ENGAGING.","DO NOT RESIST.","INVALID IFF DETECTED.","INTRUDER.","VIOLATION OF DEEPWELL SECURITY PERIMETER.","YOU ARE IN A RESTRICTED AREA.","SECURING SITE.","DEEPWELL INTRUSION.","TERMINATING.","DEFENDING AREA.");
+	spread = 10;
+	wander = 0;
+	rapid = 3
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/maintenance/starboard)
 "lD" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 4
@@ -2824,8 +3001,7 @@
 /area/outpost/maintenance/port)
 "lG" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -2854,7 +3030,7 @@
 /obj/item/toy/plush/landmine{
 	pixel_x = -2;
 	pixel_y = -3;
-	desc = s
+	desc = "Much cuddlier than the real thing."
 	},
 /obj/item/bedsheet/double/rainbow{
 	icon_state = "double_sheetsyndie";
@@ -2989,8 +3165,7 @@
 /area/ruin/space/has_grav/deepstorage/security)
 "ml" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -3006,6 +3181,25 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/cargo)
+"mn" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating,
+/area/outpost/maintenance/starboard)
 "mo" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 1;
@@ -3146,7 +3340,8 @@
 	spread = 2;
 	shot_delay = 10;
 	reaction_time = 2;
-	lethal = 1
+	lethal = 1;
+	pixel_y = 11
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -3155,6 +3350,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/structure/barricade/concrete,
 /turf/open/floor/plasteel/mono/dark,
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "mU" = (
@@ -3290,7 +3486,7 @@
 /obj/structure/fluff{
 	icon = 'icons/mob/species/ipc/bodyparts.dmi';
 	icon_state = "customsa_r_arm";
-	desc = "Chains hanging from the ceiling hook into mounting points on the arms, holding the body upright enough to loom over you.";
+	desc = "Chains hanging from the ceiling hook into mounting points on the arms, holding the body upright enough to loom over you. This arm's concerningly large thumb, usually used for handling single-action revolvers, is thankfully retracted.";
 	pixel_x = 0;
 	pixel_y = 15;
 	name = "Addust Johnson"
@@ -3307,7 +3503,7 @@
 	icon_state = "hair_business";
 	pixel_x = 0;
 	layer = 4;
-	desc = "Now it will never need combing again.";
+	desc = "Now it will never need combing again. Not that he did it often, anyway. Messier than it looks.";
 	color = "#FF9900";
 	pixel_y = 15
 	},
@@ -3357,6 +3553,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/factory/warehouse)
+"nv" = (
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/outpost/hallway/starboard)
 "nA" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
@@ -3436,8 +3639,7 @@
 	pixel_y = 27
 	},
 /obj/item/paper{
-	default_raw_text = MENU:BEAR;
-	desc = HOWTHEFUCKDOYOUADDNEWLINES;
+	default_raw_text = "MENU:BEAR";
 	name = "\proper todays menu"
 	},
 /turf/open/floor/carpet/nanoweave/red,
@@ -3504,12 +3706,26 @@
 	shot_delay = 15;
 	spread = 6;
 	pixel_x = 0;
-	pixel_y = 4;
+	pixel_y = 1;
 	armor = list("melee" = 30, "bullet" = 80, "laser" = 80, "energy" = 60, "bomb" = 80, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 100);
 	integrity_failure = 0.3;
 	lethal = 1;
 	layer = 3.1;
 	reaction_time = 5
+	},
+/obj/structure/platform/industrial{
+	pixel_x = 0;
+	pixel_y = 32;
+	layer = 2.9
+	},
+/obj/structure/barricade/concrete{
+	dir = 1
+	},
+/obj/structure/barricade/concrete{
+	dir = 4
+	},
+/obj/structure/barricade/concrete{
+	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/space/has_grav/deepstorage/security/vault)
@@ -3520,6 +3736,19 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
+"og" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 10
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/maintenance/starboard)
+"oh" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/flora/ash/tall_shroom,
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/outpost/maintenance/starboard)
 "om" = (
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
@@ -3610,8 +3839,7 @@
 	color = "#543C30"
 	},
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
@@ -3787,6 +4015,25 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/cargo)
+"pC" = (
+/obj/structure/platform/industrial{
+	dir = 6
+	},
+/obj/structure/platform/industrial/corner{
+	pixel_x = 0;
+	pixel_y = 32
+	},
+/turf/open/floor/plating{
+	smoothing_flags = 10;
+	smoothing_groups = list(0,1,5);
+	icon = 'icons/turf/floors/chasms.dmi';
+	icon_state = "chasms-255";
+	base_icon_state = "chasms";
+	name = "chasm";
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
+	attachment_holes = 0
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "pD" = (
 /obj/structure/platform,
 /obj/machinery/conveyor{
@@ -3891,6 +4138,12 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/deepstorage/security/vault)
+"pY" = (
+/obj/structure/table/wood/reinforced,
+/obj/effect/turf_decal/siding/wood/birch,
+/obj/machinery/light/directional/west,
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
 "pZ" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -3946,8 +4199,7 @@
 /area/outpost/engineering)
 "qk" = (
 /obj/structure/cable{
-	icon_state = "1-6";
-	layer = 3.1
+	icon_state = "1-6"
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
@@ -4208,8 +4460,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /turf/open/floor/plating,
 /area/outpost/hallway/central)
@@ -4362,14 +4613,31 @@
 	dir = 8
 	},
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering)
+"sa" = (
+/obj/structure/disposalpipe/segment{
+	dir = 2
+	},
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 10;
+	layer = 2.030
+	},
+/obj/structure/platform/corner{
+	dir = 4
+	},
+/obj/structure/platform/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/stairs{
+	dir = 1
+	},
+/area/outpost/maintenance/starboard)
 "sb" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 4;
@@ -4405,20 +4673,21 @@
 	},
 /obj/item/clothing/head/ngr,
 /obj/item/clothing/neck/shemagh,
-/obj/item/gun/ballistic/automatic/pistol/rattlesnake/cottonmouth{
-	pixel_x = 2;
-	pixel_y = 0;
-	icon_state = "rattlesnake";
-	name = "JC-84mB Rattlemouth";
-	desc = "A thoroughly-modified Rattlesnake machine-pistol rechambered to 10mm, bearing the insignia of the long-dead engineering firm Johnson and Company. Unlike its Ramzi Clique counterpart, it maintains the 3-round burst of the original, and is renowned across Johnson and Company's remnants for its reliability compared to its Ramzi competitor.";
-	burst_size = 3;
-	wear_rate = 0.5
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake{
+	allowed_ammo_types = list(/obj/item/ammo_box/magazine/m10mm_cottonmouth);
+	default_ammo_type = /obj/item/ammo_box/magazine/m10mm_cottonmouth;
+	name = "JC-84mp 'Rattlemouth'";
+	desc = "An imposing 10mm machinepistol based off the Rattlesnake design by Scarborough and the Cottonmouth modification by the Ramzi Clique, tailor-made for close-quarters use by assets of the Johnson and Company Remnants and the New Gorlex Republic. Capable of firing semi-auto, two-shot burst, and fully-automatic, with an incredibly smooth mechanism tailor-made for fast shots in any mode.";
+	pixel_x = -2;
+	pixel_y = -4;
+	gun_firemodes = list("single","burst","auto");
+	fire_delay = 0.1
 	},
 /obj/item/ammo_box/magazine/m10mm_cottonmouth,
 /obj/item/ammo_box/magazine/m10mm_cottonmouth,
 /obj/item/storage/toolbox/ammo/c10mm,
 /obj/item/clothing/shoes/jackboots/knife,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
 "sc" = (
@@ -4453,6 +4722,21 @@
 /obj/structure/closet/secure_closet/engineering_welding,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/engineering)
+"sg" = (
+/obj/structure/platform/industrial{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	smoothing_flags = 10;
+	smoothing_groups = list(0,1,5);
+	icon = 'icons/turf/floors/chasms.dmi';
+	icon_state = "chasms-255";
+	base_icon_state = "chasms";
+	name = "chasm";
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
+	attachment_holes = 0
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "sm" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4485,8 +4769,7 @@
 /area/ruin/lavaland/factory)
 "ss" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -4525,6 +4808,11 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/engineering)
+"sJ" = (
+/obj/effect/turf_decal/rechargefloor,
+/obj/machinery/light/directional/east,
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/maintenance/starboard)
 "sK" = (
 /obj/structure/table/chem,
 /obj/machinery/firealarm/directional/west,
@@ -4607,6 +4895,21 @@
 /obj/structure/flora/ash/stem_shroom,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/overmap_encounter/planetoid/cave/explored)
+"sY" = (
+/obj/structure/platform/industrial/corner{
+	dir = 4
+	},
+/turf/open/floor/plating{
+	smoothing_flags = 10;
+	smoothing_groups = list(0,1,5);
+	icon = 'icons/turf/floors/chasms.dmi';
+	icon_state = "chasms-255";
+	base_icon_state = "chasms";
+	name = "chasm";
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
+	attachment_holes = 0
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "sZ" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 4
@@ -4619,8 +4922,7 @@
 /area/outpost/engineering)
 "ta" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 1
@@ -4632,6 +4934,24 @@
 	name = "super hexacrete wall";
 	desc = "A thick wall made of plasma-reinforced-titanium-reinforced hexacrete. Sturdier than the gates of Heaven, if only to stop the turrets from wrecking the drill."
 	},
+/area/outpost/maintenance/starboard)
+"tb" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 10
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plating,
+/area/outpost/hallway/starboard)
+"tf" = (
+/obj/structure/platform,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
 "tg" = (
 /obj/item/defibrillator/loaded,
@@ -4647,25 +4967,31 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/cargo)
+"tl" = (
+/obj/structure/platform{
+	dir = 5
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/outpost/maintenance/starboard)
 "tm" = (
 /obj/effect/turf_decal/borderfloorblack,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/hallway/central)
 "to" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/corner_steel_grid{
-	dir = 9;
-	layer = 2.030
-	},
-/obj/structure/disposalpipe/segment{
+/obj/effect/turf_decal/borderfloorblack{
+	layer = 2.038;
 	dir = 8
 	},
-/turf/open/floor/plasteel/stairs{
-	dir = 4
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/hallway/starboard)
+"tq" = (
+/obj/structure/platform{
+	dir = 8
 	},
-/area/outpost/maintenance/starboard)
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
+/area/outpost/hallway/starboard)
 "ts" = (
 /obj/machinery/atmospherics/components/unary/passive_vent{
 	dir = 1
@@ -4803,6 +5129,12 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
 /area/ruin/lavaland/factory/adminstrative)
+"tO" = (
+/obj/structure/platform,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
+/area/outpost/maintenance/starboard)
 "tP" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 8;
@@ -4856,6 +5188,17 @@
 	desc = "Densely-packed rock, miles below the surface."
 	},
 /area/overmap_encounter/planetoid/cave/explored)
+"tU" = (
+/obj/item/gun/ballistic/automatic/powered/gauss/rail_cannon{
+	name = "New Reliable";
+	desc = "A hefty Solarian rail-cannon, designated 'Atelier'. Its capacitors hum quietly, echoing some long forgotten tune, and untold notches line its barrel. Its capacitors seem to have been replaced with even higher-grade ones, and its scope gleams with flawless polish. Mounts for attachments have been mounted with great care, below precise carvings of Terra. While simply a reproduction, it still conveys the beauty of its counterpart - resting away in a safe far above, waiting for its day to take lives once again.";
+	charge_delay = 5;
+	valid_attachments = list(/obj/item/attachment/silencer,/obj/item/attachment/laser_sight,/obj/item/attachment/rail_light,/obj/item/attachment/bayonet,/obj/item/attachment/ammo_counter,/obj/item/attachment);
+	pixel_x = 0;
+	pixel_y = 26
+	},
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
 "tV" = (
 /obj/machinery/porta_turret/ship/ngr{
 	name = "Nephthys Turret";
@@ -4964,6 +5307,10 @@
 	contact_damage = 30;
 	desc = "crispy"
 	},
+/obj/structure/platform{
+	dir = 1;
+	layer = 3
+	},
 /turf/open/water/beach{
 	color = "#617B64";
 	name = "abyssal aquifer";
@@ -5057,12 +5404,13 @@
 	},
 /area/outpost/maintenance/starboard)
 "uA" = (
-/obj/machinery/turretid{
-	pixel_x = 25;
-	pixel_y = 1;
-	id = "addust_abyss_ai_entrance"
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
 	},
-/turf/open/floor/plating,
+/obj/effect/turf_decal/siding/wood/birch{
+	dir = 1
+	},
+/turf/open/floor/wood/birch,
 /area/outpost/crew/dorm)
 "uB" = (
 /obj/effect/turf_decal/siding/wood{
@@ -5074,8 +5422,7 @@
 	color = "#543C30"
 	},
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -5134,6 +5481,30 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/engineering)
+"uT" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8
+	},
+/obj/item/deployable_mortar_folded,
+/obj/item/mortal_shell/he,
+/obj/item/mortal_shell/he,
+/obj/item/mortal_shell/flare,
+/obj/item/mortal_shell/flare,
+/obj/item/mortal_shell/airburst,
+/obj/item/mortal_shell/airburst,
+/obj/structure/closet/crate/secure/weapon,
+/obj/effect/mapping_helpers/crate_shelve,
+/turf/open/floor/concrete/reinforced,
+/area/outpost/cargo)
 "uV" = (
 /obj/structure/cable{
 	icon_state = "6-9"
@@ -5365,9 +5736,14 @@
 /turf/open/floor/wood/birch,
 /area/outpost/crew/canteen)
 "vP" = (
-/obj/machinery/recharge_station,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
+	},
+/obj/structure/salvageable/machine{
+	icon = 'icons/obj/machines/borgcharger.dmi';
+	icon_state = "borgcharger1";
+	desc = "A standard cyborg recharging station. It is sealed shut, and its display calmly notifies you that an ARMS-series unit is resting in it.";
+	name = "occupied cyborg recharging station"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/deepstorage/security/vault)
@@ -5404,6 +5780,13 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
+"vY" = (
+/obj/structure/table/wood/reinforced,
+/obj/effect/turf_decal/siding/wood/birch{
+	dir = 6
+	},
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
 "wc" = (
 /turf/closed/indestructible/rock/beach{
 	name = "abyssal rock";
@@ -5423,8 +5806,7 @@
 /area/outpost/engineering)
 "wi" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -5562,27 +5944,31 @@
 	name = "Pattern 507 combat walker";
 	desc = "An intimidating, lumbering automaton with the engraved insignia of Johnson and Company on its hefty right arm and the flag of the New Gorlex Republic laser-engraved on the energy machine-gun taking up the stump of its left arm. It sweeps the area around it calmly, an antenna mounted to its back humming quietly - chirping away over ARMS-net, waiting for orders.";
 	projectilesound = 'sound/weapons/laser4.ogg';
-	rapid_fire_delay = 1;
+	rapid_fire_delay = 1.5;
 	ranged_cooldown_time = 10;
 	casingtype = null;
 	projectiletype = /obj/projectile/beam/laser/eoehoma/wasp;
-	aggro_say_chance = 25;
-	on_aggro_say = list("ENGAGING HOSTILE TARGET.","BUILDING A BETER FUTURE.","TARGET DESIGNATED.","FOR THE REPUBLIC.","TARGET LOCKED.","ENGAGING.","DO NOT RESIST.","INVALID IFF DETECTED.","INTRUDER.");
+	aggro_say_chance = 100;
+	on_aggro_say = list("ENGAGING HOSTILE TARGET.","BUILDING A BETER FUTURE.","TARGET DESIGNATED.","FOR THE REPUBLIC.","TARGET LOCKED.","ENGAGING.","DO NOT RESIST.","INVALID IFF DETECTED.","INTRUDER.","VIOLATION OF DEEPWELL SECURITY PERIMETER.","YOU ARE IN A RESTRICTED AREA.","SECURING SITE.","DEEPWELL INTRUSION.","TERMINATING.","DEFENDING AREA.");
 	spread = 10;
-	wander = 0
+	wander = 0;
+	rapid = 3
 	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
 "wR" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 10
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
 	},
 /turf/open/floor/plating/rust,
 /area/ruin/space/has_grav/deepstorage/security)
@@ -5728,7 +6114,6 @@
 /obj/structure/vein/jungle/classfour{
 	mining_charges = 150;
 	desc = "A very big sub-subsurface ore deposit. Contains as much ore as it does a good couple hundred subterranean bears. At least you won't be running out of bear meat or ore any time soon.";
-	mob_types = sssss;
 	ore_list = list(/obj/item/stack/ore/iron = 20, /obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/gold = 3, /obj/item/stack/ore/silver = 5, /obj/item/stack/ore/titanium = 10, /obj/item/stack/ore/diamond = 2, /obj/item/stack/ore/glass = 10, /obj/item/stack/ore/bluespace_crystal = 2, /obj/item/stack/ore/plasma = 10)
 	},
 /obj/machinery/drill{
@@ -5772,8 +6157,7 @@
 	color = "#543C30"
 	},
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -5874,8 +6258,7 @@
 "xN" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
@@ -5946,8 +6329,8 @@
 	},
 /area/ruin/lavaland/factory)
 "yi" = (
-/obj/structure/cable{
-	icon_state = "5-8"
+/obj/structure/platform{
+	dir = 1
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
@@ -5988,7 +6371,9 @@
 	spread = 2;
 	shot_delay = 10;
 	reaction_time = 2;
-	lethal = 1
+	lethal = 1;
+	pixel_x = 0;
+	pixel_y = 11
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -5997,21 +6382,26 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/structure/barricade/concrete,
 /turf/open/floor/plasteel/mono/dark,
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "ys" = (
-/obj/structure/cable{
-	icon_state = "5-10"
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
+/obj/structure/platform,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
 "yu" = (
 /obj/machinery/atmospherics/components/unary/tank/air,
 /turf/open/floor/plating,
 /area/ruin/lavaland/factory/warehouse)
+"yv" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 6
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/maintenance/starboard)
 "yw" = (
 /obj/structure/platform{
 	dir = 9
@@ -6041,14 +6431,12 @@
 "yz" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
-	icon_state = "1-6";
-	layer = 3.1
+	icon_state = "1-6"
 	},
 /turf/open/floor/plating,
 /area/outpost/hallway/central)
@@ -6122,8 +6510,7 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "yO" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -6537,17 +6924,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/factory/manager_office)
 "Ac" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+/obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 4
-	},
-/obj/effect/turf_decal/corner_steel_grid{
-	dir = 9;
-	layer = 2.030
-	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/maintenance/starboard)
 "Ae" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
@@ -6564,6 +6944,17 @@
 	capacity = 4
 	},
 /obj/machinery/firealarm/directional/south,
+/obj/item/stock_parts/cell/gun/large,
+/obj/structure/closet/crate/secure/weapon,
+/obj/item/gun/energy/laser/wasp{
+	icon = 'icons/obj/guns/manufacturer/warra_sharplite/48x32.dmi';
+	icon_state = "turretlaser";
+	name = "Incinerator optical machinegun";
+	desc = "A detached, custom-made laser machinegun built for use with the Pattern-507 combat walker. Designed to send incredibly long bursts of laser fire down-range. This one has been fitted with the required components to use it without gluing it to your left arm.";
+	allowed_ammo_types = list(/obj/item/stock_parts/cell/gun/large,/obj/item/stock_parts/cell/gun/large/empty);
+	spread_unwielded = 12;
+	fire_delay = 0.5
+	},
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
 "Ai" = (
@@ -6634,8 +7025,7 @@
 /area/outpost/cargo)
 "Au" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -6703,14 +7093,23 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/factory/manager_office)
 "AA" = (
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/structure/hazard/electrical/electrified_water{
+	id = "aientrance";
+	random_sparks = 0;
+	on = 0;
+	contact_damage = 30;
+	desc = "crispy"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 8
+/obj/structure/platform{
+	dir = 4
 	},
-/turf/open/floor/plating/asteroid/dirt/beach,
-/area/outpost/maintenance/starboard)
+/obj/machinery/light/small/directional/north,
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/outpost/hallway/starboard)
 "AD" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -6945,6 +7344,15 @@
 	desc = "A multi-ton lump of plastitanium and plasteel."
 	},
 /area/outpost/engineering)
+"BF" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating,
+/area/outpost/hallway/starboard)
 "BH" = (
 /obj/effect/turf_decal/corner/opaque/syndiered{
 	dir = 10
@@ -6974,6 +7382,10 @@
 	dir = 1;
 	color = "#D2BC9D"
 	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/north,
 /turf/open/floor/wood/birch,
 /area/outpost/crew/dorm)
 "BK" = (
@@ -7005,6 +7417,17 @@
 	attachment_holes = 0
 	},
 /area/ruin/space/has_grav/deepstorage/security/vault)
+"BT" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
+/area/ruin/space/has_grav/deepstorage/security)
 "BV" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#D2BC9D";
@@ -7048,6 +7471,19 @@
 /obj/item/storage/wallet,
 /obj/item/card/bank,
 /obj/item/clothing/shoes/jackboots/knife,
+/obj/item/clothing/suit/armor/solgov_trenchcoat{
+	name = "well-worn trenchcoat";
+	desc = "A tattered, old trenchcoat of Solarian origin, with the patch of Johnson and Company stitched onto the right arm, and rank markings used by the Sonnensoldners on the left. It hasn't been worn in years."
+	},
+/obj/item/clothing/head/solgov/sonnensoldner{
+	name = "well-worn Sonnensoldner hat";
+	desc = "A standard-issue hat used by the Sonnensoldners. It bares marks of three years' repairs and many more years of ceremonial use. A single orange feather has been added to its majority-red plume."
+	},
+/obj/item/clothing/neck/cloak/solgov{
+	name = "old weibel";
+	desc = "A well-worn ceremonial weibel. Velcro straps for the attachment of camoflauge netting have been stitched to the back, and it looks like it hasn't been worn in years - only moved around from crate to crate."
+	},
+/obj/item/storage/belt/sabre/solgov,
 /turf/open/floor/wood/birch,
 /area/outpost/crew/dorm)
 "BY" = (
@@ -7066,8 +7502,7 @@
 	color = "#543C30"
 	},
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -7085,6 +7520,23 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"Cf" = (
+/obj/structure/hazard/electrical/electrified_water{
+	id = "aientrance";
+	random_sparks = 0;
+	on = 0;
+	contact_damage = 30;
+	desc = "crispy"
+	},
+/obj/structure/platform{
+	dir = 6
+	},
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/ruin/space/has_grav/deepstorage/security)
 "Ci" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -7095,6 +7547,21 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/outpost/engineering)
+"Cm" = (
+/obj/structure/platform/industrial/corner{
+	dir = 1
+	},
+/turf/open/floor/plating{
+	smoothing_flags = 10;
+	smoothing_groups = list(0,1,5);
+	icon = 'icons/turf/floors/chasms.dmi';
+	icon_state = "chasms-255";
+	base_icon_state = "chasms";
+	name = "chasm";
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
+	attachment_holes = 0
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "Co" = (
 /obj/structure/platform{
 	dir = 8
@@ -7121,8 +7588,7 @@
 "Cp" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -7246,6 +7712,29 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
+"CT" = (
+/mob/living/simple_animal/hostile/automated/bipedal{
+	faction = list("New Gorlex Republic","neutral");
+	name = "Pattern 507 combat walker";
+	desc = "An intimidating, lumbering automaton with the engraved insignia of Johnson and Company on its hefty right arm and the flag of the New Gorlex Republic laser-engraved on the energy machine-gun taking up the stump of its left arm. It sweeps the area around it calmly, an antenna mounted to its back humming quietly - chirping away over ARMS-net, waiting for orders.";
+	projectilesound = 'sound/weapons/laser4.ogg';
+	rapid_fire_delay = 1.5;
+	ranged_cooldown_time = 10;
+	casingtype = null;
+	projectiletype = /obj/projectile/beam/laser/eoehoma/wasp;
+	aggro_say_chance = 100;
+	on_aggro_say = list("ENGAGING HOSTILE TARGET.","BUILDING A BETER FUTURE.","TARGET DESIGNATED.","FOR THE REPUBLIC.","TARGET LOCKED.","ENGAGING.","DO NOT RESIST.","INVALID IFF DETECTED.","INTRUDER.","VIOLATION OF DEEPWELL SECURITY PERIMETER.","YOU ARE IN A RESTRICTED AREA.","SECURING SITE.","DEEPWELL INTRUSION.","TERMINATING.","DEFENDING AREA.");
+	spread = 10;
+	wander = 0;
+	rapid = 3;
+	dir = 1
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	layer = 2.038;
+	dir = 4
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/hallway/starboard)
 "CV" = (
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plating{
@@ -7310,6 +7799,25 @@
 	desc = "A multi-ton lump of plastitanium and plasteel."
 	},
 /area/ruin/lavaland/factory)
+"CZ" = (
+/obj/structure/lattice,
+/obj/structure/marker_beacon{
+	picked_color = "Burgundy"
+	},
+/obj/structure/platform/industrial{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	smoothing_flags = 10;
+	smoothing_groups = list(0,1,5);
+	icon = 'icons/turf/floors/chasms.dmi';
+	icon_state = "chasms-255";
+	base_icon_state = "chasms";
+	name = "chasm";
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
+	attachment_holes = 0
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "Di" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -7428,8 +7936,7 @@
 "DI" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -7509,6 +8016,14 @@
 /obj/effect/turf_decal/box/white,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/engineering)
+"Ea" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
+/turf/open/floor/carpet/green,
+/area/outpost/crew/dorm)
 "Eb" = (
 /obj/machinery/light/directional/east,
 /obj/machinery/camera{
@@ -7519,6 +8034,12 @@
 	name = "abyssal aquifer";
 	desc = "A deposit of shallow water deep below Requiem's surface."
 	},
+/area/outpost/maintenance/starboard)
+"Ec" = (
+/obj/machinery/mech_bay_recharge_port{
+	dir = 2
+	},
+/turf/open/floor/plasteel/tech/grid,
 /area/outpost/maintenance/starboard)
 "Ee" = (
 /obj/machinery/light/directional/north,
@@ -7600,9 +8121,7 @@
 	shot_delay = 10;
 	reaction_time = 2
 	},
-/turf/open/floor/plating/asteroid/waterplanet{
-	initial_gas_mix = "BEACHPLANET_ATMOS"
-	},
+/turf/open/floor/concrete/reinforced,
 /area/ruin/space/has_grav/deepstorage/security)
 "Ew" = (
 /obj/machinery/light/directional/west,
@@ -7854,8 +8373,7 @@
 "Fo" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/light/small/directional/east,
@@ -7927,6 +8445,22 @@
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plating,
 /area/ruin/lavaland/factory/adminstrative)
+"Fx" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/effect/turf_decal/borderfloorblack,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/hallway/starboard)
 "FB" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
@@ -8081,6 +8615,10 @@
 	},
 /turf/open/floor/engine/airless,
 /area/outpost/engineering)
+"Gy" = (
+/obj/structure/flora/ash/puce,
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/outpost/maintenance/starboard)
 "Gz" = (
 /obj/structure/flora/rock/pile,
 /turf/open/floor/plating/asteroid/dirt/beach,
@@ -8097,8 +8635,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 2
@@ -8154,12 +8691,16 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/outpost/engineering)
 "GT" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/turf/open/floor/plating,
+/turf/open/floor/carpet/green,
 /area/outpost/crew/dorm)
 "Ha" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -8311,8 +8852,7 @@
 "Hp" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -8361,8 +8901,7 @@
 /area/ruin/lavaland/factory/manager_office)
 "Hz" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -8385,20 +8924,18 @@
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
 "HC" = (
-/obj/structure/cable{
-	icon_state = "6-8"
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
 	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/cable{
-	icon_state = "5-8"
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 8
-	},
-/turf/open/floor/plating/asteroid/dirt/beach,
-/area/outpost/maintenance/starboard)
+/turf/open/floor/plating,
+/area/outpost/hallway/starboard)
 "HE" = (
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
@@ -8440,6 +8977,38 @@
 "HO" = (
 /turf/open/space/basic,
 /area/overmap_encounter/planetoid/cave/explored)
+"HP" = (
+/obj/machinery/turretid{
+	pixel_x = 25;
+	pixel_y = 1;
+	id = "addust_abyss_ai_entrance"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/carpet/green,
+/area/outpost/crew/dorm)
+"HQ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/effect/turf_decal/borderfloorblack,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/poddoor/preopen{
+	dir = 1;
+	armor = list("melee" = 50, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 70);
+	name = "computer core blast door";
+	id = "addust_abyss_ai_entrance"
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/hallway/starboard)
 "HR" = (
 /obj/machinery/airalarm/directional/west,
 /obj/effect/turf_decal/stairs{
@@ -8486,7 +9055,7 @@
 	},
 /obj/item/paper{
 	default_raw_text = "OUT OF ORDER";
-	desc = Howdidthisgetinhere?;
+	desc = "How did this get in here?";
 	name = "out of order notice"
 	},
 /turf/open/floor/engine/hull/reinforced,
@@ -8617,26 +9186,20 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/factory)
 "IA" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 9
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 10
-	},
-/obj/effect/turf_decal/borderfloorblack{
 	dir = 4
-	},
-/obj/effect/turf_decal/corner_steel_grid{
-	dir = 9;
-	layer = 2.030
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plating,
 /area/outpost/maintenance/starboard)
 "IB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -8651,6 +9214,10 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
+"IN" = (
+/obj/structure/barricade/concrete,
+/turf/open/floor/concrete/reinforced,
+/area/ruin/space/has_grav/deepstorage/security)
 "IO" = (
 /obj/structure/crate_shelf{
 	capacity = 4
@@ -8845,6 +9412,14 @@
 	},
 /turf/open/floor/concrete/reinforced,
 /area/outpost/cargo)
+"JA" = (
+/obj/structure/platform,
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/outpost/hallway/starboard)
 "JB" = (
 /obj/machinery/camera,
 /turf/open/floor/engine/o2,
@@ -8882,8 +9457,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -8959,10 +9533,28 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/cargo)
+"Ka" = (
+/obj/structure/lattice,
+/obj/structure/marker_beacon{
+	picked_color = "Burgundy"
+	},
+/obj/structure/platform/industrial{
+	dir = 4
+	},
+/turf/open/floor/plating{
+	smoothing_flags = 10;
+	smoothing_groups = list(0,1,5);
+	icon = 'icons/turf/floors/chasms.dmi';
+	icon_state = "chasms-255";
+	base_icon_state = "chasms";
+	name = "chasm";
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
+	attachment_holes = 0
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "Kb" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -8983,6 +9575,16 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/crew/cryo)
+"Ke" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform/corner,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
+/area/outpost/hallway/starboard)
 "Kh" = (
 /obj/machinery/button/door{
 	id = "deepwell_public_elevator_underground";
@@ -9171,6 +9773,15 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/ruin/lavaland/factory)
+"KP" = (
+/obj/structure/chair/plastic{
+	color = "#c1b6a5";
+	name = "dirty folding plastic chair";
+	dir = 1
+	},
+/obj/structure/platform,
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/outpost/maintenance/starboard)
 "KR" = (
 /obj/structure/flora/ash/cacti{
 	name = "abyssal fruiting cacti";
@@ -9213,19 +9824,15 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/hallway/central)
 "Lc" = (
-/obj/machinery/holopad,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/flasher{
-	name = "meatbag pacifier";
-	desc = "A device specifically made to keep out anyone unfashionable from the computer core.";
-	dir = 4;
-	pixel_x = 21;
-	pixel_y = -30
+/obj/structure/fluff{
+	icon = 'icons/obj/machines/telecomms.dmi';
+	icon_state = "hub";
+	name = "server rack";
+	desc = "A very large machine that handles most of Architect Base's computing. The faint thrum of cooling fans adds to the ambience of the enormous hole room.";
+	density = 1
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/deepstorage/security/vault)
@@ -9239,8 +9846,7 @@
 "Le" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -9331,9 +9937,7 @@
 /turf/open/floor/plating,
 /area/ruin/lavaland/factory/warehouse)
 "Lu" = (
-/obj/structure/platform{
-	dir = 8
-	},
+/obj/structure/platform,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
 "Lx" = (
@@ -9424,6 +10028,19 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/hallway/central)
+"LX" = (
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/machinery/button/door{
+	id = "deepwell_walker_charging_bay";
+	name = "Shutter Override";
+	pixel_x = 20;
+	pixel_y = 1;
+	dir = 8
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/maintenance/starboard)
 "Ma" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Robotics Workshop";
@@ -9580,12 +10197,13 @@
 	},
 /area/outpost/crew/canteen)
 "Mw" = (
-/obj/structure/disposalpipe/segment{
-	dir = 6
+/obj/machinery/turretid/lethal{
+	pixel_x = -3;
+	pixel_y = 38;
+	id = "addust_abyss_drill"
 	},
-/turf/open/floor/plating/asteroid/waterplanet{
-	initial_gas_mix = "BEACHPLANET_ATMOS"
-	},
+/obj/structure/platform,
+/turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
 "My" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
@@ -9730,8 +10348,7 @@
 "MS" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -9819,8 +10436,7 @@
 /area/outpost/hallway/central)
 "Nc" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -9859,14 +10475,34 @@
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
 "Nl" = (
-/obj/structure/table/reinforced{
-	color = "#c1b6a5"
-	},
 /obj/machinery/light/small/directional/east,
+/obj/structure/platform{
+	dir = 1
+	},
 /turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/maintenance/starboard)
+"Nm" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/hazard/electrical/electrified_water{
+	id = "aientrance";
+	random_sparks = 0;
+	on = 0;
+	contact_damage = 30;
+	desc = "crispy"
+	},
+/obj/structure/platform/corner{
+	dir = 8
+	},
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/ruin/space/has_grav/deepstorage/security)
 "Nn" = (
 /obj/structure/platform{
 	dir = 8
@@ -9917,6 +10553,26 @@
 /obj/machinery/door/window/northright,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/canteen)
+"Nw" = (
+/obj/structure/flora/ash/cacti{
+	name = "abyssal fruiting cacti";
+	desc = "Genetically-modified fruiting cacti frequently found in the Deepwell facility, covered in a thin layer of rock dust.";
+	harvested_desc = "Genetically-modified fruiting cacti frequently found in the Deepwell facility, covered in a thin layer of rock dust. This set seems to have been harvested.";
+	harvested_name = "abyssal cacti"
+	},
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
+/area/outpost/hallway/starboard)
+"Ny" = (
+/obj/structure/flora/ash/cacti{
+	name = "abyssal fruiting cacti";
+	desc = "Genetically-modified fruiting cacti frequently found in the Deepwell facility, covered in a thin layer of rock dust.";
+	harvested_desc = "Genetically-modified fruiting cacti frequently found in the Deepwell facility, covered in a thin layer of rock dust. This set seems to have been harvested.";
+	harvested_name = "abyssal cacti"
+	},
+/turf/open/floor/plating/asteroid/dirt/beach,
+/area/outpost/maintenance/starboard)
 "Nz" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -9968,6 +10624,24 @@
 	desc = "Densely-packed rock, miles below the surface."
 	},
 /area/outpost/engineering/atmospherics)
+"NL" = (
+/obj/structure/hazard/electrical/electrified_water{
+	id = "aientrance";
+	random_sparks = 0;
+	on = 0;
+	contact_damage = 30;
+	desc = "crispy"
+	},
+/obj/structure/platform{
+	dir = 1;
+	layer = 3
+	},
+/turf/open/water/beach{
+	color = "#617B64";
+	name = "abyssal aquifer";
+	desc = "A deposit of shallow water deep below Requiem's surface."
+	},
+/area/ruin/space/has_grav/deepstorage/security)
 "NN" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/full,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -10199,6 +10873,12 @@
 /obj/structure/platform,
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
+"OY" = (
+/obj/structure/barricade/concrete{
+	dir = 8
+	},
+/turf/open/floor/concrete/reinforced,
+/area/ruin/space/has_grav/deepstorage/security)
 "Pa" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 4
@@ -10273,8 +10953,7 @@
 "Pn" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -10336,6 +11015,7 @@
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "PA" = (
 /obj/structure/flora/rock/pile,
+/obj/structure/platform,
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/maintenance/starboard)
 "PB" = (
@@ -10420,8 +11100,7 @@
 /area/outpost/cargo)
 "PO" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "BEACHPLANET_ATMOS"
@@ -10432,6 +11111,15 @@
 /obj/machinery/camera,
 /turf/open/floor/plating/asteroid/dirt/grass/beach,
 /area/outpost/crew/garden)
+"PY" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood/birch{
+	dir = 1
+	},
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
 "Qe" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/concrete/slab_1,
@@ -10541,8 +11229,7 @@
 "Qq" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -10589,10 +11276,6 @@
 /obj/item/gun/energy/e_gun/e11,
 /obj/item/gun/energy/e_gun/e11,
 /obj/item/gun/energy/e_gun/e11,
-/obj/item/gun/energy/e_gun/e11,
-/obj/item/gun/energy/e_gun/e11,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
@@ -10777,6 +11460,12 @@
 /obj/machinery/door/airlock/maintenance_hatch,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/engineering/atmospherics)
+"QM" = (
+/obj/structure/platform,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
+/area/outpost/hallway/starboard)
 "QN" = (
 /obj/structure/platform{
 	dir = 10
@@ -10923,6 +11612,11 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
 "Rw" = (
+/obj/machinery/light/small/directional/east{
+	pixel_x = 36;
+	pixel_y = 9;
+	desc = "A solitary lighting fixture. Barely enough to help you see your way through the casket's chamber."
+	},
 /turf/open/floor/circuit{
 	icon_state = "tcomms";
 	icon_normal = "tcomms";
@@ -10931,8 +11625,7 @@
 /area/ruin/lavaland/factory)
 "RD" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
@@ -11049,10 +11742,11 @@
 	pixel_x = 6;
 	pixel_y = -12
 	},
+/obj/structure/platform,
 /turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
-/area/overmap_encounter/planetoid/cave/explored)
+/area/outpost/maintenance/starboard)
 "RN" = (
 /obj/structure/platform,
 /obj/structure/disposalpipe/trunk{
@@ -11082,16 +11776,9 @@
 /turf/open/floor/concrete/pavement,
 /area/outpost/maintenance/port)
 "RX" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 4
-	},
-/obj/effect/turf_decal/corner_steel_grid{
-	dir = 9;
-	layer = 2.030
-	},
 /obj/effect/baseturf_helper/asteroid,
-/turf/open/floor/plasteel/dark,
+/obj/effect/turf_decal/borderfloorblack,
+/turf/open/floor/plasteel/mono/dark,
 /area/outpost/maintenance/starboard)
 "RZ" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
@@ -11145,6 +11832,16 @@
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
+"Sm" = (
+/obj/effect/turf_decal/industrial/traffic,
+/obj/effect/turf_decal/industrial/traffic{
+	dir = 1
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "deepwell_walker_charging_bay"
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/outpost/maintenance/starboard)
 "So" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 1;
@@ -11159,6 +11856,26 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
+"Sp" = (
+/obj/structure/platform/industrial{
+	dir = 10
+	},
+/obj/structure/platform/industrial/corner{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 32
+	},
+/turf/open/floor/plating{
+	smoothing_flags = 10;
+	smoothing_groups = list(0,1,5);
+	icon = 'icons/turf/floors/chasms.dmi';
+	icon_state = "chasms-255";
+	base_icon_state = "chasms";
+	name = "chasm";
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
+	attachment_holes = 0
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "Sr" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 6;
@@ -11238,8 +11955,7 @@
 /area/outpost/engineering)
 "SJ" = (
 /obj/structure/cable{
-	icon_state = "1-10";
-	layer = 3.1
+	icon_state = "1-10"
 	},
 /obj/item/attachment/ammo_counter,
 /obj/item/attachment/ammo_counter,
@@ -11270,6 +11986,28 @@
 /obj/item/ammo_box/magazine/m10mm_ringneck,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/factory/manager_office)
+"SM" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/plating/asteroid/waterplanet{
+	initial_gas_mix = "BEACHPLANET_ATMOS"
+	},
+/area/outpost/maintenance/starboard)
+"SN" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/effect/turf_decal/borderfloorblack/corner{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/outpost/maintenance/starboard)
 "SO" = (
 /obj/structure/platform{
 	dir = 8
@@ -11340,19 +12078,15 @@
 /turf/open/floor/concrete/reinforced,
 /area/outpost/maintenance/starboard)
 "SV" = (
-/obj/machinery/holopad,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/obj/machinery/flasher{
-	name = "meatbag pacifier";
-	desc = "A device specifically made to keep out anyone unfashionable from the computer core.";
-	dir = 4;
-	pixel_x = -21;
-	pixel_y = -30
+/obj/structure/fluff{
+	icon = 'icons/obj/machines/telecomms.dmi';
+	icon_state = "hub";
+	name = "server rack";
+	desc = "A very large machine that handles most of Architect Base's computing. The faint thrum of cooling fans adds to the ambience of the enormous hole room.";
+	density = 1
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/deepstorage/security/vault)
@@ -11407,8 +12141,7 @@
 	dir = 4
 	},
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/dark,
@@ -11433,6 +12166,13 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/ruin/lavaland/factory)
+"Tm" = (
+/obj/effect/turf_decal/siding/wood/birch{
+	dir = 1
+	},
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/wood/birch,
+/area/outpost/crew/dorm)
 "Tn" = (
 /obj/machinery/light/small/directional/north,
 /obj/structure/railing/thin{
@@ -11571,6 +12311,21 @@
 	attachment_holes = 0
 	},
 /area/ruin/space/has_grav/deepstorage/security/vault)
+"TS" = (
+/obj/structure/platform/industrial{
+	dir = 1
+	},
+/turf/open/floor/plating{
+	smoothing_flags = 10;
+	smoothing_groups = list(0,1,5);
+	icon = 'icons/turf/floors/chasms.dmi';
+	icon_state = "chasms-255";
+	base_icon_state = "chasms";
+	name = "chasm";
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
+	attachment_holes = 0
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "TU" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -11606,24 +12361,21 @@
 	},
 /area/ruin/space/has_grav/deepstorage/security)
 "TY" = (
-/obj/machinery/turretid/lethal{
-	pixel_x = 30;
-	pixel_y = 4;
-	id = "addust_abyss_drill"
-	},
-/obj/structure/chair/plastic{
-	color = "#c1b6a5";
-	name = "dirty folding plastic chair";
-	dir = 4
-	},
 /turf/open/floor/plating/asteroid/waterplanet{
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
-/area/outpost/maintenance/starboard)
+/area/outpost/hallway/starboard)
 "Ub" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/outpost/engineering)
+"Ud" = (
+/obj/effect/turf_decal/borderfloorblack{
+	layer = 2.038;
+	dir = 5
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/outpost/hallway/starboard)
 "Ue" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -11905,19 +12657,15 @@
 	dir = 8
 	},
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/dark,
 /area/outpost/hallway/central)
 "VC" = (
-/obj/effect/turf_decal/siding/wood/corner{
-	color = "#D2BC9D"
-	},
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8;
-	color = "#D2BC9D"
+/obj/effect/turf_decal/siding/wood/maple,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
 	},
 /turf/open/floor/wood/birch,
 /area/outpost/crew/dorm)
@@ -11970,17 +12718,38 @@
 	initial_gas_mix = "BEACHPLANET_ATMOS"
 	},
 /area/outpost/cargo)
-"VS" = (
-/obj/effect/turf_decal/siding/wood{
-	color = "#D2BC9D";
-	dir = 6
+"VM" = (
+/obj/structure/platform/industrial/corner,
+/turf/open/floor/plating{
+	smoothing_flags = 10;
+	smoothing_groups = list(0,1,5);
+	icon = 'icons/turf/floors/chasms.dmi';
+	icon_state = "chasms-255";
+	base_icon_state = "chasms";
+	name = "chasm";
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
+	attachment_holes = 0
 	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
+"VS" = (
 /obj/machinery/button/door{
 	id = "deepwell_sparebody_workshop";
 	name = "Plan C";
 	pixel_x = 22;
 	pixel_y = -21;
 	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood{
+	color = "#D2BC9D";
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 8;
+	color = "#D2BC9D"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 10
 	},
 /turf/open/floor/wood/birch,
 /area/outpost/crew/dorm)
@@ -12056,8 +12825,7 @@
 "Wo" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -12295,6 +13063,21 @@
 /obj/machinery/oven,
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/canteen)
+"XH" = (
+/obj/structure/platform/industrial/corner{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	smoothing_flags = 10;
+	smoothing_groups = list(0,1,5);
+	icon = 'icons/turf/floors/chasms.dmi';
+	icon_state = "chasms-255";
+	base_icon_state = "chasms";
+	name = "chasm";
+	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool.";
+	attachment_holes = 0
+	},
+/area/ruin/space/has_grav/deepstorage/security/vault)
 "XN" = (
 /obj/structure/platform{
 	dir = 4
@@ -12354,8 +13137,7 @@
 "XS" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 8
@@ -12480,20 +13262,21 @@
 	},
 /obj/item/clothing/head/ngr,
 /obj/item/clothing/neck/shemagh,
-/obj/item/gun/ballistic/automatic/pistol/rattlesnake/cottonmouth{
-	pixel_x = 2;
-	pixel_y = 0;
-	icon_state = "rattlesnake";
-	name = "JC-84mB Rattlemouth";
-	desc = "A thoroughly-modified Rattlesnake machine-pistol rechambered to 10mm, bearing the insignia of the long-dead engineering firm Johnson and Company. Unlike its Ramzi Clique counterpart, it maintains the 3-round burst of the original, and is renowned across Johnson and Company's remnants for its reliability compared to its Ramzi competitor.";
-	burst_size = 3;
-	wear_rate = 0.5
+/obj/item/gun/ballistic/automatic/pistol/rattlesnake{
+	allowed_ammo_types = list(/obj/item/ammo_box/magazine/m10mm_cottonmouth);
+	default_ammo_type = /obj/item/ammo_box/magazine/m10mm_cottonmouth;
+	name = "JC-84mp 'Rattlemouth'";
+	desc = "An imposing 10mm machinepistol based off the Rattlesnake design by Scarborough and the Cottonmouth modification by the Ramzi Clique, tailor-made for close-quarters use by assets of the Johnson and Company Remnants and the New Gorlex Republic. Capable of firing semi-auto, two-shot burst, and fully-automatic, with an incredibly smooth mechanism tailor-made for fast shots in any mode.";
+	pixel_x = -2;
+	pixel_y = -4;
+	gun_firemodes = list("single","burst","auto");
+	fire_delay = 0.1
 	},
 /obj/item/ammo_box/magazine/m10mm_cottonmouth,
 /obj/item/ammo_box/magazine/m10mm_cottonmouth,
 /obj/item/storage/toolbox/ammo/c10mm,
 /obj/item/clothing/shoes/jackboots/knife,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/cryo)
 "Yx" = (
@@ -12586,8 +13369,66 @@
 	},
 /obj/item/stock_parts/cell/gun,
 /obj/item/stock_parts/cell/gun,
+/obj/item/gun/energy/e_gun/e11{
+	name = "JC-11 hybrid energy rifle";
+	desc = "A hybrid energy gun once fondly remembered for being an inaccurate piece of shit. Thanks to the wonders of modern firearms engineering, however, someone has fixed this specific example's horrid inaccuracy, and engraved it with the logo of Johnson and Company above that of Eoehoma.";
+	spread = 2;
+	spread_unwielded = 5;
+	dual_wield_spread = 15;
+	valid_attachments = list(/obj/item/attachment/laser_sight,/obj/item/attachment/rail_light,/obj/item/attachment/bayonet,/obj/item/attachment/gun,/obj/item/attachment/scope)
+	},
+/obj/item/gun/energy/e_gun/e11{
+	name = "JC-11 hybrid energy rifle";
+	desc = "A hybrid energy gun once fondly remembered for being an inaccurate piece of shit. Thanks to the wonders of modern firearms engineering, however, someone has fixed this specific example's horrid inaccuracy, and engraved it with the logo of Johnson and Company above that of Eoehoma.";
+	spread = 2;
+	spread_unwielded = 5;
+	dual_wield_spread = 15;
+	valid_attachments = list(/obj/item/attachment/laser_sight,/obj/item/attachment/rail_light,/obj/item/attachment/bayonet,/obj/item/attachment/gun,/obj/item/attachment/scope)
+	},
+/obj/item/gun/energy/e_gun/e11{
+	name = "JC-11 hybrid energy rifle";
+	desc = "A hybrid energy gun once fondly remembered for being an inaccurate piece of shit. Thanks to the wonders of modern firearms engineering, however, someone has fixed this specific example's horrid inaccuracy, and engraved it with the logo of Johnson and Company above that of Eoehoma.";
+	spread = 2;
+	spread_unwielded = 5;
+	dual_wield_spread = 15;
+	valid_attachments = list(/obj/item/attachment/laser_sight,/obj/item/attachment/rail_light,/obj/item/attachment/bayonet,/obj/item/attachment/gun,/obj/item/attachment/scope)
+	},
+/obj/item/gun/energy/e_gun/e11{
+	name = "JC-11 hybrid energy rifle";
+	desc = "A hybrid energy gun once fondly remembered for being an inaccurate piece of shit. Thanks to the wonders of modern firearms engineering, however, someone has fixed this specific example's horrid inaccuracy, and engraved it with the logo of Johnson and Company above that of Eoehoma.";
+	spread = 2;
+	spread_unwielded = 5;
+	dual_wield_spread = 15;
+	valid_attachments = list(/obj/item/attachment/laser_sight,/obj/item/attachment/rail_light,/obj/item/attachment/bayonet,/obj/item/attachment/gun,/obj/item/attachment/scope)
+	},
+/obj/item/gun/energy/e_gun/e11{
+	name = "JC-11 hybrid energy rifle";
+	desc = "A hybrid energy gun once fondly remembered for being an inaccurate piece of shit. Thanks to the wonders of modern firearms engineering, however, someone has fixed this specific example's horrid inaccuracy, and engraved it with the logo of Johnson and Company above that of Eoehoma.";
+	spread = 2;
+	spread_unwielded = 5;
+	dual_wield_spread = 15;
+	valid_attachments = list(/obj/item/attachment/laser_sight,/obj/item/attachment/rail_light,/obj/item/attachment/bayonet,/obj/item/attachment/gun,/obj/item/attachment/scope)
+	},
+/obj/item/gun/energy/e_gun/e11{
+	name = "JC-11 hybrid energy rifle";
+	desc = "A hybrid energy gun once fondly remembered for being an inaccurate piece of shit. Thanks to the wonders of modern firearms engineering, however, someone has fixed this specific example's horrid inaccuracy, and engraved it with the logo of Johnson and Company above that of Eoehoma.";
+	spread = 2;
+	spread_unwielded = 5;
+	dual_wield_spread = 15;
+	valid_attachments = list(/obj/item/attachment/laser_sight,/obj/item/attachment/rail_light,/obj/item/attachment/bayonet,/obj/item/attachment/gun,/obj/item/attachment/scope)
+	},
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
 /turf/open/floor/concrete/slab_1,
 /area/outpost/cargo)
+"YL" = (
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/plating,
+/area/outpost/crew/dorm)
 "YO" = (
 /obj/structure/fluff/steam_vent/low{
 	pixel_x = 0;
@@ -12704,7 +13545,12 @@
 /turf/open/floor/plating,
 /area/outpost/engineering)
 "Zj" = (
-/obj/machinery/recharge_station,
+/obj/structure/salvageable/machine{
+	icon = 'icons/obj/machines/borgcharger.dmi';
+	icon_state = "borgcharger1";
+	desc = "A standard cyborg recharging station. It is sealed shut, and its display calmly notifies you that an ARMS-series unit is resting in it.";
+	name = "occupied cyborg recharging station"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/deepstorage/security/vault)
 "Zq" = (
@@ -12722,8 +13568,7 @@
 /area/outpost/hallway/central)
 "Zv" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /turf/closed/indestructible{
 	icon = 'icons/turf/walls/hexacrete.dmi';
@@ -12740,8 +13585,7 @@
 /area/outpost/maintenance/starboard)
 "Zx" = (
 /obj/structure/cable{
-	icon_state = "1-2";
-	layer = 3.1
+	icon_state = "1-2"
 	},
 /turf/open/floor/plating/asteroid/dirt/beach,
 /area/outpost/engineering/atmospherics)
@@ -12759,16 +13603,18 @@
 /turf/open/floor/plating,
 /area/outpost/engineering)
 "ZD" = (
-/turf/open/floor/plating{
-	smoothing_flags = 10;
-	smoothing_groups = list(0,1,5);
-	icon = 'icons/turf/floors/chasms.dmi';
-	icon_state = "chasms-255";
-	base_icon_state = "chasms";
-	name = "chasm";
-	desc = "At the very bottom lies a large pool of water, which the AI core is suspended over. While it makes for a neat source of cooling, it is a bit too far down to use as a swimming pool."
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
 	},
-/area/ruin/space/has_grav/deepstorage/security/vault)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plating,
+/area/outpost/crew/dorm)
 "ZE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -17886,7 +18732,7 @@ UN
 ad
 Su
 UN
-gI
+uT
 Qz
 UN
 wB
@@ -20171,10 +21017,10 @@ bq
 bq
 bq
 Lu
-go
-to
-bn
-Lu
+ht
+IA
+Ac
+yi
 bq
 bq
 bq
@@ -20298,10 +21144,10 @@ bq
 bq
 bq
 PA
-uJ
-HC
-uJ
-uJ
+ht
+IA
+Ac
+yi
 dn
 bq
 bq
@@ -20426,12 +21272,12 @@ bq
 bq
 iF
 ka
-AA
-cE
-uJ
+mn
+Ac
+yi
 Zw
-Zw
-bq
+SM
+iF
 bq
 bq
 bq
@@ -20551,11 +21397,11 @@ bq
 bq
 bq
 bq
-dn
-Mw
-bi
-uJ
-Zw
+jI
+ht
+IA
+Ac
+bj
 Zw
 Ic
 bq
@@ -20679,10 +21525,10 @@ bq
 bq
 bq
 bq
+ht
+IA
+Ac
 bk
-TD
-TY
-dn
 Zw
 bq
 bq
@@ -20691,12 +21537,12 @@ bq
 bq
 xO
 vj
-vj
+dX
 xO
 vj
 EV
 xO
-vj
+dX
 vj
 xO
 bq
@@ -20806,16 +21652,16 @@ bq
 bq
 bq
 RM
-jI
-TD
-CP
+ht
+IA
+Ac
 Nl
-bq
-bq
-bq
-bq
-bq
-bq
+bn
+bn
+bn
+bn
+bn
+bn
 xO
 vj
 oF
@@ -20931,24 +21777,24 @@ Zw
 Oq
 bq
 bq
-bq
-Iv
-jI
-yi
-bq
 iF
-bq
-bq
-bq
-bq
-bq
-bq
+tf
+ht
+IA
+Ac
+bn
+bn
+Ec
+lw
+ev
+fV
+bn
 xO
 xO
 xO
 xO
 ZX
-EV
+ZD
 xO
 xO
 xO
@@ -21059,17 +21905,17 @@ yp
 bq
 iF
 Il
-se
-ys
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
+gj
+sa
+go
+Ac
+Sm
+eo
+eo
+eo
+eo
+og
+de
 xO
 vj
 FB
@@ -21187,24 +22033,24 @@ uJ
 Fg
 se
 ys
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
+ht
+kf
+Ac
+Sm
+LX
+dt
+dt
+dt
+yv
+jh
 xO
 vj
-vj
+YL
 xO
 vj
 EV
 xO
-vj
+YL
 vj
 xO
 bq
@@ -21313,16 +22159,16 @@ Au
 wi
 kt
 aU
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
+Lu
+ht
+kf
+Ac
+bn
+bn
+Ec
+sJ
+lk
+fV
 xO
 xO
 xO
@@ -21439,25 +22285,25 @@ TD
 uJ
 zy
 iF
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
+ak
+Mw
+ht
+kf
+Ac
+yi
+bn
+bn
+bn
+bn
+bn
 xO
 BV
 jr
 xO
-vj
-vj
-EV
-vj
+tU
+pY
+bW
+PY
 xO
 bq
 bq
@@ -21471,9 +22317,9 @@ PB
 PB
 mC
 PB
-Hk
-Hk
-Hk
+PB
+PB
+mC
 mC
 SQ
 mC
@@ -21566,12 +22412,12 @@ aR
 Zw
 Zw
 bq
-bq
-bq
-bq
-bq
-bq
-bq
+CP
+KP
+ht
+kf
+Ac
+oh
 bq
 bq
 bq
@@ -21580,11 +22426,11 @@ bq
 xO
 BJ
 VC
-mJ
-vj
-vj
+xO
+ko
+vY
 GT
-vj
+Tm
 xO
 bq
 bq
@@ -21599,7 +22445,7 @@ Hk
 Hk
 Hk
 Hk
-ao
+Hk
 Hk
 Hk
 PD
@@ -21694,12 +22540,12 @@ dn
 Zw
 bq
 bq
-bq
-bq
-bq
-bq
-bq
-bq
+Lu
+ht
+SN
+Ac
+yi
+Gy
 bq
 bq
 bq
@@ -21707,10 +22553,10 @@ bq
 xO
 iq
 VS
-xO
-vj
+mJ
+HP
 eR
-EV
+Ea
 uA
 xO
 bq
@@ -21821,12 +22667,12 @@ Cv
 bq
 bq
 bq
-bq
-bq
-bq
-bq
-bq
-bq
+tO
+ht
+kf
+Ac
+yi
+uJ
 bq
 bq
 bq
@@ -21948,16 +22794,16 @@ PL
 bq
 bq
 bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
+tO
+ht
+kf
+Ac
+yi
+Ny
+cE
+cE
+bi
+bi
 xO
 xO
 xO
@@ -21977,13 +22823,13 @@ uH
 Hk
 yq
 Hf
-ZD
-ZD
-ZD
+PB
+PB
+PB
 Fq
-ZD
-ZD
-ZD
+PB
+PB
+PB
 Yx
 jG
 Hk
@@ -22074,20 +22920,20 @@ bq
 bq
 bq
 bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
+Nw
+QM
+ht
+kf
+Ac
+tl
+ds
+bi
+cE
+bi
+cE
+cE
+cE
+bi
 No
 No
 mk
@@ -22105,11 +22951,11 @@ Hk
 vF
 KI
 PB
-PB
-PB
-Em
-PB
-PB
+VM
+dC
+Ka
+dC
+XH
 PB
 BK
 Hk
@@ -22201,23 +23047,23 @@ bq
 bq
 bq
 bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-No
-No
-mk
+nv
+QM
+jo
+HC
+Ud
+hZ
+hZ
+hZ
+CT
+bi
+cE
+cE
+cE
+bi
+AA
+fK
+Cf
 xb
 TX
 vi
@@ -22232,11 +23078,11 @@ mC
 vF
 Ir
 PB
-PB
+pC
 Hk
 Hk
 kc
-PB
+hQ
 PB
 Dt
 Hk
@@ -22328,23 +23174,23 @@ bq
 bq
 bq
 bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-No
-No
-mk
+nv
+JA
+jo
+tb
+BF
+BF
+BF
+BF
+BF
+Fx
+cE
+cE
+cE
+HQ
+Jg
+Jg
+Jg
 wR
 Bt
 Jg
@@ -22455,24 +23301,24 @@ bq
 bq
 bq
 bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-pG
-pG
+nv
+JA
+hI
+to
+to
+to
+to
+to
+to
+bi
+cE
+cE
+cE
+bi
+Ke
+BT
 cg
-mu
+Nm
 mu
 Co
 mK
@@ -22486,11 +23332,11 @@ mC
 Sg
 YZ
 PB
-PB
+Sp
 Hk
 Hk
 sc
-PB
+TS
 PB
 Dt
 Hk
@@ -22582,24 +23428,24 @@ bq
 bq
 bq
 bq
+nv
+eB
+tq
+tq
+tq
+tq
+cz
+bi
+cE
+bi
+cE
+cE
+cE
+bi
 bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
+OY
 eI
-eI
-No
+NL
 No
 CC
 zk
@@ -22613,11 +23459,11 @@ Hk
 Sg
 VG
 PB
-PB
-PB
-Em
-PB
-PB
+Cm
+sg
+CZ
+sg
+sY
 PB
 sU
 Hk
@@ -22710,22 +23556,22 @@ bq
 bq
 bq
 bq
+nv
+nv
+ao
+TY
+TY
+TY
+cE
 bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
+bi
+bi
+bi
+bi
+bi
 bq
 Ev
-eI
+IN
 uh
 No
 No
@@ -22739,13 +23585,13 @@ DU
 Hk
 mQ
 vh
-ZD
 PB
-ZD
+PB
+PB
 EG
-ZD
-ZD
-ZD
+PB
+PB
+PB
 ND
 jG
 Hk
@@ -22839,10 +23685,10 @@ bq
 bq
 bq
 bq
-bq
-bq
-bq
-bq
+iF
+Nw
+TY
+cE
 bq
 bq
 bq
@@ -23123,8 +23969,8 @@ Hk
 Hk
 Hk
 Hk
-lk
 Hk
+lU
 Hk
 PD
 Hk
@@ -23249,9 +24095,9 @@ PB
 PB
 mC
 PB
-Hk
-Hk
-lU
+PB
+PB
+mC
 mC
 hO
 mC
@@ -24389,7 +25235,7 @@ bq
 bq
 bq
 bq
-kf
+JP
 rW
 JP
 Ue
@@ -24516,7 +25362,7 @@ bq
 bq
 bq
 bq
-kf
+JP
 rW
 Kw
 kA
@@ -24643,7 +25489,7 @@ bq
 bq
 bq
 bq
-kf
+JP
 rW
 JP
 Qr
@@ -24770,7 +25616,7 @@ bq
 bq
 bq
 bq
-kf
+JP
 mB
 JP
 qU
